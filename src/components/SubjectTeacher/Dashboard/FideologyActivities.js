@@ -1,11 +1,11 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React from 'react'
 import "./FideologyActivities.css"
 
 function FideologyActivities() {
   return (
-    <div class="FideologyActivities">
-        <div class="fideo">
+    <div className="FideologyActivities">
+        <div className="fideo">
   		<h3 className='fidoh3'>Fideology Activities</h3>
   		<table>
 		  <tr>
