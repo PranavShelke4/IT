@@ -16,7 +16,8 @@ function subNavbar() {
       <Navbar bg="light" expand={false}>
         <Container fluid>
           <Navbar.Brand id="brandname">
-            <img src={clglogo} /><h3 className="clgname">Government Polytechnic Awasari kh.</h3>
+            <img src={clglogo} />
+            <h3 className="clgname">Government Polytechnic Awasari kh.</h3>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
@@ -63,7 +64,9 @@ function subNavbar() {
                 <Nav.Link href="#action5">
                   <i className="bx bx-book"></i>Course
                 </Nav.Link>
-                <Nav.Link href="#action6"><i class='bx bx-file-find' ></i>CPP Project</Nav.Link>
+                <Nav.Link href="#action6">
+                  <i class="bx bx-file-find"></i>CPP Project
+                </Nav.Link>
                 <NavDropdown title="👨🏽‍🤝‍👨🏻 Time Table" id="offcanvasNavbarDropdown">
                   <NavDropdown.Item href="#action7">
                     First Year
@@ -75,15 +78,15 @@ function subNavbar() {
                     Third Year
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="#action10"><i class='bx bx-food-menu' ></i>Teaching / Lab Plan </Nav.Link>
-                <Nav.Link href="#action11"><i class='bx bx-spreadsheet' ></i>MSBTE Result</Nav.Link>
+                <Nav.Link href="#action10">
+                  <i class="bx bx-food-menu"></i>Teaching / Lab Plan{" "}
+                </Nav.Link>
+                <Nav.Link href="#action11">
+                  <i class="bx bx-spreadsheet"></i>MSBTE Result
+                </Nav.Link>
                 <NavDropdown title="👨🏽‍🤝‍👨🏻 My Details" id="offcanvasNavbarDropdown">
-                  <NavDropdown.Item href="#action12">
-                    CR
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action13">
-                    Profile
-                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action12">CR</NavDropdown.Item>
+                  <NavDropdown.Item href="#action13">Profile</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="#action15">
                   <i className="bx bxs-comment-detail"></i>Leaves
