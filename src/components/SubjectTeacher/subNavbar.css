@@ -1,57 +1,62 @@
 /* #brandname{
   color: white ;
 } */
-Nav{
-    background-color: #11101D !important;
-    color: white;
-    margin: 0px;
+Nav {
+  background-color: #11101d !important;
+  color: white;
+  margin: 0px;
+}
+.offcanvas-body {
+  background-color: #11101d;
+  color: white;
+}
+.nav-link{
+  color: white;
+}
+.clgname {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.profile-details {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+}
+
+.dropdown-menu,
+.dropdown-item {
+  background-color: #11101d;
+  color: white;
+  text-align: center;
+}
+
+.collapsed,
+.navbar-toggler {
+  width: 4rem;
+  margin-top: -0.2rem !important;
+}
+
+#offcanvasNavbar {
+  width: 18rem;
+  text-align: left;
+}
+
+.bx {
+  margin-right: 5%;
+}
+
+.active {
+  background-color: white;
+  /* color: white !important; */
+}
+
+@media only screen and (max-width: 600px) {
+  .clgname {
+    display: none;
   }
-  .offcanvas-body{
-    background-color: #11101D;
-    color: white;
-  }
-  .clgname{
-    display: inline-block;
-    margin-left: 1rem;
-  }
-  .profile-details{
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  .photo{
-    width: 120px;
-    height: 120px;
-    border-radius: 20px;
-  }
-  
-  .dropdown-menu, .dropdown-item{
-    background-color: #11101D;
-    color: white;
-    text-align: center;
-  }
-  
-  .collapsed, .navbar-toggler{
-    width: 4rem;
-    margin-top: -0.2rem !important;
-  }
-  
-  #offcanvasNavbar{
-    width: 18rem;
-    text-align: left;
-  }
-  
-  .bx{
-    margin-right: 5%;
-  }
-  
-  .active{
-    background-color: white;
-    /* color: white !important; */
-  }
-  
-  @media only screen and (max-width: 600px){
-    .clgname{
-      display: none;
-    }
-  }
+}
