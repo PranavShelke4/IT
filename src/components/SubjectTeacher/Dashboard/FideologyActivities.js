@@ -4,8 +4,8 @@ import "./FideologyActivities.css"
 
 function FideologyActivities() {
   return (
-    <div class="FideologyActivities">
-        <div class="fideo">
+    <div className="FideologyActivities">
+        <div className="fideo">
   		<h3 className='fidoh3'>Fideology Activities</h3>
   		<table>
 		  <tr>
@@ -58,10 +58,10 @@ function FideologyActivities() {
 		    <td><a href="#"><i class='bx bx-edit-alt'></i></a> | <a href="#"><i class='bx bx-trash'></i></a></td>
 		  </tr>
 		</table>
-        <a href='#'><div className='add'>Add</div></a>
+        <a href='/fideology-form'><div className='add'>Add</div></a>
   	</div>
     </div>
   )
 }
 
-export default FideologyActivities
+export default FideologyActivities;
