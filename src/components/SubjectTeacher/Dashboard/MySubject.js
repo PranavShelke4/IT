@@ -3,8 +3,8 @@ import "./MySubject.css";
 
 function MySubject() {
   return (
-    <>
-      <div className="row">
+    
+      <div className="d-flex flex-md-row flex-sm-column flex-wrap justify-content-center" id="row">
         <div className="sub1">
           <p className="subname">Java Script</p>
           <p className="subcode">123</p>
@@ -25,7 +25,7 @@ function MySubject() {
             <h3>Information Technology</h3>
         </div>
       </div>
-    </>
+
   );
 }
 
