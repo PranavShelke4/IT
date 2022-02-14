@@ -4,6 +4,7 @@ import App from "../App";
 import Dashbord from '../pages/SubjectTeacherPages/Dashbord';
 import Fideology from '../pages/SubjectTeacherPages/FideologyForm';
 import StudentDetail from '../pages/SubjectTeacherPages/studentDetail';
+import Course from '../pages/SubjectTeacherPages/coursePage';
 
 const ConfigRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const ConfigRoutes = () => {
         <Route path="/fideology-form" element={<Fideology />}></Route>
         <Route path="/subject-teacher-dashbord" element={<Dashbord />}></Route>
         <Route path="/student-details" element={<StudentDetail />}></Route>
+        <Route path="/course" element={<Course />}></Route>
       </Routes>
     </>
   );
