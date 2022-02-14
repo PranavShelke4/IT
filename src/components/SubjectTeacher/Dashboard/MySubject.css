@@ -101,27 +101,3 @@
   box-shadow: 35px 12px 23px rgba(201, 176, 255, 0.25);
   border-radius: 10px;
 }
-
-
-.box{
-  color: white;
-  width: 250px;
-  height: 131px;
-  display: inline-block;
-  border-radius: 6px;
-  box-shadow: 35px 12px 23px rgba(201, 176, 255, 0.25);
-  margin-right: 3%;
-  padding: 1%;
-}
-#Total_Students_box{
-  background: linear-gradient(101.38deg, #8500A7 3.84%, rgba(204, 0, 255, 0.95) 46.66%, rgba(205, 4, 255, 0.6) 110.03%);
-}
-#Teachers_box{
-  background: linear-gradient(101.44deg, #0089B5 14.59%, rgba(27, 187, 238, 0.88) 82.65%, rgba(51, 194, 239, 0.45) 110.59%);
-}
-#Total_Courses_box{
-  background: linear-gradient(100.38deg, #038117 9.5%, rgba(1, 210, 35, 0.71) 88.24%, rgba(36, 198, 62, 0.67) 104.42%);
-}
-#Detened_Students_box{
-  background: linear-gradient(102.45deg, #E47C00 2.48%, #E4B200 52.84%, rgba(228, 219, 0, 0.63) 102.57%);
-}
