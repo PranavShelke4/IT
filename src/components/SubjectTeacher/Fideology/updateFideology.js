@@ -14,7 +14,7 @@ function updateFideology(){
         <input className="update" type="number" name="number" placeholder="Group No." />
 
         <a href='/'><button className="submit">Submit</button></a>
-        <button className="cancel">Cancel</button>
+        <a href='/'><button className="cancel">Cancel</button></a>
     </div>
     );
 }
