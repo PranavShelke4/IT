@@ -15,4 +15,4 @@ function Dashbord() {
   )
 }
 
-export default Dashbord
+export default Dashbord;
