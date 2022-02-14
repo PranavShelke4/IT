@@ -1,399 +1,231 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 
-import React from 'react';
-import './subNavbar.css';
+import React from "react";
+import "./subNavbar.css";
 
-function eventHandle(){
+function eventHandle() {
   let arrow = document.querySelectorAll(".arrow");
   for (var i = 0; i < arrow.length; i++) {
-    arrow[i].addEventListener("click", (e)=>{
-   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
-   arrowParent.classList.toggle("showMenu");
+    arrow[i].addEventListener("click", (e) => {
+      let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+      arrowParent.classList.toggle("showMenu");
     });
   }
   let sidebar = document.querySelector(".sidebar");
   let sidebarBtn = document.querySelector(".bx-menu");
   console.log(sidebarBtn);
-  sidebarBtn.addEventListener("click", ()=>{
+  sidebarBtn.addEventListener("click", () => {
     sidebar.classList.toggle("close");
   });
 }
 
-function subNavbar(){
+function subNavbar() {
   return (
     <div>
-    <div className="sidebar close">
+      <div class="sidebar close">
+        <div class="logo-details">
+          <img
+            class="gpa_logo"
+            src="https://www.gpawasari.ac.in/Images/logo.PNG"
+          />
+          <span class="logo_name">GPA</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">
+              <i class="bx bx-home-alt"></i>
+              <span class="link_name">Dashboard</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li>
+                <a class="link_name" href="HOD_Dashbord.html">
+                  Dashboard
+                </a>
+              </li>
+            </ul>
+          </li>
 
-    <div className="logo-details">
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class="bx bx-user"></i>
+                <span class="link_name">Students</span>
+              </a>
+              <i  onClick={eventHandle} class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li>
+                <a class="link_name" href="#">
+                Students
+                </a>
+              </li>
+              <li>
+                <a href="All_Teachers.html">First Year</a>
+              </li>
+              <li>
+                <a href="Add_Teachers.html">Second Year</a>
+              </li>
+              <li>
+                <a href="Add_class_Teacher.html">Third Year</a>
+              </li>
+            </ul>
+          </li>
 
-      <img className="gpa_logo" alt='logo' src="https://www.gpawasari.ac.in/Images/logo.PNG" />
-      <span className="logo_name">GPA</span>
+          <li>
+            <a href="#">
+              <i class="bx bx-book"></i>
+              <span class="link_name">Course</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li>
+                <a class="link_name" href="Subject_Teachers.html">
+                Course
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="bx bx-file-find"></i>
+              <span class="link_name">CPP Project</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li>
+                <a class="link_name" href="Subject_Teachers.html">
+                CPP Project
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+              <i class="bx bxs-book-content"></i>
+                <span class="link_name">Time Table</span>
+              </a>
+              <i onClick={eventHandle} class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li>
+                <a class="link_name" href="#">
+                Time Table
+                </a>
+              </li>
+              <li>
+                <a href="FY_Student.html">First Year</a>
+              </li>
+              <li>
+                <a href="SY_Student.html">Second Year</a>
+              </li>
+              <li>
+                <a href="TY_Student.html">Third Year</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="bx bx-food-menu"></i>
+              <span class="link_name">Teaching / Lab Plan</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li>
+                <a class="link_name" href="Subject_Teachers.html">
+                 Teaching / Lab Plan
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="bx bx-spreadsheet"></i>
+              <span class="link_name">MSBTE Result</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li>
+                <a class="link_name" href="#">
+                MSBTE Result
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+              <i class="bx bxs-user"></i>
+                <span class="link_name">My Details</span>
+              </a>
+              <i onClick={eventHandle} class="bx bxs-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li>
+                <a class="link_name" href="#">
+                My Details
+                </a>
+              </li>
+              <li>
+                <a href="FY_Student.html">CR</a>
+              </li>
+              <li>
+                <a href="SY_Student.html">Profile</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="bx bxs-comment-detail"></i>
+              <span class="link_name">Leaves</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li>
+                <a class="link_name" href="#">
+                Leaves
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="bx bx-log-out"></i>
+              <span class="link_name">Logout</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li>
+                <a class="link_name" href="#">
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="profile-details">
+              <div class="profile-content">
+                <img src="https://www.gpawasari.ac.in/Images/ithod.PNG" />
+              </div>
+              <div class="name-job">
+                <div class="profile_name">Dr. D.N. Rewadkar</div>
+                <div class="job">Head of Department I.T.</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="home-section">
+        <div class="home-content">
+          <i class="bx bx-menu" onClick={eventHandle}></i>
+          <span class="text">Dashboard</span>
+          <br />
+        </div>
+      </div>
     </div>
-    <ul className="nav-links">
-
-      <li>
-        <a href="ST_dashboard.html">
-          <i className='bx bx-home-alt' ></i>
-          <span className="link_name">Dashboard</span>
-        </a>
-        <ul className="sub-menu blank">
-          <li><a className="link_name" href="ST_dashboard.html">Dashboard</a></li>
-        </ul>
-      </li>
-
-      <li>
-        <a href="ST_mySubject.html">
-          <i className='bx bx-book'></i>
-          <span className="link_name">Students Details</span>
-        </a>
-        <ul className="sub-menu blank">
-          <li><a className="link_name" href="ST_mySubject.html">Students Details</a></li>
-        </ul>
-      </li>
-
-      <li>
-        <a href="ST_mySubject.html">
-          <i className='bx bx-book'></i>
-          <span className="link_name">Course</span>
-        </a>
-        <ul className="sub-menu blank">
-          <li><a className="link_name" href="ST_mySubject.html">Course</a></li>
-        </ul>
-      </li>
-      
-      <li>
-        <a href="ST_detentionList.html">
-          <i className='bx bx-file' ></i>
-          <span className="link_name">CPP Project</span>
-        </a>
-        <ul className="sub-menu blank">
-          <li><a className="link_name" href="ST_detentionList.html">CPP Project</a></li>
-        </ul>
-      </li>
-
-      <li>
-        <a href="ST_myProfile.html">
-          <i className='bx bx-cog' ></i>
-          <span className="link_name">Time Table</span>
-        </a>
-        <ul className="sub-menu blank">
-          <li><a className="link_name" href="ST_myProfile.html">Time Table</a></li>
-        </ul>
-      </li>
-
-      <li>
-        <a href="ST_mySubject.html">
-          <i className='bx bx-book'></i>
-          <span className="link_name">Teaching / Lab Plan</span>
-        </a>
-        <ul className="sub-menu blank">
-          <li><a className="link_name" href="ST_mySubject.html">Teaching / Lab Plan</a></li>
-        </ul>
-      </li>
-
-      <li>
-        <a href="ST_mySubject.html">
-          <i className='bx bx-book'></i>
-          <span className="link_name">MSBTE Result</span>
-        </a>
-        <ul className="sub-menu blank">
-          <li><a className="link_name" href="ST_mySubject.html">MSBTE Result</a></li>
-        </ul>
-      </li>
-
-      <li>
-        <a href="ST_mySubject.html">
-          <i className='bx bx-book'></i>
-          <span className="link_name">My Details</span>
-        </a>
-        <ul className="sub-menu blank">
-          <li><a className="link_name" href="ST_mySubject.html">My Details</a></li>
-        </ul>
-      </li>
-
-      <li>
-        <a href="ST_mySubject.html">
-          <i className='bx bx-book'></i>
-          <span className="link_name">Leaves</span>
-        </a>
-        <ul className="sub-menu blank">
-          <li><a className="link_name" href="ST_mySubject.html">Leaves</a></li>
-        </ul>
-      </li>
-
-       <li>
-        <a href="/">
-          <i className='bx bx-log-out' ></i>
-          <span className="link_name">Logout</span>
-        </a>
-        <ul className="sub-menu blank">
-          <li><a className="link_name" href="/">Logout</a></li>
-        </ul>
-      </li>
-
-    <div className="profile-details">
-      <div className="profile-content">
-        <img alt='Img' src="../images/bodheSir.png" />
-      </div>
-      <div className="name-job">
-        <div className="profile_name">Mr.Yogesh U. Bodhe</div>
-        <div className="job">Subject Teacher (IT)</div>
-      </div>
-        <i className='bx bx-log-out' ></i>
-      </div>
-      </ul>
-  </div>
-  <div class="home-section">
-    <div class="home-content">
-      <i class='bx bx-menu' onClick={eventHandle} ></i>
-      <span class="text">Dashboard</span><br />
-    </div>
-  </div>
-  </div>
   );
 }
 
 export default subNavbar;
-
-
-// import React from "react";
-// import "./subNavbar.css";
-// import clglogo from "../../assets/icon/clg-logo.svg";
-// import {
-//   Navbar,
-//   Nav,
-//   NavDropdown,
-//   Container,
-//   Offcanvas,
-// } from "react-bootstrap";
-
-// function subNavbar() {
-//   return (
-//     <>
-//       <Navbar bg="light" expand={false}>
-//         <Container fluid>
-//           <Navbar.Brand id="brandname">
-//             <img src={clglogo} />
-//             <h3 className="clgname">Government Polytechnic Awasari kh.</h3>
-//           </Navbar.Brand>
-//           <Navbar.Toggle aria-controls="offcanvasNavbar" />
-//           <Navbar.Offcanvas
-//             id="offcanvasNavbar"
-//             aria-labelledby="offcanvasNavbarLabel"
-//             placement="end"
-//           >
-//             <Offcanvas.Header closeButton>
-//               <Offcanvas.Title id="offcanvasNavbarLabel">
-//                 Government Polytechnic Awasari kh.
-//               </Offcanvas.Title>
-//             </Offcanvas.Header>
-//             <Offcanvas.Body>
-//               <Nav className="justify-content-end flex-grow-1 pe-3">
-//                 <div className="profile-details">
-//                   <div className="profile-content">
-//                     <img
-//                       className="photo"
-//                       src="https://www.gpawasari.ac.in/Images/ithod.PNG"
-//                     />
-//                   </div>
-//                   <div className="name-job">
-//                     <div className="profile_name">Dr. D.N. Rewadkar</div>
-//                     <div className="job">Head of Department I.T.</div>
-//                   </div>
-//                 </div>
-//                 <Nav.Link href="/subject-teacher-dashbord">
-//                   <i className="bx bx-home-alt"></i>Dashboard
-//                 </Nav.Link>
-//                 <NavDropdown
-//                   title="👨🏽‍🤝‍👨🏻 Students Details"
-//                   id="offcanvasNavbarDropdown"
-//                 >
-//                   <NavDropdown.Item href="#action2">
-//                     First Year
-//                   </NavDropdown.Item>
-//                   <NavDropdown.Item href="#action3">
-//                     Second Year
-//                   </NavDropdown.Item>
-//                   <NavDropdown.Item href="#action4">
-//                     Third Year
-//                   </NavDropdown.Item>
-//                 </NavDropdown>
-//                 <Nav.Link href="#action5">
-//                   <i className="bx bx-book"></i>Course
-//                 </Nav.Link>
-//                 <Nav.Link href="#action6">
-//                   <i class="bx bx-file-find"></i>CPP Project
-//                 </Nav.Link>
-//                 <NavDropdown title="👨🏽‍🤝‍👨🏻 Time Table" id="offcanvasNavbarDropdown">
-//                   <NavDropdown.Item href="#action7">
-//                     First Year
-//                   </NavDropdown.Item>
-//                   <NavDropdown.Item href="#action8">
-//                     Second Year
-//                   </NavDropdown.Item>
-//                   <NavDropdown.Item href="#action9">
-//                     Third Year
-//                   </NavDropdown.Item>
-//                 </NavDropdown>
-//                 <Nav.Link href="#action10">
-//                   <i class="bx bx-food-menu"></i>Teaching / Lab Plan{" "}
-//                 </Nav.Link>
-//                 <Nav.Link href="#action11">
-//                   <i class="bx bx-spreadsheet"></i>MSBTE Result
-//                 </Nav.Link>
-//                 <NavDropdown title="👨🏽‍🤝‍👨🏻 My Details" id="offcanvasNavbarDropdown">
-//                   <NavDropdown.Item href="#action12">CR</NavDropdown.Item>
-//                   <NavDropdown.Item href="#action13">Profile</NavDropdown.Item>
-//                 </NavDropdown>
-//                 <Nav.Link href="#action15">
-//                   <i className="bx bxs-comment-detail"></i>Leaves
-//                 </Nav.Link>
-//                 <Nav.Link href="/">
-//                   <i className="bx bx-log-out"></i>Log out
-//                 </Nav.Link>
-//               </Nav>
-//             </Offcanvas.Body>
-//           </Navbar.Offcanvas>
-//         </Container>
-//       </Navbar>
-//       {/* <div className="sidebar close">
-
-//                 <div className="logo-details">
-//                 <img className="gpa_logo" src="https://www.gpawasari.ac.in/Images/logo.PNG" />
-//                 <span className="logo_name">GPA</span>
-//                 </div>
-
-//                 <ul className="nav-links">
-            
-//                 <li>
-//                     <a href="/">
-//                     <i className='bx bx-home-alt' ></i>
-//                     <span className="link_name">Dashboard</span>
-//                     </a>
-//                     <ul className="sub-menu blank">
-//                     <li><a className="link_name" href="/">Dashboard</a></li>
-//                     </ul>
-//                 </li>
-            
-//                 <li>
-//                     <div className="iocn-link">
-//                     <a href="/">
-//                         <i className='bx bx-user' ></i>
-//                         <span class="link_name">Teachers</span>
-//                     </a>
-//                     <i className='bx bxs-chevron-down arrow' ></i>
-//                     </div>
-//                     <ul className="sub-menu">
-//                     <li><a className="link_name" href="/">Teachers</a></li>
-//                     <li><a href="/">All Teachers</a></li>
-//                     <li><a href="/">Add Teachers</a></li>
-//                     <li><a href="/">Add class Teacher</a></li>
-//                     </ul>
-//                 </li>
-            
-//                 <li>
-//                     <div className="iocn-link">
-//                     <a href="/">
-//                         <i className='bx bx-book-reader' ></i>
-//                         <span className="link_name">Students</span>
-//                     </a>
-//                     <i className='bx bxs-chevron-down arrow' ></i>
-//                     </div>
-//                     <ul className="sub-menu">
-//                     <li><a className="link_name" href="/">Students</a></li>
-//                     <li><a href="/">First Year</a></li>
-//                     <li><a href="/">Second Year</a></li>
-//                     <li><a href="/">Third Year</a></li>
-//                     </ul>
-//                 </li>
-            
-//                 <li>
-//                     <a href="/">
-//                     <i className='bx bxs-book-content'></i>
-//                     <span className="link_name">Subject Teachers</span>
-//                     </a>
-//                     <ul className="sub-menu blank">
-//                     <li><a className="link_name" href="/">Subject Teachers</a></li>
-//                     </ul>
-//                 </li>
-            
-            
-//                 <li>
-//                     <a href="/">
-//                     <i className='bx bx-book'></i>
-//                     <span className="link_name">My Subject</span>
-//                     </a>
-//                     <ul className="sub-menu blank">
-//                     <li><a className="link_name" href="/">My Subject</a></li>
-//                     </ul>
-//                 </li>
-                
-//                 <li>
-//                     <a href="/">
-//                     <i className='bx bx-file' ></i>
-//                     <span className="link_name">Detention List</span>
-//                     </a>
-//                     <ul className="sub-menu blank">
-//                     <li><a className="link_name" href="/">Detention List</a></li>
-//                     </ul>
-//                 </li>
-            
-//                 <li>
-//                     <a href="/">
-//                     <i className='bx bxs-comment-detail'></i>
-//                     <span className="link_name">Feedback</span>
-//                     </a>
-//                     <ul className="sub-menu blank">
-//                     <li><a className="link_name" href="/">Feedback</a></li>
-//                     </ul>
-//                 </li>
-            
-//                 <li>
-//                     <a href="/">
-//                     <i className='bx bx-cog' ></i>
-//                     <span className="link_name">Setting</span>
-//                     </a>
-//                     <ul className="sub-menu blank">
-//                     <li><a className="link_name" href="/">Setting</a></li>
-//                     </ul>
-//                 </li>
-            
-//                 <li>
-//                     <a href="/">
-//                     <i className='bx bx-log-out' ></i>
-//                     <span className="link_name">Logout</span>
-//                     </a>
-//                     <ul className="sub-menu blank">
-//                     <li><a className="link_name" href="/">Logout</a></li>
-//                     </ul>
-//                 </li>
-//             <li>
-            
-//                 <div className="profile-details">
-//                 <div className="profile-content">
-//                     <img src="https://www.gpawasari.ac.in/Images/ithod.PNG" />
-//                 </div>
-//                 <div className="name-job">
-//                     <div className="profile_name">Dr. D.N. Rewadkar</div>
-//                     <div className="job">Head of Department I.T.</div>
-//                 </div>
-//                 <i className='bx bx-log-out' ></i>
-//                 </div>
-
-//             </li>
-
-//         </ul>
-
-//             </div>
-//             <section class="home-section">
-//                 <div class="home-content">
-//                 <i class='bx bx-menu' ></i>
-//                 <span class="text">Dashboard</span><br/>
-//                 </div>
-//       </section>
-//      */}
-//     </>
-//   );
-// }
-
-// export default subNavbar;
