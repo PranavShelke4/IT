@@ -1,0 +1,13 @@
+.question{
+    padding-top: 5rem;
+    padding-left: 5rem;
+}
+.upload-btn{
+    position: absolute;
+    background-color: black;
+    color: white;
+    margin-left: 75%;
+    margin-top: 2%;
+
+   
+}
