@@ -5,6 +5,7 @@ import Dashbord from '../pages/SubjectTeacherPages/Dashbord';
 import Fideology from '../pages/SubjectTeacherPages/FideologyForm';
 import StudentDetail from '../pages/SubjectTeacherPages/studentDetail';
 import Course from '../pages/SubjectTeacherPages/coursePage';
+import QuestionPaper from '../pages/SubjectTeacherPages/questionPaper';
 
 const ConfigRoutes = () => {
   return (
@@ -15,6 +16,7 @@ const ConfigRoutes = () => {
         <Route path="/subject-teacher-dashbord" element={<Dashbord />}></Route>
         <Route path="/student-details" element={<StudentDetail />}></Route>
         <Route path="/course" element={<Course />}></Route>
+        <Route path="/question-paper" element={<QuestionPaper />}></Route>
       </Routes>
     </>
   );
