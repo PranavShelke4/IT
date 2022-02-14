@@ -2,7 +2,7 @@
     padding: 2rem;
     justify-content: center;
     background-color: #f8f9fa;
-    
+    margin-left: 5rem;
 }
 
 .fideo{
@@ -29,14 +29,14 @@
   }
   
   td {
-    border: 1px solid #dddddd;
+    border: 1px solid #dddddd !important;
     text-align: center;
     padding: 8px;
   }
   
   th {
-    border: 1px solid #dddddd;
-    text-align: center;
+    border: 1px solid #dddddd !important;
+    text-align: center !important;
     padding: 8px;
     background-color: #EBF1EF;
   }
