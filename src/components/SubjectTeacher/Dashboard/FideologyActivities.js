@@ -1,4 +1,4 @@
-
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import "./FideologyActivities.css"
 
@@ -58,10 +58,10 @@ function FideologyActivities() {
 		    <td><a href="#"><i class='bx bx-edit-alt'></i></a> | <a href="#"><i class='bx bx-trash'></i></a></td>
 		  </tr>
 		</table>
-        <a href='#'><div className='add'>Add</div></a>
+        <a href='/fideology-form'><div className='add'>Add</div></a>
   	</div>
     </div>
   )
 }
 
-export default FideologyActivities
+export default FideologyActivities;
