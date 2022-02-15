@@ -8,6 +8,7 @@ import Course from '../pages/SubjectTeacherPages/coursePage';
 import QuestionPaper from '../pages/SubjectTeacherPages/questionPaper';
 import StudyPage  from "../pages/SubjectTeacherPages/studyPage";
 import ProfilePage from "../pages/SubjectTeacherPages/ProfilePage";
+import LeavePage from '../pages/SubjectTeacherPages/LeavePage';
 
 const ConfigRoutes = () => {
   return (
@@ -21,6 +22,7 @@ const ConfigRoutes = () => {
         <Route path="/question-paper" element={<QuestionPaper />}></Route>
         <Route path="/study-material" element={<StudyPage />}></Route>
         <Route path="/profile" element={<ProfilePage />}></Route>
+        <Route path="/leave" element={<LeavePage />}></Route>
       </Routes>
     </>
   );
