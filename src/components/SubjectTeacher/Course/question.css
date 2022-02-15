@@ -4,10 +4,9 @@
 }
 .upload-btn{
     position: absolute;
-    background-color: black;
+    background-color: #11101d;
     color: white;
     margin-left: 75%;
     margin-top: 2%;
-
-   
+    border-radius: 10px;
 }

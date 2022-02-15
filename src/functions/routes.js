@@ -6,6 +6,7 @@ import Fideology from '../pages/SubjectTeacherPages/FideologyForm';
 import StudentDetail from '../pages/SubjectTeacherPages/studentDetail';
 import Course from '../pages/SubjectTeacherPages/coursePage';
 import QuestionPaper from '../pages/SubjectTeacherPages/questionPaper';
+import StudyPage  from "../pages/SubjectTeacherPages/studyPage";
 
 const ConfigRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const ConfigRoutes = () => {
         <Route path="/student-details" element={<StudentDetail />}></Route>
         <Route path="/course" element={<Course />}></Route>
         <Route path="/question-paper" element={<QuestionPaper />}></Route>
+        <Route path="/study-material" element={<StudyPage />}></Route>
       </Routes>
     </>
   );
