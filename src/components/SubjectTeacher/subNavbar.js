@@ -61,25 +61,25 @@ function subNavbar() {
                 </a>
               </li>
               <li>
-                <a href="All_Teachers.html">First Year</a>
+                <a href="/student-details">First Year</a>
               </li>
               <li>
-                <a href="Add_Teachers.html">Second Year</a>
+                <a href="/student-details">Second Year</a>
               </li>
               <li>
-                <a href="Add_class_Teacher.html">Third Year</a>
+                <a href="/student-details">Third Year</a>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="#">
+            <a href="/course">
               <i class="bx bx-book"></i>
               <span class="link_name">Course</span>
             </a>
             <ul class="sub-menu blank">
               <li>
-                <a class="link_name" href="Subject_Teachers.html">
+                <a class="link_name" href="/course">
                 Course
                 </a>
               </li>
@@ -172,19 +172,19 @@ function subNavbar() {
                 <a href="FY_Student.html">CR</a>
               </li>
               <li>
-                <a href="SY_Student.html">Profile</a>
+                <a href="/profile">Profile</a>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="#">
+            <a href="/leave">
               <i class="bx bxs-comment-detail"></i>
               <span class="link_name">Leaves</span>
             </a>
             <ul class="sub-menu blank">
               <li>
-                <a class="link_name" href="#">
+                <a class="link_name" href="/leave">
                 Leaves
                 </a>
               </li>
