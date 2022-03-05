@@ -1,12 +1,12 @@
 import React from 'react';
 import SubNavbar from "../../components/SubjectTeacher/subNavbar";
-import UpdateFideology from '../../components/SubjectTeacher/Fideology/updateFideology';
+import CreatePedology from '../../components/SubjectTeacher/Fideology/createPedology';
 
 function FideologyForm(){
     return (
     <div>
         <SubNavbar />
-        <UpdateFideology />
+        <CreatePedology />
     </div>
     );
 }
