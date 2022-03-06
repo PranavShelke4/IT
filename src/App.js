@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Dashbord from './pages/SubjectTeacherPages/Dashbord';
-// import Fideology from './pages/SubjectTeacherPages/FideologyForm';
+//import Dashbord from './pages/SubjectTeacherPages/Dashbord';
+import LoginPages from './pages/LoginPage/LoginPage';
 
 function App() {
   return (
     <>
-    <Dashbord />
-   
+    <LoginPages />
+    {/* <Dashbord />   */}
     </>
   );
 }

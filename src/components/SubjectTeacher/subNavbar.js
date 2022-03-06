@@ -1,6 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/alt-text */
-
 import React from "react";
 import "./subNavbar.css";
 import {Link} from 'react-router-dom';
@@ -26,21 +23,21 @@ function subNavbar() {
     <div>
       <div class="sidebar close">
         <div class="logo-details">
-          <img
-            class="gpa_logo"
+          <img alt=""
+            class="gpa_logo" 
             src="https://www.gpawasari.ac.in/Images/logo.PNG"
           />
           <span class="logo_name">GPA</span>
         </div>
         <ul class="nav-links">
           <li>
-            <Link to="">
+            <Link to="/">
               <i class="bx bx-home-alt"></i>
               <span class="link_name">Dashboard</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="">
+                <Link class="link_name" to="/">
                   Dashboard
                 </Link>
               </li>
@@ -208,7 +205,7 @@ function subNavbar() {
           <li>
             <div class="profile-details">
               <div class="profile-content">
-                <img src="https://www.gpawasari.ac.in/Images/ithod.PNG" />
+                <img alt="" src="https://www.gpawasari.ac.in/Images/ithod.PNG" />
               </div>
               <div class="name-job">
                 <div class="profile_name">Dr. D.N. Rewadkar</div>
@@ -221,7 +218,7 @@ function subNavbar() {
       <div class="home-section">
         <div class="home-content">
           <i class="bx bx-menu" onClick={eventHandle}></i>
-          <span class="text">Dashboard</span>
+          <span class="text">Subject Teacher Dashboard</span>
           <br />
         </div>
       </div>
