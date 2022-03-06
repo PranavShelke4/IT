@@ -3,6 +3,7 @@
 
 import React from "react";
 import "./subNavbar.css";
+import {Link} from 'react-router-dom';
 
 function eventHandle() {
   let arrow = document.querySelectorAll(".arrow");
@@ -33,174 +34,174 @@ function subNavbar() {
         </div>
         <ul class="nav-links">
           <li>
-            <a href="#">
+            <Link to="">
               <i class="bx bx-home-alt"></i>
               <span class="link_name">Dashboard</span>
-            </a>
+            </Link>
             <ul class="sub-menu blank">
               <li>
-                <a class="link_name" href="HOD_Dashbord.html">
+                <Link class="link_name" to="">
                   Dashboard
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
 
           <li>
             <div class="iocn-link">
-              <a href="#">
+              <Link to="">
                 <i class="bx bx-user"></i>
                 <span class="link_name">Students</span>
-              </a>
+              </Link>
               <i  onClick={eventHandle} class="bx bxs-chevron-down arrow"></i>
             </div>
             <ul class="sub-menu">
               <li>
-                <a class="link_name" href="#">
+                <Link to="" class="link_name">
                 Students
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/student-details">First Year</a>
+                <Link to="/student-details">First Year</Link>
               </li>
               <li>
-                <a href="/student-details">Second Year</a>
+                <Link to="/student-details">Second Year</Link>
               </li>
               <li>
-                <a href="/student-details">Third Year</a>
+                <Link to="/student-details">Third Year</Link>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="/course">
+            <Link to="/course">
               <i class="bx bx-book"></i>
               <span class="link_name">Course</span>
-            </a>
+            </Link>
             <ul class="sub-menu blank">
               <li>
-                <a class="link_name" href="/course">
+                <Link class="link_name" to="/course">
                 Course
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="#">
+            <Link to="#">
               <i class="bx bx-file-find"></i>
               <span class="link_name">CPP Project</span>
-            </a>
+            </Link>
             <ul class="sub-menu blank">
               <li>
-                <a class="link_name" href="Subject_Teachers.html">
+                <Link class="link_name" to="Subject_Teachers.html">
                 CPP Project
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
 
           <li>
             <div class="iocn-link">
-              <a href="#">
+              <Link to="#">
               <i class="bx bxs-book-content"></i>
                 <span class="link_name">Time Table</span>
-              </a>
+              </Link>
               <i onClick={eventHandle} class="bx bxs-chevron-down arrow"></i>
             </div>
             <ul class="sub-menu">
               <li>
-                <a class="link_name" href="#">
+                <Link class="link_name" to="#">
                 Time Table
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="FY_Student.html">First Year</a>
+                <Link to="FY_Student.html">First Year</Link>
               </li>
               <li>
-                <a href="SY_Student.html">Second Year</a>
+                <Link to="SY_Student.html">Second Year</Link>
               </li>
               <li>
-                <a href="TY_Student.html">Third Year</a>
+                <Link to="TY_Student.html">Third Year</Link>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="#">
+            <Link to="#">
               <i class="bx bx-food-menu"></i>
               <span class="link_name">Teaching / Lab Plan</span>
-            </a>
+            </Link>
             <ul class="sub-menu blank">
               <li>
-                <a class="link_name" href="Subject_Teachers.html">
+                <Link class="link_name" to="Subject_Teachers.html">
                  Teaching / Lab Plan
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="#">
+            <Link to="#">
               <i class="bx bx-spreadsheet"></i>
               <span class="link_name">MSBTE Result</span>
-            </a>
+            </Link>
             <ul class="sub-menu blank">
               <li>
-                <a class="link_name" href="#">
+                <Link class="link_name" to="#">
                 MSBTE Result
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
 
           <li>
             <div class="iocn-link">
-              <a href="#">
+              <Link to="#">
               <i class="bx bxs-user"></i>
                 <span class="link_name">My Details</span>
-              </a>
+              </Link>
               <i onClick={eventHandle} class="bx bxs-chevron-down arrow"></i>
             </div>
             <ul class="sub-menu">
               <li>
-                <a class="link_name" href="#">
+                <Link class="link_name" to="#">
                 My Details
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="FY_Student.html">CR</a>
+                <Link to="FY_Student.html">CR</Link>
               </li>
               <li>
-                <a href="/profile">Profile</a>
+                <Link to="/profile">Profile</Link>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="/leave">
+            <Link to="/leave">
               <i class="bx bxs-comment-detail"></i>
               <span class="link_name">Leaves</span>
-            </a>
+            </Link>
             <ul class="sub-menu blank">
               <li>
-                <a class="link_name" href="/leave">
+                <Link class="link_name" to="/leave">
                 Leaves
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="#">
+            <Link to="#">
               <i class="bx bx-log-out"></i>
               <span class="link_name">Logout</span>
-            </a>
+            </Link>
             <ul class="sub-menu blank">
               <li>
-                <a class="link_name" href="#">
+                <Link class="link_name" to="#">
                   Logout
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
