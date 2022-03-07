@@ -31,13 +31,13 @@ function subNavbar() {
         </div>
         <ul class="nav-links">
           <li>
-            <Link to="/">
+            <Link to="/subject-teacher-dashboard">
               <i class="bx bx-home-alt"></i>
               <span class="link_name">Dashboard</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="/">
+                <Link class="link_name" to="/subject-teacher-dashboard">
                   Dashboard
                 </Link>
               </li>
@@ -91,7 +91,7 @@ function subNavbar() {
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="Subject_Teachers.html">
+                <Link class="link_name" to="#">
                 CPP Project
                 </Link>
               </li>
@@ -131,7 +131,7 @@ function subNavbar() {
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="Subject_Teachers.html">
+                <Link class="link_name" to="#">
                  Teaching / Lab Plan
                 </Link>
               </li>
