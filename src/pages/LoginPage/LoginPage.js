@@ -2,7 +2,7 @@ import React from "react";
 import "./LoginPage.css";
 import loginIcon from "../../assets/icon/login-icon.svg";
 import { Tab, Tabs } from "react-bootstrap";
-import ST_Login_Form from "../../components/Login/Subject-Teacher-Login/ST-Login-Form";
+import STLoginForm from "../../components/Login/Subject-Teacher-Login/ST-Login-Form";
 
 function LoginPage() {
   return (
@@ -12,7 +12,19 @@ function LoginPage() {
       <img className="login-icon" src={loginIcon} alt="" />
       <h4 className="log">Login</h4>
       <div className="tabs">
-        
+
+      <Tabs defaultActiveKey="Subject-Teacher" transition={true} id="noanim-tab-example" className="mb-3">
+                   
+                   <Tab className="tabbb" eventKey="HOD" title="HOD" >
+                       <STLoginForm />
+                   </Tab>
+                   <Tab className="tabbb" eventKey="Class-Teacher" title="Class Teacher" >
+                       <STLoginForm />
+                   </Tab>
+                   <Tab className="tabbb" eventKey="Subject-Teacher" title="Subject Teacher">
+                       <STLoginForm />
+                   </Tab>
+               </Tabs>
       </div>
     </div>
   );
