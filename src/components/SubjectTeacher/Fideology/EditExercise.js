@@ -3,7 +3,7 @@ import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-class createPedelogy extends Component {
+class EditExercise extends Component {
 
     constructor(props){
         super();
@@ -12,7 +12,7 @@ class createPedelogy extends Component {
             description: "",
             duration: 0,
             date: new Date(),
-            users: []
+            // users: []
         }
         // this.onChangeUsername = this.onChangeUsername.bind(this);
         this.onChangeDescription = this.onChangeDescription.bind(this);
@@ -22,15 +22,27 @@ class createPedelogy extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/users/')
-            .then(response => {
-                if(response.data.length > 0) {
-                    this.setState({ 
-                        users: response.data.map(user => user.username),
-                        username: response.data[0].username
-                    });
-                }
+        axios.get('http://localhost:5000/exercises/'+this.props.match.params.id)
+            .then(res => {
+                this.setState({
+                    // username: res.data.username,
+                    description: res.data.description,
+                    duration: res.data.duration,
+                    date: new Date(res.data.date),
+                })
             })
+            .catch(function (error){
+                console.log(error);
+            })
+
+        // axios.get('http://localhost:5000/users/')
+        //     .then(response => {
+        //         if(response.data.length > 0) {
+        //             this.setState({ 
+        //                 users: response.data.map(user => user.username)
+        //             });
+        //         }
+        //     })
     }
 
     // onChangeUsername(e) {
@@ -56,20 +68,20 @@ class createPedelogy extends Component {
 
         console.log(exercise);
 
-        axios.post('http://localhost:5000/exercises/add', exercise)
+        axios.post('http://localhost:5000/exercises/update/'+this.props.match.params.id, exercise)
             .then(res => console.log(res.data));
 
-        window.location = "/subject-teacher-dashboard";
+        window.location = "/";
     }
     
     render() { 
         return ( 
             <div className="container">
-                <h3>Create New Exercise Log</h3>
+                <h3>Edit Exercise Log</h3>
                 <form onSubmit={this.onSubmit}>
                     {/* <div className="form-group">
                         <label>Username: </label>
-                        <select ref="userInput"
+                        <select 
                             required
                             className="form-control"
                             value={this.state.username}
@@ -109,7 +121,7 @@ class createPedelogy extends Component {
                         </div>
                     </div>
                     <div className="form-group">
-                        <input type="submit" value="Create Exercise Log" className="btn btn-primary" />
+                        <input type="submit" value="Edit Exercise Log" className="btn btn-primary" />
                     </div>
                 </form>
             </div>
@@ -117,4 +129,4 @@ class createPedelogy extends Component {
     }
 }
  
-export default createPedelogy;
+export default EditExercise;
