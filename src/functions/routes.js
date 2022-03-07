@@ -10,19 +10,27 @@ import StudyPage  from "../pages/SubjectTeacherPages/studyPage";
 import ProfilePage from "../pages/SubjectTeacherPages/ProfilePage";
 import LeavePage from '../pages/SubjectTeacherPages/LeavePage';
 
+import EditExercise from "../components/SubjectTeacher/Fideology/EditExercise";
+import ExercisesList from "../components/SubjectTeacher/Fideology/ExercisesList";
+
 const ConfigRoutes = () => {
   return (
     <>
       <Routes>
         <Route exact path="/" element={<App />}></Route>
         <Route path="/fideology-form" element={<Fideology />}></Route>
-        <Route path="/subject-teacher-dashbord" element={<Dashbord />}></Route>
+        <Route path="/subject-teacher-dashboard" element={<Dashbord />}></Route>
         <Route path="/student-details" element={<StudentDetail />}></Route>
         <Route path="/course" element={<Course />}></Route>
         <Route path="/question-paper" element={<QuestionPaper />}></Route>
         <Route path="/study-material" element={<StudyPage />}></Route>
         <Route path="/profile" element={<ProfilePage />}></Route>
         <Route path="/leave" element={<LeavePage />}></Route>
+
+        <Route path="/edit/:id" element={<EditExercise/>}></Route>
+        <Route path="/allExercises" element={<ExercisesList />}></Route>
+
+
       </Routes>
     </>
   );

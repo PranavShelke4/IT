@@ -11,16 +11,16 @@ app.use(cors());
 app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
-mongoose.connect(uri, { useCreateIndex: true, useUnifiedTopology: true });
+mongoose.connect(uri, { useNewUrlParser: true });
 
 const connection= mongoose.connection;
 connection.once('open', () => {
     console.log("Mongodb database connection established successfully !!");
 })
 
-const PedologyRouter = require('./routes/pedology');
+const exercisesRouter = require('./routes/exercises');
 
-app.use('/pedology', PedologyRouter);
+app.use('/exercises', exercisesRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
