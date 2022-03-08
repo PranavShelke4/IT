@@ -91,7 +91,7 @@ class createPedelogy extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Duration(in minutes): </label>
+                        <label>Select Year: </label>
                         <input
                             type="text"
                             className="form-control"
@@ -103,8 +103,11 @@ class createPedelogy extends Component {
                         <label>Date: </label>
                         <div>
                             <DatePicker
+                                // showYearPicker
+                                // dateFormat={"yyyy"}
                                 selected={this.state.date}
                                 onChange={this.onChangeDate}
+                                
                             />
                         </div>
                     </div>
