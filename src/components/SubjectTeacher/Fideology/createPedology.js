@@ -81,16 +81,17 @@ class createPedelogy extends Component {
             
                 <form onSubmit={this.onSubmit}>
 
-                        <label className='label l1'>Date : </label>
-                        <div className='update'>
+                        <label className='label l1'>Date : </label><br/>
+                       
                             <DatePicker
+                                className='update'
                                 // showYearPicker
                                 // dateFormat={"yyyy"}
                                 selected={this.state.date}
                                 onChange={this.onChangeDate}
                                 
                             />
-                        </div><br/>
+                            <br/>
       
                     
                     
