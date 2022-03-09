@@ -4,7 +4,7 @@ import "./ST-Login-Form.css"
 function ST_Login_Form() {
   return (
     <div className="box">
-      <form action="/subject-teacher-dashbord">
+      <form action="/subject-teacher-dashboard">
         <p>Email ID / Username</p>
         <input type="name" placeholder="Email ID / Username" />
         <p>Password</p>
