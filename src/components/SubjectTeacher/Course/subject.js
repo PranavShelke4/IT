@@ -1,19 +1,35 @@
 import React from 'react';
+import { Dropdown } from 'react-bootstrap';
 import './subject.css';
 
+  
+
 function subject(){
+
     return (
         <div className='subject-main'>
         <div className='sub_section'>
         <div className="sub sub1">
+
     <label className="s1">Javascript</label>
     <div className="attendance">
       <span className="attend_label">Attendance</span>
     </div>
 
-    <div className="ut">
-      <span className="attend_label">Unit Tests</span>
-    </div>
+      <div>      
+      <Dropdown>
+        <Dropdown.Toggle className="ut attend_label" variant="success" id="dropdown-basic">
+          <span> Unit Test</span>
+        </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+          <Dropdown.Item href="/question-paper">Question Paper</Dropdown.Item>
+          <Dropdown.Item href="/answer-key">Answer Key</Dropdown.Item>
+          <Dropdown.Item href="#/ds-format">DS Format</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+      </div>
+    {/* </div> */}
 
     <div className="microproject">
       <span className="attend_label">Microprojects</span>
