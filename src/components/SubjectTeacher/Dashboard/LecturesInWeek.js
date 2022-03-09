@@ -13,11 +13,10 @@ function LecturesInWeek(props) {
             return (
               <div className="ttw1">
                 <p>
-                  <b>{Lectures.subjectName}</b> <br /> {Lectures.dayAndTime[0]}
-                  <br /> {Lectures.dayAndTime[1]}
-                  <br />
-                  {Lectures.dayAndTime[2]}
-                  <br />
+                  <b>{Lectures.subjectName}</b> <br /> 
+                  {Lectures.dayAndTime[0]} <br /> 
+                  {Lectures.dayAndTime[1]} <br />
+                  {Lectures.dayAndTime[2]} <br />
                   {Lectures.dayAndTime[3]}
                 </p>
               </div>

@@ -27,7 +27,6 @@ const LecturesInWeekData = [
         dayAndTime: [ " mon 01.30 PM ", " tue 09.30 AM ", " wen 11.00 Am " ]
     }
 
-
 ]
 
 export default LecturesInWeekData;
