@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "concurrently \"react-scripts start\" \"cd backend && npm start server\"",
-    "build": "react-scripts build",
+    "build": "concurrently \"react-scripts start\" \"cd backend && npm start server\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
