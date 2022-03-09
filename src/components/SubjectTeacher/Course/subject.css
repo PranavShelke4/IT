@@ -68,7 +68,14 @@
   box-shadow: 35px 12px 23px rgba(201, 176, 255, 0.25);
   border-radius: 6px;
   }
+
   
+  .ut-opt{
+    color: #000000;
+  }
+  .ut-drop{
+    margin-top: -10px;
+  }
   .microproject{
     width: 245px;
   height: 56px;
