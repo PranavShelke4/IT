@@ -6,9 +6,11 @@ import './ExercisesList.css';
 const Exercise = props => (
     <tr>
         {/* <td>{props.exercise.username}</td> */}
-        <td>{props.exercise.description}</td>
-        <td>{props.exercise.duration}</td>
         <td>{props.exercise.date.substring(0,10)}</td>
+        <td>{props.exercise.activity}</td>
+        <td>{props.exercise.subject}</td>
+        <td>{props.exercise.group}</td>
+        
         <td>
             <Link to={"/edit/"+props.exercise._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteExercise(props.exercise._id) }} ><i class='bx bx-trash'></i></span>
             {/* <button className="btn btn-secondary"><Link to={"/edit/"+props.exercise._id} style={{color:"white"}}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => {props.deleteExercise(props.exercise._id) }}>Delete</button> */}
@@ -55,9 +57,10 @@ class ExercisesList extends Component {
                 <table>
                     <thead className="thead-light">
                         <tr>
-		                    <th>Student Name</th>
-		                    <th>Year</th>
-		                    <th>Academic Year</th>
+		                    <th>Date</th>
+		                    <th>Activity Name</th>
+		                    <th>Subject</th>
+                            <th>Group No</th>
 		                    <th>Actions</th>
                         </tr>
                     </thead>

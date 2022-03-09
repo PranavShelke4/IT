@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import axios from "axios";
 import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+//import "react-datepicker/dist/react-datepicker.css";
+import './createPedelogy.css'
 
 class createPedelogy extends Component {
 
@@ -9,15 +10,18 @@ class createPedelogy extends Component {
         super();
         this.state = {
             // username: "",
-            description: "",
-            duration: 0,
             date: new Date(),
-            users: []
+            activity: "",
+            subject: "",
+            group: 0
+           
         }
         // this.onChangeUsername = this.onChangeUsername.bind(this);
-        this.onChangeDescription = this.onChangeDescription.bind(this);
-        this.onChangeDuration = this.onChangeDuration.bind(this);
+
         this.onChangeDate = this.onChangeDate.bind(this);
+        this.onChangeActivity = this.onChangeActivity.bind(this);
+        this.onChangeSubject = this.onChangeSubject.bind(this);
+        this.onChangeGroup = this.onChangeGroup.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
     }
 
@@ -36,22 +40,27 @@ class createPedelogy extends Component {
     // onChangeUsername(e) {
     //     this.setState({ username: e.target.value})
     // }
-    onChangeDescription(e) {
-        this.setState({ description: e.target.value})
-    }
-    onChangeDuration(e) {
-        this.setState({ duration: e.target.value})
-    }
     onChangeDate(date) {
         this.setState({ date: date})
+    }
+    onChangeActivity(e) {
+        this.setState({ activity: e.target.value})
+    }
+    onChangeSubject(e) {
+        this.setState({ subject: e.target.value})
+    }
+    onChangeGroup(e) {
+        this.setState({ group: e.target.value})
     }
     onSubmit(e) {
         e.preventDefault();
         const exercise = {
             // username: this.state.username,
-            description: this.state.description,
-            duration: this.state.duration,
-            date: this.state.date
+
+            date: this.state.date,
+            activity: this.state.activity,
+            subject: this.state.subject,
+            group: this.state.group
         }
 
         console.log(exercise);
@@ -61,47 +70,19 @@ class createPedelogy extends Component {
 
         window.location = "/subject-teacher-dashboard";
     }
+    Cancel(e){
+        window.location = "/subject-teacher-dashboard";
+    }
     
     render() { 
         return ( 
-            <div className="container">
-                <h3>Create New Exercise Log</h3>
+            <div className='main-sec'>
+            <div className="upd_section">
+            
                 <form onSubmit={this.onSubmit}>
-                    {/* <div className="form-group">
-                        <label>Username: </label>
-                        <select ref="userInput"
-                            required
-                            className="form-control"
-                            value={this.state.username}
-                            onChange={this.onChangeUsername} >
-                            {
-                                this.state.users.map(function(user) {
-                                    return <option key={user} value={user}>{user}</option>;
-                                })
-                            }
-                        </select>
-                    </div> */}
-                    <div className="form-group">
-                        <label>Description: </label>
-                        <input
-                            type="text" required
-                            className="form-control"
-                            value={this.state.description}
-                            onChange={this.onChangeDescription}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label>Select Year: </label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            value={this.state.duration}
-                            onChange={this.onChangeDuration}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label>Date: </label>
-                        <div>
+
+                        <label className='label l1'>Date : </label>
+                        <div className='update'>
                             <DatePicker
                                 // showYearPicker
                                 // dateFormat={"yyyy"}
@@ -109,12 +90,44 @@ class createPedelogy extends Component {
                                 onChange={this.onChangeDate}
                                 
                             />
-                        </div>
-                    </div>
-                    <div className="form-group">
-                        <input type="submit" value="Create Exercise Log" className="btn btn-primary" />
-                    </div>
+                        </div><br/>
+      
+                    
+                    
+                        <label className='label l2'>Activity Name : </label><br/>
+                        <input
+                            type="text" required
+                            className='update'
+                            value={this.state.activity}
+                            onChange={this.onChangeActivity}
+                            placeholder="Activity Name"
+                        /><br/>
+                
+                    
+                        <label className='label l3'>Subject: </label><br/>
+                        <input
+                            type="text"
+                            className='update'
+                            value={this.state.subject}
+                            onChange={this.onChangeSubject}
+                            placeholder="Subject"
+                        /><br/>
+                  
+                 
+                        <label className='label l4'>Group No : </label><br/>
+                        <input
+                            type="number"
+                            className='update'
+                            value={this.state.group}
+                            onChange={this.onChangeGroup}
+                            placeholder="Group No"
+                        /><br/>
+    
+                        <button type="submit" value="Submit" className="submit">Submit</button>        
+                        <button type="reset" value="Cancel" className="cancel" onClick={this.Cancel}>Cancel</button>
+                 
                 </form>
+            </div>
             </div>
          );
     }

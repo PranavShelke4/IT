@@ -1,0 +1,49 @@
+.main-sec{
+    padding-top: -20px;
+}
+.upd_section{
+    /* margin-left: 200px;
+    margin-top: 50px; */
+  }
+  
+  
+  .update{
+    /* width: 948px;
+    height: 50px; */
+  
+    /* margin-top: 10px; */
+  
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border-radius: 10px;
+  }
+  
+  button{
+    position: relative;
+    width: 141px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 15px;
+    top: 60px;
+  }
+  .submit{
+    border-color: green;
+    margin-left: 35%;
+    margin-right: 5%;
+  }
+  .cancel{
+    border-color: red;
+  }
+  
+  .submit:hover{
+    background-color: green;
+    color: white;
+  }
+  .cancel:hover{
+    background-color: red;
+    color: white;
+  }

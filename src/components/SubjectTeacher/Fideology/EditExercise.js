@@ -9,15 +9,19 @@ class EditExercise extends Component {
         super();
         this.state = {
             // username: "",
-            description: "",
-            duration: 0,
             date: new Date(),
+            activity: "",
+            subject: "",
+            group: 0
+           
             // users: []
         }
         // this.onChangeUsername = this.onChangeUsername.bind(this);
-        this.onChangeDescription = this.onChangeDescription.bind(this);
-        this.onChangeDuration = this.onChangeDuration.bind(this);
+
         this.onChangeDate = this.onChangeDate.bind(this);
+        this.onChangeActivity = this.onChangeActivity.bind(this);
+        this.onChangeSubject = this.onChangeSubject.bind(this);
+        this.onChangeGroup = this.onChangegroup.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
     }
 
@@ -26,9 +30,11 @@ class EditExercise extends Component {
             .then(res => {
                 this.setState({
                     // username: res.data.username,
-                    description: res.data.description,
-                    duration: res.data.duration,
                     date: new Date(res.data.date),
+                    activity: res.data.activity,
+                    subject: res.data.subject,
+                    group: res.data.group
+                    
                 })
             })
             .catch(function (error){
@@ -48,22 +54,28 @@ class EditExercise extends Component {
     // onChangeUsername(e) {
     //     this.setState({ username: e.target.value})
     // }
-    onChangeDescription(e) {
-        this.setState({ description: e.target.value})
-    }
-    onChangeDuration(e) {
-        this.setState({ duration: e.target.value})
-    }
     onChangeDate(date) {
         this.setState({ date: date})
     }
+    onChangeActivity(e) {
+        this.setState({ activity: e.target.value})
+    }
+    onChangeSubject(e) {
+        this.setState({ subject: e.target.value})
+    }
+    onChangeGroup(e) {
+        this.setState({ group: e.target.value})
+    }
+    
     onSubmit(e) {
         e.preventDefault();
         const exercise = {
             // username: this.state.username,
-            description: this.state.description,
-            duration: this.state.duration,
-            date: this.state.date
+            date: this.state.date,
+            activity: this.state.activity,
+            subject: this.state.subject,
+            group: this.state.group
+            
         }
 
         console.log(exercise);
@@ -77,41 +89,9 @@ class EditExercise extends Component {
     render() { 
         return ( 
             <div className="container">
-                <h3>Edit Exercise Log</h3>
+                <h3>Edit Pedelogy</h3>
                 <form onSubmit={this.onSubmit}>
-                    {/* <div className="form-group">
-                        <label>Username: </label>
-                        <select 
-                            required
-                            className="form-control"
-                            value={this.state.username}
-                            onChange={this.onChangeUsername} >
-                            {
-                                this.state.users.map(function(user) {
-                                    return <option key={user} value={user}>{user}</option>;
-                                })
-                            }
-                        </select>
-                    </div> */}
-                    <div className="form-group">
-                        <label>Description: </label>
-                        <input
-                            type="text" required
-                            className="form-control"
-                            value={this.state.description}
-                            onChange={this.onChangeDescription}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label>Duration(in minutes): </label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            value={this.state.duration}
-                            onChange={this.onChangeDuration}
-                        />
-                    </div>
-                    <div className="form-group">
+                <div className="form-group">
                         <label>Date: </label>
                         <div>
                             <DatePicker
@@ -121,7 +101,38 @@ class EditExercise extends Component {
                         </div>
                     </div>
                     <div className="form-group">
-                        <input type="submit" value="Edit Exercise Log" className="btn btn-primary" />
+                        <label>Activity Name: </label>
+                        <input
+                            type="text" required
+                            className="form-control"
+                            value={this.state.activity}
+                            onChange={this.onChangeActivity}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label>Subject : </label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            value={this.state.subject}
+                            onChange={this.onChangeSubject}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label>Group No : </label>
+                        <input
+                            type="number"
+                            className="form-control"
+                            value={this.state.group}
+                            onChange={this.onChangeGroup}
+                        />
+                    </div>
+                    
+                    <div className="form-group">
+                        <input type="submit" value="Edit Pedelogy" className="btn btn-primary" />
+                    </div>
+                    <div className="form-group">
+                        <input type="reset" value="Cancel Pedelogy" className="btn btn-primary" />
                     </div>
                 </form>
             </div>
