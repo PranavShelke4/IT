@@ -113,13 +113,13 @@ function subNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="FY_Student.html">First Year</Link>
+                <Link to="#">First Year</Link>
               </li>
               <li>
-                <Link to="SY_Student.html">Second Year</Link>
+                <Link to="#">Second Year</Link>
               </li>
               <li>
-                <Link to="TY_Student.html">Third Year</Link>
+                <Link to="#">Third Year</Link>
               </li>
             </ul>
           </li>
@@ -167,7 +167,7 @@ function subNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="FY_Student.html">CR</Link>
+                <Link to="#">CR</Link>
               </li>
               <li>
                 <Link to="/profile">Profile</Link>
