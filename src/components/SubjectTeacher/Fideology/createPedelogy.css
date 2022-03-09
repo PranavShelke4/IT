@@ -1,5 +1,5 @@
 .main-sec{
-    padding-top: -20px;
+    padding-top: 2rem !important;
 }
 .upd_section{
     /* margin-left: 200px;
@@ -20,7 +20,7 @@
   }
   
   button{
-    position: relative;
+    position: absolute;
     width: 141px;
     height: 50px;
     border: 1px solid rgba(0, 0, 0, 0.5);
@@ -28,12 +28,14 @@
     border-radius: 10px;
     background-color: white;
     font-size: 15px;
-    top: 60px;
+    /* margin-top: 5rem; */
+
   }
   .submit{
     border-color: green;
     margin-left: 35%;
     margin-right: 5%;
+    margin-top: 10%;
   }
   .cancel{
     border-color: red;
