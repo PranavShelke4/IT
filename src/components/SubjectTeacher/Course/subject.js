@@ -39,9 +39,20 @@ function subject(){
       <span className="attend_label">Term Work</span>
     </div>
 
-     <div className="learn">
-      <span className="learn_label">Learning Materials</span>
-    </div>
+ 
+      
+
+      <Dropdown>
+        <Dropdown.Toggle className="learn learn_label" variant="success" id="dropdown-basic">
+        <span className="">Learning Materials</span>
+        </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+          <Dropdown.Item href="/assignments">Assignments</Dropdown.Item>
+          <Dropdown.Item href="/study-material">Study Materials</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+
   </div>
   </div>
   </div>
