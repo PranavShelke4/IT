@@ -7,6 +7,7 @@ import StudentDetail from '../pages/SubjectTeacherPages/studentDetail';
 import Course from '../pages/SubjectTeacherPages/coursePage';
 import QuestionPaper from '../pages/SubjectTeacherPages/questionPaper';
 import AnswerKey from '../pages/SubjectTeacherPages/answerKey';
+import AssignmentPage from "../pages/SubjectTeacherPages/Assignmentpage";
 import StudyPage  from "../pages/SubjectTeacherPages/studyPage";
 import ProfilePage from "../pages/SubjectTeacherPages/ProfilePage";
 import LeavePage from '../pages/SubjectTeacherPages/LeavePage';
@@ -25,6 +26,7 @@ const ConfigRoutes = () => {
         <Route path="/course" element={<Course />}></Route>
         <Route path="/question-paper" element={<QuestionPaper />}></Route>
         <Route path="/answer-key" element={<AnswerKey />}></Route>
+        <Route path="/assignments" element={<AssignmentPage />}></Route>
         <Route path="/study-material" element={<StudyPage />}></Route>
         <Route path="/profile" element={<ProfilePage />}></Route>
         <Route path="/leave" element={<LeavePage />}></Route>
