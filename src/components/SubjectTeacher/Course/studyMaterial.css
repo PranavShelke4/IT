@@ -6,13 +6,15 @@
   }
   
   .addStudent_btn{
-    position: relative;
-    display: block;
     width: 10%;
-    height: 30px;
-    background-color: 36D100;
-    top: 10px;
-    left: 950px;
+    height: 3rem;
+    background-color: #11101d;
+    color: white;
+    border-radius: 10px;
+    margin-top: -1% !important;
+    left: 90%;
+    margin-bottom: 2% !important;
+
   }
   
   table {
@@ -42,3 +44,4 @@
     object-fit: cover;
     border-radius: 16px;
   }
+  
