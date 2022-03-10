@@ -4,6 +4,7 @@ import './studyMaterial.css';
 function studyMaterial(){
     return (
         <section className="fy_section">
+        <button className='addStudent_btn'>Upload</button>
         <table className="ctTable">
         <tr>
           <th>Sr no.</th>
