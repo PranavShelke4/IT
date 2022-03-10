@@ -6,6 +6,7 @@ import Fideology from '../pages/SubjectTeacherPages/FideologyForm';
 import StudentDetail from '../pages/SubjectTeacherPages/studentDetail';
 import Course from '../pages/SubjectTeacherPages/coursePage';
 import QuestionPaper from '../pages/SubjectTeacherPages/questionPaper';
+import AnswerKey from '../pages/SubjectTeacherPages/answerKey';
 import StudyPage  from "../pages/SubjectTeacherPages/studyPage";
 import ProfilePage from "../pages/SubjectTeacherPages/ProfilePage";
 import LeavePage from '../pages/SubjectTeacherPages/LeavePage';
@@ -23,9 +24,11 @@ const ConfigRoutes = () => {
         <Route path="/student-details" element={<StudentDetail />}></Route>
         <Route path="/course" element={<Course />}></Route>
         <Route path="/question-paper" element={<QuestionPaper />}></Route>
+        <Route path="/answer-key" element={<AnswerKey />}></Route>
         <Route path="/study-material" element={<StudyPage />}></Route>
         <Route path="/profile" element={<ProfilePage />}></Route>
         <Route path="/leave" element={<LeavePage />}></Route>
+       
 
         <Route path="/edit/:id" element={<EditExercise/>}></Route>
         <Route path="/allExercises" element={<ExercisesList />}></Route>
