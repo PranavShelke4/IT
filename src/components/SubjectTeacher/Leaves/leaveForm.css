@@ -3,9 +3,9 @@
 }
 .leaves_box{
     width: 1198px;
-    height: 490px;
-    margin-left: 170px;
-    margin-top: 50px;
+    height: 470px;
+    margin-left: 7rem;
+    margin-top: 3rem;
   
   background: #FFFFFF;
   border: 0.5px solid #E4E4E4;
@@ -58,10 +58,10 @@
   .submit{
     border-radius: 25px;
     border: 2px solid green;
-    margin-left: 35%;
+    margin-left: 32% !important;
     margin-right: 5%;
     color: black;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
   .cancel{
     border-radius: 25px;
