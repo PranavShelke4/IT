@@ -2,7 +2,6 @@ import React from 'react';
 import { Dropdown } from 'react-bootstrap';
 import './subject.css';
 
-  
 
 function subject(){
 
@@ -12,14 +11,14 @@ function subject(){
         <div className="sub sub1">
 
     <label className="s1">Javascript</label>
-    <div className="attendance">
+    <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1Z_u2e43DTCcqVu94ZlK28AmcHntjzpeFreV3FIzQO8I/edit#gid=0'><div className="attendance">
       <span className="attend_label">Attendance</span>
-    </div>
+    </div></a>
 
       <div>      
       <Dropdown>
-        <Dropdown.Toggle className="ut attend_label" variant="success" id="dropdown-basic">
-          <span> Unit Test</span>
+        <Dropdown.Toggle className="ut" variant="success" id="dropdown-basic">
+          <span className='attend_label1'> Unit Test</span>
         </Dropdown.Toggle>
 
       <Dropdown.Menu>
@@ -31,20 +30,17 @@ function subject(){
       </div>
     {/* </div> */}
 
-    <div className="microproject">
+    <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1Z_u2e43DTCcqVu94ZlK28AmcHntjzpeFreV3FIzQO8I/edit#gid=0'><div className="microproject">
       <span className="attend_label">Microprojects</span>
-    </div>
+    </div></a>
 
-    <div className="term_work">
+    <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1Z_u2e43DTCcqVu94ZlK28AmcHntjzpeFreV3FIzQO8I/edit#gid=0'><div className="term_work">
       <span className="attend_label">Term Work</span>
-    </div>
-
- 
-      
+    </div></a>
 
       <Dropdown>
-        <Dropdown.Toggle className="learn learn_label" variant="success" id="dropdown-basic">
-        <span className="">Learning Materials</span>
+        <Dropdown.Toggle className="learn " variant="success" id="dropdown-basic">
+        <span className="learn_label">Learning Materials</span>
         </Dropdown.Toggle>
 
       <Dropdown.Menu>

@@ -47,9 +47,16 @@
   
   .attend_label{
     position: absolute;
-    margin-top: 15px;
+    padding-top: 12px;
     margin-left: 50px;
+    /* margin-top: -50px; */
   
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+ 
+  .attend_label1{  
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -57,10 +64,10 @@
   
   .ut{
     width: 245px;
-  height: 56px;
+    height: 54px;
     
     margin-left: 300px;
-    margin-top: -55px;
+    margin-top: -12.6rem  !important;
   
   background: linear-gradient(101.44deg, #0089B5 14.59%, rgba(27, 187, 238, 0.88) 82.65%, rgba(51, 194, 239, 0.45) 110.59%);
   border: 0.5px solid #E4E4E4;
@@ -83,7 +90,7 @@
   top: 156px;
   
   margin-left: 580px;
-  margin-top: -57px;
+  margin-top: -5rem;
   
   background: linear-gradient(100.38deg, #038117 9.5%, rgba(1, 210, 35, 0.71) 88.24%, rgba(36, 198, 62, 0.67) 104.42%);
   border: 0.5px solid #E4E4E4;
@@ -117,9 +124,9 @@
   border-radius: 6px;
   }
   .learn_label{
-    position: absolute;
+    /* position: absolute; */
     margin-top: 15px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
   
     color: white;
     font-weight: bold;
