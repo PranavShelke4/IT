@@ -1,10 +1,12 @@
 import React from 'react';
 import './studyMaterial.css';
+import {Link} from "react-router-dom";
 
 function studyMaterial(){
+
     return (
         <section className="fy_section">
-        <button className='addStudent_btn'>Upload</button>
+        <Link to="/add-material"><button className='addStudent_btn'>Upload</button></Link>
         <table className="ctTable">
         <tr>
           <th>Sr no.</th>
