@@ -86,7 +86,7 @@ function subNavbar() {
           </li>
 
           <li>
-            <a rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1Z_u2e43DTCcqVu94ZlK28AmcHntjzpeFreV3FIzQO8I/edit#gid=0">
+            <a rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1Z_u2e43DTCcqVu94ZlK28AmcHntjzpeFreV3FIzQO8I/edit#gid=0" >
               <i class="bx bx-file-find"></i>
               <span class="link_name">CPP Project</span>
             </a>
@@ -191,13 +191,13 @@ function subNavbar() {
           </li>
 
           <li>
-            <Link to="#">
+            <Link to="/">
               <i class="bx bx-log-out"></i>
               <span class="link_name">Logout</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="#">
+                <Link class="link_name" to="/">
                   Logout
                 </Link>
               </li>
