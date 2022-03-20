@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import App from "../App";
-import Signup from "../components/SignUp/signUp";
 import Dashbord from '../pages/SubjectTeacherPages/Dashbord';
 import Fideology from '../pages/SubjectTeacherPages/FideologyForm';
 import StudentDetail from '../pages/SubjectTeacherPages/studentDetail';
@@ -21,7 +20,6 @@ const ConfigRoutes = () => {
     <>
       <Routes>
         <Route exact path="/" element={<App />}></Route>
-        <Route path="/sign-up" element={<Signup />}></Route>
         <Route path="/fideology-form" element={<Fideology />}></Route>
         <Route path="/subject-teacher-dashboard" element={<Dashbord />}></Route>
         <Route path="/student-details" element={<StudentDetail />}></Route>

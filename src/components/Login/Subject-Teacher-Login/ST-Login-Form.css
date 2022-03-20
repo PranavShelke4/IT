@@ -36,6 +36,13 @@ button{
     text-align: right;
 }
 
+.login-btn{
+    color: black;
+    margin-top: -100px !important;
+    position: relative;
+    top: -5px !important;
+}
+
 @media only screen and (max-width:600px){
  box{
      padding: 0%;
