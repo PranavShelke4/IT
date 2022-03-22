@@ -5,8 +5,11 @@ import App from "../App";
 // classTaecher Routes
 
 import ClassTeacherDashboard from '../pages/ClassTeacherPages/Dashboard';
+
+
 // subject teacher Routes
 
+import SignUp from "../components/SignUP/SignUp";
 import Dashbord from '../pages/SubjectTeacherPages/Dashbord';
 import Fideology from '../pages/SubjectTeacherPages/FideologyForm';
 import StudentDetail from '../pages/SubjectTeacherPages/studentDetail';
@@ -26,6 +29,7 @@ const ConfigRoutes = () => {
     <>
       <Routes>
         <Route exact path="/" element={<App />}></Route>
+        <Route path="/sign-up" element={<SignUp />}></Route>
         <Route path="/fideology-form" element={<Fideology />}></Route>
         <Route path="/subject-teacher-dashboard" element={<Dashbord />}></Route>
         <Route path="/student-details" element={<StudentDetail />}></Route>
