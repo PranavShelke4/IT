@@ -8,9 +8,9 @@ function ST_Login_Form() {
     <div className="box">
       <form action="/subject-teacher-dashboard">
         <p>Email ID / Username</p>
-        <input type="name" placeholder="Email ID / Username" />
+        <input type="email" placeholder="Email ID / Username" required />
         <p>Password</p>
-        <input type="password" placeholder="Enter Password" />
+        <input type="password" placeholder="Enter Password" required />
         <a href="/">
           <p className="forgot">Forgot Password?</p>
         </a>
@@ -19,7 +19,7 @@ function ST_Login_Form() {
         </button>
       </form>
       <div className="w-100 text-center mt-1 color: alert">
-        Don't have an account? <Link to="/">Sign Up</Link>
+        Don't have an account? <Link to="/sign-up">Sign Up</Link>
       </div>
     </div>
   )
