@@ -1,6 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import App from "../App";
+
+// classTaecher Routes
+
+import ClassTeacherDashboard from '../pages/ClassTeacherPages/Dashboard';
+// subject teacher Routes
+
 import Dashbord from '../pages/SubjectTeacherPages/Dashbord';
 import Fideology from '../pages/SubjectTeacherPages/FideologyForm';
 import StudentDetail from '../pages/SubjectTeacherPages/studentDetail';
@@ -35,6 +41,8 @@ const ConfigRoutes = () => {
         <Route path="/edit/:id" element={<EditExercise/>}></Route>
         <Route path="/allExercises" element={<ExercisesList />}></Route>
 
+        {/* class teacher Routes */}
+        <Route path="/class-teacher-dashboard" element={<ClassTeacherDashboard />}></Route>
 
       </Routes>
     </>

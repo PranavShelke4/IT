@@ -1,10 +1,10 @@
 import React from 'react'
-import "./classTeacherNavbar.css"
+import SubNavBar from '../SubjectTeacher/subNavbar';
 
 function classTeacherNavbar() {
   return (
-    <div>classTeacherNavbar</div>
+    <SubNavBar />
   )
 }
 
-export default classTeacherNavbar
+export default classTeacherNavbar;
