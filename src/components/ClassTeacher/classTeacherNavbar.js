@@ -33,31 +33,31 @@ function classTeacherNavbar() {
         </div>
         <ul class="nav-links">
           <li>
-            <Link to="/subject-teacher-dashboard">
+            <Link to="/class-teacher-dashboard">
               <i class="bx bx-home-alt"></i>
               <span class="link_name">Dashboard</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="/subject-teacher-dashboard">
+                <Link class="link_name" to="/class-teacher-dashboard">
                   Dashboard
                 </Link>
               </li>
             </ul>
           </li>
 
-          <li>
+          {/* <li>
             <div class="iocn-link">
               <Link to="">
                 <i class="bx bx-user"></i>
-                <span class="link_name">Students</span>
+                <span class="link_name">Faculty</span>
               </Link>
               <i  onClick={eventHandle} class="bx bxs-chevron-down arrow"></i>
             </div>
             <ul class="sub-menu">
               <li>
                 <Link to="" class="link_name">
-                Students
+                Faculty
                 </Link>
               </li>
               <li>
@@ -70,17 +70,17 @@ function classTeacherNavbar() {
                 <Link to="/student-details">Third Year</Link>
               </li>
             </ul>
-          </li>
+          </li> */}
 
           <li>
             <Link to="/course">
-              <i class="bx bx-book"></i>
-              <span class="link_name">Course</span>
+              <i class="bx bxs-user"></i>
+              <span class="link_name">Faculty</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
                 <Link class="link_name" to="/course">
-                Course
+                Faculty
                 </Link>
               </li>
             </ul>
