@@ -41,13 +41,12 @@ const ConfigRoutes = () => {
         <Route path="/profile" element={<ProfilePage />}></Route>
         <Route path="/leave" element={<LeavePage />}></Route>
        
-
         <Route path="/edit/:id" element={<EditExercise/>}></Route>
         <Route path="/allExercises" element={<ExercisesList />}></Route>
 
         {/* class teacher Routes */}
         <Route path="/class-teacher-dashboard" element={<ClassTeacherDashboard />}></Route>
-
+    
       </Routes>
     </>
   );
