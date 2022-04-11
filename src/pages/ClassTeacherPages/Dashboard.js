@@ -5,7 +5,7 @@ import MyClassDetails from "../../components/ClassTeacher/Dashboard/myClassDetai
 import ImpNotes from '../../components/ClassTeacher/Dashboard/ImpNotes';
 import StudentAchievement from '../../components/ClassTeacher/Dashboard/StudentAchievement';
 
-function Dashbord() {
+function Dashboard() {
   return (
     <>
         <ClassNavbar/>
@@ -16,4 +16,4 @@ function Dashbord() {
   )
 }
 
-export default Dashbord;
+export default Dashboard;
