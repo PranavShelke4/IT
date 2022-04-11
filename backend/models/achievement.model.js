@@ -4,12 +4,11 @@ const Schema = mongoose.Schema;
 
 const achievementSchema = new Schema({
     // username: {type: String, required: true},
-    // studentName: {type: String, required: true}
-
-    date: {type: Date,required: true},
-    activity: {type: String, required: true},
-    subject: {type: String, required: true},
-    group: {type: Number, required: true}
+    studentName: {type: String, required: true},
+    dept: {type: String, required: true},
+    institute: {type: String, required: true},
+    event: {type: String, required: true},
+    date: {type: Date,required: true}
     
 }, {
     timestamps: true 

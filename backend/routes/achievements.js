@@ -10,13 +10,13 @@ router.route('/').get((req,res) => {
 router.route('/add-achievement').post((req,res) => {
     // const username = req.body.username;
 
+    const studentName = req.body.studentName;
+    const dept = req.body.dept;
+    const institute = req.body.institute;
+    const event = req.body.event;
     const date = Date.parse(req.body.date);
-    const activity = req.body.activity;
-    const subject = req.body.subject;
-    const group = Number(req.body.group);
-    
-
-    const newAchievement = new Achievement({ date, activity, subject, group});
+   
+    const newAchievement = new Achievement({ studentName, dept, institute, event, date });
 
     newAchievement.save()
         .then(() => res.json('Achievement added!'))
@@ -39,11 +39,11 @@ router.route('/update/:id').post((req,res) => {
     Achievement.findById(req.params.id)
         .then(achievement => {
            
+            achievement.studentName = req.body.studentName;
+            achievement.dept = req.body.dept;
+            achievement.institute = req.body.institute;
+            achievement.event = req.body.event;
             achievement.date = Date.parse(req.body.date);
-            achievement.activity = req.body.activity;
-            achievement.subject = req.body.subject;
-            achievement.group = Number(req.body.group);
-            
 
             achievement.save()
                 .then(() => res.json('Achievement updated !'))
