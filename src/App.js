@@ -1,15 +1,16 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 //import Dashbord from './pages/SubjectTeacherPages/Dashbord';
-import LoginPages from './pages/LoginPage/LoginPage';
+import LoginPage from "./pages/LoginPage/LoginPage";
 
-function App() {
+
+function App () {
   return (
     <>
-    <LoginPages />
-    {/* <Dashbord />   */}
+      <LoginPage />
+      {/* <Dashbord />   */}
     </>
   );
-}
+};
 
 export default App;
