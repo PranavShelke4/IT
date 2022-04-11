@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./subNavbar.css";
 import {Link} from 'react-router-dom';
+import { AuthContext } from "../../functions/Auth"
+import firebaseConfig from "../../functions/fire"
 
 
 function eventHandle() {

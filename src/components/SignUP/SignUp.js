@@ -1,37 +1,34 @@
-import React from "react"
-import { Form, Button, Card } from "react-bootstrap"
-import { Link } from "react-router-dom"
+import React, {useState} from "react";
+import { Link } from "react-router-dom";
+import firebaseConfig from "../../functions/fire";
 
-export default function Signup() {
-
+const SignUp = () => {
+  const [currentUser, setCurrentUser] = useState(null);    
+  const handleSubmit = (e) => {
+    e.preventDefault();    
+    const { email, password } = e.target.elements;
+    try {
+      firebaseConfig.auth().createUserWithEmailAndPassword(email.value, password.value);      
+      setCurrentUser(true);
+    } catch (error) {
+      alert(error);
+    }
+  };
+  if (currentUser) {
+      return <Link to="/dashboard" />;
+  }
   return (
     <>
-      <Card>
-        <Card.Body>
-          <h2 className="text-center mb-4">Sign Up</h2>
-          {/* {error && <Alert variant="danger">{error}</Alert>} */}
-          <Form>
-            <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
-              <Form.Control type="email" required />
-            </Form.Group>
-            <Form.Group id="password">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" required />
-            </Form.Group>
-            <Form.Group id="password-confirm">
-              <Form.Label>Password Confirmation</Form.Label>
-              <Form.Control type="password" required />
-            </Form.Group>
-            <Button className="w-100" type="submit">
-              Sign Up
-            </Button>
-          </Form>
-        </Card.Body>
-      </Card>
-      <div className="w-100 text-center mt-5">
-        Already have an account? <Link to="/">Log In</Link>
-      </div>
+      <h1>Sign Up</h1>
+      <form onSubmit={handleSubmit}>
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Email" />
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Password" />
+        <button type="submit">Submit</button>
+      </form>
     </>
-  )
-}
+  );
+};
+
+export default SignUp;
