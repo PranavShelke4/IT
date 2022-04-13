@@ -19,10 +19,10 @@ connection.once('open', () => {
 })
 
 const exercisesRouter = require('./routes/exercises');
-const achievementsRouter = require('./routes/achievements');
+// const achievementsRouter = require('./routes/achievements');
 
 app.use('/exercises', exercisesRouter);
-app.use('/achievements', achievementsRouter);
+// app.use('/achievements', achievementsRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);

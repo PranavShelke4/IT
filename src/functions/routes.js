@@ -4,8 +4,8 @@ import App from "../App";
 
 // classTaecher Routes
 
-import ClassTeacherDashboard from '../pages/ClassTeacherPages/Dashboard';
-import AddAchievement from "../pages/ClassTeacherPages/addAchievement";
+// import ClassTeacherDashboard from '../pages/ClassTeacherPages/Dashboard';
+// import AddAchievement from "../pages/ClassTeacherPages/addAchievement";
 
 
 // subject teacher Routes
@@ -46,9 +46,9 @@ const ConfigRoutes = () => {
         <Route path="/allExercises" element={<ExercisesList />}></Route>
 
         {/* class teacher Routes */}
-        <Route path="/class-teacher-dashboard" element={<ClassTeacherDashboard />}></Route>
+        {/* <Route path="/class-teacher-dashboard" element={<ClassTeacherDashboard />}></Route>
     
-        <Route path="/add-achievement" element={<AddAchievement />}></Route>
+        <Route path="/add-achievement" element={<AddAchievement />}></Route> */}
       </Routes>
     </>
   );
