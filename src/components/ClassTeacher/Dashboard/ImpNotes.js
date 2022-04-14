@@ -11,8 +11,9 @@ function ImpNotes(props) {
         <div className="d-flex flex-md-row flex-sm-column flex-wrap justify-content-center">
           {ImpNotesData.map((Lectures) => {
             return (
-              <div className="ttw1">
+              <div className="ttw1" key={Lectures.id}>
                 <p>
+                
                   <b>{Lectures.subjectName}</b> <br /> 
                   {Lectures.dayAndTime[0]} <br /> 
                   {Lectures.dayAndTime[1]} <br />
