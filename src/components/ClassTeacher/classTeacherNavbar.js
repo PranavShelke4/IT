@@ -147,7 +147,7 @@ function classTeacherNavbar() {
           <li>
             <div class="iocn-link">
               <Link to="#">
-              <i class="bx bxs-user"></i>
+              <i class="bx bxs-comment-detail"></i>
                 <span class="link_name">Feedback</span>
               </Link>
             </div>
@@ -162,7 +162,7 @@ function classTeacherNavbar() {
 
           <li>
             <Link to="/leave">
-              <i class="bx bxs-comment-detail"></i>
+              <i class="bx bxs-user"></i>
               <span class="link_name">My Profile</span>
             </Link>
             <ul class="sub-menu blank">
