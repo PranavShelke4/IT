@@ -6,11 +6,11 @@ import './studentAchievement.css';
 const Achievement = props => (
     <tr>
         {/* <td>{props.exercise.username}</td> */}
-        <td>{props.achievement.StudentName}</td>
-        <td>{props.achievement.dept}</td>
-        <td>{props.achievement.institute}</td>
-        <td>{props.achievement.event}</td>
         <td>{props.achievement.date.substring(0,10)}</td>
+        <td>{props.achievement.activity}</td>
+        <td>{props.achievement.subject}</td>
+        <td>{props.achievement.group}</td>
+        
         <td>
             <Link to={"/edit/"+props.achievement._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteAchievement(props.achievement._id) }} ><i class='bx bx-trash'></i></span>
             {/* <button className="btn btn-secondary"><Link to={"/edit/"+props.exercise._id} style={{color:"white"}}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => {props.deleteExercise(props.exercise._id) }}>Delete</button> */}
@@ -18,7 +18,7 @@ const Achievement = props => (
     </tr>
 )
 
-class StudentAchievement extends Component {
+class studentAchievement extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -37,7 +37,8 @@ class StudentAchievement extends Component {
     }
 
     deleteAchievement(id) {
-        axios.delete('http://localhost:5000/achievements/' +id)
+        console.log(id)
+        axios.delete("http://localhost:5000/achievements/" +id)
             .then(res => console.log(res.data));
 
         this.setState({ achievements: this.state.achievements.filter(el => el._id !== id)})
@@ -53,16 +54,15 @@ class StudentAchievement extends Component {
         return ( 
             <div className='FideologyActivities'>
             <div className="fideo">
-                <h3 className='fidoh3'>Students Achievements</h3>
+                <h3 className='fidoh3'>Pedelogy Activities</h3>
                 <table>
                     <thead className="thead-light">
                         <tr>
-		                    <th>Student Name</th>
-		                    <th>Department</th>
-		                    <th>Institute</th>
-                            <th>Event Name</th>
 		                    <th>Date</th>
-                            <th>Actions</th>
+		                    <th>Activity Name</th>
+		                    <th>Subject</th>
+                            <th>Group No</th>
+		                    <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -76,5 +76,5 @@ class StudentAchievement extends Component {
     }
 }
  
-export default StudentAchievement;
+export default studentAchievement;
 

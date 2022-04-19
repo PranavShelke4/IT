@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from "axios";
 import DatePicker from "react-datepicker";
 //import "react-datepicker/dist/react-datepicker.css";
-//import './createPedelogy.css'
+import './createAchievement.css'
 
 class createAchievement extends Component {
 
@@ -26,7 +26,7 @@ class createAchievement extends Component {
     }
 
     // componentDidMount() {
-    //     axios.get('http://localhost:5000/users/')
+    //     axios.get('http://localhost:5000/achievements/')
     //         .then(response => {
     //             if(response.data.length > 0) {
     //                 this.setState({ 
@@ -65,7 +65,7 @@ class createAchievement extends Component {
 
         console.log(achievement);
 
-        axios.post('http://localhost:5000/achievements/add', achievement)
+        axios.post("http://localhost:5000/achievements/add-achievement", achievement)
             .then(res => console.log(res.data));
 
         window.location = "/class-teacher-dashboard";

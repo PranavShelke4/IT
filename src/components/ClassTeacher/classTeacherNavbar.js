@@ -89,66 +89,12 @@ function classTeacherNavbar() {
           <li>
             <a rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1Z_u2e43DTCcqVu94ZlK28AmcHntjzpeFreV3FIzQO8I/edit#gid=0" >
               <i class="bx bx-file-find"></i>
-              <span class="link_name">CPP Project</span>
+              <span class="link_name">Assign Course</span>
             </a>
             <ul class="sub-menu blank">
               <li>
                 <Link class="link_name" to="#">
-                CPP Project
-                </Link>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <div class="iocn-link">
-              <Link to="#">
-              <i class="bx bxs-book-content"></i>
-                <span class="link_name">Time Table</span>
-              </Link>
-              <i onClick={eventHandle} class="bx bxs-chevron-down arrow"></i>
-            </div>
-            <ul class="sub-menu">
-              <li>
-                <Link class="link_name" to="#">
-                Time Table
-                </Link>
-              </li>
-              <li>
-                <Link to="#">First Year</Link>
-              </li>
-              <li>
-                <Link to="#">Second Year</Link>
-              </li>
-              <li>
-                <Link to="#">Third Year</Link>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <Link to="#">
-              <i class="bx bx-food-menu"></i>
-              <span class="link_name">Teaching / Lab Plan</span>
-            </Link>
-            <ul class="sub-menu blank">
-              <li>
-                <Link class="link_name" to="#">
-                 Teaching / Lab Plan
-                </Link>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <Link to="#">
-              <i class="bx bx-spreadsheet"></i>
-              <span class="link_name">MSBTE Result</span>
-            </Link>
-            <ul class="sub-menu blank">
-              <li>
-                <Link class="link_name" to="#">
-                MSBTE Result
+                Assign Course
                 </Link>
               </li>
             </ul>
@@ -158,34 +104,71 @@ function classTeacherNavbar() {
             <div class="iocn-link">
               <Link to="#">
               <i class="bx bxs-user"></i>
-                <span class="link_name">My Details</span>
+                <span class="link_name">Students</span>
               </Link>
-              <i onClick={eventHandle} class="bx bxs-chevron-down arrow"></i>
             </div>
             <ul class="sub-menu">
               <li>
                 <Link class="link_name" to="#">
-                My Details
+                Students
                 </Link>
               </li>
+            </ul>
+          </li>
+
+          <li>
+            <Link to="#">
+              <i class="bx bx-food-menu"></i>
+              <span class="link_name">Detention List</span>
+            </Link>
+            <ul class="sub-menu blank">
               <li>
-                <Link to="#">CR</Link>
+                <Link class="link_name" to="#">
+                 Detention List
+                </Link>
               </li>
+            </ul>
+          </li>
+
+          <li>
+            <Link to="#">
+              <i class="bx bx-spreadsheet"></i>
+              <span class="link_name">Result Analysis</span>
+            </Link>
+            <ul class="sub-menu blank">
               <li>
-                <Link to="/profile">Profile</Link>
+                <Link class="link_name" to="#">
+                Result Analysis
+                </Link>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <Link to="#">
+              <i class="bx bxs-comment-detail"></i>
+                <span class="link_name">Feedback</span>
+              </Link>
+            </div>
+            <ul class="sub-menu">
+              <li>
+                <Link class="link_name" to="#">
+                Feedback
+                </Link>
               </li>
             </ul>
           </li>
 
           <li>
             <Link to="/leave">
-              <i class="bx bxs-comment-detail"></i>
-              <span class="link_name">Leaves</span>
+              <i class="bx bxs-user"></i>
+              <span class="link_name">My Profile</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
                 <Link class="link_name" to="/leave">
-                Leaves
+                My Profile
                 </Link>
               </li>
             </ul>
