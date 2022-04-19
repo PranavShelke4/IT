@@ -38,7 +38,7 @@ class studentAchievement extends Component {
 
     deleteAchievement(id) {
         console.log(id)
-        axios.delete("http://localhost:5000/achievement/" +id)
+        axios.delete("http://localhost:5000/achievements/" +id)
             .then(res => console.log(res.data));
 
         this.setState({ achievements: this.state.achievements.filter(el => el._id !== id)})
