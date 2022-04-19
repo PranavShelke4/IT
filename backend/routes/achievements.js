@@ -23,13 +23,13 @@ router.route('/add-achievement').post((req,res) => {
         .catch(err => res.status(400).json('Error: '+err));
 });
 
-router.route('/achievement/:id').delete((req,res) => {
+router.route('achievements/:id').delete((req,res) => {
     console.log("Hello")
     Achievement.findByIdAndDelete(req.params.id)
         .then(achievement => res.json('Achievement deleted'))
         .catch(err => res.status(400).json('Error: '+err));
 });
-router.route('achievement/:id').get((req,res) => {
+router.route('achievements/:id').get((req,res) => {
     Achievement.findById(req.params.id)
         .then(achievement => res.json(achievement))
         .catch(err => res.status(400).json('Error: '+err));
@@ -37,7 +37,7 @@ router.route('achievement/:id').get((req,res) => {
 
 
 
-router.route('achievement/:id').post((req,res) => {
+router.route('achievements/:id').post((req,res) => {
     Achievement.findById(req.params.id)
         .then(achievement => {
            

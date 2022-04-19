@@ -19,7 +19,7 @@ connection.once('open', () => {
 })
 
 const exercisesRouter = require('./routes/exercises');
-const achievementsRouter = require('./routes/achievement');
+const achievementsRouter = require('./routes/achievements');
 
 app.use('/exercises', exercisesRouter);
 app.use('/achievements', achievementsRouter);
