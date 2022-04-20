@@ -33,7 +33,7 @@ function classTeacherNavbar() {
         </div>
         <ul class="nav-links">
           <li>
-            <Link to="/class-teacher-dashboard">
+            <Link to="/HOD-Dashbord">
               <i class="bx bx-home-alt"></i>
               <span class="link_name">Dashboard</span>
             </Link>
