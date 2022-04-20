@@ -102,7 +102,7 @@ function classTeacherNavbar() {
 
           <li>
             <div class="iocn-link">
-              <Link to="#">
+              <Link to="">
               <i class="bx bxs-user"></i>
                 <span class="link_name">Students</span>
               </Link>
