@@ -6,6 +6,7 @@ import App from "../App";
 
 import ClassTeacherDashboard from '../pages/ClassTeacherPages/Dashboard';
 import AddAchievement from "../pages/ClassTeacherPages/addAchievement";
+import Student from "../pages/ClassTeacherPages/studentpage";
 
 
 // subject teacher Routes
@@ -50,6 +51,7 @@ const ConfigRoutes = () => {
         {/* class teacher Routes */}
         <Route path="/class-teacher-dashboard" element={<ClassTeacherDashboard />}></Route>
         <Route path="/add-achievement" element={<AddAchievement />}></Route>
+        <Route path="/student-table" element={<Student />}></Route>
 
       </Routes>
     </>
