@@ -4,8 +4,17 @@
     padding-top: 5rem;
     overflow: auto;
   }
+
+  .add-student{
+    margin-bottom: 20px;
+    padding:10px;
+    width: 12%;
+    background-color: black;
+    color: #dddddd;
+    border-radius: 6%;
+  }
   
-  .addStudent_btn{
+  /* .addStudent_btn{
     position: relative;
     display: block;
     width: 10%;
@@ -14,7 +23,7 @@
     top: 10px;
     left: 950px;
   }
-  
+   */
   table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
