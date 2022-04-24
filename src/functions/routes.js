@@ -2,6 +2,11 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import App from "../App";
 
+// HOD Routes
+
+import HODDashbord from "../pages/HODPages/Dashboard"
+import FacultyDetails from "../pages/HODPages/FacultyDetails";
+
 // classTaecher Routes
 
 import ClassTeacherDashboard from '../pages/ClassTeacherPages/Dashboard';
@@ -54,6 +59,11 @@ const ConfigRoutes = () => {
         <Route path="/add-achievement" element={<AddAchievement />}></Route>
         <Route path="/student-table" element={<Student />}></Route>
         <Route path="/add-student-list" element={<AddList />}></Route>
+
+        {/* HOD Routes */}
+        <Route path="/HOD-Dashbord" element={<HODDashbord />}></Route>
+        <Route path="/Faculty-Details" element={<FacultyDetails />}></Route>
+
       </Routes>
     </>
   );
