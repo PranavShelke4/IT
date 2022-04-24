@@ -12,6 +12,7 @@ import FacultyDetails from "../pages/HODPages/FacultyDetails";
 import ClassTeacherDashboard from '../pages/ClassTeacherPages/Dashboard';
 import AddAchievement from "../pages/ClassTeacherPages/addAchievement";
 import Student from "../pages/ClassTeacherPages/studentpage";
+import AddList from "../pages/ClassTeacherPages/addListPage";
 
 
 // subject teacher Routes
@@ -57,6 +58,7 @@ const ConfigRoutes = () => {
         <Route path="/class-teacher-dashboard" element={<ClassTeacherDashboard />}></Route>
         <Route path="/add-achievement" element={<AddAchievement />}></Route>
         <Route path="/student-table" element={<Student />}></Route>
+        <Route path="/add-student-list" element={<AddList />}></Route>
 
         {/* HOD Routes */}
         <Route path="/HOD-Dashbord" element={<HODDashbord />}></Route>
@@ -66,5 +68,6 @@ const ConfigRoutes = () => {
     </>
   );
 };
+// HTMLElement
 
 export default ConfigRoutes;
