@@ -39,7 +39,7 @@ function classTeacherNavbar() {
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="/class-teacher-dashboard">
+                <Link class="link_name" to="/HOD-Dashbord">
                   Dashboard
                 </Link>
               </li>
@@ -87,7 +87,7 @@ function classTeacherNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="#">Faculty Details </Link>
+                <Link to="">Faculty Details </Link>
               </li>
               <li>
                 <Link to="#">Faculty CR</Link>

@@ -5,6 +5,7 @@ import App from "../App";
 // HOD Routes
 
 import HODDashbord from "../pages/HODPages/Dashboard"
+import FacultyDetails from "../pages/HODPages/FacultyDetails";
 
 // classTaecher Routes
 
@@ -59,6 +60,7 @@ const ConfigRoutes = () => {
 
         {/* HOD Routes */}
         <Route path="/HOD-Dashbord" element={<HODDashbord />}></Route>
+        <Route path="/Faculty-Details" element={<FacultyDetails />}></Route>
 
       </Routes>
     </>
