@@ -1,18 +1,18 @@
-import React from 'react'
-import "./StudentAchievementsHOD.css"
+import React from "react";
+import "./StudentAchievementsHOD.css";
 
 function TopperList() {
   return (
-   <>
-        <div className="TopperList">
+    <>
+      <div className="TopperList">
         <div className="fideo">
-          <h3 className="fidoh3">Student Achievements</h3>
+          <h3 className="fidoh3">Student Topper List</h3>
           <table>
             <tr>
               <th>Sr no.</th>
               <th>Student Name</th>
               <th>Percentage</th>
-              <th>Academic Year</th> 
+              <th>Academic Year</th>
             </tr>
             <tr>
               <td>1.</td>
@@ -23,8 +23,8 @@ function TopperList() {
           </table>
         </div>
       </div>
-   </>
-  )
+    </>
+  );
 }
 
-export default TopperList
+export default TopperList;

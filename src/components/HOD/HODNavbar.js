@@ -87,10 +87,10 @@ function classTeacherNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="">Faculty Details </Link>
+                <Link to="/Faculty-Details">Faculty Details </Link>
               </li>
               <li>
-                <Link to="#">Faculty CR</Link>
+                <Link to="/Faculty-CR">Faculty CR</Link>
               </li>
               <li>
                 <Link to="#">Leaves</Link>

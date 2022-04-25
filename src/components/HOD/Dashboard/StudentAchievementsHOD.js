@@ -27,9 +27,9 @@ function StudentAchievementsHOD() {
               <td>First Year</td>
               <td>2/4/2019</td>
               <td>
-              <a href="#">
+              <Link to="/">
                  <i class='bx bxs-file-doc'></i>
-                </a>{" "}         
+                </Link>{" "}         
               </td>
             </tr>
           </table>
