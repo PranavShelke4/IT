@@ -8,6 +8,7 @@ import HODDashbord from "../pages/HODPages/Dashboard"
 import FacultyDetails from "../pages/HODPages/FacultyDetails";
 import FacultyCR from "../pages/HODPages/FacultyCR";
 import Leaves from "../pages/HODPages/Leaves";
+import AssignClassTeacher from "../pages/HODPages/AssignClassTeacher";
 
 // classTaecher Routes
 
@@ -67,6 +68,7 @@ const ConfigRoutes = () => {
         <Route path="/Faculty-Details" element={<FacultyDetails />}></Route>
         <Route path="/Faculty-CR" element={<FacultyCR />}></Route>
         <Route path="/Faculty-Leaves" element={<Leaves />}></Route>
+        <Route path="/Assign-Class-Teacher" element={<AssignClassTeacher />}></Route>
 
       </Routes>
     </>

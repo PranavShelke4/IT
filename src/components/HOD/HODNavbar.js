@@ -99,13 +99,13 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <a rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1Z_u2e43DTCcqVu94ZlK28AmcHntjzpeFreV3FIzQO8I/edit#gid=0" >
+            <Link to="/Assign-Class-Teacher" >
               <i class="bx bx-user"></i>
               <span class="link_name">Assign Class Teacher</span>
-            </a>
+            </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="#">
+                <Link class="link_name" to="/Assign-Class-Teacher">
                 Assign Class Teacher
                 </Link>
               </li>
