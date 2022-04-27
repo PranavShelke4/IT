@@ -100,7 +100,7 @@ function classTeacherNavbar() {
 
           <li>
             <Link to="/Assign-Class-Teacher" >
-              <i class="bx bx-user"></i>
+              <i class="bx bx-user-pin"></i>
               <span class="link_name">Assign Class Teacher</span>
             </Link>
             <ul class="sub-menu blank">
@@ -140,7 +140,7 @@ function classTeacherNavbar() {
 
           <li>
             <Link to="/leave">
-              <i class="bx bxs-comment-detail"></i>
+              <i class="bx bx-notepad"></i>
               <span class="link_name">Result Analysis</span>
             </Link>
             <ul class="sub-menu blank">
@@ -182,7 +182,7 @@ function classTeacherNavbar() {
           <li>
             <div class="iocn-link">
               <Link to="">
-                <i class="bx bx-spreadsheet"></i>
+                <i class="bx bx-comment-dots"></i>
                 <span class="link_name">Feedback</span>
               </Link>
               <i  onClick={eventHandle} class="bx bxs-chevron-down arrow"></i>
@@ -207,7 +207,7 @@ function classTeacherNavbar() {
 
           <li>
             <Link to="/">
-              <i class="bx bxs-user"></i>
+              <i class="bx bx-user-circle"></i>
               <span class="link_name">My Profile</span>
             </Link>
             <ul class="sub-menu blank">
