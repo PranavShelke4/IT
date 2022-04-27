@@ -1,6 +1,16 @@
 const router = require('express').Router();
 let Exercise = require('../models/exercise.model');
 
+
+// var RateLimit = require('express-rate-limit');
+// var limiter = new RateLimit({
+//   windowMs: 1*60*1000, // 1 minute
+//   max: 5
+// });
+
+// // apply rate limiter to all requests
+// app.use(limiter);
+
 router.route('/').get((req,res) => {
     Exercise.find()
         .then(exercises => res.json(exercises))
