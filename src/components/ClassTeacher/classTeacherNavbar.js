@@ -117,13 +117,13 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <Link to="#">
+            <Link to="/class-detentionlist">
               <i class="bx bx-food-menu"></i>
               <span class="link_name">Detention List</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="#">
+                <Link class="link_name" to="class-detentionlist">
                  Detention List
                 </Link>
               </li>

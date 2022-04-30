@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function DetentionList(){
     return (
         <section className="fy_section">
-        <Link to={'/add-student-list'}><div className='add-student'>Add Student List</div></Link>
+        <Link to={'/add-detention-list'}><div className='add-student'>Add Detention List</div></Link>
         <table className="ctTable">
         <tr>
           <th>Sr no.</th>
