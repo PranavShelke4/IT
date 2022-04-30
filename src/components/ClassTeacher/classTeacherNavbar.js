@@ -146,14 +146,14 @@ function classTeacherNavbar() {
 
           <li>
             <div class="iocn-link">
-              <Link to="#">
+              <Link to="/class-feedback">
               <i class="bx bxs-comment-detail"></i>
                 <span class="link_name">Feedback</span>
               </Link>
             </div>
             <ul class="sub-menu">
               <li>
-                <Link class="link_name" to="#">
+                <Link class="link_name" to="/class-feedback">
                 Feedback
                 </Link>
               </li>

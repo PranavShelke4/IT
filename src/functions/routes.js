@@ -17,6 +17,9 @@ import AddList from "../pages/ClassTeacherPages/addListPage";
 import ClassFaculty from "../pages/ClassTeacherPages/FacultyDetails";
 import DetentionPage from "../pages/ClassTeacherPages/DetentionPage";
 import AddDetentionPage from "../pages/ClassTeacherPages/addDetentionPage";
+import FeedbackPage from "../pages/ClassTeacherPages/FeedbackPage";
+import AddFeedbackPage from "../pages/ClassTeacherPages/AddFeedbackPage";
+
 
 // subject teacher Routes
 
@@ -65,6 +68,8 @@ const ConfigRoutes = () => {
         <Route path="/classfaculty" element={<ClassFaculty />}></Route>
         <Route path="/class-detentionlist" element={<DetentionPage />}></Route>
         <Route path="/add-detention-list" element={<AddDetentionPage />}></Route>
+        <Route path="/class-feedback" element={<FeedbackPage />}></Route>
+        <Route path="/add-class-feedback-list" element={<AddFeedbackPage />}></Route>
 
 
         {/* HOD Routes */}
