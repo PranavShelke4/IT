@@ -11,7 +11,7 @@ function subject(){
         <div className="sub sub1">
 
     <label className="s1">Javascript</label>
-    <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1Z_u2e43DTCcqVu94ZlK28AmcHntjzpeFreV3FIzQO8I/edit#gid=0'><div className="attendance">
+    <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0'><div className="attendance">
       <span className="attend_label">Attendance</span>
     </div></a>
 
@@ -30,11 +30,11 @@ function subject(){
       </div>
     {/* </div> */}
 
-    <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1Z_u2e43DTCcqVu94ZlK28AmcHntjzpeFreV3FIzQO8I/edit#gid=0'><div className="microproject">
+    <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0'><div className="microproject">
       <span className="attend_label">Microprojects</span>
     </div></a>
 
-    <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1Z_u2e43DTCcqVu94ZlK28AmcHntjzpeFreV3FIzQO8I/edit#gid=0'><div className="term_work">
+    <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0'><div className="term_work">
       <span className="attend_label">Term Work</span>
     </div></a>
 

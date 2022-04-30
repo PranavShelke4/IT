@@ -73,13 +73,13 @@ function classTeacherNavbar() {
           </li> */}
 
           <li>
-            <Link to="/course">
+            <Link to="/classfaculty">
               <i class="bx bxs-user"></i>
               <span class="link_name">Faculty</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="/course">
+                <Link class="link_name" to="/classfaculty">
                 Faculty
                 </Link>
               </li>
@@ -117,13 +117,13 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <Link to="#">
+            <Link to="/class-detentionlist">
               <i class="bx bx-food-menu"></i>
               <span class="link_name">Detention List</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="#">
+                <Link class="link_name" to="class-detentionlist">
                  Detention List
                 </Link>
               </li>
@@ -146,14 +146,14 @@ function classTeacherNavbar() {
 
           <li>
             <div class="iocn-link">
-              <Link to="#">
+              <Link to="/class-feedback">
               <i class="bx bxs-comment-detail"></i>
                 <span class="link_name">Feedback</span>
               </Link>
             </div>
             <ul class="sub-menu">
               <li>
-                <Link class="link_name" to="#">
+                <Link class="link_name" to="/class-feedback">
                 Feedback
                 </Link>
               </li>
@@ -161,13 +161,13 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <Link to="/leave">
+            <Link to="/class-teacher-profile">
               <i class="bx bxs-user"></i>
               <span class="link_name">My Profile</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="/leave">
+                <Link class="link_name" to="/class-teacher-profile">
                 My Profile
                 </Link>
               </li>

@@ -34,6 +34,8 @@ function AssignCT(props) {
               );
             })}
           </table>
+            
+        </div> 
 
           <h4 className="fidoh44">Second Year</h4>
           <table>

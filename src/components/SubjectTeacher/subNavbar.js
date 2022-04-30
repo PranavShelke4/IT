@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+//import React, { useContext } from "react";
 import "./subNavbar.css";
 import {Link} from 'react-router-dom';
-import { AuthContext } from "../../functions/Auth"
-import firebaseConfig from "../../functions/fire"
+//import { AuthContext } from "../../functions/Auth"
+//import firebaseConfig from "../../functions/fire"
 
 
 function eventHandle() {
@@ -24,23 +24,23 @@ function eventHandle() {
 function subNavbar() {
   return (
     <div>
-      <div class="sidebar close">
-        <div class="logo-details">
+      <div className="sidebar close">
+        <div className="logo-details">
           <img alt=""
-            class="gpa_logo" 
+            className="gpa_logo" 
             src="https://www.gpawasari.ac.in/Images/logo.PNG"
           />
-          <span class="logo_name">GPA</span>
+          <span className="logo_name">GPA</span>
         </div>
-        <ul class="nav-links">
+        <ul className="nav-links">
           <li>
             <Link to="/subject-teacher-dashboard">
-              <i class="bx bx-home-alt"></i>
-              <span class="link_name">Dashboard</span>
+              <i className="bx bx-home-alt"></i>
+              <span className="link_name">Dashboard</span>
             </Link>
-            <ul class="sub-menu blank">
+            <ul className="sub-menu blank">
               <li>
-                <Link class="link_name" to="/subject-teacher-dashboard">
+                <Link className="link_name" to="/subject-teacher-dashboard">
                   Dashboard
                 </Link>
               </li>
@@ -48,16 +48,16 @@ function subNavbar() {
           </li>
 
           <li>
-            <div class="iocn-link">
+            <div className="iocn-link">
               <Link to="">
-                <i class="bx bx-user"></i>
-                <span class="link_name">Students</span>
+                <i className="bx bx-user"></i>
+                <span className="link_name">Students</span>
               </Link>
-              <i  onClick={eventHandle} class="bx bxs-chevron-down arrow"></i>
+              <i  onClick={eventHandle} className="bx bxs-chevron-down arrow"></i>
             </div>
-            <ul class="sub-menu">
+            <ul className="sub-menu">
               <li>
-                <Link to="" class="link_name">
+                <Link to="" className="link_name">
                 Students
                 </Link>
               </li>
@@ -75,12 +75,12 @@ function subNavbar() {
 
           <li>
             <Link to="/course">
-              <i class="bx bx-book"></i>
-              <span class="link_name">Course</span>
+              <i className="bx bx-book"></i>
+              <span className="link_name">Course</span>
             </Link>
-            <ul class="sub-menu blank">
+            <ul className="sub-menu blank">
               <li>
-                <Link class="link_name" to="/course">
+                <Link className="link_name" to="/course">
                 Course
                 </Link>
               </li>
@@ -88,13 +88,13 @@ function subNavbar() {
           </li>
 
           <li>
-            <a rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1Z_u2e43DTCcqVu94ZlK28AmcHntjzpeFreV3FIzQO8I/edit#gid=0" >
-              <i class="bx bx-file-find"></i>
-              <span class="link_name">CPP Project</span>
+            <a rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0" >
+              <i className="bx bx-file-find"></i>
+              <span className="link_name">CPP Project</span>
             </a>
-            <ul class="sub-menu blank">
+            <ul className="sub-menu blank">
               <li>
-                <Link class="link_name" to="#">
+                <Link className="link_name" to="https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0">
                 CPP Project
                 </Link>
               </li>
@@ -102,16 +102,16 @@ function subNavbar() {
           </li>
 
           <li>
-            <div class="iocn-link">
+            <div className="iocn-link">
               <Link to="#">
-              <i class="bx bxs-book-content"></i>
-                <span class="link_name">Time Table</span>
+              <i className="bx bxs-book-content"></i>
+                <span className="link_name">Time Table</span>
               </Link>
-              <i onClick={eventHandle} class="bx bxs-chevron-down arrow"></i>
+              <i onClick={eventHandle} className="bx bxs-chevron-down arrow"></i>
             </div>
-            <ul class="sub-menu">
+            <ul className="sub-menu">
               <li>
-                <Link class="link_name" to="#">
+                <Link className="link_name" to="#">
                 Time Table
                 </Link>
               </li>
@@ -129,12 +129,12 @@ function subNavbar() {
 
           <li>
             <Link to="#">
-              <i class="bx bx-food-menu"></i>
-              <span class="link_name">Teaching / Lab Plan</span>
+              <i className="bx bx-food-menu"></i>
+              <span className="link_name">Teaching / Lab Plan</span>
             </Link>
-            <ul class="sub-menu blank">
+            <ul className="sub-menu blank">
               <li>
-                <Link class="link_name" to="#">
+                <Link className="link_name" to="#">
                  Teaching / Lab Plan
                 </Link>
               </li>
@@ -143,12 +143,12 @@ function subNavbar() {
 
           <li>
             <Link to="#">
-              <i class="bx bx-spreadsheet"></i>
-              <span class="link_name">MSBTE Result</span>
+              <i className="bx bx-spreadsheet"></i>
+              <span className="link_name">MSBTE Result</span>
             </Link>
-            <ul class="sub-menu blank">
+            <ul className="sub-menu blank">
               <li>
-                <Link class="link_name" to="#">
+                <Link className="link_name" to="#">
                 MSBTE Result
                 </Link>
               </li>
@@ -156,16 +156,16 @@ function subNavbar() {
           </li>
 
           <li>
-            <div class="iocn-link">
+            <div className="iocn-link">
               <Link to="#">
-              <i class="bx bxs-user"></i>
-                <span class="link_name">My Details</span>
+              <i className="bx bxs-user"></i>
+                <span className="link_name">My Details</span>
               </Link>
-              <i onClick={eventHandle} class="bx bxs-chevron-down arrow"></i>
+              <i onClick={eventHandle} className="bx bxs-chevron-down arrow"></i>
             </div>
-            <ul class="sub-menu">
+            <ul className="sub-menu">
               <li>
-                <Link class="link_name" to="#">
+                <Link className="link_name" to="#">
                 My Details
                 </Link>
               </li>
@@ -180,12 +180,12 @@ function subNavbar() {
 
           <li>
             <Link to="/leave">
-              <i class="bx bxs-comment-detail"></i>
-              <span class="link_name">Leaves</span>
+              <i className="bx bxs-comment-detail"></i>
+              <span className="link_name">Leaves</span>
             </Link>
-            <ul class="sub-menu blank">
+            <ul className="sub-menu blank">
               <li>
-                <Link class="link_name" to="/leave">
+                <Link className="link_name" to="/leave">
                 Leaves
                 </Link>
               </li>
@@ -194,34 +194,34 @@ function subNavbar() {
 
           <li>
             <Link to="/">
-              <i class="bx bx-log-out"></i>
-              <span class="link_name">Logout</span>
+              <i className="bx bx-log-out"></i>
+              <span className="link_name">Logout</span>
             </Link>
-            <ul class="sub-menu blank">
+            <ul className="sub-menu blank">
               <li>
-                <Link class="link_name" to="/">
+                <Link className="link_name" to="/">
                   Logout
                 </Link>
               </li>
             </ul>
           </li>
           <li>
-            <div class="profile-details">
-              <div class="profile-content">
+            <div className="profile-details">
+              <div className="profile-content">
                 <img alt="" src="https://www.gpawasari.ac.in/Images/ithod.PNG" />
               </div>
-              <div class="name-job">
-                <div class="profile_name">Dr. D.N. Rewadkar</div>
-                <div class="job">Head of Department I.T.</div>
+              <div className="name-job">
+                <div className="profile_name">Dr. D.N. Rewadkar</div>
+                <div className="job">Head of Department I.T.</div>
               </div>
             </div>
           </li>
         </ul>
       </div>
-      <div class="home-section">
-        <div class="home-content">
-          <i class="bx bx-menu" onClick={eventHandle}></i>
-          <span class="text">Subject Teacher Dashboard</span>
+      <div className="home-section">
+        <div className="home-content">
+          <i className="bx bx-menu" onClick={eventHandle}></i>
+          <span className="text">Subject Teacher Dashboard</span>
           <br />
         </div>
       </div>

@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 //import axios from "axios";
 import DatePicker from "react-datepicker";
 //import "react-datepicker/dist/react-datepicker.css";
-import './addList.css'
+import '../Students/addList.css';
 
-class addStudentList extends Component {
+class addFeedback extends Component {
 
     // constructor(props){
     //     super();
@@ -63,6 +63,15 @@ class addStudentList extends Component {
                                 placeholderText='Academic Year'
                             />
                             <br/>
+
+                            <label className='label l2'>faculty Name : </label><br/>
+                        <input
+                            type="text" required
+                            className='update'
+                            //value={this.state.activity}
+                            //onChange={this.onChangeLink}
+                            placeholder="Faculty Name"
+                        /><br/>
       
                     
                     
@@ -86,4 +95,4 @@ class addStudentList extends Component {
     }
 }
  
-export default addStudentList;
+export default addFeedback;

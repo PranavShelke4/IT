@@ -12,7 +12,7 @@ const Exercise = props => (
         <td>{props.exercise.group}</td>
         
         <td>
-            <Link to={"/edit/"+props.exercise._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteExercise(props.exercise._id) }} ><i class='bx bx-trash'></i></span>
+            <Link to={"/edit/"+props.exercise._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteExercise(props.exercise._id) }} ><i className='bx bx-trash'></i></span>
             {/* <button className="btn btn-secondary"><Link to={"/edit/"+props.exercise._id} style={{color:"white"}}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => {props.deleteExercise(props.exercise._id) }}>Delete</button> */}
         </td>
     </tr>

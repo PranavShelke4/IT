@@ -2,13 +2,15 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import App from "../App";
 
+
+
 // HOD Routes
 
 import HODDashbord from "../pages/HODPages/Dashboard"
 import FacultyDetails from "../pages/HODPages/FacultyDetails";
 import FacultyCR from "../pages/HODPages/FacultyCR";
-import Leaves from "../pages/HODPages/Leaves";
-import AssignClassTeacher from "../pages/HODPages/AssignClassTeacher";
+
+
 
 // classTaecher Routes
 
@@ -16,6 +18,13 @@ import ClassTeacherDashboard from '../pages/ClassTeacherPages/Dashboard';
 import AddAchievement from "../pages/ClassTeacherPages/addAchievement";
 import Student from "../pages/ClassTeacherPages/studentpage";
 import AddList from "../pages/ClassTeacherPages/addListPage";
+import ClassFaculty from "../pages/ClassTeacherPages/FacultyDetails";
+import DetentionPage from "../pages/ClassTeacherPages/DetentionPage";
+import AddDetentionPage from "../pages/ClassTeacherPages/addDetentionPage";
+import FeedbackPage from "../pages/ClassTeacherPages/FeedbackPage";
+import AddFeedbackPage from "../pages/ClassTeacherPages/AddFeedbackPage";
+import ClassProfilePage from "../pages/ClassTeacherPages/ProfilePage";
+
 
 
 // subject teacher Routes
@@ -31,9 +40,10 @@ import AssignmentPage from "../pages/SubjectTeacherPages/Assignmentpage";
 import StudyPage  from "../pages/SubjectTeacherPages/studyPage";
 import ProfilePage from "../pages/SubjectTeacherPages/ProfilePage";
 import LeavePage from '../pages/SubjectTeacherPages/LeavePage';
-
 import EditExercise from "../components/SubjectTeacher/Fideology/EditExercise";
 import ExercisesList from "../components/SubjectTeacher/Fideology/ExercisesList";
+
+
 
 const ConfigRoutes = () => {
   return (
@@ -51,7 +61,6 @@ const ConfigRoutes = () => {
         <Route path="/study-material" element={<StudyPage />}></Route>
         <Route path="/profile" element={<ProfilePage />}></Route>
         <Route path="/leave" element={<LeavePage />}></Route>
-       
         <Route path="/edit/:id" element={<EditExercise/>}></Route>
         <Route path="/allExercises" element={<ExercisesList />}></Route>
 
@@ -62,18 +71,21 @@ const ConfigRoutes = () => {
         <Route path="/add-achievement" element={<AddAchievement />}></Route>
         <Route path="/student-table" element={<Student />}></Route>
         <Route path="/add-student-list" element={<AddList />}></Route>
+        <Route path="/classfaculty" element={<ClassFaculty />}></Route>
+        <Route path="/class-detentionlist" element={<DetentionPage />}></Route>
+        <Route path="/add-detention-list" element={<AddDetentionPage />}></Route>
+        <Route path="/class-feedback" element={<FeedbackPage />}></Route>
+        <Route path="/add-class-feedback-list" element={<AddFeedbackPage />}></Route>
+        <Route path="/class-teacher-profile" element={<ClassProfilePage />}></Route>
+
 
         {/* HOD Routes */}
         <Route path="/HOD-Dashbord" element={<HODDashbord />}></Route>
         <Route path="/Faculty-Details" element={<FacultyDetails />}></Route>
         <Route path="/Faculty-CR" element={<FacultyCR />}></Route>
-        <Route path="/Faculty-Leaves" element={<Leaves />}></Route>
-        <Route path="/Assign-Class-Teacher" element={<AssignClassTeacher />}></Route>
 
       </Routes>
     </>
   );
 };
-// HTMLElement
-
 export default ConfigRoutes;
