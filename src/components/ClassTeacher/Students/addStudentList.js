@@ -68,10 +68,10 @@ class addStudentList extends Component {
         axios.post("http://localhost:5000/achievements/add-achievement", achievement)
             .then(res => console.log(res.data));
 
-        window.location = "/class-teacher-dashboard";
+        window.location = "/student-table";
     }
     Cancel(e){
-        window.location = "/class-teacher-dashboard";
+        window.location = "/student-table";
     }
     
     render() { 
