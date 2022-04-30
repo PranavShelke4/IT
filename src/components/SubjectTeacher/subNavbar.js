@@ -1,6 +1,7 @@
 //import React, { useContext } from "react";
 import "./subNavbar.css";
 import {Link} from 'react-router-dom';
+import BodheSirImg from "../../assets/img/BodheSirImg.jpg"
 //import { AuthContext } from "../../functions/Auth"
 //import firebaseConfig from "../../functions/fire"
 
@@ -208,11 +209,11 @@ function subNavbar() {
           <li>
             <div className="profile-details">
               <div className="profile-content">
-                <img alt="" src="https://www.gpawasari.ac.in/Images/ithod.PNG" />
+                <img alt="" src={BodheSirImg} />
               </div>
               <div className="name-job">
-                <div className="profile_name">Dr. D.N. Rewadkar</div>
-                <div className="job">Head of Department I.T.</div>
+                <div className="profile_name">Mr. Yogesh U. Bodhe</div>
+                <div className="job">Lecturer in IT</div>
               </div>
             </div>
           </li>

@@ -9,6 +9,7 @@ import App from "../App";
 import HODDashbord from "../pages/HODPages/Dashboard"
 import FacultyDetails from "../pages/HODPages/FacultyDetails";
 import FacultyCR from "../pages/HODPages/FacultyCR";
+import AssignClassTeacher from '../pages/HODPages/AssignClassTeacher';
 
 
 
@@ -24,6 +25,7 @@ import AddDetentionPage from "../pages/ClassTeacherPages/addDetentionPage";
 import FeedbackPage from "../pages/ClassTeacherPages/FeedbackPage";
 import AddFeedbackPage from "../pages/ClassTeacherPages/AddFeedbackPage";
 import ClassProfilePage from "../pages/ClassTeacherPages/ProfilePage";
+import AssignSTPage from "../pages/ClassTeacherPages/AssignSTPage";
 
 
 
@@ -42,6 +44,7 @@ import ProfilePage from "../pages/SubjectTeacherPages/ProfilePage";
 import LeavePage from '../pages/SubjectTeacherPages/LeavePage';
 import EditExercise from "../components/SubjectTeacher/Fideology/EditExercise";
 import ExercisesList from "../components/SubjectTeacher/Fideology/ExercisesList";
+
 
 
 
@@ -77,12 +80,14 @@ const ConfigRoutes = () => {
         <Route path="/class-feedback" element={<FeedbackPage />}></Route>
         <Route path="/add-class-feedback-list" element={<AddFeedbackPage />}></Route>
         <Route path="/class-teacher-profile" element={<ClassProfilePage />}></Route>
+        <Route path="/assign-subject-teacher" element={<AssignSTPage />}></Route>
 
 
         {/* HOD Routes */}
         <Route path="/HOD-Dashbord" element={<HODDashbord />}></Route>
         <Route path="/Faculty-Details" element={<FacultyDetails />}></Route>
         <Route path="/Faculty-CR" element={<FacultyCR />}></Route>
+        <Route path="/assign-class-teacher" element={<AssignClassTeacher />}></Route>
 
       </Routes>
     </>
