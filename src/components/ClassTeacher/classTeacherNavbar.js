@@ -73,13 +73,13 @@ function classTeacherNavbar() {
           </li> */}
 
           <li>
-            <Link to="/course">
+            <Link to="/classfaculty">
               <i class="bx bxs-user"></i>
               <span class="link_name">Faculty</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="/course">
+                <Link class="link_name" to="/classfaculty">
                 Faculty
                 </Link>
               </li>
