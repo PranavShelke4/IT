@@ -7,8 +7,6 @@ import App from "../App";
 import HODDashbord from "../pages/HODPages/Dashboard"
 import FacultyDetails from "../pages/HODPages/FacultyDetails";
 import FacultyCR from "../pages/HODPages/FacultyCR";
-import Leaves from "../pages/HODPages/Leaves";
-import AssignClassTeacher from "../pages/HODPages/AssignClassTeacher";
 
 // classTaecher Routes
 
@@ -16,6 +14,7 @@ import ClassTeacherDashboard from '../pages/ClassTeacherPages/Dashboard';
 import AddAchievement from "../pages/ClassTeacherPages/addAchievement";
 import Student from "../pages/ClassTeacherPages/studentpage";
 import AddList from "../pages/ClassTeacherPages/addListPage";
+import ClassFaculty from "../pages/ClassTeacherPages/FacultyDetails";
 
 
 // subject teacher Routes
@@ -62,13 +61,13 @@ const ConfigRoutes = () => {
         <Route path="/add-achievement" element={<AddAchievement />}></Route>
         <Route path="/student-table" element={<Student />}></Route>
         <Route path="/add-student-list" element={<AddList />}></Route>
+        <Route path="/ClassFaculty" element={<ClassFaculty />}></Route>
+
 
         {/* HOD Routes */}
         <Route path="/HOD-Dashbord" element={<HODDashbord />}></Route>
         <Route path="/Faculty-Details" element={<FacultyDetails />}></Route>
         <Route path="/Faculty-CR" element={<FacultyCR />}></Route>
-        <Route path="/Faculty-Leaves" element={<Leaves />}></Route>
-        <Route path="/Assign-Class-Teacher" element={<AssignClassTeacher />}></Route>
 
       </Routes>
     </>
