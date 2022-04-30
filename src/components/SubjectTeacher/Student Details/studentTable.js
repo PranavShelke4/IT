@@ -5,6 +5,7 @@ function studentTable(){
     return (
         <section className="fy_section">
         <table className="ctTable">
+        <tbody>
         <tr>
           <th>Sr no.</th>
           <th>Year</th>
@@ -25,6 +26,7 @@ function studentTable(){
           <td>2019</td>
           <td><a href='/student-detail'>www.google.com</a></td>
         </tr>
+        </tbody>
       </table>
     </section>
   
