@@ -15,6 +15,8 @@ import AddAchievement from "../pages/ClassTeacherPages/addAchievement";
 import Student from "../pages/ClassTeacherPages/studentpage";
 import AddList from "../pages/ClassTeacherPages/addListPage";
 import ClassFaculty from "../pages/ClassTeacherPages/FacultyDetails";
+import DetentionPage from "../pages/ClassTeacherPages/DetentionPage";
+import AddDetentionPage from "../pages/ClassTeacherPages/addDetentionPage";
 
 // subject teacher Routes
 
@@ -61,6 +63,8 @@ const ConfigRoutes = () => {
         <Route path="/student-table" element={<Student />}></Route>
         <Route path="/add-student-list" element={<AddList />}></Route>
         <Route path="/classfaculty" element={<ClassFaculty />}></Route>
+        <Route path="/class-detentionlist" element={<DetentionPage />}></Route>
+        <Route path="/add-detention-list" element={<AddDetentionPage />}></Route>
 
 
         {/* HOD Routes */}

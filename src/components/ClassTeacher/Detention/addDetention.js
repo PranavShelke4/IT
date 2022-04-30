@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 //import axios from "axios";
 import DatePicker from "react-datepicker";
 //import "react-datepicker/dist/react-datepicker.css";
-import './addList.css'
+import '../Students/addList.css';
 
-class addStudentList extends Component {
+class addDetention extends Component {
 
     // constructor(props){
     //     super();
@@ -86,4 +86,4 @@ class addStudentList extends Component {
     }
 }
  
-export default addStudentList;
+export default addDetention;
