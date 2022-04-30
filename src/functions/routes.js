@@ -2,11 +2,15 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import App from "../App";
 
+
+
 // HOD Routes
 
 import HODDashbord from "../pages/HODPages/Dashboard"
 import FacultyDetails from "../pages/HODPages/FacultyDetails";
 import FacultyCR from "../pages/HODPages/FacultyCR";
+
+
 
 // classTaecher Routes
 
@@ -22,6 +26,7 @@ import AddFeedbackPage from "../pages/ClassTeacherPages/AddFeedbackPage";
 import ClassProfilePage from "../pages/ClassTeacherPages/ProfilePage";
 
 
+
 // subject teacher Routes
 
 import SignUp from "../components/SignUP/SignUp";
@@ -35,9 +40,10 @@ import AssignmentPage from "../pages/SubjectTeacherPages/Assignmentpage";
 import StudyPage  from "../pages/SubjectTeacherPages/studyPage";
 import ProfilePage from "../pages/SubjectTeacherPages/ProfilePage";
 import LeavePage from '../pages/SubjectTeacherPages/LeavePage';
-
 import EditExercise from "../components/SubjectTeacher/Fideology/EditExercise";
 import ExercisesList from "../components/SubjectTeacher/Fideology/ExercisesList";
+
+
 
 const ConfigRoutes = () => {
   return (
@@ -55,7 +61,6 @@ const ConfigRoutes = () => {
         <Route path="/study-material" element={<StudyPage />}></Route>
         <Route path="/profile" element={<ProfilePage />}></Route>
         <Route path="/leave" element={<LeavePage />}></Route>
-       
         <Route path="/edit/:id" element={<EditExercise/>}></Route>
         <Route path="/allExercises" element={<ExercisesList />}></Route>
 
@@ -83,6 +88,4 @@ const ConfigRoutes = () => {
     </>
   );
 };
-// HTMLElement
-
 export default ConfigRoutes;

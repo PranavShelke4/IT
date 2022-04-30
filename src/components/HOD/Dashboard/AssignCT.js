@@ -6,8 +6,7 @@ function AssignCT() {
       <div className="facultysCR">
         <div className="fideo">
           <h3 className="fidoh3">Assign Class Teacher</h3>
-
-          <
+            
         </div> 
 
       </div>
