@@ -37,3 +37,22 @@
     background-color: red;
     color: white;
 }
+
+.Assign{
+    color: black;
+    height: auto;
+    position: static;
+    border-radius: 5px;
+    border-color: green;    
+}
+
+.Assign:hover{
+    background-color: green;
+    color: white;
+}
+
+.fidoh44{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
