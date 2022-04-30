@@ -161,13 +161,13 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <Link to="/leave">
+            <Link to="/class-teacher-profile">
               <i class="bx bxs-user"></i>
               <span class="link_name">My Profile</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="/leave">
+                <Link class="link_name" to="/class-teacher-profile">
                 My Profile
                 </Link>
               </li>

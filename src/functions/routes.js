@@ -19,6 +19,7 @@ import DetentionPage from "../pages/ClassTeacherPages/DetentionPage";
 import AddDetentionPage from "../pages/ClassTeacherPages/addDetentionPage";
 import FeedbackPage from "../pages/ClassTeacherPages/FeedbackPage";
 import AddFeedbackPage from "../pages/ClassTeacherPages/AddFeedbackPage";
+import ClassProfilePage from "../pages/ClassTeacherPages/ProfilePage";
 
 
 // subject teacher Routes
@@ -70,6 +71,7 @@ const ConfigRoutes = () => {
         <Route path="/add-detention-list" element={<AddDetentionPage />}></Route>
         <Route path="/class-feedback" element={<FeedbackPage />}></Route>
         <Route path="/add-class-feedback-list" element={<AddFeedbackPage />}></Route>
+        <Route path="/class-teacher-profile" element={<ClassProfilePage />}></Route>
 
 
         {/* HOD Routes */}
