@@ -86,7 +86,7 @@ function AssignCT(props) {
           </table>
           
         </div>
-      </div>
+
     </>
   );
 }
