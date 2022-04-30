@@ -88,13 +88,13 @@ function subNavbar() {
           </li>
 
           <li>
-            <a rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1Z_u2e43DTCcqVu94ZlK28AmcHntjzpeFreV3FIzQO8I/edit#gid=0" >
+            <a rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0" >
               <i className="bx bx-file-find"></i>
               <span className="link_name">CPP Project</span>
             </a>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="#">
+                <Link className="link_name" to="https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0">
                 CPP Project
                 </Link>
               </li>
