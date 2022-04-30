@@ -16,7 +16,6 @@ import Student from "../pages/ClassTeacherPages/studentpage";
 import AddList from "../pages/ClassTeacherPages/addListPage";
 import ClassFaculty from "../pages/ClassTeacherPages/FacultyDetails";
 
-
 // subject teacher Routes
 
 import SignUp from "../components/SignUP/SignUp";
@@ -61,7 +60,7 @@ const ConfigRoutes = () => {
         <Route path="/add-achievement" element={<AddAchievement />}></Route>
         <Route path="/student-table" element={<Student />}></Route>
         <Route path="/add-student-list" element={<AddList />}></Route>
-        <Route path="/ClassFaculty" element={<ClassFaculty />}></Route>
+        <Route path="/classfaculty" element={<ClassFaculty />}></Route>
 
 
         {/* HOD Routes */}
