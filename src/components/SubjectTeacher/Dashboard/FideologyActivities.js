@@ -20,42 +20,42 @@ function FideologyActivities() {
 		    <td>Pranav Keshav Shelke</td>
 		    <td>First Year</td>
 		    <td>2019-20</td>
-		    <td><a href="#"><i class='bx bx-edit-alt'></i></a> | <a href="#"><i class='bx bx-trash'></i></a></td>
+		    <td><a href="#"><i className='bx bx-edit-alt'></i></a> | <a href="#"><i className='bx bx-trash'></i></a></td>
 		  </tr>
 		  <tr>
 		    <td>2.</td>
 		    <td>Avadhut Sambhaji Shedage</td>
 		    <td>First Year</td>
 		    <td>2019-20</td>
-		    <td><a href="#"><i class='bx bx-edit-alt'></i></a> | <a href="#"><i class='bx bx-trash'></i></a></td>
+		    <td><a href="#"><i className='bx bx-edit-alt'></i></a> | <a href="#"><i className='bx bx-trash'></i></a></td>
 		  </tr>
 		  <tr>
 		    <td>3.</td>
 		    <td>Sangam Ashok Gorde</td>
 		    <td>First Year</td>
 		    <td>2019-20</td>
-		    <td><a href="#"><i class='bx bx-edit-alt'></i></a> | <a href="#"><i class='bx bx-trash'></i></a></td>
+		    <td><a href="#"><i className='bx bx-edit-alt'></i></a> | <a href="#"><i className='bx bx-trash'></i></a></td>
 		  </tr>
 		  <tr>
 		    <td>4.</td>
 		    <td>Helen Bennett</td>
 		    <td>First Year</td>
 		    <td>2019-20</td>
-		    <td><a href="#"><i class='bx bx-edit-alt'></i></a> | <a href="#"><i class='bx bx-trash'></i></a></td>
+		    <td><a href="#"><i className='bx bx-edit-alt'></i></a> | <a href="#"><i className='bx bx-trash'></i></a></td>
 		  </tr>
 		  <tr>
 		    <td>5.</td>
 		    <td>Akash Sitaram Gadge</td>
 		    <td>First Year</td>
 		    <td>2019-20</td>
-		    <td><a href="#"><i class='bx bx-edit-alt'></i></a> | <a href="#"><i class='bx bx-trash'></i></a></td>
+		    <td><a href="#"><i className='bx bx-edit-alt'></i></a> | <a href="#"><i className='bx bx-trash'></i></a></td>
 		  </tr>
 		  <tr>
 		    <td>6.</td>
 		    <td>Giovanni Rovelli</td>
 		    <td>First Year</td>
 		    <td>2019-20</td>
-		    <td><a href="#"><i class='bx bx-edit-alt'></i></a> | <a href="#"><i class='bx bx-trash'></i></a></td>
+		    <td><a href="#"><i className='bx bx-edit-alt'></i></a> | <a href="#"><i className='bx bx-trash'></i></a></td>
 		  </tr>
 		</table>
         <a href='/fideology-form'><div className='add'>Add</div></a>
