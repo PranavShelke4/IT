@@ -1,5 +1,5 @@
 import React from 'react'
-import FacultyCRs from '../../components/HOD/Dashboard/FacultyCR'
+import FacultyCRs from "../../components/HOD/Faculty/FacultyCR"
 import HODNavbar from '../../components/HOD/HODNavbar'
 
 function FacultyCR() {
