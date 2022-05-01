@@ -1,6 +1,6 @@
 import React from 'react';
 import ClassNavbar from '../../components/ClassTeacher/classTeacherNavbar';
-import Faculty from "../../components/ClassTeacher/Faculty/classFaculty";
+import Faculty from '../../components/HOD/Faculty/Facultys'
 
 function FacultyDetails(){
     return (
