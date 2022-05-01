@@ -62,7 +62,7 @@ function AssignCT(props) {
           </table>
 
           <h4 className="fidoh44">Third Year</h4>
-          <table>
+          <table className="ty">
             <tr>
               <th>Sr No</th>
               <th>Image</th>
