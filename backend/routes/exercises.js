@@ -42,7 +42,7 @@ router.route('exercise/:id').get((req,res) => {
 router.route('exercise/:id').delete((req,res) => {
     Exercise.findByIdAndDelete(req.params.id)
         .then(exercise => res.json('Exercise deleted'))
-        .catch(err => res.status(400).json('Error: '+err));
+        .catch(err => res.status(404).json('Error: '+err));
 });
 
 router.route('exercise/:id').post((req,res) => {

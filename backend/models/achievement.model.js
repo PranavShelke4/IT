@@ -16,3 +16,6 @@ const achievementSchema = new Schema({
 const Achievement = mongoose.model('Achievement', achievementSchema);
 
 module.exports = Achievement;
+
+
+// "start": "concurrently \"react-scripts start\" \"cd backend && npm start server\"",

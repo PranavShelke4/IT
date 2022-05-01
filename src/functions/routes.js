@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import App from "../App";
 
 
-
 // HOD Routes
 
 import HODDashbord from "../pages/HODPages/Dashboard"
@@ -11,7 +10,6 @@ import FacultyDetails from "../pages/HODPages/FacultyDetails";
 import FacultyCR from "../pages/HODPages/FacultyCR";
 import AssignClassTeacher from '../pages/HODPages/AssignClassTeacher';
 import FacyltyLeave from '../pages/HODPages/Leaves'
-
 
 
 // classTaecher Routes
