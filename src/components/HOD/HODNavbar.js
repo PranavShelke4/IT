@@ -93,7 +93,7 @@ function classTeacherNavbar() {
                 <Link to="/Faculty-CR">Faculty CR</Link>
               </li>
               <li>
-                <Link to="/Faculty-Leaves">Leaves</Link>
+                <Link to="/Facylty-Leave">Leaves</Link>
               </li>
             </ul>
           </li>
@@ -139,13 +139,13 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <Link to="/leave">
+            <Link to="#">
               <i class="bx bx-notepad"></i>
               <span class="link_name">Result Analysis</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="/leave">
+                <Link class="link_name" to="#">
                 Result Analysis
                 </Link>
               </li>
