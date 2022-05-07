@@ -21,10 +21,11 @@ router.route('/add-exercise').post((req,res) => {
     // const username = req.body.username;
 
     const date = Date.parse(req.body.date);
-    const activity = req.body.activity;
-    const subject = req.body.subject;
-    const group = Number(req.body.group);
+    const activity = req.body.activityName;
+    const subject = req.body.subName;
+    const group = Number(req.body.groupNo);
     
+    // console.log("Heloo")
 
     const newExercise = new Exercise({ date, activity, subject, group});
 
@@ -34,6 +35,7 @@ router.route('/add-exercise').post((req,res) => {
 });
 
 router.route('exercise/:id').get((req,res) => {
+    console.log(req.params.id)
     Exercise.findById(req.params.id)
         .then(exercise => res.json(exercise))
         .catch(err => res.status(400).json('Error: '+err));

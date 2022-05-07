@@ -1,6 +1,6 @@
 import React from 'react';
 import SubNavbar from "../../components/SubjectTeacher/subNavbar";
-import CreatePedology from '../../components/SubjectTeacher/Fideology/createPedology';
+import CreatePedology from '../../components/SubjectTeacher/Fideology/CreatePedology';
 
 function FideologyForm(){
     return (

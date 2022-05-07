@@ -1,137 +1,85 @@
-import React, { Component } from 'react';
-import axios from "axios";
-import DatePicker from "react-datepicker";
-//import "react-datepicker/dist/react-datepicker.css";
-import './createPedelogy.css'
+import React,{useState} from 'react'
+import { useForm } from "react-hook-form";
 
-class createPedelogy extends Component {
+import Exercise from "../../../api/Exercise";
 
-    constructor(props){
-        super();
-        this.state = {
-            // username: "",
-            date: new Date(),
-            activity: "",
-            subject: "",
-            group: 0
-           
-        }
-        // this.onChangeUsername = this.onChangeUsername.bind(this);
+function  CreatePedology() {
 
-        this.onChangeDate = this.onChangeDate.bind(this);
-        this.onChangeActivity = this.onChangeActivity.bind(this);
-        this.onChangeSubject = this.onChangeSubject.bind(this);
-        this.onChangeGroup = this.onChangeGroup.bind(this);
-        this.onSubmit = this.onSubmit.bind(this);
+  const [date,SetDate] = useState("");
+  const [activityName,SetActicityName] = useState("");
+  const [subName,SetSubName] = useState("");
+  const [groupNo, SetGroupNo] = useState("");
+
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
+  const onSubmit = async() =>{
+    const exercise = {
+      date:date,
+      activityName:activityName,
+      subName:subName,
+      groupNo:groupNo
     }
 
-    componentDidMount() {
-        axios.get('http://localhost:5000/exercises/')
-            .then(response => {
-                if(response.data.length > 0) {
-                    this.setState({ 
-                        users: response.data.map(user => user.username),
-                        username: response.data[0].username
-                    });
-                }
-            })
-    }
+    console.log(exercise);
+    await Exercise.post("/add-exercise",exercise);
+  }
 
-    // onChangeUsername(e) {
-    //     this.setState({ username: e.target.value})
-    // }
-    onChangeDate(date) {
-        this.setState({ date: date})
-    }
-    onChangeActivity(e) {
-        this.setState({ activity: e.target.value})
-    }
-    onChangeSubject(e) {
-        this.setState({ subject: e.target.value})
-    }
-    onChangeGroup(e) {
-        this.setState({ group: e.target.value})
-    }
-    onSubmit(e) {
-        e.preventDefault();
-        const exercise = {
-            // username: this.state.username,
-
-            date: this.state.date,
-            activity: this.state.activity,
-            subject: this.state.subject,
-            group: this.state.group
-        }
-
-        console.log(exercise);
-
-        axios.post('http://localhost:5000/exercises/add-exercise', exercise)
-            .then(res => console.log(res.data));
-
-        window.location = "/subject-teacher-dashboard";
-    }
-    Cancel(e){
-        window.location = "/subject-teacher-dashboard";
-    }
-    
-    render() { 
-        return ( 
-            <div className='main-sec'>
-            <div className="upd_section">
-            
-                <form onSubmit={this.onSubmit}>
-
-                        <label className='label l1'>Date : </label><br/>
-                       
-                            <DatePicker
-                                className='update'
-                                // showYearPicker
-                                // dateFormat={"yyyy"}
-                                selected={this.state.date}
-                                onChange={this.onChangeDate}
-                                
-                            />
-                            <br/>
-      
-                    
-                    
-                        <label className='label l2'>Activity Name : </label><br/>
-                        <input
-                            type="text" required
-                            className='update'
-                            value={this.state.activity}
-                            onChange={this.onChangeActivity}
-                            placeholder="Activity Name"
-                        /><br/>
-                
-                    
-                        <label className='label l3'>Subject: </label><br/>
-                        <input
-                            type="text"
-                            className='update'
-                            value={this.state.subject}
-                            onChange={this.onChangeSubject}
-                            placeholder="Subject"
-                        /><br/>
-                  
-                 
-                        <label className='label l4'>Group No : </label><br/>
-                        <input
-                            type="number"
-                            className='update'
-                            value={this.state.group}
-                            onChange={this.onChangeGroup}
-                            placeholder="Group No"
-                        /><br/>
-    
-                        <button type="submit" value="Submit" className="submit">Submit</button>        
-                        <button type="reset" value="Cancel" className="cancel" onClick={this.Cancel}>Cancel</button>
-                 
-                </form>
-            </div>
-            </div>
-         );
-    }
+  return (
+    <div className='main-sec'>
+    <div className="upd_section">
+      <form onSubmit ={handleSubmit(onSubmit)} >
+        <div>
+          <label>Date</label>
+          <input 
+          type = "date"
+          name="date"
+          value={date}
+          onChange={(e) => {
+            SetDate(e.target.value);
+          }}
+          />
+        </div>
+        <div>
+          <label>Activity Name</label>
+          <input 
+          type ="text"
+          name ="activityName"
+          value = {activityName}
+          onChange={(e)=>{
+            SetActicityName(e.target.value);
+          }}
+          />
+        </div>
+        <div>
+          <label>Sub Name</label>
+          <input 
+          type ="text"
+          name="subName"
+          value ={subName}
+          onChange={(e)=>{
+            SetSubName(e.target.value);
+          }}
+          />
+        </div>
+        <div>
+          <label>Group NO</label>
+          <input 
+          type = "text"
+          name="groupNo"
+          value ={groupNo}
+          onChange={(e)=>{
+            SetGroupNo(e.target.value);
+          }}
+          />
+        </div>
+        <input className ="btn btn-primary" type="submit" value="Submit"/>
+      </form>
+    </div>
+    </div>
+  )
 }
- 
-export default createPedelogy;
+
+export default CreatePedology      
