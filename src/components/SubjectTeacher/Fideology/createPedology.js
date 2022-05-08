@@ -1,7 +1,9 @@
 import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
+// import { useHistory } from "react-router-dom";
 
 import Exercise from "../../../api/Exercise";
+
 
 function  CreatePedology() {
 
@@ -9,6 +11,9 @@ function  CreatePedology() {
   const [activityName,SetActicityName] = useState("");
   const [subName,SetSubName] = useState("");
   const [groupNo, SetGroupNo] = useState("");
+
+
+  // const history = useHistory();
 
   const {
     register,
@@ -18,13 +23,17 @@ function  CreatePedology() {
   const onSubmit = async() =>{
     const exercise = {
       date:date,
-      activityName:activityName,
-      subName:subName,
-      groupNo:groupNo
+      activity:activityName,
+      subject:subName,
+      group:groupNo
     }
 
     console.log(exercise);
-    await Exercise.post("/add-exercise",exercise);
+   const res = await Exercise.post("/add-exercise",exercise);
+   console.log(res.data.msg)
+  //  if(res.data.msg =="success"){
+  //   //  history.push("/subject-teacher-dashboard");
+  //  }
   }
 
   return (

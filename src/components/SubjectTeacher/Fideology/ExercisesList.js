@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import './ExercisesList.css';
 
+import Exercises from '../../../api/Exercise';
+
 const Exercise = props => (
     <tr>
         {/* <td>{props.exercise.username}</td> */}
-        <td>{props.exercise.date.substring(0,10)}</td>
+        <td>{props.exercise.date}</td>
         <td>{props.exercise.activity}</td>
         <td>{props.exercise.subject}</td>
         <td>{props.exercise.group}</td>
@@ -29,7 +31,7 @@ class ExercisesList extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/exercises/')
+        Exercises.get('/get-exercises')
             .then(res => {
                 this.setState({ exercises: res.data })
             })
@@ -37,7 +39,7 @@ class ExercisesList extends Component {
     }
 
     deleteExercise(id) {
-        axios.delete('http://localhost:5000/exercises/' +id)
+        Exercises.delete('/delete-exercise/' +id)
             .then(res => console.log(res.data));
 
         this.setState({ exercises: this.state.exercises.filter(el => el._id !== id)})

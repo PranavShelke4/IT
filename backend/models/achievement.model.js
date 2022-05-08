@@ -9,13 +9,9 @@ const achievementSchema = new Schema({
     subject: {type: String, required: true},
     group: {type: Number, required: true}
     
-}, {
-    timestamps: true
 });
 
 const Achievement = mongoose.model('Achievement', achievementSchema);
 
 module.exports = Achievement;
 
-
-// "start": "concurrently \"react-scripts start\" \"cd backend && npm start server\"",
