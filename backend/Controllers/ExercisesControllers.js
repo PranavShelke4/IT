@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const Exercises = require("../models/exercise.model");
 
 exports.postExercise = (req, res) => {
@@ -63,3 +64,23 @@ exports.updateExercise = (req, res) => {
   }
   
 };
+=======
+const Exercises = require('../models/exercise.model');
+
+
+exports.postExercise = (req,res) =>{
+    console.log("Hello------------------->>>>>>")
+}
+
+exports.getExercises = (req,res) =>{
+
+}
+
+exports.deleteExercises = (req,res) =>{
+
+}
+
+exports.updateExercise = (req,res) =>{
+
+}
+>>>>>>> 373f06356ce89ddbba42106d657e74d8e2f953f5
