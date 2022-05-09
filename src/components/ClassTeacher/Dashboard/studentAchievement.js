@@ -15,7 +15,7 @@ const Achievement = props => (
         <td>{props.achievement.group}</td>
         
         <td>
-            <Link to={"/edit/"+props.achievement._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteAchievement(props.achievement._id) }} ><i className='bx bx-trash'></i></span>
+            <Link to={"/CT/edit/"+props.achievement._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteAchievement(props.achievement._id) }} ><i className='bx bx-trash'></i></span>
             {/* <button className="btn btn-secondary"><Link to={"/edit/"+props.exercise._id} style={{color:"white"}}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => {props.deleteExercise(props.exercise._id) }}>Delete</button> */}
         </td>
     </tr>
@@ -71,7 +71,7 @@ class studentAchievement extends Component {
                         {this.achievementsList()}
                     </tbody>
                 </table>
-                <Link to='/add-achievement'><div className='add'>Add</div></Link>
+                <Link to='class-teacher/add-achievement'><div className='add'>Add</div></Link>
             </div>
             </div>
          );

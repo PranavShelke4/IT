@@ -25,6 +25,7 @@ import FeedbackPage from "../pages/ClassTeacherPages/FeedbackPage";
 import AddFeedbackPage from "../pages/ClassTeacherPages/AddFeedbackPage";
 import ClassProfilePage from "../pages/ClassTeacherPages/ProfilePage";
 import AssignSTPage from "../pages/ClassTeacherPages/AssignSTPage";
+import EditAchievement from "../components/ClassTeacher/Dashboard/EditAchievement"
 
 
 // subject teacher Routes
@@ -79,6 +80,7 @@ const ConfigRoutes = () => {
         <Route path="/class-teacher/add-class-feedback-list" element={<AddFeedbackPage />}></Route>
         <Route path="/class-teacher/profile" element={<ClassProfilePage />}></Route>
         <Route path="/class-teacher/assign-subject-teacher" element={<AssignSTPage />}></Route>
+        <Route path="/CT/edit/:id" element={<EditAchievement/>}></Route>
 
 
         {/* HOD Routes */}
