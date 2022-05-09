@@ -33,13 +33,13 @@ function classTeacherNavbar() {
         </div>
         <ul class="nav-links">
           <li>
-            <Link to="/class-teacher-dashboard">
+            <Link to="/class-teacher/dashboard">
               <i class="bx bx-home-alt"></i>
               <span class="link_name">Dashboard</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="/class-teacher-dashboard">
+                <Link class="link_name" to="/class-teacher/dashboard">
                   Dashboard
                 </Link>
               </li>
@@ -73,13 +73,13 @@ function classTeacherNavbar() {
           </li> */}
 
           <li>
-            <Link to="/classfaculty">
+            <Link to="/class-teacher/classfaculty">
               <i class="bx bxs-user"></i>
               <span class="link_name">Faculty</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="/classfaculty">
+                <Link class="link_name" to="/class-teacher/classfaculty">
                 Faculty
                 </Link>
               </li>
@@ -87,13 +87,13 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <Link to="/assign-subject-teacher">
+            <Link to="/class-teacher/assign-subject-teacher">
               <i class="bx bx-file-find"></i>
               <span class="link_name">Assign Course</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="/assign-subject-teacher">
+                <Link class="link_name" to="/class-teacher/assign-subject-teacher">
                 Assign Course
                 </Link>
               </li>
@@ -102,14 +102,14 @@ function classTeacherNavbar() {
 
           <li>
             <div class="iocn-link">
-              <Link to="/student-table">
+              <Link to="/class-teacher/student-table">
               <i class="bx bxs-user"></i>
                 <span class="link_name">Students</span>
               </Link>
             </div>
             <ul class="sub-menu">
               <li>
-                <Link class="link_name" to="/student-table">
+                <Link class="link_name" to="/class-teacher/student-table">
                 Students
                 </Link>
               </li>
@@ -117,7 +117,7 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <Link to="/class-detentionlist">
+            <Link to="/class-teacher/class-detentionlist">
               <i class="bx bx-food-menu"></i>
               <span class="link_name">Detention List</span>
             </Link>
@@ -146,14 +146,14 @@ function classTeacherNavbar() {
 
           <li>
             <div class="iocn-link">
-              <Link to="/class-feedback">
+              <Link to="/class-teacher/class-feedback">
               <i class="bx bxs-comment-detail"></i>
                 <span class="link_name">Feedback</span>
               </Link>
             </div>
             <ul class="sub-menu">
               <li>
-                <Link class="link_name" to="/class-feedback">
+                <Link class="link_name" to="/class-teacher/class-feedback">
                 Feedback
                 </Link>
               </li>
@@ -161,13 +161,13 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <Link to="/class-teacher-profile">
+            <Link to="/class-teacher/profile">
               <i class="bx bxs-user"></i>
               <span class="link_name">My Profile</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="/class-teacher-profile">
+                <Link class="link_name" to="/class-teacher/profile">
                 My Profile
                 </Link>
               </li>

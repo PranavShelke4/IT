@@ -69,17 +69,17 @@ const ConfigRoutes = () => {
 
 
         {/* class teacher Routes */}
-        <Route path="/class-teacher-dashboard" element={<ClassTeacherDashboard />}></Route>
-        <Route path="/add-achievement" element={<AddAchievement />}></Route>
-        <Route path="/student-table" element={<Student />}></Route>
-        <Route path="/add-student-list" element={<AddList />}></Route>
-        <Route path="/classfaculty" element={<ClassFaculty />}></Route>
-        <Route path="/class-detentionlist" element={<DetentionPage />}></Route>
-        <Route path="/add-detention-list" element={<AddDetentionPage />}></Route>
-        <Route path="/class-feedback" element={<FeedbackPage />}></Route>
-        <Route path="/add-class-feedback-list" element={<AddFeedbackPage />}></Route>
-        <Route path="/class-teacher-profile" element={<ClassProfilePage />}></Route>
-        <Route path="/assign-subject-teacher" element={<AssignSTPage />}></Route>
+        <Route path="/class-teacher/dashboard" element={<ClassTeacherDashboard />}></Route>
+        <Route path="/class-teacher/add-achievement" element={<AddAchievement />}></Route>
+        <Route path="/class-teacher/student-table" element={<Student />}></Route>
+        <Route path="/class-teacher/add-student-list" element={<AddList />}></Route>
+        <Route path="/class-teacher/classfaculty" element={<ClassFaculty />}></Route>
+        <Route path="/class-teacher/class-detentionlist" element={<DetentionPage />}></Route>
+        <Route path="/class-teacher/add-detention-list" element={<AddDetentionPage />}></Route>
+        <Route path="/class-teacher/class-feedback" element={<FeedbackPage />}></Route>
+        <Route path="/class-teacher/add-class-feedback-list" element={<AddFeedbackPage />}></Route>
+        <Route path="/class-teacher/profile" element={<ClassProfilePage />}></Route>
+        <Route path="/class-teacher/assign-subject-teacher" element={<AssignSTPage />}></Route>
 
 
         {/* HOD Routes */}
