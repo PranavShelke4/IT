@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const bodyParser = require('body-parser')//rajesh add
+const bodyParser = require('body-parser')
 
 require('dotenv').config();
 
@@ -10,13 +10,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use(bodyParser.urlencoded({ extended: false }));//rajesh add
+app.use(bodyParser.urlencoded({ extended: false }));
 
 
 const uri = process.env.ATLAS_URI;
+
+
 const ExercisesRouter = require('./routes/ExercisesRoutes');
-
-
+const AchievementsRouter = require('./routes/AchievementsRoutes');
 
 
 mongoose.connect(uri, { useNewUrlParser: true });
@@ -28,7 +29,8 @@ connection.once('open', () => {
 
 
 
-app.use('/exercises', ExercisesRouter);//rajesh add 
+app.use('/exercises', ExercisesRouter);
+app.use('/achievements', AchievementsRouter);
 
 
 app.listen(5000, () => {

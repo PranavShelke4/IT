@@ -1,19 +1,33 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
-// import { useHistory } from "react-router-dom";
 
 import Achievement from "../../../api/Achievement";
 
+import { useParams } from "react-router-dom";
 
-function  CreateAchievement() {
+function  EditAchievement() {
 
   const [date,SetDate] = useState("");
   const [activityName,SetActicityName] = useState("");
   const [subName,SetSubName] = useState("");
   const [groupNo, SetGroupNo] = useState("");
+  
+  const params = useParams();
 
-//avadhut
-  // const history = useHistory();
+  useEffect(()=>{
+    const HandelGetReq= async ()=>{
+        console.log(params.id)
+        const res = await Achievement.get(`/get-achievement/${params.id}`);
+        console.log("res");
+        console.log(res.data)
+        SetDate( res.data.date);
+        SetActicityName(res.data.activity);
+        SetSubName(res.data.subject);
+        SetGroupNo(res.data.group);
+    }
+    HandelGetReq();
+  },[SetDate,SetActicityName,SetSubName,SetGroupNo,params.id]);
+
 
   const {
     register,
@@ -21,19 +35,25 @@ function  CreateAchievement() {
     handleSubmit,
   } = useForm();
   const onSubmit = async() =>{
-    const achievement = {
-      date:date,
-      activity:activityName,
-      subject:subName,
-      group:groupNo
+    // const formdata = new FormData();
+    // formdata.append("date",date);
+    // formdata.append("activity",activityName);
+    // formdata.append("subject",subName);
+    // formdata.append("group",groupNo);
+    
+    const formdata = {
+        "date":date,
+        "activity":activityName,
+        "subject":subName,
+        "group":groupNo
     }
 
-    console.log(achievement);
-   const res = await Achievement.post("/add-achievement",achievement);
+    console.log("req")
+    console.log(params.id)
+    console.log(formdata)
+   const res = await Achievement.patch(`/update-achievement/${params.id}`,formdata);
    console.log(res.data.msg)
-  //  if(res.data.msg =="success"){
-  //   //  history.push("/subject-teacher-dashboard");
-  //  }
+
   }
 
   return (
@@ -91,4 +111,4 @@ function  CreateAchievement() {
   )
 }
 
-export default CreateAchievement;    
+export default EditAchievement;    
