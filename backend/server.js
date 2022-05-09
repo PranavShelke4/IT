@@ -31,6 +31,6 @@ connection.once('open', () => {
 app.use('/exercises', ExercisesRouter);//rajesh add 
 
 
-app.listen(8080, () => {// i changed the port 
+app.listen(5000, () => {
     console.log(`Server is running on port`);
 });
