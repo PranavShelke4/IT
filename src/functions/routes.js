@@ -27,7 +27,6 @@ import ClassProfilePage from "../pages/ClassTeacherPages/ProfilePage";
 import AssignSTPage from "../pages/ClassTeacherPages/AssignSTPage";
 
 
-
 // subject teacher Routes
 
 import SignUp from "../components/SignUP/SignUp";
