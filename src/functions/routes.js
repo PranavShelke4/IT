@@ -83,11 +83,11 @@ const ConfigRoutes = () => {
 
 
         {/* HOD Routes */}
-        <Route path="/HOD-Dashbord" element={<HODDashbord />}></Route>
-        <Route path="/Faculty-Details" element={<FacultyDetails />}></Route>
-        <Route path="/Faculty-CR" element={<FacultyCR />}></Route>
-        <Route path="/assign-class-teacher" element={<AssignClassTeacher />}></Route>
-        <Route path="/Facylty-Leave" element={<FacyltyLeave />}></Route>
+        <Route path="/HOD/Dashbord" element={<HODDashbord />}></Route>
+        <Route path="/HOD/Faculty-Details" element={<FacultyDetails />}></Route>
+        <Route path="/HOD/Faculty-CR" element={<FacultyCR />}></Route>
+        <Route path="/HOD/assign-class-teacher" element={<AssignClassTeacher />}></Route>
+        <Route path="/HOD/Facylty-Leave" element={<FacyltyLeave />}></Route>
 
       </Routes>
     </>

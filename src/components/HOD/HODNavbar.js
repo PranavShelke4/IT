@@ -33,13 +33,13 @@ function classTeacherNavbar() {
         </div>
         <ul class="nav-links">
           <li>
-            <Link to="/HOD-Dashbord">
+            <Link to="/HOD/Dashbord">
               <i class="bx bx-home-alt"></i>
               <span class="link_name">Dashboard</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="/HOD-Dashbord">
+                <Link class="link_name" to="/HOD/Dashbord">
                   Dashboard
                 </Link>
               </li>
@@ -87,25 +87,25 @@ function classTeacherNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/Faculty-Details">Faculty Details </Link>
+                <Link to="/HOD/Faculty-Details">Faculty Details </Link>
               </li>
               <li>
-                <Link to="/Faculty-CR">Faculty CR</Link>
+                <Link to="/HOD/Faculty-CR">Faculty CR</Link>
               </li>
               <li>
-                <Link to="/Facylty-Leave">Leaves</Link>
+                <Link to="/HOD/Facylty-Leave">Leaves</Link>
               </li>
             </ul>
           </li>
 
           <li>
-            <Link to="/Assign-Class-Teacher" >
+            <Link to="/HOD/Assign-Class-Teacher" >
               <i class="bx bx-user-pin"></i>
               <span class="link_name">Assign Class Teacher</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="/Assign-Class-Teacher">
+                <Link class="link_name" to="/HOD/Assign-Class-Teacher">
                 Assign Class Teacher
                 </Link>
               </li>
@@ -127,13 +127,13 @@ function classTeacherNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/student-details">First Year</Link>
+                <Link to="/HOD/student-details">First Year</Link>
               </li>
               <li>
-                <Link to="/student-details">Second Year</Link>
+                <Link to="/HOD/student-details">Second Year</Link>
               </li>
               <li>
-                <Link to="/student-details">Third Year</Link>
+                <Link to="/HOD/student-details">Third Year</Link>
               </li>
             </ul>
           </li>
@@ -168,13 +168,13 @@ function classTeacherNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/student-details">First Year</Link>
+                <Link to="/HOD/student-details">First Year</Link>
               </li>
               <li>
-                <Link to="/student-details">Second Year</Link>
+                <Link to="/HOD/student-details">Second Year</Link>
               </li>
               <li>
-                <Link to="/student-details">Third Year</Link>
+                <Link to="/HOD/student-details">Third Year</Link>
               </li>
             </ul>
           </li>
@@ -194,13 +194,13 @@ function classTeacherNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/student-details">First Year</Link>
+                <Link to="/HOD/student-details">First Year</Link>
               </li>
               <li>
-                <Link to="/student-details">Second Year</Link>
+                <Link to="/HOD/student-details">Second Year</Link>
               </li>
               <li>
-                <Link to="/student-details">Third Year</Link>
+                <Link to="/HOD/student-details">Third Year</Link>
               </li>
             </ul>
           </li>
