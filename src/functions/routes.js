@@ -53,16 +53,16 @@ const ConfigRoutes = () => {
       <Routes>
         <Route exact path="/" element={<App />}></Route>
         <Route path="/sign-up" element={<SignUp />}></Route>
-        <Route path="/fideology-form" element={<Fideology />}></Route>
-        <Route path="/subject-teacher-dashboard" element={<Dashbord />}></Route>
-        <Route path="/student-details" element={<StudentDetail />}></Route>
-        <Route path="/course" element={<Course />}></Route>
-        <Route path="/question-paper" element={<QuestionPaper />}></Route>
-        <Route path="/answer-key" element={<AnswerKey />}></Route>
-        <Route path="/assignments" element={<AssignmentPage />}></Route>
-        <Route path="/study-material" element={<StudyPage />}></Route>
-        <Route path="/profile" element={<ProfilePage />}></Route>
-        <Route path="/leave" element={<LeavePage />}></Route>
+        <Route path="/subject-teacher/fideology-form" element={<Fideology />}></Route>
+        <Route path="/subject-teacher/dashboard" element={<Dashbord />}></Route>
+        <Route path="/subject-teacher/student-details" element={<StudentDetail />}></Route>
+        <Route path="/subject-teacher/course" element={<Course />}></Route>
+        <Route path="/subject-teacher/question-paper" element={<QuestionPaper />}></Route>
+        <Route path="/subject-teacher/answer-key" element={<AnswerKey />}></Route>
+        <Route path="/subject-teacher/assignments" element={<AssignmentPage />}></Route>
+        <Route path="/subject-teacher/study-material" element={<StudyPage />}></Route>
+        <Route path="/subject-teacher/profile" element={<ProfilePage />}></Route>
+        <Route path="/subject-teacher/leave" element={<LeavePage />}></Route>
         <Route path="/edit/:id" element={<EditExercise/>}></Route>
         <Route path="/allExercises" element={<ExercisesList />}></Route>
 
