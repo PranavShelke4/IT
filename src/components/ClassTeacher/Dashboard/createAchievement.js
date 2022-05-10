@@ -7,10 +7,11 @@ import Achievement from "../../../api/Achievement";
 
 function  CreateAchievement() {
 
+  const [studentName,SetStudentName] = useState("");
+  const [deptName,SetDeptName] = useState("");
+  const [instName,SetInstName] = useState("");
+  const [eventName, SetEventName] = useState("");
   const [date,SetDate] = useState("");
-  const [activityName,SetActicityName] = useState("");
-  const [subName,SetSubName] = useState("");
-  const [groupNo, SetGroupNo] = useState("");
 
 //avadhut
   // const history = useHistory();
@@ -22,10 +23,11 @@ function  CreateAchievement() {
   } = useForm();
   const onSubmit = async() =>{
     const achievement = {
-      date:date,
-      activity:activityName,
-      subject:subName,
-      group:groupNo
+      sname:studentName,
+      dept:deptName,
+      institute:instName,
+      ename:eventName,
+      date:date
     }
 
     console.log(achievement);
@@ -40,6 +42,51 @@ function  CreateAchievement() {
     <div className='main-sec'>
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
+      <div>
+          <label>Student Name</label>
+          <input 
+          type ="text"
+          name ="studentName"
+          value = {studentName}
+          onChange={(e)=>{
+            SetStudentName(e.target.value);
+          }}
+          />
+        </div>
+        
+        <div>
+          <label>Department</label>
+          <input 
+          type ="text"
+          name ="deptName"
+          value = {deptName}
+          onChange={(e)=>{
+            SetDeptName(e.target.value);
+          }}
+          />
+        </div>
+        <div>
+          <label>Institute</label>
+          <input 
+          type ="text"
+          name="instName"
+          value ={instName}
+          onChange={(e)=>{
+            SetInstName(e.target.value);
+          }}
+          />
+        </div>
+        <div>
+          <label>Event Name</label>
+          <input 
+          type = "text"
+          name="eventName"
+          value ={eventName}
+          onChange={(e)=>{
+            SetEventName(e.target.value);
+          }}
+          />
+        </div>
         <div>
           <label>Date</label>
           <input 
@@ -48,39 +95,6 @@ function  CreateAchievement() {
           value={date}
           onChange={(e) => {
             SetDate(e.target.value);
-          }}
-          />
-        </div>
-        <div>
-          <label>Activity Name</label>
-          <input 
-          type ="text"
-          name ="activityName"
-          value = {activityName}
-          onChange={(e)=>{
-            SetActicityName(e.target.value);
-          }}
-          />
-        </div>
-        <div>
-          <label>Sub Name</label>
-          <input 
-          type ="text"
-          name="subName"
-          value ={subName}
-          onChange={(e)=>{
-            SetSubName(e.target.value);
-          }}
-          />
-        </div>
-        <div>
-          <label>Group NO</label>
-          <input 
-          type = "text"
-          name="groupNo"
-          value ={groupNo}
-          onChange={(e)=>{
-            SetGroupNo(e.target.value);
           }}
           />
         </div>

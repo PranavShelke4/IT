@@ -7,10 +7,11 @@ import { useParams } from "react-router-dom";
 
 function  EditAchievement() {
 
+  const [studentName,SetStudentName] = useState("");
+  const [deptName,SetDeptName] = useState("");
+  const [instName,SetInstName] = useState("");
+  const [eventName, SetEventName] = useState("");
   const [date,SetDate] = useState("");
-  const [activityName,SetActicityName] = useState("");
-  const [subName,SetSubName] = useState("");
-  const [groupNo, SetGroupNo] = useState("");
   
   const params = useParams();
 
@@ -20,13 +21,14 @@ function  EditAchievement() {
         const res = await Achievement.get(`/get-achievement/${params.id}`);
         console.log("res");
         console.log(res.data)
+        SetStudentName(res.data.sname);
+        SetDeptName(res.data.dept);
+        SetInstName(res.data.institute);
+        SetEventName(res.data.ename);
         SetDate( res.data.date);
-        SetActicityName(res.data.activity);
-        SetSubName(res.data.subject);
-        SetGroupNo(res.data.group);
     }
     HandelGetReq();
-  },[SetDate,SetActicityName,SetSubName,SetGroupNo,params.id]);
+  },[SetStudentName,SetDeptName,SetInstName,SetEventName,SetDate,params.id]);
 
 
   const {
@@ -42,10 +44,11 @@ function  EditAchievement() {
     // formdata.append("group",groupNo);
     
     const formdata = {
-        "date":date,
-        "activity":activityName,
-        "subject":subName,
-        "group":groupNo
+        "sname":studentName,
+        "dept":deptName,
+        "institute":instName,
+        "ename":eventName,
+        "date":date
     }
 
     console.log("req")
@@ -60,6 +63,52 @@ function  EditAchievement() {
     <div className='main-sec'>
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
+        
+      <div>
+          <label>Student Name</label>
+          <input 
+          type ="text"
+          name ="studentName"
+          value = {studentName}
+          onChange={(e)=>{
+            SetStudentName(e.target.value);
+          }}
+          />
+        </div>
+        
+        <div>
+          <label>Department</label>
+          <input 
+          type ="text"
+          name ="deptName"
+          value = {deptName}
+          onChange={(e)=>{
+            SetDeptName(e.target.value);
+          }}
+          />
+        </div>
+        <div>
+          <label>Institute</label>
+          <input 
+          type ="text"
+          name="instName"
+          value ={instName}
+          onChange={(e)=>{
+            SetInstName(e.target.value);
+          }}
+          />
+        </div>
+        <div>
+          <label>Event Name</label>
+          <input 
+          type = "text"
+          name="eventName"
+          value ={eventName}
+          onChange={(e)=>{
+            SetEventName(e.target.value);
+          }}
+          />
+        </div>
         <div>
           <label>Date</label>
           <input 
@@ -68,39 +117,6 @@ function  EditAchievement() {
           value={date}
           onChange={(e) => {
             SetDate(e.target.value);
-          }}
-          />
-        </div>
-        <div>
-          <label>Activity Name</label>
-          <input 
-          type ="text"
-          name ="activityName"
-          value = {activityName}
-          onChange={(e)=>{
-            SetActicityName(e.target.value);
-          }}
-          />
-        </div>
-        <div>
-          <label>Sub Name</label>
-          <input 
-          type ="text"
-          name="subName"
-          value ={subName}
-          onChange={(e)=>{
-            SetSubName(e.target.value);
-          }}
-          />
-        </div>
-        <div>
-          <label>Group NO</label>
-          <input 
-          type = "text"
-          name="groupNo"
-          value ={groupNo}
-          onChange={(e)=>{
-            SetGroupNo(e.target.value);
           }}
           />
         </div>

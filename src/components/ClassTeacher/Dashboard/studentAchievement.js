@@ -9,10 +9,11 @@ import Achievements from '../../../api/Achievement';
 const Achievement = props => (
     <tr>
         {/* <td>{props.exercise.username}</td> */}
+        <td>{props.achievement.sname}</td>
+        <td>{props.achievement.dept}</td>
+        <td>{props.achievement.institute}</td>
+        <td>{props.achievement.ename}</td>
         <td>{props.achievement.date}</td>
-        <td>{props.achievement.activity}</td>
-        <td>{props.achievement.subject}</td>
-        <td>{props.achievement.group}</td>
         
         <td>
             <Link to={"/CT/edit/"+props.achievement._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteAchievement(props.achievement._id) }} ><i className='bx bx-trash'></i></span>
@@ -60,11 +61,12 @@ class studentAchievement extends Component {
                 <table>
                     <thead className="thead-light">
                         <tr>
+		                    <th>Student Name</th>
+		                    <th>Department</th>
+		                    <th>Institute</th>
+                            <th>Event Name</th>
 		                    <th>Date</th>
-		                    <th>Activity Name</th>
-		                    <th>Subject</th>
-                            <th>Group No</th>
-		                    <th>Actions</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
