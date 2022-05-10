@@ -9,9 +9,8 @@ const Studymaterial = props => (
     <tr>
         {/* <td>{props.exercise.username}</td> */}
         <td>{props.studymaterial.date}</td>
-        <td>{props.studymaterial.activity}</td>
-        <td>{props.studymaterial.subject}</td>
-        <td>{props.studymaterial.group}</td>
+        <td>{props.studymaterial.description}</td>
+        <td>{props.studymaterial.link}</td>
         
         <td>
             <Link to={"/studymaterial/edit/"+props.studymaterial._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteStudymaterial(props.studymaterial._id) }} ><i className='bx bx-trash'></i></span>
@@ -60,9 +59,8 @@ class StudyMaterial extends Component {
                     <thead className="thead-light">
                         <tr>
 		                    <th>Date</th>
-		                    <th>Activity Name</th>
-		                    <th>Subject</th>
-                            <th>Group No</th>
+		                    <th>Decsription</th>
+		                    <th>Link</th>
 		                    <th>Actions</th>
                         </tr>
                     </thead>

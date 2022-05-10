@@ -4,11 +4,10 @@ exports.postStudymaterial = (req, res) => {
   console.log("Post Req ------------------->>>>>>");
   console.log(req.body);
   const date = req.body.date;
-  const activity = req.body.activity;
-  const subject = req.body.subject;
-  const group = Number(req.body.group);
+  const description = req.body.description;
+  const link = req.body.link;
 
-  const newStudymaterial = new Studymaterials({ date, activity, subject, group });
+  const newStudymaterial = new Studymaterials({ date, description, link });
 
   newStudymaterial
     .save()
@@ -45,9 +44,9 @@ exports.updateStudymaterial = (req, res) => {
         {
             _id: req.params.id ,
             date: req.body.date,
-            activity: req.body.activity,
-            subject: req.body.subject,
-            group: req.body.group,
+            description: req.body.description,
+            link: req.body.link
+            
           },(error,data)=>{
               if(error){
                   console.log(error);

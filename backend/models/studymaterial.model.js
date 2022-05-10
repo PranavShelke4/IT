@@ -5,9 +5,8 @@ const Schema = mongoose.Schema;
 const studymaterialSchema = new Schema({
     // username: {type: String, required: true},
     date: {type: String,required: true},
-    activity: {type: String, required: true},
-    subject: {type: String, required: true},
-    group: {type: Number, required: true}
+    description: {type: String, required: true},
+    link: {type: String, required: true},
     
 });
 
