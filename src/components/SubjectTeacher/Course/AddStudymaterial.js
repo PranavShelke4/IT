@@ -8,9 +8,9 @@ import Studymaterial from "../../../api/Studymaterial";
 function  AddStudymaterial() {
 
   const [date,SetDate] = useState("");
-  const [activityName,SetActicityName] = useState("");
-  const [subName,SetSubName] = useState("");
-  const [groupNo, SetGroupNo] = useState("");
+  const [descriptionName,SetDescriptionName] = useState("");
+  const [linkName,SetLinkName] = useState("");
+
 
 
   // const history = useHistory();
@@ -24,9 +24,8 @@ function  AddStudymaterial() {
   const onSubmit = async() =>{
     const studymaterial = {
       date:date,
-      activity:activityName,
-      subject:subName,
-      group:groupNo
+      description:descriptionName,
+      link:linkName
     }
 
     console.log(studymaterial);
@@ -53,38 +52,28 @@ function  AddStudymaterial() {
           />
         </div>
         <div>
-          <label>Activity Name</label>
+          <label>Decsription</label>
           <input 
           type ="text"
           name ="activityName"
-          value = {activityName}
+          value = {descriptionName}
           onChange={(e)=>{
-            SetActicityName(e.target.value);
+            SetDescriptionName(e.target.value);
           }}
           />
         </div>
         <div>
-          <label>Sub Name</label>
+          <label>Link</label>
           <input 
           type ="text"
           name="subName"
-          value ={subName}
+          value ={linkName}
           onChange={(e)=>{
-            SetSubName(e.target.value);
+            SetLinkName(e.target.value);
           }}
           />
         </div>
-        <div>
-          <label>Group NO</label>
-          <input 
-          type = "text"
-          name="groupNo"
-          value ={groupNo}
-          onChange={(e)=>{
-            SetGroupNo(e.target.value);
-          }}
-          />
-        </div>
+        
         <input className ="btn btn-primary" type="submit" value="Submit"/>
       </form>
     </div>

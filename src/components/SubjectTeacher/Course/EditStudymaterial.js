@@ -8,9 +8,8 @@ import { useParams } from "react-router-dom";
 function  EditStudymaterial() {
 
   const [date,SetDate] = useState("");
-  const [activityName,SetActicityName] = useState("");
-  const [subName,SetSubName] = useState("");
-  const [groupNo, SetGroupNo] = useState("");
+  const [descriptionName,SetDescriptionName] = useState("");
+  const [linkName,SetLinkName] = useState("");
   
   const params = useParams();
 
@@ -21,12 +20,11 @@ function  EditStudymaterial() {
         console.log("res");
         console.log(res.data)
         SetDate( res.data.date);
-        SetActicityName(res.data.activity);
-        SetSubName(res.data.subject);
-        SetGroupNo(res.data.group);
+        SetDescriptionName(res.data.description);
+        SetLinkName(res.data.link);
     }
     HandelGetReq();
-  },[SetDate,SetActicityName,SetSubName,SetGroupNo,params.id]);
+  },[SetDate,SetDescriptionName,SetLinkName,params.id]);
 
 
   const {
@@ -43,9 +41,8 @@ function  EditStudymaterial() {
     
     const formdata = {
         "date":date,
-        "activity":activityName,
-        "subject":subName,
-        "group":groupNo
+        "description":descriptionName,
+        "link":linkName
     }
 
     console.log("req")
@@ -72,38 +69,28 @@ function  EditStudymaterial() {
           />
         </div>
         <div>
-          <label>Activity Name</label>
+          <label>Decsription</label>
           <input 
           type ="text"
           name ="activityName"
-          value = {activityName}
+          value = {descriptionName}
           onChange={(e)=>{
-            SetActicityName(e.target.value);
+            SetDescriptionName(e.target.value);
           }}
           />
         </div>
         <div>
-          <label>Sub Name</label>
+          <label>Link</label>
           <input 
           type ="text"
           name="subName"
-          value ={subName}
+          value ={linkName}
           onChange={(e)=>{
-            SetSubName(e.target.value);
+            SetLinkName(e.target.value);
           }}
           />
         </div>
-        <div>
-          <label>Group NO</label>
-          <input 
-          type = "text"
-          name="groupNo"
-          value ={groupNo}
-          onChange={(e)=>{
-            SetGroupNo(e.target.value);
-          }}
-          />
-        </div>
+        
         <input className ="btn btn-primary" type="submit" value="Submit"/>
       </form>
     </div>
