@@ -3,13 +3,14 @@ const Achievements = require("../models/achievement.model");
 exports.postAchievement = (req, res) => {
   console.log("Post Req ------------------->>>>>>");
   console.log(req.body);
+  const sname = req.body.sname;
+  const dept = req.body.dept;
+  const institute = req.body.institute;
+  const ename = req.body.ename;
   const date = req.body.date;
-  const activity = req.body.activity;
-  const subject = req.body.subject;
-  const group = Number(req.body.group);
 
   
-  const newAchievement = new Achievements({ date, activity, subject, group });
+  const newAchievement = new Achievements({ sname, dept, institute, ename, date });
 
   newAchievement
     .save()
@@ -45,10 +46,11 @@ exports.updateAchievement = (req, res) => {
         { _id: req.params.id },
         {
             _id: req.params.id ,
-            date: req.body.date,
-            activity: req.body.activity,
-            subject: req.body.subject,
-            group: req.body.group,
+            sname: req.body.sname,
+            dept: req.body.dept,
+            institute: req.body.institute,
+            ename: req.body.ename,
+            date: req.body.date
           },(error,data)=>{
               if(error){
                   console.log(error);
