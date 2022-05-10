@@ -56,7 +56,7 @@ class studentAchievement extends Component {
         return ( 
             <div className='FideologyActivities'>
             <div className="fideo">
-                <h3 className='fidoh3'>Pedelogy Activities</h3>
+                <h3 className='fidoh3'>Student Achievements</h3>
                 <table>
                     <thead className="thead-light">
                         <tr>
@@ -71,7 +71,7 @@ class studentAchievement extends Component {
                         {this.achievementsList()}
                     </tbody>
                 </table>
-                <Link to='class-teacher/add-achievement'><div className='add'>Add</div></Link>
+                <Link to='/class-teacher/add-achievement'><div className='add'>Add</div></Link>
             </div>
             </div>
          );
