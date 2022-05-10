@@ -1,41 +1,81 @@
-import React from 'react';
-import './studyMaterial.css';
-import {Link} from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+import axios from "axios";
+//import './ExercisesList.css';
 
-function studyMaterial(){
+import Studymaterials from '../../../api/Studymaterial';
 
-    return (
-        <section className="fy_section">
-        <Link to="/add-material"><button className='addStudent_btn'>Upload</button></Link>
-        <table className="ctTable">
-        <tr>
-          <th>Sr no.</th>
-          <th>Year</th>
-          <th>Description</th>
-          <th>Link</th>
-        </tr>
-        <tr>
-          <td>1.</td>
-          <td>2021</td>
-          <td>Array Videos</td>
-          <td><a href='/student-detail'>www.google.com</a></td>
-        </tr>
-        <tr>
-          <td>2.</td>
-          <td>2020</td>
-          <td>Function videos</td>
-          <td><a href='/student-detail'>www.google.com</a></td>
-        </tr>
-        <tr>
-          <td>3.</td>
-          <td>2019</td>
-          <td>Data Structure</td>
-          <td><a href='/student-detail'>www.google.com</a></td>
-        </tr>
-      </table>
-    </section>
-  
-    );
+const Studymaterial = props => (
+    <tr>
+        {/* <td>{props.exercise.username}</td> */}
+        <td>{props.studymaterial.date}</td>
+        <td>{props.studymaterial.activity}</td>
+        <td>{props.studymaterial.subject}</td>
+        <td>{props.studymaterial.group}</td>
+        
+        <td>
+            <Link to={"/studymaterial/edit/"+props.studymaterial._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteStudymaterial(props.studymaterial._id) }} ><i className='bx bx-trash'></i></span>
+            {/* <button className="btn btn-secondary"><Link to={"/edit/"+props.exercise._id} style={{color:"white"}}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => {props.deleteExercise(props.exercise._id) }}>Delete</button> */}
+        </td>
+    </tr>
+)
+
+class StudyMaterial extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            studymaterials: []
+        }
+
+        this.deleteStudymaterial = this.deleteStudymaterial.bind(this);
+    }
+
+    componentDidMount() {
+        Studymaterials.get('/get-studymaterials')
+            .then(res => {
+                this.setState({ studymaterials: res.data })
+            })
+            .catch(error => console.log(error));
+    }
+
+    deleteStudymaterial(id) {
+        Studymaterials.delete('/delete-studymaterial/' +id)
+            .then(res => console.log(res.data));
+
+        this.setState({ studymaterials: this.state.studymaterials.filter(el => el._id !== id)})
+    }
+
+    studymaterialsList() {
+        return this.state.studymaterials.map(currentstudymaterial => {
+            return <Studymaterial studymaterial={currentstudymaterial} deleteStudymaterial={this.deleteStudymaterial} key={currentstudymaterial._id} />
+        })
+    }
+
+    render() { 
+        return ( 
+            <div className='FideologyActivities'>
+            <div className="fideo">
+                <h3 className='fidoh3'>Pedelogy Activities</h3>
+                <table>
+                    <thead className="thead-light">
+                        <tr>
+		                    <th>Date</th>
+		                    <th>Activity Name</th>
+		                    <th>Subject</th>
+                            <th>Group No</th>
+		                    <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.studymaterialsList()}
+                    </tbody>
+                </table>
+                <Link to={'/subject-teacher/add-studymaterial'}><div className='add'>Add</div></Link>
+            </div>
+            </div>
+         );
+    }
 }
+ 
+export default StudyMaterial;
 
-export default studyMaterial;
