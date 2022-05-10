@@ -23,23 +23,23 @@ function eventHandle() {
 function classTeacherNavbar() {
   return (
     <div>
-      <div class="sidebar close">
-        <div class="logo-details">
+      <div className="sidebar close">
+        <div className="logo-details">
           <img alt=""
-            class="gpa_logo" 
+            className="gpa_logo" 
             src="https://www.gpawasari.ac.in/Images/logo.PNG"
           />
-          <span class="logo_name">GPA</span>
+          <span className="logo_name">GPA</span>
         </div>
-        <ul class="nav-links">
+        <ul className="nav-links">
           <li>
             <Link to="/class-teacher/dashboard">
-              <i class="bx bx-home-alt"></i>
-              <span class="link_name">Dashboard</span>
+              <i className="bx bx-home-alt"></i>
+              <span className="link_name">Dashboard</span>
             </Link>
-            <ul class="sub-menu blank">
+            <ul className="sub-menu blank">
               <li>
-                <Link class="link_name" to="/class-teacher/dashboard">
+                <Link className="link_name" to="/class-teacher/dashboard">
                   Dashboard
                 </Link>
               </li>
@@ -74,12 +74,12 @@ function classTeacherNavbar() {
 
           <li>
             <Link to="/class-teacher/classfaculty">
-              <i class="bx bxs-user"></i>
-              <span class="link_name">Faculty</span>
+              <i className="bx bxs-user"></i>
+              <span className="link_name">Faculty</span>
             </Link>
-            <ul class="sub-menu blank">
+            <ul className="sub-menu blank">
               <li>
-                <Link class="link_name" to="/class-teacher/classfaculty">
+                <Link className="link_name" to="/class-teacher/classfaculty">
                 Faculty
                 </Link>
               </li>
@@ -88,12 +88,12 @@ function classTeacherNavbar() {
 
           <li>
             <Link to="/class-teacher/assign-subject-teacher">
-              <i class="bx bx-file-find"></i>
-              <span class="link_name">Assign Course</span>
+              <i className="bx bx-file-find"></i>
+              <span className="link_name">Assign Course</span>
             </Link>
-            <ul class="sub-menu blank">
+            <ul className="sub-menu blank">
               <li>
-                <Link class="link_name" to="/class-teacher/assign-subject-teacher">
+                <Link className="link_name" to="/class-teacher/assign-subject-teacher">
                 Assign Course
                 </Link>
               </li>
@@ -101,15 +101,15 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <div class="iocn-link">
+            <div className="iocn-link">
               <Link to="/class-teacher/student-table">
-              <i class="bx bxs-user"></i>
-                <span class="link_name">Students</span>
+              <i className="bx bxs-user"></i>
+                <span className="link_name">Students</span>
               </Link>
             </div>
-            <ul class="sub-menu">
+            <ul className="sub-menu">
               <li>
-                <Link class="link_name" to="/class-teacher/student-table">
+                <Link className="link_name" to="/class-teacher/student-table">
                 Students
                 </Link>
               </li>
@@ -118,12 +118,12 @@ function classTeacherNavbar() {
 
           <li>
             <Link to="/class-teacher/class-detentionlist">
-              <i class="bx bx-food-menu"></i>
-              <span class="link_name">Detention List</span>
+              <i className="bx bx-food-menu"></i>
+              <span className="link_name">Detention List</span>
             </Link>
-            <ul class="sub-menu blank">
+            <ul className="sub-menu blank">
               <li>
-                <Link class="link_name" to="class-detentionlist">
+                <Link className="link_name" to="class-detentionlist">
                  Detention List
                 </Link>
               </li>
@@ -132,12 +132,12 @@ function classTeacherNavbar() {
 
           <li>
             <Link to="#">
-              <i class="bx bx-spreadsheet"></i>
-              <span class="link_name">Result Analysis</span>
+              <i className="bx bx-spreadsheet"></i>
+              <span className="link_name">Result Analysis</span>
             </Link>
-            <ul class="sub-menu blank">
+            <ul className="sub-menu blank">
               <li>
-                <Link class="link_name" to="#">
+                <Link className="link_name" to="#">
                 Result Analysis
                 </Link>
               </li>
@@ -145,15 +145,15 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <div class="iocn-link">
+            <div className="iocn-link">
               <Link to="/class-teacher/class-feedback">
-              <i class="bx bxs-comment-detail"></i>
-                <span class="link_name">Feedback</span>
+              <i className="bx bxs-comment-detail"></i>
+                <span className="link_name">Feedback</span>
               </Link>
             </div>
-            <ul class="sub-menu">
+            <ul className="sub-menu">
               <li>
-                <Link class="link_name" to="/class-teacher/class-feedback">
+                <Link className="link_name" to="/class-teacher/class-feedback">
                 Feedback
                 </Link>
               </li>
@@ -162,12 +162,12 @@ function classTeacherNavbar() {
 
           <li>
             <Link to="/class-teacher/profile">
-              <i class="bx bxs-user"></i>
-              <span class="link_name">My Profile</span>
+              <i className="bx bxs-user"></i>
+              <span className="link_name">My Profile</span>
             </Link>
-            <ul class="sub-menu blank">
+            <ul className="sub-menu blank">
               <li>
-                <Link class="link_name" to="/class-teacher/profile">
+                <Link className="link_name" to="/class-teacher/profile">
                 My Profile
                 </Link>
               </li>
@@ -176,34 +176,34 @@ function classTeacherNavbar() {
 
           <li>
             <Link to="/">
-              <i class="bx bx-log-out"></i>
-              <span class="link_name">Logout</span>
+              <i className="bx bx-log-out"></i>
+              <span className="link_name">Logout</span>
             </Link>
-            <ul class="sub-menu blank">
+            <ul className="sub-menu blank">
               <li>
-                <Link class="link_name" to="/">
+                <Link className="link_name" to="/">
                   Logout
                 </Link>
               </li>
             </ul>
           </li>
           <li>
-            <div class="profile-details">
-              <div class="profile-content">
+            <div className="profile-details">
+              <div className="profile-content">
                 <img alt="" src={GhodeMadamimg} />
               </div>
-              <div class="name-job">
-                <div class="profile_name">Ms. P. S. Ghode</div>
-                <div class="job">Class Teacher</div>
+              <div className="name-job">
+                <div className="profile_name">Ms. P. S. Ghode</div>
+                <div className="job">Class Teacher</div>
               </div>
             </div>
           </li>
         </ul>
       </div>
-      <div class="home-section">
-        <div class="home-content">
-          <i class="bx bx-menu" onClick={eventHandle}></i>
-          <span class="text">Class Teacher Dashboard</span>
+      <div className="home-section">
+        <div className="home-content">
+          <i className="bx bx-menu" onClick={eventHandle}></i>
+          <span className="text">Class Teacher Dashboard</span>
           <br />
         </div>
       </div>
