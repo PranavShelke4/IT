@@ -43,7 +43,9 @@ import ProfilePage from "../pages/SubjectTeacherPages/ProfilePage";
 import LeavePage from '../pages/SubjectTeacherPages/LeavePage';
 import EditExercise from "../components/SubjectTeacher/Fideology/EditExercise";
 import ExercisesList from "../components/SubjectTeacher/Fideology/ExercisesList";
-
+import Studymaterial from "../components/SubjectTeacher/Course/StudyMaterial";
+import AddStudymaterial from "../components/SubjectTeacher/Course/AddStudymaterial";
+import EditStudymaterial from "../components/SubjectTeacher/Course/EditStudymaterial";
 
 
 
@@ -61,11 +63,14 @@ const ConfigRoutes = () => {
         <Route path="/subject-teacher/answer-key" element={<AnswerKey />}></Route>
         <Route path="/subject-teacher/assignments" element={<AssignmentPage />}></Route>
         <Route path="/subject-teacher/study-material" element={<StudyPage />}></Route>
+        {/* <Route path="/subject-teacher/add-material" element={<LeavePage />}></Route> */}
         <Route path="/subject-teacher/profile" element={<ProfilePage />}></Route>
         <Route path="/subject-teacher/leave" element={<LeavePage />}></Route>
         <Route path="/edit/:id" element={<EditExercise/>}></Route>
         <Route path="/allExercises" element={<ExercisesList />}></Route>
-
+        <Route path="/subject-teacher/studymaterial" element={<Studymaterial/>}></Route>
+        <Route path="/subject-teacher/add-studymaterial" element={<AddStudymaterial />}></Route>
+        <Route path="/studymaterial/edit/:id" element={<EditStudymaterial />}></Route>
 
 
         {/* class teacher Routes */}
