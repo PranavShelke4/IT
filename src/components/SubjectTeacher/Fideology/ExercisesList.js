@@ -70,7 +70,7 @@ class ExercisesList extends Component {
                         {this.exercisesList()}
                     </tbody>
                 </table>
-                <Link to={'/fideology-form'}><div className='add'>Add</div></Link>
+                <Link to={'/subject-teacher/fideology-form'}><div className='add'>Add</div></Link>
             </div>
             </div>
          );
