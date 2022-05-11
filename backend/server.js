@@ -19,6 +19,7 @@ const uri = process.env.ATLAS_URI;
 const ExercisesRouter = require('./routes/ExercisesRoutes');
 const AchievementsRouter = require('./routes/AchievementsRoutes');
 const StudymaterialsRouter = require('./routes/StudymaterialsRoutes');
+const StudentlistsRouter = require('./routes/StudentlistsRoutes');
 
 mongoose.connect(uri, { useNewUrlParser: true });
 
@@ -32,7 +33,7 @@ connection.once('open', () => {
 app.use('/exercises', ExercisesRouter);
 app.use('/achievements', AchievementsRouter);
 app.use('/studymaterials', StudymaterialsRouter);
-
+app.use('/studentlists', StudentlistsRouter);
 
 app.listen(5000, () => {
     console.log(`Server is running on port`);
