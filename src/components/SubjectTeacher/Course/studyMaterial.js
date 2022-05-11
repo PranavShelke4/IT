@@ -10,7 +10,7 @@ const Studymaterial = props => (
         {/* <td>{props.exercise.username}</td> */}
         <td>{props.studymaterial.date}</td>
         <td>{props.studymaterial.description}</td>
-        <td>{props.studymaterial.link}</td>
+        <td><a href={props.studymaterial.link}>{props.studymaterial.link}</a></td>
         
         <td>
             <Link to={"/studymaterial/edit/"+props.studymaterial._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteStudymaterial(props.studymaterial._id) }} ><i className='bx bx-trash'></i></span>
