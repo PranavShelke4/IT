@@ -25,7 +25,9 @@ import FeedbackPage from "../pages/ClassTeacherPages/FeedbackPage";
 import AddFeedbackPage from "../pages/ClassTeacherPages/AddFeedbackPage";
 import ClassProfilePage from "../pages/ClassTeacherPages/ProfilePage";
 import AssignSTPage from "../pages/ClassTeacherPages/AssignSTPage";
-import EditAchievement from "../components/ClassTeacher/Dashboard/EditAchievement"
+import EditAchievement from "../components/ClassTeacher/Dashboard/EditAchievement";
+import AddStudentList from "../components/ClassTeacher/Students/addStudentlist";
+import EditStudentlist from "../components/ClassTeacher/Students/EditStudentlist";
 
 
 // subject teacher Routes
@@ -71,7 +73,7 @@ const ConfigRoutes = () => {
         <Route path="/subject-teacher/studymaterial" element={<Studymaterial/>}></Route>
         <Route path="/subject-teacher/add-studymaterial" element={<AddStudymaterial />}></Route>
         <Route path="/studymaterial/edit/:id" element={<EditStudymaterial />}></Route>
-
+      
 
         {/* class teacher Routes */}
         <Route path="/class-teacher/dashboard" element={<ClassTeacherDashboard />}></Route>
@@ -86,6 +88,9 @@ const ConfigRoutes = () => {
         <Route path="/class-teacher/profile" element={<ClassProfilePage />}></Route>
         <Route path="/class-teacher/assign-subject-teacher" element={<AssignSTPage />}></Route>
         <Route path="/CT/edit/:id" element={<EditAchievement/>}></Route>
+        <Route path="/class-teacher/add-studentlist" element={<AddStudentList />}></Route>
+        <Route path="/studentlist/edit/:id" element={<EditStudentlist />}></Route>
+
 
 
         {/* HOD Routes */}
