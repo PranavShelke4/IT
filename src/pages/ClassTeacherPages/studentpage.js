@@ -1,6 +1,6 @@
 import React from 'react';
 import ClassNavbar from '../../components/ClassTeacher/classTeacherNavbar';
-import StudentTable from "../../components/ClassTeacher/Students/students";
+import StudentTable from "../../components/ClassTeacher/Students/StudentList";
 
 function studentPage(){
     return (

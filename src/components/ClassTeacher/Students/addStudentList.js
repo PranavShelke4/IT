@@ -1,89 +1,84 @@
-import React, { Component } from 'react';
-//import axios from "axios";
-import DatePicker from "react-datepicker";
-//import "react-datepicker/dist/react-datepicker.css";
-import './addList.css'
+import React,{useState} from 'react'
+import { useForm } from "react-hook-form";
+// import { useHistory } from "react-router-dom";
 
-class addStudentList extends Component {
+import Studentlist from "../../../api/Studentlist";
 
-    // constructor(props){
-    //     super();
-    //     this.state = {
-            
-    //         date: new Date(),
-    //         activity: ""
-    //     }
-    
 
-    //     this.onChangeDate = this.onChangeDate.bind(this);
-    //     this.onChangeLink = this.onChangeLink.bind(this);
-        
-    // }
+function  AddStudentList() {
 
-   
-    // onChangeDate(date) {
-    //     this.setState({ date: date})
-    // }
-    // onChangeLink(e) {
-    //     this.setState({ link: e.target.value})
-    // }
-    // onSubmit(e) {
-    //     e.preventDefault();
-    //     const achievement = {
-    //         // username: this.state.username,
+  const [date,SetDate] = useState("");
+  const [descriptionName,SetDescriptionName] = useState("");
+  const [linkName,SetLinkName] = useState("");
 
-    //         date: this.state.date,
-    //         link: this.state.link
-    //     }
 
-    //     console.log(achievement);
 
-    //     axios.post("http://localhost:5000/achievements/add-achievement", achievement)
-    //         .then(res => console.log(res.data));
+  // const history = useHistory();
 
-    //     window.location = "/student-table";
-    // }
-    // Cancel(e){
-    //     window.location = "/student-table";
-    // }
-    
-    render() { 
-        return ( 
-            <div className='main-sec'>
-            <div className="upd_section">
-            
-                <form>
-
-                        <label className='label l1'>Academic Year : </label><br/>
-                       
-                            <DatePicker
-                                className='update'
-                                //selected={this.state.date}
-                                ///onChange={this.onChangeDate}
-                                placeholderText='Academic Year'
-                            />
-                            <br/>
-      
-                    
-                    
-                        <label className='label l2'>Link : </label><br/>
-                        <input
-                            type="text" required
-                            className='update'
-                            //value={this.state.activity}
-                            //onChange={this.onChangeLink}
-                            placeholder="Link"
-                        /><br/>
-                
-            
-                        <button type="submit" value="Submit" className="submit">Submit</button>        
-                        <button type="reset" value="Cancel" className="cancel">Cancel</button>
-                 
-                </form>
-            </div>
-            </div>
-         );
+  //rajesh is here
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
+  const onSubmit = async() =>{
+    const studentlist = {
+      date:date,
+      description:descriptionName,
+      link:linkName
     }
+
+    console.log(studentlist);
+   const res = await Studentlist.post("/add-studentlist",studentlist);
+   console.log(res.data.msg)
+  //  if(res.data.msg =="success"){
+  //   //  history.push("/subject-teacher-dashboard");
+  //  }
+  }
+
+  return (
+    <div className='main-sec'>
+    <div className="upd_section">
+      <form onSubmit ={handleSubmit(onSubmit)} >
+        <div>
+          <label>Date</label>
+          <input 
+          type = "date"
+          name="date"
+          value={date}
+          onChange={(e) => {
+            SetDate(e.target.value);
+          }}
+          />
+        </div>
+        <div>
+          <label>Year</label>
+          <input 
+          type ="text"
+          name ="activityName"
+          value = {descriptionName}
+          onChange={(e)=>{
+            SetDescriptionName(e.target.value);
+          }}
+          />
+        </div>
+        <div>
+          <label>Link</label>
+          <input 
+          type ="text"
+          name="subName"
+          value ={linkName}
+          onChange={(e)=>{
+            SetLinkName(e.target.value);
+          }}
+          />
+        </div>
+        
+        <input className ="btn btn-primary" type="submit" value="Submit"/>
+      </form>
+    </div>
+    </div>
+  )
 }
- 
-export default addStudentList;
+
+export default AddStudentList;     
