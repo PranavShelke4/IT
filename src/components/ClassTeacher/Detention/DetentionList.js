@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import axios from "axios";
-//import './ExercisesList.css';
+import "./DetentionList.css";
 
 import Detentionlists from '../../../api/Detentionlist';
 
@@ -54,8 +54,8 @@ class DetentionList extends Component {
         return ( 
             <div className='FideologyActivities'>
             <div className="fideo">
-                <h3 className='fidoh3'>Pedelogy Activities</h3>
-                <table>
+                
+                <table className='detention-table'>
                     <thead className="thead-light">
                         <tr>
 		                    <th>Date</th>
