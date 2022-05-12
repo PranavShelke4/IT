@@ -50,6 +50,12 @@ import EditStudymaterial from "../components/SubjectTeacher/Course/EditStudymate
 
 
 
+// Other
+
+import SignUpPage from "../components/Signup/signup";
+
+
+
 const ConfigRoutes = () => {
   return (
     <>
@@ -97,6 +103,9 @@ const ConfigRoutes = () => {
         <Route path="/HOD/Faculty-CR" element={<FacultyCR />}></Route>
         <Route path="/HOD/assign-class-teacher" element={<AssignClassTeacher />}></Route>
         <Route path="/HOD/Facylty-Leave" element={<FacyltyLeave />}></Route>
+
+
+        <Route path="/SignUp" element={<SignUpPage />}></Route>
 
       </Routes>
     </>
