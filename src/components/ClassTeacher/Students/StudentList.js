@@ -59,7 +59,7 @@ class StudentList extends Component {
                     <thead className="thead-light">
                         <tr>
 		                    <th>Date</th>
-		                    <th>Decsription</th>
+		                    <th>Year</th>
 		                    <th>Link</th>
 		                    <th>Actions</th>
                         </tr>
