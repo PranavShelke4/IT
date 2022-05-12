@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
+
 import Exercise from "../../../api/Exercise";
 
 import { useParams } from "react-router-dom";
