@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import axios from "axios";
 //import './ExercisesList.css';
+import "./students.css";
 
 import Studentlists from '../../../api/Studentlist';
 
@@ -54,8 +55,8 @@ class StudentList extends Component {
         return ( 
             <div className='FideologyActivities'>
             <div className="fideo">
-                <h3 className='fidoh3'>Pedelogy Activities</h3>
-                <table>
+                
+                <table className='student-list'>
                     <thead className="thead-light">
                         <tr>
 		                    <th>Date</th>
