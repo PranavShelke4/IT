@@ -30,6 +30,8 @@ import EditAchievement from "../components/ClassTeacher/Dashboard/EditAchievemen
 import EditStudentlist from "../components/ClassTeacher/Students/EditStudentlist";
 import AddDetentionList from "../components/ClassTeacher/Detention/addDetentionlist"
 import EditDetentionlist from "../components/ClassTeacher/Detention/EditDetentionlist";
+import AddFeedbackList from "../components/ClassTeacher/FeedBack/addFeedbacklist";
+import EditFeedbacklist from "../components/ClassTeacher/FeedBack/EditFeedbacklist";
 
 
 // subject teacher Routes
@@ -98,6 +100,8 @@ const ConfigRoutes = () => {
         <Route path="/studentlist/edit/:id" element={<EditStudentlist />}></Route>
         <Route path="/class-teacher/add-detentionlist" element={<AddDetentionList />}></Route>
         <Route path="/detentionlist/edit/:id" element={<EditDetentionlist />}></Route>
+        <Route path="/class-teacher/add-feedbacklist" element={<AddFeedbackList />}></Route>
+        <Route path="/feedbacklist/edit/:id" element={<EditFeedbacklist />}></Route>
 
 
         {/* HOD Routes */}
