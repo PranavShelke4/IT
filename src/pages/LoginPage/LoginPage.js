@@ -1,7 +1,6 @@
 /* eslint-disable default-case */
 
-import React, { useState, useEffect } from "react";
-import fire from "../../functions/fire";
+import React from "react";
 import "./LoginPage.css";
 import loginIcon from "../../assets/icon/login-icon.svg";
 import { Tab, Tabs } from "react-bootstrap";

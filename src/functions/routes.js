@@ -17,7 +17,7 @@ import FacyltyLeave from '../pages/HODPages/Leaves'
 import ClassTeacherDashboard from '../pages/ClassTeacherPages/Dashboard';
 import AddAchievement from "../pages/ClassTeacherPages/addAchievement";
 import Student from "../pages/ClassTeacherPages/studentpage";
-import AddList from "../pages/ClassTeacherPages/addListPage";
+//import AddList from "../pages/ClassTeacherPages/addListPage";
 import ClassFaculty from "../pages/ClassTeacherPages/FacultyDetails";
 import DetentionPage from "../pages/ClassTeacherPages/DetentionPage";
 import AddDetentionPage from "../pages/ClassTeacherPages/addDetentionPage";
@@ -26,13 +26,12 @@ import AddFeedbackPage from "../pages/ClassTeacherPages/AddFeedbackPage";
 import ClassProfilePage from "../pages/ClassTeacherPages/ProfilePage";
 import AssignSTPage from "../pages/ClassTeacherPages/AssignSTPage";
 import EditAchievement from "../components/ClassTeacher/Dashboard/EditAchievement";
-import AddStudentList from "../components/ClassTeacher/Students/addStudentlist";
+//import AddStudentList from "../components/ClassTeacher/Students/addStudentlist";
 import EditStudentlist from "../components/ClassTeacher/Students/EditStudentlist";
 
 
 // subject teacher Routes
 
-import SignUp from "../components/SignUP/SignUp";
 import Dashbord from '../pages/SubjectTeacherPages/Dashbord';
 import Fideology from '../pages/SubjectTeacherPages/FideologyForm';
 import StudentDetail from '../pages/SubjectTeacherPages/studentDetail';
@@ -45,7 +44,7 @@ import ProfilePage from "../pages/SubjectTeacherPages/ProfilePage";
 import LeavePage from '../pages/SubjectTeacherPages/LeavePage';
 import EditExercise from "../components/SubjectTeacher/Fideology/EditExercise";
 import ExercisesList from "../components/SubjectTeacher/Fideology/ExercisesList";
-import Studymaterial from "../components/SubjectTeacher/Course/StudyMaterial";
+//import Studymaterial from "../components/SubjectTeacher/Course/StudyMaterial";
 import AddStudymaterial from "../components/SubjectTeacher/Course/AddStudymaterial";
 import EditStudymaterial from "../components/SubjectTeacher/Course/EditStudymaterial";
 
@@ -56,7 +55,6 @@ const ConfigRoutes = () => {
     <>
       <Routes>
         <Route exact path="/" element={<App />}></Route>
-        <Route path="/sign-up" element={<SignUp />}></Route>
         <Route path="/subject-teacher/fideology-form" element={<Fideology />}></Route>
         <Route path="/subject-teacher/dashboard" element={<Dashbord />}></Route>
         <Route path="/subject-teacher/student-details" element={<StudentDetail />}></Route>
@@ -70,7 +68,7 @@ const ConfigRoutes = () => {
         <Route path="/subject-teacher/leave" element={<LeavePage />}></Route>
         <Route path="/edit/:id" element={<EditExercise/>}></Route>
         <Route path="/allExercises" element={<ExercisesList />}></Route>
-        <Route path="/subject-teacher/studymaterial" element={<Studymaterial/>}></Route>
+        {/* <Route path="/subject-teacher/studymaterial" element={<Studymaterial/>}></Route> */}
         <Route path="/subject-teacher/add-studymaterial" element={<AddStudymaterial />}></Route>
         <Route path="/studymaterial/edit/:id" element={<EditStudymaterial />}></Route>
       
@@ -79,7 +77,7 @@ const ConfigRoutes = () => {
         <Route path="/class-teacher/dashboard" element={<ClassTeacherDashboard />}></Route>
         <Route path="/class-teacher/add-achievement" element={<AddAchievement />}></Route>
         <Route path="/class-teacher/student-table" element={<Student />}></Route>
-        <Route path="/class-teacher/add-student-list" element={<AddList />}></Route>
+        {/* <Route path="/class-teacher/add-student-list" element={<AddList />}></Route> */}
         <Route path="/class-teacher/classfaculty" element={<ClassFaculty />}></Route>
         <Route path="/class-teacher/class-detentionlist" element={<DetentionPage />}></Route>
         <Route path="/class-teacher/add-detention-list" element={<AddDetentionPage />}></Route>
@@ -88,7 +86,7 @@ const ConfigRoutes = () => {
         <Route path="/class-teacher/profile" element={<ClassProfilePage />}></Route>
         <Route path="/class-teacher/assign-subject-teacher" element={<AssignSTPage />}></Route>
         <Route path="/CT/edit/:id" element={<EditAchievement/>}></Route>
-        <Route path="/class-teacher/add-studentlist" element={<AddStudentList />}></Route>
+        {/* <Route path="/class-teacher/add-studentlist" element={<AddStudentList />}></Route> */}
         <Route path="/studentlist/edit/:id" element={<EditStudentlist />}></Route>
 
 
