@@ -3,8 +3,11 @@ import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
 import Exercise from "../../../api/Exercise";
+import "./createPedelogy.css";
 
-
+function Cancel(){
+  window.location.href="/subject-teacher/dashboard"
+}
 function  CreatePedology() {
 
   const [date,SetDate] = useState("");
@@ -12,7 +15,7 @@ function  CreatePedology() {
   const [subName,SetSubName] = useState("");
   const [groupNo, SetGroupNo] = useState("");
 
-
+ 
   // const history = useHistory();
 
   //rajesh is here
@@ -32,6 +35,7 @@ function  CreatePedology() {
     console.log(exercise);
    const res = await Exercise.post("/add-exercise",exercise);
    console.log(res.data.msg)
+   window.location.href="/subject-teacher/dashboard";
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }
@@ -42,8 +46,9 @@ function  CreatePedology() {
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
         <div>
-          <label>Date</label>
+          <label>Date</label><br/>
           <input 
+          className='input-box'
           type = "date"
           name="date"
           value={date}
@@ -53,8 +58,9 @@ function  CreatePedology() {
           />
         </div>
         <div>
-          <label>Activity Name</label>
-          <input 
+          <label>Activity Name</label><br/>
+          <input
+          className='input-box' 
           type ="text"
           name ="activityName"
           value = {activityName}
@@ -64,8 +70,9 @@ function  CreatePedology() {
           />
         </div>
         <div>
-          <label>Sub Name</label>
+          <label>Sub Name</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name="subName"
           value ={subName}
@@ -75,8 +82,9 @@ function  CreatePedology() {
           />
         </div>
         <div>
-          <label>Group NO</label>
+          <label>Group NO</label><br/>
           <input 
+          className='input-box'
           type = "text"
           name="groupNo"
           value ={groupNo}
@@ -85,7 +93,8 @@ function  CreatePedology() {
           }}
           />
         </div>
-        <input className ="btn btn-primary" type="submit" value="Submit"/>
+        <input className ="subButton" type="submit" value="Submit"/>
+        <input className ="cancelButton" type="button" onClick={Cancel} value="Cancel"/>
       </form>
     </div>
     </div>
