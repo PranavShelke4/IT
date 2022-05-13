@@ -69,7 +69,6 @@ const ConfigRoutes = () => {
         <Route path="/subject-teacher/answer-key" element={<AnswerKey />}></Route>
         <Route path="/subject-teacher/assignments" element={<AssignmentPage />}></Route>
         <Route path="/subject-teacher/study-material" element={<StudyPage />}></Route>
-        {/* <Route path="/subject-teacher/add-material" element={<LeavePage />}></Route> */}
         <Route path="/subject-teacher/profile" element={<ProfilePage />}></Route>
         <Route path="/subject-teacher/leave" element={<LeavePage />}></Route>
         <Route path="/edit/:id" element={<EditExercise/>}></Route>
