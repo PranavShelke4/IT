@@ -4,6 +4,11 @@ import { useForm } from "react-hook-form";
 import Studymaterial from "../../../api/Studymaterial";
 
 import { useParams } from "react-router-dom";
+import "../Fideology/createPedelogy.css";
+
+function Cancel(){
+  window.location.href="/subject-teacher/study-material";
+}
 
 function  EditStudymaterial() {
 
@@ -44,12 +49,13 @@ function  EditStudymaterial() {
         "description":descriptionName,
         "link":linkName
     }
-
+    window.location.href="/subject-teacher/study-material";
     console.log("req")
     console.log(params.id)
     console.log(formdata)
    const res = await Studymaterial.patch(`/update-studymaterial/${params.id}`,formdata);
    console.log(res.data.msg)
+   
 
   }
 
@@ -58,8 +64,9 @@ function  EditStudymaterial() {
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
         <div>
-          <label>Date</label>
+          <label>Date</label><br/>
           <input 
+          className='input-box'
           type = "date"
           name="date"
           value={date}
@@ -69,8 +76,9 @@ function  EditStudymaterial() {
           />
         </div>
         <div>
-          <label>Decsription</label>
+          <label>Decsription</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name ="activityName"
           value = {descriptionName}
@@ -80,8 +88,9 @@ function  EditStudymaterial() {
           />
         </div>
         <div>
-          <label>Link</label>
+          <label>Link</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name="subName"
           value ={linkName}
@@ -91,7 +100,8 @@ function  EditStudymaterial() {
           />
         </div>
         
-        <input className ="btn btn-primary" type="submit" value="Submit"/>
+        <input className ="subButton" type="submit" value="Submit"/>
+        <input className ="cancelButton" type="button" onClick={Cancel} value="Cancel"/>
       </form>
     </div>
     </div>
