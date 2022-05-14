@@ -38,7 +38,15 @@ import EditFeedbacklist from "../components/ClassTeacher/FeedBack/EditFeedbackli
 
 import SignUp from "../components/SignUP/SignUp";
 import Dashbord from '../pages/SubjectTeacherPages/Dashbord';
+
 import Fideology from '../pages/SubjectTeacherPages/FideologyForm';
+import EditExercise from "../pages/SubjectTeacherPages/EditPedeology";
+import ExercisesList from "../components/SubjectTeacher/Fideology/ExercisesList";
+
+import Studymaterial from "../components/SubjectTeacher/Course/StudyMaterial";
+import AddStudymaterial from "../pages/SubjectTeacherPages/StudyMaterialPage";
+import EditStudymaterial from "../pages/SubjectTeacherPages/EditStudyMaterialPage";
+
 import StudentDetail from '../pages/SubjectTeacherPages/studentDetail';
 import Course from '../pages/SubjectTeacherPages/coursePage';
 import QuestionPaper from '../pages/SubjectTeacherPages/questionPaper';
@@ -47,11 +55,7 @@ import AssignmentPage from "../pages/SubjectTeacherPages/Assignmentpage";
 import StudyPage  from "../pages/SubjectTeacherPages/studyPage";
 import ProfilePage from "../pages/SubjectTeacherPages/ProfilePage";
 import LeavePage from '../pages/SubjectTeacherPages/LeavePage';
-import EditExercise from "../pages/SubjectTeacherPages/EditPedeology";
-import ExercisesList from "../components/SubjectTeacher/Fideology/ExercisesList";
-import Studymaterial from "../components/SubjectTeacher/Course/StudyMaterial";
-import AddStudymaterial from "../components/SubjectTeacher/Course/AddStudymaterial";
-import EditStudymaterial from "../components/SubjectTeacher/Course/EditStudymaterial";
+
 
 
 
