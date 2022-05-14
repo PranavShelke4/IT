@@ -34,7 +34,7 @@ import AddFeedbackList from "../components/ClassTeacher/FeedBack/addFeedbacklist
 import EditFeedbacklist from "../components/ClassTeacher/FeedBack/EditFeedbacklist";
 
 
-// subject teacher Routes
+// subject teacher Routes.....
 
 import SignUp from "../components/SignUP/SignUp";
 import Dashbord from '../pages/SubjectTeacherPages/Dashbord';
