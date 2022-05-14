@@ -53,13 +53,13 @@ function  EditExercise() {
         "subject":subName,
         "group":groupNo
     }
-
+    window.location.href="/subject-teacher/dashboard";
     console.log("req")
     console.log(params.id)
     console.log(formdata)
    const res = await Exercise.patch(`/update-exercise/${params.id}`,formdata);
    console.log(res.data.msg)
-
+  
   }
 
   return (
@@ -67,7 +67,7 @@ function  EditExercise() {
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
         <div>
-          <label>Date</label>
+          <label>Date</label><br/>
           <input 
           className='input-box'
           type = "date"
@@ -79,7 +79,7 @@ function  EditExercise() {
           />
         </div>
         <div>
-          <label>Activity Name</label>
+          <label>Activity Name</label><br/>
           <input 
           className='input-box'
           type ="text"
@@ -91,7 +91,7 @@ function  EditExercise() {
           />
         </div>
         <div>
-          <label>Sub Name</label>
+          <label>Sub Name</label><br/>
           <input 
           className='input-box'
           type ="text"
@@ -103,7 +103,7 @@ function  EditExercise() {
           />
         </div>
         <div>
-          <label>Group NO</label>
+          <label>Group NO</label><br/>
           <input 
           className='input-box'
           type = "text"
