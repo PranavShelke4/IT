@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import App from "../App";
 
 
-// HOD Routes
+// HOD Routes...
 
 import HODDashbord from "../pages/HODPages/Dashboard"
 import FacultyDetails from "../pages/HODPages/FacultyDetails";
