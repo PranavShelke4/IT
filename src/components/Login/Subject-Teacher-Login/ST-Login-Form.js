@@ -1,28 +1,12 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./ST-Login-Form.css";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../../../functions/Auth";
-import firebaseConfig from "../../../functions/fire";
 
 function ST_Login_Form() {
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const { email, password } = e.target.elements;
-    try {
-      firebaseConfig.auth().signInWithEmailAndPassword(email.value, password.value);
-    } catch (error) {
-      alert(error);
-    }
-  };
-  const currentUser = useContext(AuthContext);
-  if (currentUser) {
-    return <Link to="/subject-teacher-dashboard" />;
-  }
-
   return (
     <div className="box">
-      <form onSubmit={handleSubmit}>
+      <form>
         <label htmlFor="email">Email ID / Username</label>
         <input
           type="email"
