@@ -5,6 +5,11 @@ import { useForm } from "react-hook-form";
 import Exercise from "../../../api/Exercise";
 
 import { useParams } from "react-router-dom";
+import "./createPedelogy.css";
+
+function Cancel(){
+  window.location.href="/subject-teacher/dashboard"
+}
 
 function  EditExercise() {
 
@@ -48,13 +53,13 @@ function  EditExercise() {
         "subject":subName,
         "group":groupNo
     }
-
+    window.location.href="/subject-teacher/dashboard";
     console.log("req")
     console.log(params.id)
     console.log(formdata)
    const res = await Exercise.patch(`/update-exercise/${params.id}`,formdata);
    console.log(res.data.msg)
-
+  
   }
 
   return (
@@ -62,8 +67,9 @@ function  EditExercise() {
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
         <div>
-          <label>Date</label>
+          <label>Date</label><br/>
           <input 
+          className='input-box'
           type = "date"
           name="date"
           value={date}
@@ -73,8 +79,9 @@ function  EditExercise() {
           />
         </div>
         <div>
-          <label>Activity Name</label>
+          <label>Activity Name</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name ="activityName"
           value = {activityName}
@@ -84,8 +91,9 @@ function  EditExercise() {
           />
         </div>
         <div>
-          <label>Sub Name</label>
+          <label>Sub Name</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name="subName"
           value ={subName}
@@ -95,8 +103,9 @@ function  EditExercise() {
           />
         </div>
         <div>
-          <label>Group NO</label>
+          <label>Group NO</label><br/>
           <input 
+          className='input-box'
           type = "text"
           name="groupNo"
           value ={groupNo}
@@ -105,7 +114,8 @@ function  EditExercise() {
           }}
           />
         </div>
-        <input className ="btn btn-primary" type="submit" value="Submit"/>
+        <input className ="subButton" type="submit" value="Submit"/>
+        <input className ="cancelButton" type="button" onClick={Cancel} value="Cancel"/>
       </form>
     </div>
     </div>
