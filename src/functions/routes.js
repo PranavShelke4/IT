@@ -47,7 +47,7 @@ import AssignmentPage from "../pages/SubjectTeacherPages/Assignmentpage";
 import StudyPage  from "../pages/SubjectTeacherPages/studyPage";
 import ProfilePage from "../pages/SubjectTeacherPages/ProfilePage";
 import LeavePage from '../pages/SubjectTeacherPages/LeavePage';
-import EditExercise from "../components/SubjectTeacher/Fideology/EditExercise";
+import EditExercise from "../pages/SubjectTeacherPages/EditPedeology";
 import ExercisesList from "../components/SubjectTeacher/Fideology/ExercisesList";
 import Studymaterial from "../components/SubjectTeacher/Course/StudyMaterial";
 import AddStudymaterial from "../components/SubjectTeacher/Course/AddStudymaterial";
