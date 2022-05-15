@@ -3,11 +3,6 @@ import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
 import Studymaterial from "../../../api/Studymaterial";
-import "../Fideology/createPedelogy.css";
-
-function Cancel(){
-  window.location.href="/subject-teacher/study-material";
-}
 
 
 function  AddStudymaterial() {
@@ -39,7 +34,6 @@ function  AddStudymaterial() {
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }
-  window.location.href="/subject-teacher/study-material";
   }
 
   return (
@@ -47,9 +41,8 @@ function  AddStudymaterial() {
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
         <div>
-          <label>Date</label><br/>
+          <label>Date</label>
           <input 
-          className='input-box'
           type = "date"
           name="date"
           value={date}
@@ -59,9 +52,8 @@ function  AddStudymaterial() {
           />
         </div>
         <div>
-          <label>Decsription</label><br/>
+          <label>Decsription</label>
           <input 
-          className='input-box'
           type ="text"
           name ="activityName"
           value = {descriptionName}
@@ -71,9 +63,8 @@ function  AddStudymaterial() {
           />
         </div>
         <div>
-          <label>Link</label><br/>
+          <label>Link</label>
           <input 
-          className='input-box'
           type ="text"
           name="subName"
           value ={linkName}
@@ -83,8 +74,7 @@ function  AddStudymaterial() {
           />
         </div>
         
-        <input className ="subButton" type="submit" value="Submit"/>
-        <input className ="cancelButton" type="button" onClick={Cancel} value="Cancel"/>
+        <input className ="btn btn-primary" type="submit" value="Submit"/>
       </form>
     </div>
     </div>
