@@ -21,7 +21,7 @@ const AchievementsRouter = require('./routes/AchievementsRoutes');
 const StudymaterialsRouter = require('./routes/StudymaterialsRoutes');
 const StudentlistsRouter = require('./routes/StudentlistsRoutes');
 const DetentionlistsRouter = require('./routes/DetentionlistsRoutes');
-const FeedbacklistsRouter = require('./routes/FeedbacklistsRoutes');
+//const FeedbacklistsRouter = require('./routes/FeedbacklistsRoutes');
 
 mongoose.connect(uri, { useNewUrlParser: true });
 
@@ -37,7 +37,7 @@ app.use('/achievements', AchievementsRouter);
 app.use('/studymaterials', StudymaterialsRouter);
 app.use('/studentlists', StudentlistsRouter);
 app.use('/detentionlists', DetentionlistsRouter);
-app.use('/feedbacklists', FeedbacklistsRouter);
+//app.use('/feedbacklists', FeedbacklistsRouter);
 
 app.listen(5000, () => {
     console.log(`Server is running on port`);
