@@ -6,7 +6,7 @@ function CT_Login_Form() {
 
   return (
     <div className="box">
-      <form action="/class-teacher-dashboard">
+      <form action="/class-teacher/dashboard">
         <label>Email ID / Username</label>
         <input
           type="email"

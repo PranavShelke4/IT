@@ -21,7 +21,7 @@ function ST_Login_Form() {
 
   return (
     <div className="box">
-      <form>
+      <form action="/subject-teacher/dashboard" method="POST">
         <label htmlFor="email">Email ID / Username</label>
         <input
           type="email"

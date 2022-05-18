@@ -6,6 +6,7 @@ import loginIcon from "../../assets/icon/login-icon.svg";
 import { Tab, Tabs } from "react-bootstrap";
 import STLoginForm from "../../components/Login/Subject-Teacher-Login/ST-Login-Form";
 import CTLoginForm from "../../components/Login/Class-Teacher-Login/CT-Login-Form"
+import HODLoginForm from "../../components/Login/HOD-Login/HOD-Login-Form";
 
 const LoginPage = () => {
 
@@ -23,7 +24,7 @@ const LoginPage = () => {
           className="mb-3"
         >
           <Tab className="tabbb" eventKey="HOD" title="HOD">
-            <STLoginForm />
+            <HODLoginForm />
           </Tab>
           <Tab className="tabbb" eventKey="Class-Teacher" title="Class Teacher">
             <CTLoginForm />

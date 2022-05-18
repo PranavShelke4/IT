@@ -69,7 +69,7 @@ class StudentList extends Component {
                         {this.studentlistsList()}
                     </tbody>
                 </table>
-                <Link to={'/class-teacher/add-studentlist'}><div className='add'>Add</div></Link>
+                <Link to={'/class-teacher/add-student-list'}><div className='add'>Add</div></Link>
             </div>
             </div>
          );
