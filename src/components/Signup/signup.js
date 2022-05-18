@@ -3,10 +3,6 @@ import "./signup.css";
 
 function SignUpForm() {
 
-    
-
-
-
   return (
     <>
       <div className="container mt-5 ">
