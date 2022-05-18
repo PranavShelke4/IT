@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./signup.css";
+import axios from "axios";
 
 function SignUpForm() {
 
@@ -12,19 +13,29 @@ function SignUpForm() {
   })
 
   const handleChange = e =>{
-    console.log(e.target)
     const { name, value } = e.target
-
     setUser({
       ...user,
       [name]:value
     })
+  }
+ 
+  const register = () =>{
+    const {fname, lname, email, password, reEnterPassword} = user
+    if( fname && lname && email && password && (password === reEnterPassword)){
+        axios.post("http://localhost:9002/register", user)
+        .then(res => console.log(res))
+    } else {
+      alert("invalid input")
+    }
+    
   }
 
   return (
     <>
       <div className="container mt-5 ">
         <form>
+        {console.log("User",user)}
           <h3>Sign Up</h3>
           <div className="mb-3">
             <label>First name</label>
@@ -83,7 +94,7 @@ function SignUpForm() {
             />
           </div>
           <div className="d-grid">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-primary" onClick={register}>
               Sign Up
             </button>
           </div>
