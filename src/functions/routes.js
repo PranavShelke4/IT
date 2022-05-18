@@ -71,7 +71,7 @@ import LeavePage from '../pages/SubjectTeacherPages/LeavePage';
 
 // Other
 
-//import SignUpPage from "../components/Signup/signup";
+import SignUpPage from "../components/Signup/signup";
 
 
 
@@ -133,7 +133,7 @@ const ConfigRoutes = () => {
         <Route path="/HOD/Facylty-Leave" element={<FacyltyLeave />}></Route>
 
 
-        {/* <Route path="/SignUp" element={<SignUpPage />}></Route> */}
+        <Route path="/SignUp" element={<SignUpPage />}></Route>
 
       </Routes>
     </>

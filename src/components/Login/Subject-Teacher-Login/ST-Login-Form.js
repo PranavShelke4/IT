@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ST-Login-Form.css";
 import { Link } from "react-router-dom";
 
 function ST_Login_Form() {
+
+  const [ user, setUser] = useState({
+    email: "",
+    password: ""
+  })
+
+  const handleChange = e =>{
+    console.log(e.target)
+    const { name, value } = e.target
+
+    setUser({
+      ...user,
+      [name]:value
+    })
+  }
 
   return (
     <div className="box">
@@ -11,6 +26,8 @@ function ST_Login_Form() {
         <input
           type="email"
           name="email"
+          value={user.email}
+          onChange={ handleChange }
           placeholder="Email ID / Username"
           autoFocus
           required
@@ -19,6 +36,8 @@ function ST_Login_Form() {
         <input 
          type="password" 
          name="password"
+         value={user.password}
+         onChange={ handleChange }
          placeholder="Enter Password"
          required />
         <a href="/">
@@ -30,7 +49,7 @@ function ST_Login_Form() {
         <button type="submit"  className="login-btn">Submit</button>
       </form>
       <div className="w-100 text-center mt-1 color: alert">
-        Don't have an account? <Link to="/sign-up">Sign Up</Link>
+        Don't have an account? <Link to="/SignUp">Sign Up</Link>
       </div>
     </div>
   );
