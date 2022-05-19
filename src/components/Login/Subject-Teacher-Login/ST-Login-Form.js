@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ST-Login-Form.css";
 import { Link } from "react-router-dom";
+import axios from "axios"; 
 
 function ST_Login_Form() {
 
@@ -19,9 +20,14 @@ function ST_Login_Form() {
     })
   }
 
+  const login = () =>{
+    axios.post("http://localhost:9002/login", user)
+    .then(res => console.log(res))
+  }
+
   return (
     <div className="box">
-      <form action="/subject-teacher/dashboard" method="POST">
+      <form >
         <label htmlFor="email">Email ID / Username</label>
         <input
           type="email"
@@ -46,7 +52,7 @@ function ST_Login_Form() {
         {/* <button type="submit" className="login-btn">
           Login
         </button> */}
-        <button type="submit"  className="login-btn">Submit</button>
+        <button type="submit" onClick={login} className="login-btn">Submit</button>
       </form>
       <div className="w-100 text-center mt-1 color: alert">
         Don't have an account? <Link to="/SignUp">Sign Up</Link>

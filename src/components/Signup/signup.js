@@ -3,39 +3,38 @@ import "./signup.css";
 import axios from "axios";
 
 function SignUpForm() {
-
-  const [ user, setUser] = useState({
+  const [user, setUser] = useState({
     fname: "",
     lname: "",
     email: "",
     password: "",
-    reEnterPassword: ""
-  })
+    reEnterPassword: "",
+  });
 
-  const handleChange = e =>{
-    const { name, value } = e.target
+  const handleChange = (e) => {
+    const { name, value } = e.target;
     setUser({
       ...user,
-      [name]:value
-    })
-  }
- 
-  const register = () =>{
-    const {fname, lname, email, password, reEnterPassword} = user
-    if( fname && lname && email && password && (password === reEnterPassword)){
-        axios.post("http://localhost:9002/register", user)
-        .then(res => console.log(res))
+      [name]: value,
+    });
+  };
+
+  const register = () => {
+    const { fname, lname, email, password, reEnterPassword } = user;
+    if (fname && lname && email && password && password === reEnterPassword) {
+      axios
+        .post("http://localhost:9002/register", user)
+        .then((res) => console.log(res));
     } else {
-      alert("invalid input")
+      alert("invalid input");
     }
-    
-  }
+  };
 
   return (
     <>
       <div className="container mt-5 ">
         <form>
-        {console.log("User",user)}
+          {console.log("User", user)}
           <h3>Sign Up</h3>
           <div className="mb-3">
             <label>First name</label>
@@ -43,10 +42,9 @@ function SignUpForm() {
               type="text"
               name="fname"
               value={user.fname}
-              onChange={ handleChange }
+              onChange={handleChange}
               className="form-control"
               placeholder="First name"
-             
             />
           </div>
           <div className="mb-3">
@@ -57,7 +55,7 @@ function SignUpForm() {
               value={user.lname}
               className="form-control"
               placeholder="Last name"
-              onChange={ handleChange }
+              onChange={handleChange}
             />
           </div>
           <div className="mb-3">
@@ -68,7 +66,7 @@ function SignUpForm() {
               value={user.email}
               className="form-control"
               placeholder="Enter email"
-              onChange={ handleChange }
+              onChange={handleChange}
             />
           </div>
           <div className="mb-3">
@@ -79,7 +77,7 @@ function SignUpForm() {
               value={user.password}
               className="form-control"
               placeholder="Enter password"
-              onChange={ handleChange }
+              onChange={handleChange}
             />
           </div>
           <div className="mb-3">
@@ -90,11 +88,15 @@ function SignUpForm() {
               value={user.reEnterPassword}
               className="form-control"
               placeholder="Re-enter password"
-              onChange={ handleChange }
+              onChange={handleChange}
             />
           </div>
           <div className="d-grid">
-            <button type="submit" className="btn btn-primary" onClick={register}>
+            <button
+              type="submit"
+              className="btn btn-primary"
+              onClick={register}
+            >
               Sign Up
             </button>
           </div>
