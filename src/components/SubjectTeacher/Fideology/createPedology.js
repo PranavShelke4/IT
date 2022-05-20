@@ -8,6 +8,7 @@ import "./createPedelogy.css";
 function Cancel(){
   window.location.href="/subject-teacher/dashboard"
 }
+
 function  CreatePedology() {
 
   const [date,SetDate] = useState("");
