@@ -2,8 +2,13 @@ import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
 import Achievement from "../../../api/Achievement";
+import "../../SubjectTeacher/Fideology/createPedelogy.css"
 
 import { useParams } from "react-router-dom";
+
+function Cancel(){
+  window.location.href="/class-teacher/dashboard";
+}
 
 function  EditAchievement() {
 
@@ -56,6 +61,7 @@ function  EditAchievement() {
     console.log(formdata)
    const res = await Achievement.patch(`/update-achievement/${params.id}`,formdata);
    console.log(res.data.msg)
+   window.location.href="/class-teacher/dashboard";
 
   }
 
@@ -65,8 +71,9 @@ function  EditAchievement() {
       <form onSubmit ={handleSubmit(onSubmit)} >
         
       <div>
-          <label>Student Name</label>
+          <label>Student Name</label><br/>
           <input 
+           className='input-box'
           type ="text"
           name ="studentName"
           value = {studentName}
@@ -77,8 +84,9 @@ function  EditAchievement() {
         </div>
         
         <div>
-          <label>Department</label>
+          <label>Department</label><br/>
           <input 
+           className='input-box'
           type ="text"
           name ="deptName"
           value = {deptName}
@@ -88,8 +96,9 @@ function  EditAchievement() {
           />
         </div>
         <div>
-          <label>Institute</label>
+          <label>Institute</label><br/>
           <input 
+           className='input-box'
           type ="text"
           name="instName"
           value ={instName}
@@ -99,8 +108,9 @@ function  EditAchievement() {
           />
         </div>
         <div>
-          <label>Event Name</label>
+          <label>Event Name</label><br/>
           <input 
+           className='input-box'
           type = "text"
           name="eventName"
           value ={eventName}
@@ -110,8 +120,9 @@ function  EditAchievement() {
           />
         </div>
         <div>
-          <label>Date</label>
+          <label>Date</label><br/>
           <input 
+           className='input-box'
           type = "date"
           name="date"
           value={date}
@@ -120,7 +131,8 @@ function  EditAchievement() {
           }}
           />
         </div>
-        <input className ="btn btn-primary" type="submit" value="Submit"/>
+        <input className ="subButton" type="submit" value="Submit"/>
+        <input className ="cancelButton" type="button" onClick={Cancel} value="Cancel"/>
       </form>
     </div>
     </div>
