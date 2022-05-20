@@ -3,7 +3,11 @@ import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
 import Studentlist from "../../../api/Studentlist";
+import "../../SubjectTeacher/Fideology/createPedelogy.css"
 
+function Cancel(){
+  window.location.href="/class-teacher/student-table"
+}
 
 function  AddStudentList() {
 
@@ -31,6 +35,7 @@ function  AddStudentList() {
     console.log(studentlist);
    const res = await Studentlist.post("/add-studentlist",studentlist);
    console.log(res.data.msg)
+   window.location.href="/class-teacher/student-table"
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }
@@ -41,8 +46,9 @@ function  AddStudentList() {
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
         <div>
-          <label>Date</label>
+          <label>Date</label><br/>
           <input 
+          className='input-box'
           type = "date"
           name="date"
           value={date}
@@ -52,8 +58,9 @@ function  AddStudentList() {
           />
         </div>
         <div>
-          <label>Year</label>
+          <label>Year</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name ="activityName"
           value = {descriptionName}
@@ -63,8 +70,9 @@ function  AddStudentList() {
           />
         </div>
         <div>
-          <label>Link</label>
+          <label>Link</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name="subName"
           value ={linkName}
@@ -74,7 +82,8 @@ function  AddStudentList() {
           />
         </div>
         
-        <input className ="btn btn-primary" type="submit" value="Submit"/>
+        <input className ="subButton" type="submit" value="Submit"/>
+        <input className ="cancelButton" type="button" onClick={Cancel} value="Cancel"/>
       </form>
     </div>
     </div>
