@@ -3,7 +3,11 @@ import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
 import Achievement from "../../../api/Achievement";
+import "../../SubjectTeacher/Fideology/createPedelogy.css"
 
+function Cancel(){
+  window.location.href="/class-teacher/dashboard";
+}
 
 function  CreateAchievement() {
 
@@ -33,6 +37,7 @@ function  CreateAchievement() {
     console.log(achievement);
    const res = await Achievement.post("/add-achievement",achievement);
    console.log(res.data.msg)
+   window.location.href="/class-teacher/dashboard";
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }
@@ -43,8 +48,9 @@ function  CreateAchievement() {
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
       <div>
-          <label>Student Name</label>
+          <label>Student Name</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name ="studentName"
           value = {studentName}
@@ -55,8 +61,9 @@ function  CreateAchievement() {
         </div>
         
         <div>
-          <label>Department</label>
+          <label>Department</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name ="deptName"
           value = {deptName}
@@ -66,8 +73,9 @@ function  CreateAchievement() {
           />
         </div>
         <div>
-          <label>Institute</label>
+          <label>Institute</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name="instName"
           value ={instName}
@@ -77,8 +85,9 @@ function  CreateAchievement() {
           />
         </div>
         <div>
-          <label>Event Name</label>
+          <label>Event Name</label><br/>
           <input 
+          className='input-box'
           type = "text"
           name="eventName"
           value ={eventName}
@@ -88,8 +97,9 @@ function  CreateAchievement() {
           />
         </div>
         <div>
-          <label>Date</label>
+          <label>Date</label><br/>
           <input 
+          className='input-box'
           type = "date"
           name="date"
           value={date}
@@ -98,7 +108,8 @@ function  CreateAchievement() {
           }}
           />
         </div>
-        <input className ="btn btn-primary" type="submit" value="Submit"/>
+        <input className ="subButton" type="submit" value="Submit"/>
+        <input className ="cancelButton" type="button" onClick={Cancel} value="Cancel"/>
       </form>
     </div>
     </div>
