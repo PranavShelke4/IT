@@ -3,6 +3,11 @@ import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
 import Detentionlist from "../../../api/Detentionlist";
+import "../../SubjectTeacher/Fideology/createPedelogy.css"
+
+function Cancel(){
+  window.location.href="/class-teacher/class-detentionlist";
+}
 
 
 function  AddDetentionList() {
@@ -31,6 +36,7 @@ function  AddDetentionList() {
     console.log(detentionlist);
    const res = await Detentionlist.post("/add-detentionlist",detentionlist);
    console.log(res.data.msg)
+   window.location.href="/class-teacher/class-detentionlist";
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }
@@ -41,8 +47,9 @@ function  AddDetentionList() {
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
         <div>
-          <label>Date</label>
+          <label>Date</label><br/>
           <input 
+          className='input-box'
           type = "date"
           name="date"
           value={date}
@@ -52,8 +59,9 @@ function  AddDetentionList() {
           />
         </div>
         <div>
-          <label>Year</label>
+          <label>Year</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name ="activityName"
           value = {descriptionName}
@@ -63,8 +71,9 @@ function  AddDetentionList() {
           />
         </div>
         <div>
-          <label>Link</label>
+          <label>Link</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name="subName"
           value ={linkName}
@@ -74,7 +83,8 @@ function  AddDetentionList() {
           />
         </div>
         
-        <input className ="btn btn-primary" type="submit" value="Submit"/>
+        <input className ="subButton" type="submit" value="Submit"/>
+        <input className ="cancelButton" type="button" onClick={Cancel} value="Cancel"/>
       </form>
     </div>
     </div>
