@@ -46,7 +46,7 @@ class DetentionList extends Component {
 
     detentionlistsList() {
         return this.state.detentionlists.map(currentdetentionlist => {
-            return <Detentionlist detentionlist={currentdetentionlist} deletedetentionlist={this.deleteDetentionlist} key={currentdetentionlist._id} />
+            return <Detentionlist detentionlist={currentdetentionlist} deleteDetentionlist={this.deleteDetentionlist} key={currentdetentionlist._id} />
         })
     }
 
