@@ -2,8 +2,13 @@ import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
 import Studentlist from "../../../api/Studentlist";
+import "../../SubjectTeacher/Fideology/createPedelogy.css"
 
 import { useParams } from "react-router-dom";
+
+function Cancel(){
+  window.location.href="/class-teacher/student-table"
+}
 
 function  EditStudentlist() {
 
@@ -38,7 +43,7 @@ function  EditStudentlist() {
     // formdata.append("activity",activityName);
     // formdata.append("subject",subName);
     // formdata.append("group",groupNo);
-    
+    window.location.href="/class-teacher/student-table"
     const formdata = {
         "date":date,
         "description":descriptionName,
@@ -50,6 +55,7 @@ function  EditStudentlist() {
     console.log(formdata)
    const res = await Studentlist.patch(`/update-studentlist/${params.id}`,formdata);
    console.log(res.data.msg)
+   
 
   }
 
@@ -58,8 +64,9 @@ function  EditStudentlist() {
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
         <div>
-          <label>Date</label>
+          <label>Date</label><br/>
           <input 
+          className='input-box'
           type = "date"
           name="date"
           value={date}
@@ -69,8 +76,9 @@ function  EditStudentlist() {
           />
         </div>
         <div>
-          <label>Year</label>
+          <label>Year</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name ="activityName"
           value = {descriptionName}
@@ -80,8 +88,9 @@ function  EditStudentlist() {
           />
         </div>
         <div>
-          <label>Link</label>
+          <label>Link</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name="subName"
           value ={linkName}
@@ -91,7 +100,9 @@ function  EditStudentlist() {
           />
         </div>
         
-        <input className ="btn btn-primary" type="submit" value="Submit"/>
+        <input className ="subButton" type="submit" value="Submit"/>
+        <input className ="cancelButton" type="button" onClick={Cancel} value="Cancel"/>
+
       </form>
     </div>
     </div>

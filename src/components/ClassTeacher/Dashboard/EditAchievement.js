@@ -47,7 +47,7 @@ function  EditAchievement() {
     // formdata.append("activity",activityName);
     // formdata.append("subject",subName);
     // formdata.append("group",groupNo);
-    
+    window.location.href="/class-teacher/dashboard";
     const formdata = {
         "sname":studentName,
         "dept":deptName,
@@ -61,7 +61,7 @@ function  EditAchievement() {
     console.log(formdata)
    const res = await Achievement.patch(`/update-achievement/${params.id}`,formdata);
    console.log(res.data.msg)
-   window.location.href="/class-teacher/dashboard";
+   
 
   }
 
