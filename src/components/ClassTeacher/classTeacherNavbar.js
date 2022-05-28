@@ -87,13 +87,13 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <Link to="/class-teacher/assign-subject-teacher">
+            <Link to="/class-teacher/assign-5thSem">
               <i className="bx bx-file-find"></i>
               <span className="link_name">Assign Course</span>
             </Link>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="/class-teacher/assign-subject-teacher">
+                <Link className="link_name" to="/class-teacher/assign-5thSem">
                 Assign Course
                 </Link>
               </li>

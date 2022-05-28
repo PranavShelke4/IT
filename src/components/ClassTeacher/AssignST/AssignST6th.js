@@ -1,6 +1,7 @@
 /* eslint-disable react/style-prop-object */
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
+import { Link } from "react-router-dom";
 import STData from "./STData";
 import "./AssignST.css";
 
@@ -10,6 +11,7 @@ function AssignST(props) {
       <div className="facultysCR">
         <div className="fideo">
           <h3 className="fidoh3">Assign Subject Teacher</h3>
+          <Link to={'/class-teacher/assign-5thSem'}><div className='add'>5th Sem</div></Link>
 
           <h4 className="fidoh44">Management (MAN)</h4>
 
