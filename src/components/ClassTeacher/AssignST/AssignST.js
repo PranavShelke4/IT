@@ -9,9 +9,9 @@ function AssignST(props) {
     <>
       <div className="facultysCR">
         <div className="fideo">
-          <h3 className="fidoh3">Assign Class Teacher</h3>
+          <h3 className="fidoh3">Assign Subject Teacher</h3>
 
-          <h4 className="fidoh44">First Year</h4>
+          <h4 className="fidoh44">Management (MAN)</h4>
 
           {/* <select>
               <option>java</option>
@@ -52,7 +52,7 @@ function AssignST(props) {
             
         </div> 
 
-          <h4 className="fidoh44">Second Year</h4>
+          <h4 className="fidoh44">Emerginig Trends in IT & Computer (ETI)</h4>
           <table>
             <tr>
               <th>Sr No</th>
@@ -76,7 +76,55 @@ function AssignST(props) {
             })}
           </table>
 
-          <h4 className="fidoh44">Third Year</h4>
+          <h4 className="fidoh44">Wireless And Mobile Network (WMN)</h4>
+          <table>
+            <tr>
+              <th>Sr No</th>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Action</th>
+            </tr>
+            {STData.map((item) => {
+              return (
+                <tr key={item.id}>
+                  <td>{item.SrNo}</td>
+                  <td>{item.Image}</td>
+                  <td>{item.Name}</td>
+                  <td>
+                    <button onClick={() => {}} className="Assign">
+                      Assign
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
+          </table>
+
+           <h4 className="fidoh44">Mobile Application Development (MAD)</h4>
+          <table>
+            <tr>
+              <th>Sr No</th>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Action</th>
+            </tr>
+            {STData.map((item) => {
+              return (
+                <tr key={item.id}>
+                  <td>{item.SrNo}</td>
+                  <td>{item.Image}</td>
+                  <td>{item.Name}</td>
+                  <td>
+                    <button onClick={() => {}} className="Assign">
+                      Assign
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
+          </table>
+
+          <h4 className="fidoh44">Web Based Application using PHP (WBP)</h4>
           <table>
             <tr>
               <th>Sr No</th>
