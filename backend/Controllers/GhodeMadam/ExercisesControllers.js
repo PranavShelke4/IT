@@ -1,52 +1,53 @@
-const Studymaterials = require("../models/studymaterial.model");
+const Exercises = require("../../models/GhodeMadam/exercise.model");
 
-exports.postStudymaterial = (req, res) => {
+exports.postExercise = (req, res) => {
   console.log("Post Req ------------------->>>>>>");
   console.log(req.body);
   const date = req.body.date;
-  const description = req.body.description;
-  const link = req.body.link;
+  const activity = req.body.activity;
+  const subject = req.body.subject;
+  const group = Number(req.body.group);
 
-  const newStudymaterial = new Studymaterials({ date, description, link });
+  const newExercise = new Exercises({ date, activity, subject, group });
 
-  newStudymaterial
+  newExercise
     .save()
     .then(() => res.json({ msg: "success" }))
     .catch((err) => res.status(400).json({ msg: "Error" }));
 };
 
-exports.getStudymaterials = (req, res) => {
-  Studymaterials.find()
-    .then((studymaterials) => res.json(studymaterials))
+exports.getExercises = (req, res) => {
+  Exercises.find()
+    .then((exercises) => res.json(exercises))
     .catch((err) => res.status(400).json("Error: " + err));
 };
 
-exports.getStudymaterialById = (req, res) => {
+exports.getExerciseById = (req, res) => {
   console.log("hello");
   console.log(req.params.id);
-  Studymaterials.findById(req.params.id)
-    .then((studymaterial) => res.json(studymaterial))
+  Exercises.findById(req.params.id)
+    .then((exercise) => res.json(exercise))
     .catch((err) => res.status(400).json("Error: " + err));
 };
 
-exports.deleteStudymaterials = (req, res) => {
+exports.deleteExercises = (req, res) => {
   console.log(req.params.id);
-  Studymaterials.findByIdAndDelete(req.params.id)
-    .then((studymaterial) => res.json("Material deleted"))
+  Exercises.findByIdAndDelete(req.params.id)
+    .then((exercise) => res.json("Exercise deleted"))
     .catch((err) => res.status(404).json("Error: " + err));
 };
 
-exports.updateStudymaterial = (req, res) => {
+exports.updateExercise = (req, res) => {
   console.log("update");
   if(req.params.id !=null){
-    Studymaterials.findOneAndUpdate(
+    Exercises.findOneAndUpdate(
         { _id: req.params.id },
         {
             _id: req.params.id ,
             date: req.body.date,
-            description: req.body.description,
-            link: req.body.link
-            
+            activity: req.body.activity,
+            subject: req.body.subject,
+            group: req.body.group,
           },(error,data)=>{
               if(error){
                   console.log(error);

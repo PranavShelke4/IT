@@ -1,50 +1,50 @@
-const Feedbacklists = require("../models/feedbacklist.model");
+const Detentionlists = require("../../models/GhodeMadam/detentionlist.model");
 
-exports.postFeedbacklist = (req, res) => {
+exports.postDetentionlist = (req, res) => {
   console.log("Post Req ------------------->>>>>>");
   console.log(req.body);
-  const year = req.body.year;
-  const faculty = req.body.faculty;
+  const date = req.body.date;
+  const description = req.body.description;
   const link = req.body.link;
 
-  const newFeedbacklist = new Feedbacklists({ year, faculty, link });
+  const newDetentionlist = new Detentionlists({ date, description, link });
 
-  newFeedbacklist
+  newDetentionlist
     .save()
     .then(() => res.json({ msg: "success" }))
     .catch((err) => res.status(400).json({ msg: "Error" }));
 };
 
-exports.getFeedbacklists = (req, res) => {
-    Feedbacklists.find()
-    .then((feedbacklists) => res.json(feedbacklists))
+exports.getDetentionlists = (req, res) => {
+    Detentionlists.find()
+    .then((detentionlists) => res.json(detentionlists))
     .catch((err) => res.status(400).json("Error: " + err));
 };
 
-exports.getFeedbacklistById = (req, res) => {
+exports.getDetentionlistById = (req, res) => {
   console.log("hello");
   console.log(req.params.id);
-  Feedbacklists.findById(req.params.id)
-    .then((feedbacklist) => res.json(feedbacklist))
+  Detentionlists.findById(req.params.id)
+    .then((detentionlist) => res.json(detentionlist))
     .catch((err) => res.status(400).json("Error: " + err));
 };
 
-exports.deleteFeedbacklists = (req, res) => {
+exports.deleteDetentionlists = (req, res) => {
   console.log(req.params.id);
-  Feedbacklists.findByIdAndDelete(req.params.id)
-    .then((feedbacklist) => res.json("Feedback List deleted"))
+  Detentionlists.findByIdAndDelete(req.params.id)
+    .then((detentionlist) => res.json("Detention List deleted"))
     .catch((err) => res.status(404).json("Error: " + err));
 };
 
-exports.updateFeedbacklist = (req, res) => {
+exports.updateDetentionlist = (req, res) => {
   console.log("update");
   if(req.params.id !=null){
-    Feedbacklists.findOneAndUpdate(
+    Detentionlists.findOneAndUpdate(
         { _id: req.params.id },
         {
             _id: req.params.id ,
-            year: req.body.year,
-            faculty: req.body.faculty,
+            date: req.body.date,
+            description: req.body.description,
             link: req.body.link
             
           },(error,data)=>{

@@ -14,12 +14,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 const uri = process.env.ATLAS_URI;
 
-const ExercisesRouter = require("./routes/ExercisesRoutes");
-const AchievementsRouter = require("./routes/AchievementsRoutes");
-const StudymaterialsRouter = require("./routes/StudymaterialsRoutes");
-const StudentlistsRouter = require("./routes/StudentlistsRoutes");
-const DetentionlistsRouter = require("./routes/DetentionlistsRoutes");
-const FeedbacklistsRouter = require('./routes/FeedbacklistsRoutes');
+const ExercisesRouter = require("./routes/GhodeMadam/ExercisesRoutes");
+const AchievementsRouter = require("./routes/GhodeMadam/AchievementsRoutes");
+const StudymaterialsRouter = require("./routes/GhodeMadam/StudymaterialsRoutes");
+const StudentlistsRouter = require("./routes/GhodeMadam/StudentlistsRoutes");
+const DetentionlistsRouter = require("./routes/GhodeMadam/DetentionlistsRoutes");
+const FeedbacklistsRouter = require('./routes/GhodeMadam/FeedbacklistsRoutes');
 
 mongoose.connect(uri, { useNewUrlParser: true });
 

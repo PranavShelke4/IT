@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const achievementsControllers = require('../Controllers/AchievementsControllers');
+const achievementsControllers = require('../../Controllers/GhodeMadam/AchievementsControllers');
 
 router.post('/add-achievement',achievementsControllers.postAchievement);
 router.get('/get-achievements',achievementsControllers.getAchievements);
