@@ -3,6 +3,11 @@ import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
 import Feedbacklist from "../../../api/Feedbacklist";
+import "../../SubjectTeacher/Fideology/createPedelogy.css"
+
+function Cancel(){
+  window.location.href="/class-teacher/class-feedback";
+}
 
 
 function  AddFeedbackList() {
@@ -31,6 +36,7 @@ function  AddFeedbackList() {
     console.log(feedbacklist);
    const res = await Feedbacklist.post("/add-feedbacklist",feedbacklist);
    console.log(res.data.msg)
+   window.location.href="/class-teacher/class-feedback";
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }
@@ -41,8 +47,9 @@ function  AddFeedbackList() {
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
         <div>
-          <label>Date</label>
+          <label>Date</label><br/>
           <input 
+          className='input-box'
           type = "date"
           name="date"
           value={date}
@@ -52,8 +59,9 @@ function  AddFeedbackList() {
           />
         </div>
         <div>
-          <label>Name</label>
+          <label>Year</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name ="activityName"
           value = {descriptionName}
@@ -63,8 +71,9 @@ function  AddFeedbackList() {
           />
         </div>
         <div>
-          <label>Link</label>
+          <label>Link</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name="subName"
           value ={linkName}
@@ -74,7 +83,8 @@ function  AddFeedbackList() {
           />
         </div>
         
-        <input className ="btn btn-primary" type="submit" value="Submit"/>
+        <input className ="subButton" type="submit" value="Submit"/>
+        <input className ="cancelButton" type="button" onClick={Cancel} value="Cancel"/>
       </form>
     </div>
     </div>
