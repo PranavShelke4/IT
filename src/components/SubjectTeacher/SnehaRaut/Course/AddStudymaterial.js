@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
-import Studymaterial from "../../../api/Studymaterial";
+import Studymaterial from "../../../../api/Studymaterial"
 
 
 function  AddStudymaterial() {

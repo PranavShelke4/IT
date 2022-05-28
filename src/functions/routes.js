@@ -41,25 +41,25 @@ import EditFeedbacklist from "../pages/ClassTeacherPages/EditFeedback";
 
 
 
-// subject teacher Routes.....
+// Sneha Raut Routes.....
 
-import Dashbord from '../pages/SubjectTeacherPages/Dashbord';
-import CreateExercise from "../pages/SubjectTeacherPages/FideologyForm";
-import EditExercise from "../pages/SubjectTeacherPages/EditPedeology";
+import Dashbord from '../pages/SubjectTeacherPages/SnehaRaut/Dashbord';
+import CreateExercise from "../pages/SubjectTeacherPages/SnehaRaut/FideologyForm";
+import EditExercise from "../pages/SubjectTeacherPages/SnehaRaut/EditPedeology";
 
-import StudentDetail from '../pages/SubjectTeacherPages/studentDetail';
-import Course from '../pages/SubjectTeacherPages/coursePage';
+import StudentDetail from '../pages/SubjectTeacherPages/SnehaRaut/studentDetail';
+import Course from '../pages/SubjectTeacherPages/SnehaRaut/coursePage';
 
-import StudyPage  from "../pages/SubjectTeacherPages/studyPage";
-import AddStudymaterial from "../pages/SubjectTeacherPages/StudyMaterialPage";
-import EditStudymaterial from "../pages/SubjectTeacherPages/EditStudyMaterialPage";
+import StudyPage  from "../pages/SubjectTeacherPages/SnehaRaut/studyPage";
+import AddStudymaterial from "../pages/SubjectTeacherPages/SnehaRaut/StudyMaterialPage";
+import EditStudymaterial from "../pages/SubjectTeacherPages/SnehaRaut/EditStudyMaterialPage";
 
-import QuestionPaper from '../pages/SubjectTeacherPages/questionPaper';
-import AnswerKey from '../pages/SubjectTeacherPages/answerKey';
-import AssignmentPage from "../pages/SubjectTeacherPages/Assignmentpage";
+import QuestionPaper from '../pages/SubjectTeacherPages/SnehaRaut/questionPaper';
+import AnswerKey from '../pages/SubjectTeacherPages/SnehaRaut/answerKey';
+import AssignmentPage from "../pages/SubjectTeacherPages/SnehaRaut/Assignmentpage";
 
-import ProfilePage from "../pages/SubjectTeacherPages/ProfilePage";
-import LeavePage from '../pages/SubjectTeacherPages/LeavePage';
+import ProfilePage from "../pages/SubjectTeacherPages/SnehaRaut/ProfilePage";
+import LeavePage from '../pages/SubjectTeacherPages/SnehaRaut/LeavePage';
 
 //import EditExercise from "../pages/SubjectTeacherPages/EditPedeology";
 //import ExercisesList from "../components/SubjectTeacher/Fideology/ExercisesList";
@@ -81,22 +81,22 @@ const ConfigRoutes = () => {
       <Routes>
         <Route exact path="/" element={<App />}></Route>
 
-        <Route path="/subject-teacher/dashboard" element={<Dashbord />}></Route>
-        <Route path="/subject-teacher/fideology-form" element={<CreateExercise />}></Route>
+        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/dashboard" element={<Dashbord />}></Route>
+        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/fideology-form" element={<CreateExercise />}></Route>
         <Route path="/edit/:id" element={<EditExercise/>}></Route>
         
-        <Route path="/subject-teacher/student-details" element={<StudentDetail />}></Route>
-        <Route path="/subject-teacher/course" element={<Course />}></Route>
-        <Route path="/subject-teacher/study-material" element={<StudyPage />}></Route>
-        <Route path="/subject-teacher/add-studymaterial" element={<AddStudymaterial />}></Route>
+        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/student-details" element={<StudentDetail />}></Route>
+        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/course" element={<Course />}></Route>
+        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/study-material" element={<StudyPage />}></Route>
+        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/add-studymaterial" element={<AddStudymaterial />}></Route>
         <Route path="/studymaterial/edit/:id" element={<EditStudymaterial />}></Route>
 
-        <Route path="/subject-teacher/question-paper" element={<QuestionPaper />}></Route>
-        <Route path="/subject-teacher/answer-key" element={<AnswerKey />}></Route>
-        <Route path="/subject-teacher/assignments" element={<AssignmentPage />}></Route>
+        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/question-paper" element={<QuestionPaper />}></Route>
+        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/answer-key" element={<AnswerKey />}></Route>
+        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/assignments" element={<AssignmentPage />}></Route>
         
-        <Route path="/subject-teacher/profile" element={<ProfilePage />}></Route>
-        <Route path="/subject-teacher/leave" element={<LeavePage />}></Route>
+        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/profile" element={<ProfilePage />}></Route>
+        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/leave" element={<LeavePage />}></Route>
        
         
       

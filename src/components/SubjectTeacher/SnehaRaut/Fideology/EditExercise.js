@@ -1,35 +1,38 @@
 import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
-import Studymaterial from "../../../api/Studymaterial";
+
+import Exercise from "../../../../api/Exercise";
 
 import { useParams } from "react-router-dom";
-import "../Fideology/createPedelogy.css";
+import "./createPedelogy.css";
 
 function Cancel(){
-  window.location.href="/subject-teacher/study-material";
+  window.location.href="/subject-teacher/dashboard"
 }
 
-function  EditStudymaterial() {
+function  EditExercise() {
 
   const [date,SetDate] = useState("");
-  const [descriptionName,SetDescriptionName] = useState("");
-  const [linkName,SetLinkName] = useState("");
+  const [activityName,SetActicityName] = useState("");
+  const [subName,SetSubName] = useState("");
+  const [groupNo, SetGroupNo] = useState("");
   
   const params = useParams();
 
   useEffect(()=>{
     const HandelGetReq= async ()=>{
         console.log(params.id)
-        const res = await Studymaterial.get(`/get-studymaterial/${params.id}`);
+        const res = await Exercise.get(`/get-exercise/${params.id}`);
         console.log("res");
         console.log(res.data)
         SetDate( res.data.date);
-        SetDescriptionName(res.data.description);
-        SetLinkName(res.data.link);
+        SetActicityName(res.data.activity);
+        SetSubName(res.data.subject);
+        SetGroupNo(res.data.group);
     }
     HandelGetReq();
-  },[SetDate,SetDescriptionName,SetLinkName,params.id]);
+  },[SetDate,SetActicityName,SetSubName,SetGroupNo,params.id]);
 
 
   const {
@@ -46,17 +49,17 @@ function  EditStudymaterial() {
     
     const formdata = {
         "date":date,
-        "description":descriptionName,
-        "link":linkName
+        "activity":activityName,
+        "subject":subName,
+        "group":groupNo
     }
-    window.location.href="/subject-teacher/study-material";
+    window.location.href="/subject-teacher/dashboard";
     console.log("req")
     console.log(params.id)
     console.log(formdata)
-   const res = await Studymaterial.patch(`/update-studymaterial/${params.id}`,formdata);
+   const res = await Exercise.patch(`/update-exercise/${params.id}`,formdata);
    console.log(res.data.msg)
-   
-
+  
   }
 
   return (
@@ -76,30 +79,41 @@ function  EditStudymaterial() {
           />
         </div>
         <div>
-          <label>Decsription</label><br/>
+          <label>Activity Name</label><br/>
           <input 
           className='input-box'
           type ="text"
           name ="activityName"
-          value = {descriptionName}
+          value = {activityName}
           onChange={(e)=>{
-            SetDescriptionName(e.target.value);
+            SetActicityName(e.target.value);
           }}
           />
         </div>
         <div>
-          <label>Link</label><br/>
+          <label>Sub Name</label><br/>
           <input 
           className='input-box'
           type ="text"
           name="subName"
-          value ={linkName}
+          value ={subName}
           onChange={(e)=>{
-            SetLinkName(e.target.value);
+            SetSubName(e.target.value);
           }}
           />
         </div>
-        
+        <div>
+          <label>Group NO</label><br/>
+          <input 
+          className='input-box'
+          type = "text"
+          name="groupNo"
+          value ={groupNo}
+          onChange={(e)=>{
+            SetGroupNo(e.target.value);
+          }}
+          />
+        </div>
         <input className ="subButton" type="submit" value="Submit"/>
         <input className ="cancelButton" type="button" onClick={Cancel} value="Cancel"/>
       </form>
@@ -108,4 +122,4 @@ function  EditStudymaterial() {
   )
 }
 
-export default EditStudymaterial;     
+export default EditExercise      

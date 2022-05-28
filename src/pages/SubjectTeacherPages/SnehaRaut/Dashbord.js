@@ -1,14 +1,14 @@
 import React from 'react'
-import SubNavbar from '../../components/SubjectTeacher/subNavbar'
-import MySubject from "../../components/SubjectTeacher/Dashboard/MySubject";
+import RautSubNavbar from '../../../components/SubjectTeacher/SnehaRaut/RautSubNavbar';
+import MySubject from "../../../components/SubjectTeacher/SnehaRaut/Dashboard/MySubject";
 // import FideologyActivities from "../../components/SubjectTeacher/Dashboard/FideologyActivities";
 //import LecturesInWeek from '../../components/SubjectTeacher/Dashboard/LecturesInWeek';
-import ExercisesList from '../../components/SubjectTeacher/Fideology/ExercisesList';
+import ExercisesList from '../../../components/SubjectTeacher/SnehaRaut/Fideology/ExercisesList';
 
 function Dashbord() {
   return (
     <>
-        <SubNavbar/>
+        <RautSubNavbar/>
         <MySubject />
         {/* <FideologyActivities /> */}
         <ExercisesList />
