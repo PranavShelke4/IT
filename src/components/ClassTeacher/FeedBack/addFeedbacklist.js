@@ -12,8 +12,8 @@ function Cancel(){
 
 function  AddFeedbackList() {
 
-  const [date,SetDate] = useState("");
-  const [descriptionName,SetDescriptionName] = useState("");
+  const [year,SetYear] = useState("");
+  const [facultyName,SetFacultyName] = useState("");
   const [linkName,SetLinkName] = useState("");
 
 
@@ -28,8 +28,8 @@ function  AddFeedbackList() {
   } = useForm();
   const onSubmit = async() =>{
     const feedbacklist = {
-      date:date,
-      description:descriptionName,
+      year:year,
+      faculty:facultyName,
       link:linkName
     }
 
@@ -47,26 +47,26 @@ function  AddFeedbackList() {
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
         <div>
-          <label>Date</label><br/>
+          <label>Year</label><br/>
           <input 
           className='input-box'
-          type = "date"
+          type = "text"
           name="date"
-          value={date}
+          value={year}
           onChange={(e) => {
-            SetDate(e.target.value);
+            SetYear(e.target.value);
           }}
           />
         </div>
         <div>
-          <label>Year</label><br/>
+          <label>Faculty Name</label><br/>
           <input 
           className='input-box'
           type ="text"
           name ="activityName"
-          value = {descriptionName}
+          value = {facultyName}
           onChange={(e)=>{
-            SetDescriptionName(e.target.value);
+            SetFacultyName(e.target.value);
           }}
           />
         </div>

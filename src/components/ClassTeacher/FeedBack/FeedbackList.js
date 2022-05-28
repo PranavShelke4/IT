@@ -8,8 +8,8 @@ import Feedbacklists from '../../../api/Feedbacklist';
 const Feedbacklist = props => (
     <tr>
         {/* <td>{props.exercise.username}</td> */}
-        <td>{props.feedbacklist.date}</td>
-        <td>{props.feedbacklist.description}</td>
+        <td>{props.feedbacklist.year}</td>
+        <td>{props.feedbacklist.faculty}</td>
         <td><a href={props.feedbacklist.link}>{props.feedbacklist.link}</a></td>
         
         <td>
@@ -58,8 +58,8 @@ class FeedbackList extends Component {
                 <table className='detention-table'>
                     <thead className="thead-light">
                         <tr>
-		                    <th>Date</th>
 		                    <th>Year</th>
+		                    <th>Faculty Name</th>
 		                    <th>Link</th>
 		                    <th>Actions</th>
                         </tr>
