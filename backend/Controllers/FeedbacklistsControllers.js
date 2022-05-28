@@ -32,7 +32,7 @@ exports.getFeedbacklistById = (req, res) => {
 exports.deleteFeedbacklists = (req, res) => {
   console.log(req.params.id);
   Feedbacklists.findByIdAndDelete(req.params.id)
-    .then((feedbacklist) => res.json("feedback List deleted"))
+    .then((feedbacklist) => res.json("Feedback List deleted"))
     .catch((err) => res.status(404).json("Error: " + err));
 };
 
