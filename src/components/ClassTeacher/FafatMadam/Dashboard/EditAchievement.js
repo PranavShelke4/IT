@@ -1,13 +1,13 @@
 import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
-import Achievement from "../../../../api/Achievement";
+import Achievement from "../../../../api/FafatMadam/Achievement";
 import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 import { useParams } from "react-router-dom";
 
 function Cancel(){
-  window.location.href="/class-teacher/dashboard";
+  window.location.href="/class-teacher/Fafat/dashboard";
 }
 
 function  EditAchievement() {
@@ -47,7 +47,7 @@ function  EditAchievement() {
     // formdata.append("activity",activityName);
     // formdata.append("subject",subName);
     // formdata.append("group",groupNo);
-    window.location.href="/class-teacher/dashboard";
+    window.location.href="/class-teacher/Fafat/dashboard";
     const formdata = {
         "sname":studentName,
         "dept":deptName,

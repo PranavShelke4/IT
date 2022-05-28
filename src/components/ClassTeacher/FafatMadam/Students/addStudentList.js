@@ -2,11 +2,11 @@ import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
-import Studentlist from "../../../../api/Studentlist";
+import Studentlist from "../../../../api/FafatMadam/Studentlist";
 import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 function Cancel(){
-  window.location.href="/class-teacher/student-table"
+  window.location.href="/class-teacher/Fafat/student-table"
 }
 
 function  AddStudentList() {
@@ -35,7 +35,7 @@ function  AddStudentList() {
     console.log(studentlist);
    const res = await Studentlist.post("/add-studentlist",studentlist);
    console.log(res.data.msg)
-   window.location.href="/class-teacher/student-table"
+   window.location.href="/class-teacher/Fafat/student-table"
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }

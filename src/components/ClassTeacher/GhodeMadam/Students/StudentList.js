@@ -4,7 +4,7 @@ import axios from "axios";
 //import './ExercisesList.css';
 import "./students.css";
 
-import Studentlists from '../../../../api/Studentlist';
+import Studentlists from '../../../../api/GhodeMadam/Studentlist';
 
 const Studentlist = props => (
     <tr>

@@ -1,12 +1,12 @@
 import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
-import Detentionlist from "../../../../api/Detentionlist";
+import Detentionlist from "../../../../api/FafatMadam/Detentionlist";
 import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 import { useParams } from "react-router-dom";
 
 function Cancel(){
-  window.location.href="/class-teacher/class-detentionlist";
+  window.location.href="/class-teacher/Fafat/class-detentionlist";
 }
 
 
@@ -43,7 +43,7 @@ function  EditDetentionlist() {
     // formdata.append("activity",activityName);
     // formdata.append("subject",subName);
     // formdata.append("group",groupNo);
-    window.location.href="/class-teacher/class-detentionlist";
+    window.location.href="/class-teacher/Fafat/class-detentionlist";
     const formdata = {
         "date":date,
         "description":descriptionName,

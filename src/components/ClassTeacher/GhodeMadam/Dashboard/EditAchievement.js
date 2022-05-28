@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
-import Achievement from "../../../../api/Achievement";
+import Achievement from "../../../../api/GhodeMadam/Achievement";
 import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 import { useParams } from "react-router-dom";

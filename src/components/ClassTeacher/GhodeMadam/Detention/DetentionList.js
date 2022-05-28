@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./DetentionList.css";
 
-import Detentionlists from '../../../../api/Detentionlist';
+import Detentionlists from '../../../../api/GhodeMadam/Detentionlist';
 
 const Detentionlist = props => (
     <tr>

@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
-import Studentlist from "../../../../api/Studentlist";
+import Studentlist from "../../../../api/GhodeMadam/Studentlist";
 import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 import { useParams } from "react-router-dom";

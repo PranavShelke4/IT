@@ -12,7 +12,7 @@ import AssignClassTeacher from '../pages/HODPages/AssignClassTeacher';
 import FacyltyLeave from '../pages/HODPages/Leaves'
 
 
-// classTaecher Routes
+// classTaecher Routes Ghode Madam
 
 import ClassTeacherDashboard from '../pages/ClassTeacherPages/GhodeMadam/Dashboard';
 import AddAchievement from "../pages/ClassTeacherPages/GhodeMadam/addAchievement";
@@ -37,11 +37,30 @@ import EditFeedbacklist from "../pages/ClassTeacherPages/GhodeMadam/EditFeedback
 
 import ClassProfilePage from "../pages/ClassTeacherPages/GhodeMadam/ProfilePage";
 
+//class Teacher routes Fafat Madam
 
-//import AddStudentList from "../components/ClassTeacher/Students/addStudentlist";
-//import EditStudentlist from "../components/ClassTeacher/Students/EditStudentlist";
-//import AddDetentionList from "../components/ClassTeacher/Detention/addDetentionlist"
-//import AddFeedbackList from "../components/ClassTeacher/FeedBack/addFeedbacklist";
+import FafatClassTeacherDashboard from '../pages/ClassTeacherPages/FafatMadam/Dashboard';
+import FafatAddAchievement from "../pages/ClassTeacherPages/FafatMadam/addAchievement";
+import FafatEditAchievement from "../pages/ClassTeacherPages/FafatMadam/EditAchievementPage";
+
+import FafatClassFaculty from "../pages/ClassTeacherPages/FafatMadam/FacultyDetails";
+
+import FafatAssignST5thPage from "../pages/ClassTeacherPages/FafatMadam/AssignST5thPage";
+import FafatAssignST6thPage from "../pages/ClassTeacherPages/FafatMadam/AssignST6thPage";
+
+import FafatStudent from "../pages/ClassTeacherPages/FafatMadam/studentpage";
+import FafatAddList from "../pages/ClassTeacherPages/FafatMadam/addListPage";
+import FafatEditStudentlist from "../pages/ClassTeacherPages/FafatMadam/EditListPage";
+
+import FafatDetentionPage from "../pages/ClassTeacherPages/FafatMadam/DetentionPage";
+import FafatAddDetentionList from "../pages/ClassTeacherPages/FafatMadam/addDetentionPage";
+import FafatEditDetentionlist from "../pages/ClassTeacherPages/FafatMadam/EditDetention";
+
+import FafatFeedbackPage from "../pages/ClassTeacherPages/FafatMadam/FeedbackPage";
+import FafatAddFeedbackList from "../pages/ClassTeacherPages/FafatMadam/AddFeedbackPage";
+import FafatEditFeedbacklist from "../pages/ClassTeacherPages/FafatMadam/EditFeedback";
+
+import FafatClassProfilePage from "../pages/ClassTeacherPages/FafatMadam/ProfilePage";
 
 
 
@@ -65,11 +84,6 @@ import AssignmentPage from "../pages/SubjectTeacherPages/SnehaRaut/Assignmentpag
 import ProfilePage from "../pages/SubjectTeacherPages/SnehaRaut/ProfilePage";
 import LeavePage from '../pages/SubjectTeacherPages/SnehaRaut/LeavePage';
 
-//import EditExercise from "../pages/SubjectTeacherPages/EditPedeology";
-//import ExercisesList from "../components/SubjectTeacher/Fideology/ExercisesList";
-//import Studymaterial from "../components/SubjectTeacher/Course/StudyMaterial";
-//import AddStudymaterial from "../components/SubjectTeacher/Course/AddStudymaterial";
-//import EditStudymaterial from "../components/SubjectTeacher/Course/EditStudymaterial";
 
 // Sheetal Sutar Routes.....
 
@@ -181,7 +195,7 @@ const ConfigRoutes = () => {
        
         
       
-        {/* class teacher Routes */}
+        {/* class teacher Routes Ghode Madam  */}
         <Route path="/class-teacher/dashboard" element={<ClassTeacherDashboard />}></Route>
         <Route path="/class-teacher/add-achievement" element={<AddAchievement />}></Route>
         <Route path="/CT/edit/:id" element={<EditAchievement/>}></Route>
@@ -204,6 +218,29 @@ const ConfigRoutes = () => {
         <Route path="/feedbacklist/edit/:id" element={<EditFeedbacklist />}></Route>
         <Route path="/class-teacher/profile" element={<ClassProfilePage />}></Route>
         
+        
+        {/* class teacher Routes Fafat Madam  */}
+        <Route path="/class-teacher/Fafat/dashboard" element={<FafatClassTeacherDashboard />}></Route>
+        <Route path="/class-teacher/Fafat/add-achievement" element={<FafatAddAchievement />}></Route>
+        <Route path="/CT/Fafat/edit/:id" element={<FafatEditAchievement/>}></Route>
+
+        <Route path="/class-teacher/Fafat/classfaculty" element={<FafatClassFaculty />}></Route>
+
+        <Route path="/class-teacher/Fafat/student-table" element={<FafatStudent />}></Route>
+        <Route path="/class-teacher/Fafat/add-student-list" element={<FafatAddList />}></Route>
+        <Route path="/studentlist/Fafat/edit/:id" element={<FafatEditStudentlist />}></Route>
+        
+        <Route path="/class-teacher/Fafat/assign-5thSem" element={<FafatAssignST5thPage />}></Route>
+        <Route path="/class-teacher/Fafat/assign-6thSem" element={<FafatAssignST6thPage />}></Route>
+        
+        <Route path="/class-teacher/Fafat/class-detentionlist" element={<FafatDetentionPage />}></Route>
+        <Route path="/class-teacher/Fafat/add-detentionlist" element={<FafatAddDetentionList />}></Route>
+        <Route path="/detentionlist/Fafat/edit/:id" element={<FafatEditDetentionlist />}></Route>
+
+        <Route path="/class-teacher/Fafat/class-feedback" element={<FafatFeedbackPage />}></Route>
+        <Route path="/class-teacher/Fafat/add-feedbacklist" element={<FafatAddFeedbackList />}></Route>
+        <Route path="/feedbacklist/Fafat/edit/:id" element={<FafatEditFeedbacklist />}></Route>
+        <Route path="/class-teacher/Fafat/profile" element={<FafatClassProfilePage />}></Route>
         
 
 
