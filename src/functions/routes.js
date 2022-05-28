@@ -87,6 +87,26 @@ import SutarAssignmentPage from "../pages/SubjectTeacherPages/SheetalSutar/Assig
 import SutarProfilePage from "../pages/SubjectTeacherPages/SheetalSutar/ProfilePage";
 import SutarLeavePage from '../pages/SubjectTeacherPages/SheetalSutar/LeavePage';
 
+// Poonam Fafat Routes.....
+
+import FafatDashbord from '../pages/SubjectTeacherPages/PoonamFafat/Dashbord';
+import FafatCreateExercise from "../pages/SubjectTeacherPages/PoonamFafat/FideologyForm";
+import FafatEditExercise from "../pages/SubjectTeacherPages/PoonamFafat/EditPedeology";
+
+import FafatStudentDetail from '../pages/SubjectTeacherPages/PoonamFafat/studentDetail';
+import FafatCourse from '../pages/SubjectTeacherPages/PoonamFafat/coursePage';
+
+import FafatStudyPage  from "../pages/SubjectTeacherPages/PoonamFafat/studyPage";
+import FafatAddStudymaterial from "../pages/SubjectTeacherPages/PoonamFafat/StudyMaterialPage";
+import FafatEditStudymaterial from "../pages/SubjectTeacherPages/PoonamFafat/EditStudyMaterialPage";
+
+import FafatQuestionPaper from '../pages/SubjectTeacherPages/PoonamFafat/questionPaper';
+import FafatAnswerKey from '../pages/SubjectTeacherPages/PoonamFafat/answerKey';
+import FafatAssignmentPage from "../pages/SubjectTeacherPages/PoonamFafat/Assignmentpage";
+
+import FafatProfilePage from "../pages/SubjectTeacherPages/PoonamFafat/ProfilePage";
+import FafatLeavePage from '../pages/SubjectTeacherPages/PoonamFafat/LeavePage';
+
 // Other
 
 //import SignUpPage from "../components/Signup/signup";
@@ -135,6 +155,25 @@ const ConfigRoutes = () => {
         
         <Route path="/subject-teacher/sheetal-sutar/profile" element={<SutarProfilePage />}></Route>
         <Route path="/subject-teacher/sheetal-sutar/leave" element={<SutarLeavePage />}></Route>
+
+
+         {/* Poonam Fafat Routes */}
+         <Route path="/subject-teacher/poonam-fafat/dashboard" element={<FafatDashbord />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/fideology-form" element={<FafatCreateExercise />}></Route>
+        <Route path="/edit/:id" element={<FafatEditExercise/>}></Route>
+        
+        <Route path="/subject-teacher/poonam-fafat/student-details" element={<FafatStudentDetail />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/course" element={<FafatCourse />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/study-material" element={<FafatStudyPage />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/add-studymaterial" element={<FafatAddStudymaterial />}></Route>
+        <Route path="/studymaterial/edit/:id" element={<FafatEditStudymaterial />}></Route>
+
+        <Route path="/subject-teacher/poonam-fafat/question-paper" element={<FafatQuestionPaper />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/answer-key" element={<FafatAnswerKey />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/assignments" element={<FafatAssignmentPage />}></Route>
+        
+        <Route path="/subject-teacher/poonam-fafat/profile" element={<FafatProfilePage />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/leave" element={<FafatLeavePage />}></Route>
        
         
       
