@@ -2,7 +2,7 @@ import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
 import Feedbacklist from "../../../api/Feedbacklist";
-import "../../SubjectTeacher/Fideology/createPedelogy.css"
+import "../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 import { useParams } from "react-router-dom";
 
 function Cancel(){
