@@ -14,28 +14,28 @@ import FacyltyLeave from '../pages/HODPages/Leaves'
 
 // classTaecher Routes
 
-import ClassTeacherDashboard from '../pages/ClassTeacherPages/Dashboard';
-import AddAchievement from "../pages/ClassTeacherPages/addAchievement";
-import EditAchievement from "../pages/ClassTeacherPages/EditAchievementPage";
+import ClassTeacherDashboard from '../pages/ClassTeacherPages/GhodeMadam/Dashboard';
+import AddAchievement from "../pages/ClassTeacherPages/GhodeMadam/addAchievement";
+import EditAchievement from "../pages/ClassTeacherPages/GhodeMadam/EditAchievementPage";
 
-import ClassFaculty from "../pages/ClassTeacherPages/FacultyDetails";
+import ClassFaculty from "../pages/ClassTeacherPages/GhodeMadam/FacultyDetails";
 
-import AssignST5thPage from "../pages/ClassTeacherPages/AssignST5thPage";
-import AssignST6thPage from "../pages/ClassTeacherPages/AssignST6thPage";
+import AssignST5thPage from "../pages/ClassTeacherPages/GhodeMadam/AssignST5thPage";
+import AssignST6thPage from "../pages/ClassTeacherPages/GhodeMadam/AssignST6thPage";
 
-import Student from "../pages/ClassTeacherPages/studentpage";
-import AddList from "../pages/ClassTeacherPages/addListPage";
-import EditStudentlist from "../pages/ClassTeacherPages/EditListPage";
+import Student from "../pages/ClassTeacherPages/GhodeMadam/studentpage";
+import AddList from "../pages/ClassTeacherPages/GhodeMadam/addListPage";
+import EditStudentlist from "../pages/ClassTeacherPages/GhodeMadam/EditListPage";
 
-import DetentionPage from "../pages/ClassTeacherPages/DetentionPage";
-import AddDetentionList from "../pages/ClassTeacherPages/addDetentionPage";
-import EditDetentionlist from "../pages/ClassTeacherPages/EditDetention";
+import DetentionPage from "../pages/ClassTeacherPages/GhodeMadam/DetentionPage";
+import AddDetentionList from "../pages/ClassTeacherPages/GhodeMadam/addDetentionPage";
+import EditDetentionlist from "../pages/ClassTeacherPages/GhodeMadam/EditDetention";
 
-import FeedbackPage from "../pages/ClassTeacherPages/FeedbackPage";
-import AddFeedbackList from "../pages/ClassTeacherPages/AddFeedbackPage";
-import EditFeedbacklist from "../pages/ClassTeacherPages/EditFeedback";
+import FeedbackPage from "../pages/ClassTeacherPages/GhodeMadam/FeedbackPage";
+import AddFeedbackList from "../pages/ClassTeacherPages/GhodeMadam/AddFeedbackPage";
+import EditFeedbacklist from "../pages/ClassTeacherPages/GhodeMadam/EditFeedback";
 
-import ClassProfilePage from "../pages/ClassTeacherPages/ProfilePage";
+import ClassProfilePage from "../pages/ClassTeacherPages/GhodeMadam/ProfilePage";
 
 
 //import AddStudentList from "../components/ClassTeacher/Students/addStudentlist";
