@@ -35,13 +35,13 @@ function subNavbar() {
         </div>
         <ul className="nav-links">
           <li>
-            <Link to="/subject-teacher/dashboard">
+            <Link to="/subject-teacher/sheetal-sutar/dashboard">
               <i className="bx bx-home-alt"></i>
               <span className="link_name">Dashboard</span>
             </Link>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="/subject-teacher/dashboard">
+                <Link className="link_name" to="/subject-teacher/sheetal-sutar/dashboard">
                   Dashboard
                 </Link>
               </li>
@@ -63,25 +63,25 @@ function subNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/subject-teacher/student-details">First Year</Link>
+                <Link to="/subject-teacher/sheetal-sutar/student-details">First Year</Link>
               </li>
               <li>
-                <Link to="/subject-teacher/student-details">Second Year</Link>
+                <Link to="/subject-teacher/sheetal-sutar/student-details">Second Year</Link>
               </li>
               <li>
-                <Link to="/subject-teacher/student-details">Third Year</Link>
+                <Link to="/subject-teacher/sheetal-sutar/student-details">Third Year</Link>
               </li>
             </ul>
           </li>
 
           <li>
-            <Link to="/subject-teacher/course">
+            <Link to="/subject-teacher/sheetal-sutar/course">
               <i className="bx bx-book"></i>
               <span className="link_name">Course</span>
             </Link>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="/subject-teacher/course">
+                <Link className="link_name" to="/subject-teacher/sheetal-sutar/course">
                 Course
                 </Link>
               </li>
@@ -174,19 +174,19 @@ function subNavbar() {
                 <Link to="#">CR</Link>
               </li>
               <li>
-                <Link to="/subject-teacher/profile">Profile</Link>
+                <Link to="/subject-teacher/sheetal-sutar/profile">Profile</Link>
               </li>
             </ul>
           </li>
 
           <li>
-            <Link to="/subject-teacher/leave">
+            <Link to="/subject-teacher/sheetal-sutar/leave">
               <i className="bx bxs-comment-detail"></i>
               <span className="link_name">Leaves</span>
             </Link>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="/subject-teacher/leave">
+                <Link className="link_name" to="/subject-teacher/sheetal-sutar/leave">
                 Leaves
                 </Link>
               </li>

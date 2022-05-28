@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import Link from 'react-router-dom'
 // import "./FideologyActivities.css"
 
 function FideologyActivities() {
@@ -58,7 +59,7 @@ function FideologyActivities() {
 		    <td><a href="#"><i className='bx bx-edit-alt'></i></a> | <a href="#"><i className='bx bx-trash'></i></a></td>
 		  </tr>
 		</table>
-        <a href='/fideology-form'><div className='add'>Add</div></a>
+        <Link to='/subject-teacher/sneha-raut/fideology-form'><div className='add'>Add</div></Link>
   	</div>
     </div>
   )

@@ -106,7 +106,7 @@ const ConfigRoutes = () => {
          {/* Sneha Raut Routes */}
         <Route path="/subject-teacher/sneha-raut/dashboard" element={<Dashbord />}></Route>
         <Route path="/subject-teacher/sneha-raut/fideology-form" element={<CreateExercise />}></Route>
-        <Route path="/edit/:id" element={<EditExercise/>}></Route>
+        <Route path="/sneha-raut/edit/:id" element={<EditExercise/>}></Route>
         
         <Route path="/subject-teacher/sneha-raut/student-details" element={<StudentDetail />}></Route>
         <Route path="/subject-teacher/sneha-raut/course" element={<Course />}></Route>
