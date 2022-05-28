@@ -2,8 +2,13 @@ import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
 import Feedbacklist from "../../../api/Feedbacklist";
-
+import "../../SubjectTeacher/Fideology/createPedelogy.css"
 import { useParams } from "react-router-dom";
+
+function Cancel(){
+  window.location.href="/class-teacher/class-feedback";
+}
+
 
 function  EditFeedbacklist() {
 
@@ -38,7 +43,7 @@ function  EditFeedbacklist() {
     // formdata.append("activity",activityName);
     // formdata.append("subject",subName);
     // formdata.append("group",groupNo);
-    
+    window.location.href="/class-teacher/class-feedback";
     const formdata = {
         "date":date,
         "description":descriptionName,
@@ -58,8 +63,9 @@ function  EditFeedbacklist() {
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
         <div>
-          <label>Date</label>
+          <label>Date</label><br/>
           <input 
+          className='input-box'
           type = "date"
           name="date"
           value={date}
@@ -69,8 +75,9 @@ function  EditFeedbacklist() {
           />
         </div>
         <div>
-          <label>Name</label>
+          <label>Year</label><br/>
           <input 
+          className='input-box'
           type ="text"
           name ="activityName"
           value = {descriptionName}
@@ -80,8 +87,9 @@ function  EditFeedbacklist() {
           />
         </div>
         <div>
-          <label>Link</label>
-          <input 
+          <label>Link</label><br/>
+          <input
+          className='input-box' 
           type ="text"
           name="subName"
           value ={linkName}
@@ -91,7 +99,9 @@ function  EditFeedbacklist() {
           />
         </div>
         
-        <input className ="btn btn-primary" type="submit" value="Submit"/>
+        <input className ="subButton" type="submit" value="Submit"/>
+        <input className ="cancelButton" type="button" onClick={Cancel} value="Cancel"/>
+
       </form>
     </div>
     </div>
