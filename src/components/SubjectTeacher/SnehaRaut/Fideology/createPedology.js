@@ -1,65 +1,45 @@
-import React,{useEffect, useState} from 'react'
+import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
+// import { useHistory } from "react-router-dom";
 
-
-import Exercise from "../../../api/Exercise";
-
-import { useParams } from "react-router-dom";
+import Exercise from "../../../../api/Exercise";
 import "./createPedelogy.css";
 
 function Cancel(){
   window.location.href="/subject-teacher/dashboard"
 }
 
-function  EditExercise() {
+function  CreatePedology() {
 
   const [date,SetDate] = useState("");
   const [activityName,SetActicityName] = useState("");
   const [subName,SetSubName] = useState("");
   const [groupNo, SetGroupNo] = useState("");
-  
-  const params = useParams();
 
-  useEffect(()=>{
-    const HandelGetReq= async ()=>{
-        console.log(params.id)
-        const res = await Exercise.get(`/get-exercise/${params.id}`);
-        console.log("res");
-        console.log(res.data)
-        SetDate( res.data.date);
-        SetActicityName(res.data.activity);
-        SetSubName(res.data.subject);
-        SetGroupNo(res.data.group);
-    }
-    HandelGetReq();
-  },[SetDate,SetActicityName,SetSubName,SetGroupNo,params.id]);
+ 
+  // const history = useHistory();
 
-
+  //rajesh is here
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
   const onSubmit = async() =>{
-    // const formdata = new FormData();
-    // formdata.append("date",date);
-    // formdata.append("activity",activityName);
-    // formdata.append("subject",subName);
-    // formdata.append("group",groupNo);
-    
-    const formdata = {
-        "date":date,
-        "activity":activityName,
-        "subject":subName,
-        "group":groupNo
+    const exercise = {
+      date:date,
+      activity:activityName,
+      subject:subName,
+      group:groupNo
     }
-    window.location.href="/subject-teacher/dashboard";
-    console.log("req")
-    console.log(params.id)
-    console.log(formdata)
-   const res = await Exercise.patch(`/update-exercise/${params.id}`,formdata);
+
+    console.log(exercise);
+   const res = await Exercise.post("/add-exercise",exercise);
    console.log(res.data.msg)
-  
+   window.location.href="/subject-teacher/dashboard";
+  //  if(res.data.msg =="success"){
+  //   //  history.push("/subject-teacher-dashboard");
+  //  }
   }
 
   return (
@@ -80,8 +60,8 @@ function  EditExercise() {
         </div>
         <div>
           <label>Activity Name</label><br/>
-          <input 
-          className='input-box'
+          <input
+          className='input-box' 
           type ="text"
           name ="activityName"
           value = {activityName}
@@ -122,4 +102,4 @@ function  EditExercise() {
   )
 }
 
-export default EditExercise      
+export default CreatePedology      

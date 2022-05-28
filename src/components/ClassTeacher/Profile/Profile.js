@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../SubjectTeacher/My Details/profile.css';
+// import '';
 
 function Profile(){
     return (

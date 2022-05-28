@@ -2,23 +2,22 @@ import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
-import Exercise from "../../../api/Exercise";
-import "./createPedelogy.css";
+import Studymaterial from "../../../../api/Studymaterial"
 
 function Cancel(){
-  window.location.href="/subject-teacher/dashboard"
+  window.location.href="/subject-teacher/study-material"
 }
 
-function  CreatePedology() {
+function  AddStudymaterial() {
 
   const [date,SetDate] = useState("");
-  const [activityName,SetActicityName] = useState("");
-  const [subName,SetSubName] = useState("");
-  const [groupNo, SetGroupNo] = useState("");
+  const [descriptionName,SetDescriptionName] = useState("");
+  const [linkName,SetLinkName] = useState("");
 
- 
+
+
   // const history = useHistory();
-
+//avadhut is here
   //rajesh is here
   const {
     register,
@@ -26,17 +25,16 @@ function  CreatePedology() {
     handleSubmit,
   } = useForm();
   const onSubmit = async() =>{
-    const exercise = {
+    const studymaterial = {
       date:date,
-      activity:activityName,
-      subject:subName,
-      group:groupNo
+      description:descriptionName,
+      link:linkName
     }
 
-    console.log(exercise);
-   const res = await Exercise.post("/add-exercise",exercise);
+    console.log(studymaterial);
+   const res = await Studymaterial.post("/add-studymaterial",studymaterial);
    console.log(res.data.msg)
-   window.location.href="/subject-teacher/dashboard";
+   window.location.href="/subject-teacher/study-material";
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }
@@ -59,41 +57,30 @@ function  CreatePedology() {
           />
         </div>
         <div>
-          <label>Activity Name</label><br/>
-          <input
-          className='input-box' 
+          <label>Decsription</label><br/>
+          <input 
+          className='input-box'
           type ="text"
           name ="activityName"
-          value = {activityName}
+          value = {descriptionName}
           onChange={(e)=>{
-            SetActicityName(e.target.value);
+            SetDescriptionName(e.target.value);
           }}
           />
         </div>
         <div>
-          <label>Sub Name</label><br/>
+          <label>Link</label><br/>
           <input 
           className='input-box'
           type ="text"
           name="subName"
-          value ={subName}
+          value ={linkName}
           onChange={(e)=>{
-            SetSubName(e.target.value);
+            SetLinkName(e.target.value);
           }}
           />
         </div>
-        <div>
-          <label>Group NO</label><br/>
-          <input 
-          className='input-box'
-          type = "text"
-          name="groupNo"
-          value ={groupNo}
-          onChange={(e)=>{
-            SetGroupNo(e.target.value);
-          }}
-          />
-        </div>
+        
         <input className ="subButton" type="submit" value="Submit"/>
         <input className ="cancelButton" type="button" onClick={Cancel} value="Cancel"/>
       </form>
@@ -102,4 +89,4 @@ function  CreatePedology() {
   )
 }
 
-export default CreatePedology      
+export default AddStudymaterial;     

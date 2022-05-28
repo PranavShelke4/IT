@@ -1,7 +1,7 @@
 //import React, { useContext } from "react";
-import "./subNavbar.css";
+import "./RautSubNavbar.css";
 import {Link} from 'react-router-dom';
-import BodheSirImg from "../../assets/img/BodheSirImg.jpg"
+import BodheSirImg from "../../../assets/img/BodheSirImg.jpg"
 //import { AuthContext } from "../../functions/Auth"
 //import firebaseConfig from "../../functions/fire"
 
