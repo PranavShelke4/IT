@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const studentlistsControllers = require('../Controllers/StudentlistsControllers');
+const studentlistsControllers = require('../../Controllers/GhodeMadam/StudentlistsControllers');
 
 router.post('/add-studentlist',studentlistsControllers.postStudentlist);
 router.get('/get-studentlists',studentlistsControllers.getStudentlists);
