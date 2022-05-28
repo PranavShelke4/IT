@@ -2,11 +2,11 @@ import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
-import Achievement from "../../../../api/Achievement";
+import Achievement from "../../../../api/FafatMadam/Achievement";
 import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 function Cancel(){
-  window.location.href="/class-teacher/dashboard";
+  window.location.href="/class-teacher/Fafat/dashboard";
 }
 
 function  CreateAchievement() {
@@ -37,7 +37,7 @@ function  CreateAchievement() {
     console.log(achievement);
    const res = await Achievement.post("/add-achievement",achievement);
    console.log(res.data.msg)
-   window.location.href="/class-teacher/dashboard";
+   window.location.href="/class-teacher/Fafat/dashboard";
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }

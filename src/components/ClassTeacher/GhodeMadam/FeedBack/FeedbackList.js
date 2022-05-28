@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./Feedback.css";
 
-import Feedbacklists from '../../../../api/Feedbacklist';
+import Feedbacklists from '../../../../api/GhodeMadam/Feedbacklist';
 
 const Feedbacklist = props => (
     <tr>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import './studentAchievement.css';
 
-import Achievements from '../../../../api/Achievement';
+import Achievements from '../../../../api/GhodeMadam/Achievement';
 
 
 const Achievement = props => (

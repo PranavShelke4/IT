@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./DetentionList.css";
 
-import Detentionlists from '../../../../api/Detentionlist';
+import Detentionlists from '../../../../api/FafatMadam/Detentionlist';
 
 const Detentionlist = props => (
     <tr>
@@ -13,7 +13,7 @@ const Detentionlist = props => (
         <td><a href={props.detentionlist.link}>{props.detentionlist.link}</a></td>
         
         <td>
-            <Link to={"/detentionlist/edit/"+props.detentionlist._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteDetentionlist(props.detentionlist._id) }} ><i className='bx bx-trash'></i></span>
+            <Link to={"/detentionlist/Fafat/edit/"+props.detentionlist._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteDetentionlist(props.detentionlist._id) }} ><i className='bx bx-trash'></i></span>
             {/* <button className="btn btn-secondary"><Link to={"/edit/"+props.exercise._id} style={{color:"white"}}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => {props.deleteExercise(props.exercise._id) }}>Delete</button> */}
         </td>
     </tr>
@@ -68,7 +68,7 @@ class DetentionList extends Component {
                         {this.detentionlistsList()}
                     </tbody>
                 </table>
-                <Link to={'/class-teacher/add-detentionlist'}><div className='add'>Add</div></Link>
+                <Link to={'/class-teacher/Fafat/add-detentionlist'}><div className='add'>Add</div></Link>
             </div>
             </div>
          );

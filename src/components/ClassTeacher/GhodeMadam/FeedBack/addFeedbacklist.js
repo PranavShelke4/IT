@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
-import Feedbacklist from "../../../../api/Feedbacklist";
+import Feedbacklist from "../../../../api/GhodeMadam/Feedbacklist";
 import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 function Cancel(){

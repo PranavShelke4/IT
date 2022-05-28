@@ -7,7 +7,7 @@ function myClassDetails() {
       <div className="d-flex flex-md-row flex-sm-column flex-wrap justify-content-center" id="row">
         <div className="sub1">
           <p className="subname">Students</p>
-          <p className="subcode">71</p>
+          <p className="subcode">60</p>
         </div>
         <div className="sub2">
           <p className="subname">Teachers</p>
@@ -22,7 +22,7 @@ function myClassDetails() {
           <p className="subcode">6</p>
         </div>
         <div className="it">
-            <h3>Third Year (2021 - 22)</h3>
+            <h3>Second Year (2021 - 22)</h3>
         </div>
       </div>
 

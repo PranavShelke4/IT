@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./Feedback.css";
 
-import Feedbacklists from '../../../../api/Feedbacklist';
+import Feedbacklists from '../../../../api/FafatMadam/Feedbacklist';
 
 const Feedbacklist = props => (
     <tr>
@@ -13,7 +13,7 @@ const Feedbacklist = props => (
         <td><a href={props.feedbacklist.link}>{props.feedbacklist.link}</a></td>
         
         <td>
-            <Link to={"/feedbacklist/edit/"+props.feedbacklist._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteFeedbacklist(props.feedbacklist._id) }} ><i className='bx bx-trash'></i></span>
+            <Link to={"/feedbacklist/Fafat/edit/"+props.feedbacklist._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteFeedbacklist(props.feedbacklist._id) }} ><i className='bx bx-trash'></i></span>
             {/* <button className="btn btn-secondary"><Link to={"/edit/"+props.exercise._id} style={{color:"white"}}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => {props.deleteExercise(props.exercise._id) }}>Delete</button> */}
         </td>
     </tr>
@@ -68,7 +68,7 @@ class FeedbackList extends Component {
                         {this.feedbacklistsList()}
                     </tbody>
                 </table>
-                <Link to={'/class-teacher/add-feedbacklist'}><div className='add'>Add</div></Link>
+                <Link to={'/class-teacher/Fafat/add-feedbacklist'}><div className='add'>Add</div></Link>
             </div>
             </div>
          );
