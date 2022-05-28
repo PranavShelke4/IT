@@ -1,7 +1,7 @@
 import React from "react";
 import "./classTeacherNavbar.css";
 import {Link} from 'react-router-dom';
-import GhodeMadamimg from '../../../assets/img/ghode-madam.svg'
+import FafatMadamimg from '../../../assets/img/fafat-madam.jpeg'
 
 
 function eventHandle() {
@@ -190,7 +190,7 @@ function classTeacherNavbar() {
           <li>
             <div className="profile-details">
               <div className="profile-content">
-                <img alt="" src={GhodeMadamimg} />
+                <img alt="" src={FafatMadamimg} />
               </div>
               <div className="name-job">
                 <div className="profile_name">Miss. P. C. Fafat</div>
