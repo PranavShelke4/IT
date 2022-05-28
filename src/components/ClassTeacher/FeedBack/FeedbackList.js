@@ -1,53 +1,52 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import axios from "axios";
-//import './ExercisesList.css';
 import "./Feedback.css";
 
-import Feedbacklists from '../../../api/Feedbacklist';
+import Detentionlists from '../../../api/Detentionlist';
 
-const Feedbacklist = props => (
+const Detentionlist = props => (
     <tr>
         {/* <td>{props.exercise.username}</td> */}
-        <td>{props.feedbacklist.date}</td>
-        <td>{props.feedbacklist.description}</td>
-        <td><a href={props.feedbacklist.link}>{props.feedbacklist.link}</a></td>
+        <td>{props.detentionlist.date}</td>
+        <td>{props.detentionlist.description}</td>
+        <td><a href={props.detentionlist.link}>{props.detentionlist.link}</a></td>
         
         <td>
-            <Link to={"/feedbacklist/edit/"+props.feedbacklist._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteFeedbacklist(props.feedbacklist._id) }} ><i className='bx bx-trash'></i></span>
+            <Link to={"/detentionlist/edit/"+props.detentionlist._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteDetentionlist(props.detentionlist._id) }} ><i className='bx bx-trash'></i></span>
             {/* <button className="btn btn-secondary"><Link to={"/edit/"+props.exercise._id} style={{color:"white"}}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => {props.deleteExercise(props.exercise._id) }}>Delete</button> */}
         </td>
     </tr>
 )
 
-class FeedbackList extends Component {
+class DetentionList extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          feedbacklists: []
+          detentionlists: []
         }
 
-        this.deleteFeedbacklist = this.deleteFeedbacklist.bind(this);
+        this.deleteDetentionlist = this.deleteDetentionlist.bind(this);
     }
 
     componentDidMount() {
-      Feedbacklists.get('/get-feedbacklists')
+      Detentionlists.get('/get-detentionlists')
             .then(res => {
-                this.setState({ feedbacklists: res.data })
+                this.setState({ detentionlists: res.data })
             })
             .catch(error => console.log(error));
     }
 
-    deleteFeedbacklist(id) {
-      Feedbacklists.delete('/delete-feedbacklist/' +id)
+    deleteDetentionlist(id) {
+      Detentionlists.delete('/delete-detentionlist/' +id)
             .then(res => console.log(res.data));
 
-        this.setState({ feedbacklists: this.state.feedbacklists.filter(el => el._id !== id)})
+        this.setState({ detentionlists: this.state.detentionlists.filter(el => el._id !== id)})
     }
 
-    feedbacklistsList() {
-        return this.state.feedbacklists.map(currentfeedbacklist => {
-            return <Feedbacklist feedbacklist={currentfeedbacklist} deletefeedbacklist={this.deleteFeedbacklist} key={currentfeedbacklist._id} />
+    detentionlistsList() {
+        return this.state.detentionlists.map(currentdetentionlist => {
+            return <Detentionlist detentionlist={currentdetentionlist} deleteDetentionlist={this.deleteDetentionlist} key={currentdetentionlist._id} />
         })
     }
 
@@ -55,26 +54,26 @@ class FeedbackList extends Component {
         return ( 
             <div className='FideologyActivities'>
             <div className="fideo">
-               
-                <table className='feedback-table'>
+                
+                <table className='detention-table'>
                     <thead className="thead-light">
                         <tr>
 		                    <th>Date</th>
-		                    <th>Name</th>
+		                    <th>Year</th>
 		                    <th>Link</th>
 		                    <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {this.feedbacklistsList()}
+                        {this.detentionlistsList()}
                     </tbody>
                 </table>
-                <Link to={'/class-teacher/add-feedbacklist'}><div className='add'>Add</div></Link>
+                <Link to={'/class-teacher/add-detentionlist'}><div className='add'>Add</div></Link>
             </div>
             </div>
          );
     }
 }
  
-export default FeedbackList;
+export default DetentionList;
 
