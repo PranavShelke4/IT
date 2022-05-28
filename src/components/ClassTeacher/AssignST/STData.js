@@ -3,7 +3,13 @@ const FacultyDatass = [
     {
         id: 1,
         SrNo: "1",
-        Subject: "English"
+        Image: "1",
+        Name: "Mrs. Priyanka S. Ghode",
+        Gender: "Female",
+        Qualification: "M.Tech (CSE) B.E(IT)",
+        Mobile: "9960465169",
+        Email: "priyanka.kamdi@gmail.com",
+        MoreInfo: "https://drive.google.com/file/d/1wW9EtYi5b7dCDiB8sb4nILJjovM2jFUL/view",
     },
     {
         id: 2,
