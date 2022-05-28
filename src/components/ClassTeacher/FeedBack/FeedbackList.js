@@ -3,50 +3,50 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./Feedback.css";
 
-import Detentionlists from '../../../api/Detentionlist';
+import Feedbacklists from '../../../api/Feedbacklist';
 
-const Detentionlist = props => (
+const Feedbacklist = props => (
     <tr>
         {/* <td>{props.exercise.username}</td> */}
-        <td>{props.detentionlist.date}</td>
-        <td>{props.detentionlist.description}</td>
-        <td><a href={props.detentionlist.link}>{props.detentionlist.link}</a></td>
+        <td>{props.feedbacklist.date}</td>
+        <td>{props.feedbacklist.description}</td>
+        <td><a href={props.feedbacklist.link}>{props.feedbacklist.link}</a></td>
         
         <td>
-            <Link to={"/detentionlist/edit/"+props.detentionlist._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteDetentionlist(props.detentionlist._id) }} ><i className='bx bx-trash'></i></span>
+            <Link to={"/feedbacklist/edit/"+props.feedbacklist._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteFeedbacklist(props.feedbacklist._id) }} ><i className='bx bx-trash'></i></span>
             {/* <button className="btn btn-secondary"><Link to={"/edit/"+props.exercise._id} style={{color:"white"}}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => {props.deleteExercise(props.exercise._id) }}>Delete</button> */}
         </td>
     </tr>
 )
 
-class DetentionList extends Component {
+class FeedbackList extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          detentionlists: []
+          feedbacklists: []
         }
 
-        this.deleteDetentionlist = this.deleteDetentionlist.bind(this);
+        this.deleteFeedbacklist = this.deleteFeedbacklist.bind(this);
     }
 
     componentDidMount() {
-      Detentionlists.get('/get-detentionlists')
+      Feedbacklists.get('/get-feedbacklists')
             .then(res => {
-                this.setState({ detentionlists: res.data })
+                this.setState({ feedbacklists: res.data })
             })
             .catch(error => console.log(error));
     }
 
-    deleteDetentionlist(id) {
-      Detentionlists.delete('/delete-detentionlist/' +id)
+    deleteFeedbacklist(id) {
+      Feedbacklists.delete('/delete-feedbacklist/' +id)
             .then(res => console.log(res.data));
 
-        this.setState({ detentionlists: this.state.detentionlists.filter(el => el._id !== id)})
+        this.setState({ feedbacklists: this.state.feedbacklists.filter(el => el._id !== id)})
     }
 
-    detentionlistsList() {
-        return this.state.detentionlists.map(currentdetentionlist => {
-            return <Detentionlist detentionlist={currentdetentionlist} deleteDetentionlist={this.deleteDetentionlist} key={currentdetentionlist._id} />
+    feedbacklistsList() {
+        return this.state.feedbacklists.map(currentfeedbacklist => {
+            return <Feedbacklist feedbacklist={currentfeedbacklist} deleteFeedbacklist={this.deleteFeedbacklist} key={currentfeedbacklist._id} />
         })
     }
 
@@ -65,15 +65,15 @@ class DetentionList extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        {this.detentionlistsList()}
+                        {this.feedbacklistsList()}
                     </tbody>
                 </table>
-                <Link to={'/class-teacher/add-detentionlist'}><div className='add'>Add</div></Link>
+                <Link to={'/class-teacher/add-feedbacklist'}><div className='add'>Add</div></Link>
             </div>
             </div>
          );
     }
 }
  
-export default DetentionList;
+export default FeedbackList;
 
