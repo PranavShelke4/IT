@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
 import Detentionlist from "../../../api/Detentionlist";
-import "../../SubjectTeacher/Fideology/createPedelogy.css"
+import "../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 function Cancel(){
   window.location.href="/class-teacher/class-detentionlist";
