@@ -3,11 +3,11 @@ const Feedbacklists = require("../models/feedbacklist.model");
 exports.postFeedbacklist = (req, res) => {
   console.log("Post Req ------------------->>>>>>");
   console.log(req.body);
-  const date = req.body.date;
-  const description = req.body.description;
+  const year = req.body.year;
+  const faculty = req.body.faculty;
   const link = req.body.link;
 
-  const newFeedbacklist = new Feedbacklists({ date, description, link });
+  const newFeedbacklist = new Feedbacklists({ year, faculty, link });
 
   newFeedbacklist
     .save()
@@ -43,8 +43,8 @@ exports.updateFeedbacklist = (req, res) => {
         { _id: req.params.id },
         {
             _id: req.params.id ,
-            date: req.body.date,
-            description: req.body.description,
+            year: req.body.year,
+            faculty: req.body.faculty,
             link: req.body.link
             
           },(error,data)=>{

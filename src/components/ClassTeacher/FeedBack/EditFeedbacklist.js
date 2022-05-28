@@ -12,8 +12,8 @@ function Cancel(){
 
 function  EditFeedbacklist() {
 
-  const [date,SetDate] = useState("");
-  const [descriptionName,SetDescriptionName] = useState("");
+  const [year,SetYear] = useState("");
+  const [facultyName,SetFacultyName] = useState("");
   const [linkName,SetLinkName] = useState("");
   
   const params = useParams();
@@ -24,12 +24,12 @@ function  EditFeedbacklist() {
         const res = await Feedbacklist.get(`/get-feedbacklist/${params.id}`);
         console.log("res");
         console.log(res.data)
-        SetDate( res.data.date);
-        SetDescriptionName(res.data.description);
+        SetYear( res.data.year);
+        SetFacultyName(res.data.faculty);
         SetLinkName(res.data.link);
     }
     HandelGetReq();
-  },[SetDate,SetDescriptionName,SetLinkName,params.id]);
+  },[SetYear,SetFacultyName,SetLinkName,params.id]);
 
 
   const {
@@ -45,8 +45,8 @@ function  EditFeedbacklist() {
     // formdata.append("group",groupNo);
     window.location.href="/class-teacher/class-feedback";
     const formdata = {
-        "date":date,
-        "description":descriptionName,
+        "year":year,
+        "faculty":facultyName,
         "link":linkName
     }
 
@@ -63,26 +63,26 @@ function  EditFeedbacklist() {
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
         <div>
-          <label>Date</label><br/>
+          <label>Year</label><br/>
           <input 
           className='input-box'
-          type = "date"
+          type = "text"
           name="date"
-          value={date}
+          value={year}
           onChange={(e) => {
-            SetDate(e.target.value);
+            SetYear(e.target.value);
           }}
           />
         </div>
         <div>
-          <label>Year</label><br/>
+          <label>Faculty Name</label><br/>
           <input 
           className='input-box'
           type ="text"
           name ="activityName"
-          value = {descriptionName}
+          value = {facultyName}
           onChange={(e)=>{
-            SetDescriptionName(e.target.value);
+            SetFacultyName(e.target.value);
           }}
           />
         </div>
