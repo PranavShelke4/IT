@@ -67,7 +67,25 @@ import LeavePage from '../pages/SubjectTeacherPages/SnehaRaut/LeavePage';
 //import AddStudymaterial from "../components/SubjectTeacher/Course/AddStudymaterial";
 //import EditStudymaterial from "../components/SubjectTeacher/Course/EditStudymaterial";
 
+// Sheetal Sutar Routes.....
 
+import SutarDashbord from '../pages/SubjectTeacherPages/SheetalSutar/Dashbord';
+import SutarCreateExercise from "../pages/SubjectTeacherPages/SheetalSutar/FideologyForm";
+import SutarEditExercise from "../pages/SubjectTeacherPages/SheetalSutar/EditPedeology";
+
+import SutarStudentDetail from '../pages/SubjectTeacherPages/SheetalSutar/studentDetail';
+import SutarCourse from '../pages/SubjectTeacherPages/SheetalSutar/coursePage';
+
+import SutarStudyPage  from "../pages/SubjectTeacherPages/SheetalSutar/studyPage";
+import SutarAddStudymaterial from "../pages/SubjectTeacherPages/SheetalSutar/StudyMaterialPage";
+import SutarEditStudymaterial from "../pages/SubjectTeacherPages/SheetalSutar/EditStudyMaterialPage";
+
+import SutarQuestionPaper from '../pages/SubjectTeacherPages/SheetalSutar/questionPaper';
+import SutarAnswerKey from '../pages/SubjectTeacherPages/SheetalSutar/answerKey';
+import SutarAssignmentPage from "../pages/SubjectTeacherPages/SheetalSutar/Assignmentpage";
+
+import SutarProfilePage from "../pages/SubjectTeacherPages/SheetalSutar/ProfilePage";
+import SutarLeavePage from '../pages/SubjectTeacherPages/SheetalSutar/LeavePage';
 
 // Other
 
@@ -81,22 +99,42 @@ const ConfigRoutes = () => {
       <Routes>
         <Route exact path="/" element={<App />}></Route>
 
-        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/dashboard" element={<Dashbord />}></Route>
-        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/fideology-form" element={<CreateExercise />}></Route>
+         {/* Sneha Raut Routes */}
+        <Route path="/subject-teacher/sneha-raut/dashboard" element={<Dashbord />}></Route>
+        <Route path="/subject-teacher/sneha-raut/fideology-form" element={<CreateExercise />}></Route>
         <Route path="/edit/:id" element={<EditExercise/>}></Route>
         
-        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/student-details" element={<StudentDetail />}></Route>
-        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/course" element={<Course />}></Route>
-        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/study-material" element={<StudyPage />}></Route>
-        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/add-studymaterial" element={<AddStudymaterial />}></Route>
+        <Route path="/subject-teacher/sneha-raut/student-details" element={<StudentDetail />}></Route>
+        <Route path="/subject-teacher/sneha-raut/course" element={<Course />}></Route>
+        <Route path="/subject-teacher/sneha-raut/study-material" element={<StudyPage />}></Route>
+        <Route path="/subject-teacher/sneha-raut/add-studymaterial" element={<AddStudymaterial />}></Route>
         <Route path="/studymaterial/edit/:id" element={<EditStudymaterial />}></Route>
 
-        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/question-paper" element={<QuestionPaper />}></Route>
-        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/answer-key" element={<AnswerKey />}></Route>
-        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/assignments" element={<AssignmentPage />}></Route>
+        <Route path="/subject-teacher/sneha-raut/question-paper" element={<QuestionPaper />}></Route>
+        <Route path="/subject-teacher/sneha-raut/answer-key" element={<AnswerKey />}></Route>
+        <Route path="/subject-teacher/sneha-raut/assignments" element={<AssignmentPage />}></Route>
         
-        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/profile" element={<ProfilePage />}></Route>
-        <Route path="/subject-teacher/sneha-raut-8wey8wdisd9823e12ncxzncz/leave" element={<LeavePage />}></Route>
+        <Route path="/subject-teacher/sneha-raut/profile" element={<ProfilePage />}></Route>
+        <Route path="/subject-teacher/sneha-raut/leave" element={<LeavePage />}></Route>
+
+
+         {/* Sheetal Sutar Routes */}
+         <Route path="/subject-teacher/sheetal-sutar/dashboard" element={<SutarDashbord />}></Route>
+        <Route path="/subject-teacher/sheetal-sutar/fideology-form" element={<SutarCreateExercise />}></Route>
+        <Route path="/edit/:id" element={<SutarEditExercise/>}></Route>
+        
+        <Route path="/subject-teacher/sheetal-sutar/student-details" element={<SutarStudentDetail />}></Route>
+        <Route path="/subject-teacher/sheetal-sutar/course" element={<SutarCourse />}></Route>
+        <Route path="/subject-teacher/sheetal-sutar/study-material" element={<SutarStudyPage />}></Route>
+        <Route path="/subject-teacher/sheetal-sutar/add-studymaterial" element={<SutarAddStudymaterial />}></Route>
+        <Route path="/studymaterial/edit/:id" element={<SutarEditStudymaterial />}></Route>
+
+        <Route path="/subject-teacher/sheetal-sutar/question-paper" element={<SutarQuestionPaper />}></Route>
+        <Route path="/subject-teacher/sheetal-sutar/answer-key" element={<SutarAnswerKey />}></Route>
+        <Route path="/subject-teacher/sheetal-sutar/assignments" element={<SutarAssignmentPage />}></Route>
+        
+        <Route path="/subject-teacher/sheetal-sutar/profile" element={<SutarProfilePage />}></Route>
+        <Route path="/subject-teacher/sheetal-sutar/leave" element={<SutarLeavePage />}></Route>
        
         
       
