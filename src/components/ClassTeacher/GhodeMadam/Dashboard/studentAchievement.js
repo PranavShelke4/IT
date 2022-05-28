@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import axios from "axios";
-import '../../ClassTeacher/GhodeMadam/Dashboard/studentAchievement.css';
+import './studentAchievement.css';
 
-import Achievements from '../../../api/Achievement';
+import Achievements from '../../../../api/Achievement';
 
 
 const Achievement = props => (
@@ -15,7 +15,10 @@ const Achievement = props => (
         <td>{props.achievement.ename}</td>
         <td>{props.achievement.date}</td>
         
-       
+        <td>
+            <Link to={"/CT/edit/"+props.achievement._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteAchievement(props.achievement._id) }} ><i className='bx bx-trash'></i></span>
+            {/* <button className="btn btn-secondary"><Link to={"/edit/"+props.exercise._id} style={{color:"white"}}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => {props.deleteExercise(props.exercise._id) }}>Delete</button> */}
+        </td>
     </tr>
 )
 
@@ -61,16 +64,16 @@ class studentAchievement extends Component {
 		                    <th>Student Name</th>
 		                    <th>Department</th>
 		                    <th>Institute</th>
-                        <th>Event Name</th>
+                            <th>Event Name</th>
 		                    <th>Date</th>
-                           
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         {this.achievementsList()}
                     </tbody>
                 </table>
-                
+                <Link to='/class-teacher/add-achievement'><div className='add'>Add</div></Link>
             </div>
             </div>
          );
