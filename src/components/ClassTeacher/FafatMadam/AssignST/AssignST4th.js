@@ -11,7 +11,7 @@ function AssignST4th(props) {
       <div className="facultysCR">
         <div className="fideo">
           <h3 className="fidoh3">Assign Subject Teacher</h3>
-          <Link to={'/class-teacher/Fafat/assign-6thSem'}><div className='add'>4th Sem</div></Link>
+          <Link to={'/class-teacher/Fafat/assign-3rdSem'}><div className='add'>3rd Sem</div></Link>
 
           <h4 className="fidoh44">Operating System (OS)</h4>
 
