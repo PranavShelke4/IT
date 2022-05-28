@@ -13,21 +13,8 @@ function AssignST(props) {
           <h3 className="fidoh3">Assign Subject Teacher</h3>
           <Link to={'/class-teacher/Fafat/assign-4thSem'}><div className='add'>4th Sem</div></Link>
 
-          <h4 className="fidoh44">Management (MAN)</h4>
-
-          {/* <select>
-              <option>java</option>
-              <option>cpp</option>
-              <option>php</option>
-          </select>
-
-          <select>
-              <option>java</option>
-              <option>cpp</option>
-              <option>php</option>
-          </select> */}
-
-<table>
+          <h4 className="fidoh44">Object Oriented Programming (OOP)</h4> 
+        <table>
             <tr>
               <th>Sr No</th>
               <th>Image</th>
@@ -54,7 +41,7 @@ function AssignST(props) {
             
         </div> 
 
-          <h4 className="fidoh44">Emerginig Trends in IT & Computer (ETI)</h4>
+          <h4 className="fidoh44">Data Structure using C (DSU)</h4>
           <table>
             <tr>
               <th>Sr No</th>
@@ -78,7 +65,7 @@ function AssignST(props) {
             })}
           </table>
 
-          <h4 className="fidoh44">Wireless And Mobile Network (WMN)</h4>
+          <h4 className="fidoh44">Principle of Database (POD)</h4>
           <table>
             <tr>
               <th>Sr No</th>
@@ -102,7 +89,7 @@ function AssignST(props) {
             })}
           </table>
 
-           <h4 className="fidoh44">Mobile Application Development (MAD)</h4>
+           <h4 className="fidoh44">Data Communication (DCO)</h4>
           <table>
             <tr>
               <th>Sr No</th>
@@ -126,7 +113,31 @@ function AssignST(props) {
             })}
           </table>
 
-          <h4 className="fidoh44">Web Based Application using PHP (WBP)</h4>
+          <h4 className="fidoh44">Digital Techniques and Microprocessor (DTM)</h4>
+          <table>
+            <tr>
+              <th>Sr No</th>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Action</th>
+            </tr>
+            {STData.map((item) => {
+              return (
+                <tr key={item.id}>
+                  <td>{item.SrNo}</td>
+                  <td>{item.Image}</td>
+                  <td>{item.Name}</td>
+                  <td>
+                    <button onClick={() => {}} className="Assign">
+                      Assign
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
+          </table>
+
+          <h4 className="fidoh44">Applied Multimedia Techniques (AMT)</h4>
           <table>
             <tr>
               <th>Sr No</th>
