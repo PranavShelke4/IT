@@ -45,8 +45,8 @@ import FafatEditAchievement from "../pages/ClassTeacherPages/FafatMadam/EditAchi
 
 import FafatClassFaculty from "../pages/ClassTeacherPages/FafatMadam/FacultyDetails";
 
-import FafatAssignST5thPage from "../pages/ClassTeacherPages/FafatMadam/AssignST5thPage";
-import FafatAssignST6thPage from "../pages/ClassTeacherPages/FafatMadam/AssignST6thPage";
+import FafatAssignST3rdPage from "../pages/ClassTeacherPages/FafatMadam/AssignST3rdPage";
+import FafatAssignST4thPage from "../pages/ClassTeacherPages/FafatMadam/AssignST4thPage";
 
 import FafatStudent from "../pages/ClassTeacherPages/FafatMadam/studentpage";
 import FafatAddList from "../pages/ClassTeacherPages/FafatMadam/addListPage";
@@ -269,8 +269,8 @@ const ConfigRoutes = () => {
         <Route path="/class-teacher/Fafat/add-student-list" element={<FafatAddList />}></Route>
         <Route path="/studentlist/Fafat/edit/:id" element={<FafatEditStudentlist />}></Route>
         
-        <Route path="/class-teacher/Fafat/assign-5thSem" element={<FafatAssignST5thPage />}></Route>
-        <Route path="/class-teacher/Fafat/assign-6thSem" element={<FafatAssignST6thPage />}></Route>
+        <Route path="/class-teacher/Fafat/assign-3rdSem" element={<FafatAssignST3rdPage />}></Route>
+        <Route path="/class-teacher/Fafat/assign-4thSem" element={<FafatAssignST4thPage />}></Route>
         
         <Route path="/class-teacher/Fafat/class-detentionlist" element={<FafatDetentionPage />}></Route>
         <Route path="/class-teacher/Fafat/add-detentionlist" element={<FafatAddDetentionList />}></Route>
