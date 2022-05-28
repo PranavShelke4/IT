@@ -16,9 +16,27 @@ function TopperList() {
             </tr>
             <tr>
               <td>1.</td>
-              <td>Pranav Keshav Shelke</td>
-              <td>99.99</td>
-              <td>First Year</td>
+              <td>Avadhut S. Shedage</td>
+              <td>97.90</td>
+              <td>2021 - 22</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>Pranav K. Shelke </td>
+              <td>94.20</td>
+              <td>2020 - 21</td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>Sangam A. Gorde</td>
+              <td>95.55</td>
+              <td>2019 - 20</td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>Akash S. Gadge</td>
+              <td>93.88</td>
+              <td>2018 - 19</td>
             </tr>
           </table>
         </div>
