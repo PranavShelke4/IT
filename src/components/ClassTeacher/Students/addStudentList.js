@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
 import Studentlist from "../../../api/Studentlist";
-import "../../SubjectTeacher/Fideology/createPedelogy.css"
+import "../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 function Cancel(){
   window.location.href="/class-teacher/student-table"
