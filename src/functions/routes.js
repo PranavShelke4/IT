@@ -31,8 +31,10 @@ import EditDetentionlist from "../pages/ClassTeacherPages/EditDetention";
 
 import FeedbackPage from "../pages/ClassTeacherPages/FeedbackPage";
 import AddFeedbackList from "../pages/ClassTeacherPages/AddFeedbackPage";
-import ClassProfilePage from "../pages/ClassTeacherPages/ProfilePage";
 import EditFeedbacklist from "../pages/ClassTeacherPages/EditFeedback";
+
+import ClassProfilePage from "../pages/ClassTeacherPages/ProfilePage";
+
 
 //import AddStudentList from "../components/ClassTeacher/Students/addStudentlist";
 //import EditStudentlist from "../components/ClassTeacher/Students/EditStudentlist";
@@ -118,7 +120,7 @@ const ConfigRoutes = () => {
         <Route path="/detentionlist/edit/:id" element={<EditDetentionlist />}></Route>
 
         <Route path="/class-teacher/class-feedback" element={<FeedbackPage />}></Route>
-        <Route path="/class-teacher/add-class-feedback-list" element={<AddFeedbackList />}></Route>
+        <Route path="/class-teacher/add-feedbacklist" element={<AddFeedbackList />}></Route>
         <Route path="/feedbacklist/edit/:id" element={<EditFeedbacklist />}></Route>
         <Route path="/class-teacher/profile" element={<ClassProfilePage />}></Route>
         
