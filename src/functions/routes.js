@@ -19,7 +19,9 @@ import AddAchievement from "../pages/ClassTeacherPages/addAchievement";
 import EditAchievement from "../pages/ClassTeacherPages/EditAchievementPage";
 
 import ClassFaculty from "../pages/ClassTeacherPages/FacultyDetails";
-import AssignSTPage from "../pages/ClassTeacherPages/AssignSTPage";
+
+import AssignST5thPage from "../pages/ClassTeacherPages/AssignST5thPage";
+import AssignST6thPage from "../pages/ClassTeacherPages/AssignST6thPage";
 
 import Student from "../pages/ClassTeacherPages/studentpage";
 import AddList from "../pages/ClassTeacherPages/addListPage";
@@ -151,7 +153,8 @@ const ConfigRoutes = () => {
         <Route path="/class-teacher/add-student-list" element={<AddList />}></Route>
         <Route path="/studentlist/edit/:id" element={<EditStudentlist />}></Route>
         
-        <Route path="/class-teacher/assign-subject-teacher" element={<AssignSTPage />}></Route>
+        <Route path="/class-teacher/assign-5thSem" element={<AssignST5thPage />}></Route>
+        <Route path="/class-teacher/assign-6thSem" element={<AssignST6thPage />}></Route>
         
         <Route path="/class-teacher/class-detentionlist" element={<DetentionPage />}></Route>
         <Route path="/class-teacher/add-detentionlist" element={<AddDetentionList />}></Route>
