@@ -127,13 +127,13 @@ function classTeacherNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/HOD/student-details">First Year</Link>
+                <Link to="/HOD/FY-Students">First Year</Link>
               </li>
               <li>
-                <Link to="/HOD/student-details">Second Year</Link>
+                <Link to="/HOD/SY-Students">Second Year</Link>
               </li>
               <li>
-                <Link to="/HOD/student-details">Third Year</Link>
+                <Link to="/HOD/TY-Students">Third Year</Link>
               </li>
             </ul>
           </li>
