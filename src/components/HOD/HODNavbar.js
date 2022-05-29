@@ -46,32 +46,6 @@ function classTeacherNavbar() {
             </ul>
           </li>
 
-          {/* <li>
-            <div class="iocn-link">
-              <Link to="">
-                <i class="bx bx-user"></i>
-                <span class="link_name">Faculty</span>
-              </Link>
-              <i  onClick={eventHandle} class="bx bxs-chevron-down arrow"></i>
-            </div>
-            <ul class="sub-menu">
-              <li>
-                <Link to="" class="link_name">
-                Faculty
-                </Link>
-              </li>
-              <li>
-                <Link to="/student-details">First Year</Link>
-              </li>
-              <li>
-                <Link to="/student-details">Second Year</Link>
-              </li>
-              <li>
-                <Link to="/student-details">Third Year</Link>
-              </li>
-            </ul>
-          </li> */}
-
           <li>
             <div class="iocn-link">
               <Link to="#">
