@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const exercisesControllers = require('../../Controllers/FafatMadam/ExercisesControllers');
+const exercisesControllers = require('../../Controllers/ThirdYear/ExercisesControllers');
 
 router.post('/add-exercise',exercisesControllers.postExercise);
 router.get('/get-exercises',exercisesControllers.getExercises);
