@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const feedbacklistsControllers = require('../../Controllers/FafatMadam/FeedbacklistsControllers');
+const feedbacklistsControllers = require('../../Controllers/ThirdYear/FeedbacklistsControllers');
 
 router.post('/add-feedbacklist',feedbacklistsControllers.postFeedbacklist);
 router.get('/get-feedbacklists',feedbacklistsControllers.getFeedbacklists);
