@@ -6,7 +6,7 @@ import Studentlist from "../../../../api/ThirdYear/Studentlist";
 import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 function Cancel(){
-  window.location.href="/class-teacher/Fafat/student-table"
+  window.location.href="/class-teacher/TY/student-table"
 }
 
 function  AddStudentList() {
@@ -35,7 +35,7 @@ function  AddStudentList() {
     console.log(studentlist);
    const res = await Studentlist.post("/add-studentlist",studentlist);
    console.log(res.data.msg)
-   window.location.href="/class-teacher/Fafat/student-table"
+   window.location.href="/class-teacher/TY/student-table"
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }
