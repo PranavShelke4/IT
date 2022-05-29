@@ -314,27 +314,27 @@ const ConfigRoutes = () => {
         
       
         {/* class teacher Routes Second Year  */}
-        <Route path="/class-teacher/dashboard" element={<ClassTeacherDashboard />}></Route>
-        <Route path="/class-teacher/add-achievement" element={<AddAchievement />}></Route>
-        <Route path="/CT/edit/:id" element={<EditAchievement/>}></Route>
+        <Route path="/class-teacher/SY/dashboard" element={<ClassTeacherDashboard />}></Route>
+        <Route path="/class-teacher/SY/add-achievement" element={<AddAchievement />}></Route>
+        <Route path="/CT/SY/edit/:id" element={<EditAchievement/>}></Route>
 
-        <Route path="/class-teacher/classfaculty" element={<ClassFaculty />}></Route>
+        <Route path="/class-teacher/SY/classfaculty" element={<ClassFaculty />}></Route>
 
-        <Route path="/class-teacher/student-table" element={<Student />}></Route>
-        <Route path="/class-teacher/add-student-list" element={<AddList />}></Route>
-        <Route path="/studentlist/edit/:id" element={<EditStudentlist />}></Route>
+        <Route path="/class-teacher/SY/student-table" element={<Student />}></Route>
+        <Route path="/class-teacher/SY/add-student-list" element={<AddList />}></Route>
+        <Route path="/studentlist/SY/edit/:id" element={<EditStudentlist />}></Route>
         
-        <Route path="/class-teacher/assign-5thSem" element={<AssignST5thPage />}></Route>
-        <Route path="/class-teacher/assign-6thSem" element={<AssignST6thPage />}></Route>
+        <Route path="/class-teacher/SY/assign-5thSem" element={<AssignST5thPage />}></Route>
+        <Route path="/class-teacher/SY/assign-6thSem" element={<AssignST6thPage />}></Route>
         
-        <Route path="/class-teacher/class-detentionlist" element={<DetentionPage />}></Route>
-        <Route path="/class-teacher/add-detentionlist" element={<AddDetentionList />}></Route>
-        <Route path="/detentionlist/edit/:id" element={<EditDetentionlist />}></Route>
+        <Route path="/class-teacher/SY/class-detentionlist" element={<DetentionPage />}></Route>
+        <Route path="/class-teacher/SY/add-detentionlist" element={<AddDetentionList />}></Route>
+        <Route path="/detentionlist/SY/edit/:id" element={<EditDetentionlist />}></Route>
 
-        <Route path="/class-teacher/class-feedback" element={<FeedbackPage />}></Route>
-        <Route path="/class-teacher/add-feedbacklist" element={<AddFeedbackList />}></Route>
-        <Route path="/feedbacklist/edit/:id" element={<EditFeedbacklist />}></Route>
-        <Route path="/class-teacher/profile" element={<ClassProfilePage />}></Route>
+        <Route path="/class-teacher/SY/class-feedback" element={<FeedbackPage />}></Route>
+        <Route path="/class-teacher/SY/add-feedbacklist" element={<AddFeedbackList />}></Route>
+        <Route path="/feedbacklist/SY/edit/:id" element={<EditFeedbacklist />}></Route>
+        <Route path="/class-teacher/SY/profile" element={<ClassProfilePage />}></Route>
         
         
         {/* class teacher Routes Third Year  */}

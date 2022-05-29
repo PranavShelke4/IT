@@ -1,7 +1,7 @@
 import React from "react";
 import "./classTeacherNavbar.css";
 import {Link} from 'react-router-dom';
-import FafatMadamimg from '../../../assets/img/fafat-madam.jpeg'
+import GhodeMadamimg from '../../../assets/img/ghode-madam.svg'
 
 
 function eventHandle() {
@@ -33,13 +33,13 @@ function classTeacherNavbar() {
         </div>
         <ul className="nav-links">
           <li>
-            <Link to="/class-teacher/dashboard">
+            <Link to="/class-teacher/SY/dashboard">
               <i className="bx bx-home-alt"></i>
               <span className="link_name">Dashboard</span>
             </Link>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="/class-teacher/dashboard">
+                <Link className="link_name" to="/class-teacher/SY/dashboard">
                   Dashboard
                 </Link>
               </li>
@@ -73,13 +73,13 @@ function classTeacherNavbar() {
           </li> */}
 
           <li>
-            <Link to="/class-teacher/classfaculty">
+            <Link to="/class-teacher/SY/classfaculty">
               <i className="bx bxs-user"></i>
               <span className="link_name">Faculty</span>
             </Link>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="/class-teacher/classfaculty">
+                <Link className="link_name" to="/class-teacher/SY/classfaculty">
                 Faculty
                 </Link>
               </li>
@@ -87,13 +87,13 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <Link to="/class-teacher/assign-5thSem">
+            <Link to="/class-teacher/SY/assign-5thSem">
               <i className="bx bx-file-find"></i>
               <span className="link_name">Assign Course</span>
             </Link>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="/class-teacher/assign-5thSem">
+                <Link className="link_name" to="/class-teacher/SY/assign-5thSem">
                 Assign Course
                 </Link>
               </li>
@@ -102,14 +102,14 @@ function classTeacherNavbar() {
 
           <li>
             <div className="iocn-link">
-              <Link to="/class-teacher/student-table">
+              <Link to="/class-teacher/SY/student-table">
               <i className="bx bxs-user"></i>
                 <span className="link_name">Students</span>
               </Link>
             </div>
             <ul className="sub-menu">
               <li>
-                <Link className="link_name" to="/class-teacher/student-table">
+                <Link className="link_name" to="/class-teacher/SY/student-table">
                 Students
                 </Link>
               </li>
@@ -117,13 +117,13 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <Link to="/class-teacher/class-detentionlist">
+            <Link to="/class-teacher/SY/class-detentionlist">
               <i className="bx bx-food-menu"></i>
               <span className="link_name">Detention List</span>
             </Link>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="class-detentionlist">
+                <Link className="link_name" to="/class-teacher/SY/class-detentionlist">
                  Detention List
                 </Link>
               </li>
@@ -146,14 +146,14 @@ function classTeacherNavbar() {
 
           <li>
             <div className="iocn-link">
-              <Link to="/class-teacher/class-feedback">
+              <Link to="/class-teacher/SY/class-feedback">
               <i className="bx bxs-comment-detail"></i>
                 <span className="link_name">Feedback</span>
               </Link>
             </div>
             <ul className="sub-menu">
               <li>
-                <Link className="link_name" to="/class-teacher/class-feedback">
+                <Link className="link_name" to="/class-teacher/SY/class-feedback">
                 Feedback
                 </Link>
               </li>
@@ -161,13 +161,13 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <Link to="/class-teacher/profile">
+            <Link to="/class-teacher/SY/profile">
               <i className="bx bxs-user"></i>
               <span className="link_name">My Profile</span>
             </Link>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="/class-teacher/profile">
+                <Link className="link_name" to="/class-teacher/SY/profile">
                 My Profile
                 </Link>
               </li>
@@ -190,10 +190,10 @@ function classTeacherNavbar() {
           <li>
             <div className="profile-details">
               <div className="profile-content">
-                <img alt="" src={FafatMadamimg} />
+                <img alt="" src={GhodeMadamimg} />
               </div>
               <div className="name-job">
-                <div className="profile_name">Miss. P. C. Fafat</div>
+                <div className="profile_name">Mrs. P. S. Ghode</div>
                 <div className="job">Class Teacher</div>
               </div>
             </div>
