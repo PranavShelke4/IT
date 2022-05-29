@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
-import Exercise from "../../../../api/GhodeMadam/Exercise";
+import Exercise from "../../../../api/RautMadam/Exercise";
 import "./createPedelogy.css";
 
 function Cancel(){
