@@ -7,7 +7,7 @@ import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 import { useParams } from "react-router-dom";
 
 function Cancel(){
-  window.location.href="/class-teacher/student-table"
+  window.location.href="/class-teacher/SY/student-table"
 }
 
 function  EditStudentlist() {
@@ -43,7 +43,7 @@ function  EditStudentlist() {
     // formdata.append("activity",activityName);
     // formdata.append("subject",subName);
     // formdata.append("group",groupNo);
-    window.location.href="/class-teacher/student-table"
+    window.location.href="/class-teacher/SY/student-table"
     const formdata = {
         "date":date,
         "description":descriptionName,

@@ -6,7 +6,7 @@ import Feedbacklist from "../../../../api/SecondYear/Feedbacklist";
 import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 function Cancel(){
-  window.location.href="/class-teacher/class-feedback";
+  window.location.href="/class-teacher/SY/class-feedback";
 }
 
 
@@ -36,7 +36,7 @@ function  AddFeedbackList() {
     console.log(feedbacklist);
    const res = await Feedbacklist.post("/add-feedbacklist",feedbacklist);
    console.log(res.data.msg)
-   window.location.href="/class-teacher/class-feedback";
+   window.location.href="/class-teacher/SY/class-feedback";
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }
