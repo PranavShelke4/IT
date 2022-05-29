@@ -343,13 +343,13 @@ const ConfigRoutes = () => {
         {/* Yogesh Bodhe Routes */}
         <Route path="/subject-teacher/yogesh-bodhe/dashboard" element={<BodheDashbord />}></Route>
         <Route path="/subject-teacher/yogesh-bodhe/fideology-form" element={<BodheCreateExercise />}></Route>
-        <Route path="/edit/:id" element={<BodheEditExercise/>}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/edit/:id" element={<BodheEditExercise/>}></Route>
         
         <Route path="/subject-teacher/yogesh-bodhe/student-details" element={<BodheStudentDetail />}></Route>
         <Route path="/subject-teacher/yogesh-bodhe/course" element={<BodheCourse />}></Route>
         <Route path="/subject-teacher/yogesh-bodhe/study-material" element={<BodheStudyPage />}></Route>
         <Route path="/subject-teacher/yogesh-bodhe/add-studymaterial" element={<BodheAddStudymaterial />}></Route>
-        <Route path="/studymaterial/edit/:id" element={<BodheEditStudymaterial />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/studymaterial/edit/:id" element={<BodheEditStudymaterial />}></Route>
 
         <Route path="/subject-teacher/yogesh-bodhe/question-paper" element={<BodheQuestionPaper />}></Route>
         <Route path="/subject-teacher/yogesh-bodhe/answer-key" element={<BodheAnswerKey />}></Route>
