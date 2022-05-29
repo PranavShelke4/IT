@@ -1,4 +1,4 @@
-const Studymaterials = require("../../models/GhodeMadam/studymaterial.model");
+const Studymaterials = require("../../models/ThirdYear/studymaterial.model");
 
 exports.postStudymaterial = (req, res) => {
   console.log("Post Req ------------------->>>>>>");
