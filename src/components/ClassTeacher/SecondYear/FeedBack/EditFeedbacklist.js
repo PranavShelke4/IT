@@ -6,7 +6,7 @@ import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 import { useParams } from "react-router-dom";
 
 function Cancel(){
-  window.location.href="/class-teacher/class-feedback";
+  window.location.href="/class-teacher/SY/class-feedback";
 }
 
 
@@ -43,7 +43,7 @@ function  EditFeedbacklist() {
     // formdata.append("activity",activityName);
     // formdata.append("subject",subName);
     // formdata.append("group",groupNo);
-    window.location.href="/class-teacher/class-feedback";
+    window.location.href="/class-teacher/SY/class-feedback";
     const formdata = {
         "year":year,
         "faculty":facultyName,

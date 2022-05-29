@@ -20,8 +20,8 @@ import EditAchievement from "../pages/ClassTeacherPages/SecondYear/EditAchieveme
 
 import ClassFaculty from "../pages/ClassTeacherPages/SecondYear/FacultyDetails";
 
-import AssignST5thPage from "../pages/ClassTeacherPages/SecondYear/AssignST5thPage";
-import AssignST6thPage from "../pages/ClassTeacherPages/SecondYear/AssignST6thPage";
+import AssignST3rdPage from "../pages/ClassTeacherPages/SecondYear/AssignST3rdPage";
+import AssignST4thPage from "../pages/ClassTeacherPages/SecondYear/AssignST4thPage";
 
 import Student from "../pages/ClassTeacherPages/SecondYear/studentpage";
 import AddList from "../pages/ClassTeacherPages/SecondYear/addListPage";
@@ -45,8 +45,8 @@ import TYEditAchievement from "../pages/ClassTeacherPages/ThirdYear/EditAchievem
 
 import TYClassFaculty from "../pages/ClassTeacherPages/ThirdYear/FacultyDetails";
 
-import TYAssignST3rdPage from "../pages/ClassTeacherPages/ThirdYear/AssignST3rdPage";
-import TYAssignST4thPage from "../pages/ClassTeacherPages/ThirdYear/AssignST4thPage";
+import TYAssignST5thPage from "../pages/ClassTeacherPages/ThirdYear/AssignST5thPage";
+import TYAssignST6thPage from "../pages/ClassTeacherPages/ThirdYear/AssignST6thPage";
 
 import TYStudent from "../pages/ClassTeacherPages/ThirdYear/studentpage";
 import TYAddList from "../pages/ClassTeacherPages/ThirdYear/addListPage";
@@ -284,8 +284,8 @@ const ConfigRoutes = () => {
         <Route path="/class-teacher/SY/add-student-list" element={<AddList />}></Route>
         <Route path="/studentlist/SY/edit/:id" element={<EditStudentlist />}></Route>
         
-        <Route path="/class-teacher/SY/assign-5thSem" element={<AssignST5thPage />}></Route>
-        <Route path="/class-teacher/SY/assign-6thSem" element={<AssignST6thPage />}></Route>
+        <Route path="/class-teacher/SY/assign-3rdSem" element={<AssignST3rdPage />}></Route>
+        <Route path="/class-teacher/SY/assign-4thSem" element={<AssignST4thPage />}></Route>
         
         <Route path="/class-teacher/SY/class-detentionlist" element={<DetentionPage />}></Route>
         <Route path="/class-teacher/SY/add-detentionlist" element={<AddDetentionList />}></Route>
@@ -308,8 +308,8 @@ const ConfigRoutes = () => {
         <Route path="/class-teacher/TY/add-student-list" element={<TYAddList />}></Route>
         <Route path="/studentlist/TY/edit/:id" element={<TYEditStudentlist />}></Route>
         
-        <Route path="/class-teacher/TY/assign-3rdSem" element={<TYAssignST3rdPage />}></Route>
-        <Route path="/class-teacher/TY/assign-4thSem" element={<TYAssignST4thPage />}></Route>
+        <Route path="/class-teacher/TY/assign-5thSem" element={<TYAssignST5thPage />}></Route>
+        <Route path="/class-teacher/TY/assign-6thSem" element={<TYAssignST6thPage />}></Route>
         
         <Route path="/class-teacher/TY/class-detentionlist" element={<TYDetentionPage />}></Route>
         <Route path="/class-teacher/TY/add-detentionlist" element={<TYAddDetentionList />}></Route>

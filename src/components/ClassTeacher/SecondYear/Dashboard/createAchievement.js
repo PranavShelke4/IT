@@ -6,7 +6,7 @@ import Achievement from "../../../../api/SecondYear/Achievement";
 import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 function Cancel(){
-  window.location.href="/class-teacher/dashboard";
+  window.location.href="/class-teacher/SY/dashboard";
 }
 
 function  CreateAchievement() {
@@ -37,7 +37,7 @@ function  CreateAchievement() {
     console.log(achievement);
    const res = await Achievement.post("/add-achievement",achievement);
    console.log(res.data.msg)
-   window.location.href="/class-teacher/dashboard";
+   window.location.href="/class-teacher/SY/dashboard";
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }
