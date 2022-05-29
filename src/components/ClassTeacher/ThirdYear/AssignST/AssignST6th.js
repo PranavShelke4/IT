@@ -11,7 +11,7 @@ function AssignST(props) {
       <div className="facultysCR">
         <div className="fideo">
           <h3 className="fidoh3">Assign Subject Teacher</h3>
-          <Link to={'/class-teacher/assign-5thSem'}><div className='add'>5th Sem</div></Link>
+          <Link to={'/class-teacher/TY/assign-5thSem'}><div className='add'>5th Sem</div></Link>
 
           <h4 className="fidoh44">Management (MAN)</h4>
 

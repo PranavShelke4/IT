@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
 import { Link } from "react-router-dom";
-import STData from "../../SecondYear/AssignST/STData";
+import STData from "./STData";
 import "./AssignST.css";
 
 function AssignST5th(props) {
@@ -11,7 +11,7 @@ function AssignST5th(props) {
       <div className="facultysCR">
         <div className="fideo">
           <h3 className="fidoh3">Assign Subject Teacher</h3>
-          <Link to={'/class-teacher/assign-6thSem'}><div className='add'>6th Sem</div></Link>
+          <Link to={'/class-teacher/TY/assign-6thSem'}><div className='add'>6th Sem</div></Link>
 
           <h4 className="fidoh44">Operating System (OS)</h4>
 
