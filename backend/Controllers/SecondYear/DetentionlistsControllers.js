@@ -1,4 +1,4 @@
-const Detentionlists = require("../../models/GhodeMadam/detentionlist.model");
+const Detentionlists = require("../../models/SecondYear/detentionlist.model");
 
 exports.postDetentionlist = (req, res) => {
   console.log("Post Req ------------------->>>>>>");
