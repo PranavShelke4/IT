@@ -6,6 +6,8 @@ import App from "../App";
 // HOD Routes
 
 import HODDashbord from "../pages/HODPages/Dashboard"
+import SYAchievementPage from "../pages/HODPages/SYAchievementPage"
+import TYAchievementPage from "../pages/HODPages/TYAchievementPage"
 import FacultyDetails from "../pages/HODPages/FacultyDetails";
 import FacultyCR from "../pages/HODPages/FacultyCR";
 import AssignClassTeacher from '../pages/HODPages/AssignClassTeacher';
@@ -378,6 +380,8 @@ const ConfigRoutes = () => {
 
         {/* HOD Routes */}
         <Route path="/HOD/Dashbord" element={<HODDashbord />}></Route>
+        <Route path="/HOD/Dashbord/SY-Achievements" element={<SYAchievementPage/>}></Route>
+        <Route path="/HOD/Dashbord/TY-Achievements" element={<TYAchievementPage />}></Route>
         <Route path="/HOD/Faculty-Details" element={<FacultyDetails />}></Route>
         <Route path="/HOD/Faculty-CR" element={<FacultyCR />}></Route>
         <Route path="/HOD/assign-class-teacher" element={<AssignClassTeacher />}></Route>
