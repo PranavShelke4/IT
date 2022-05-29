@@ -2,22 +2,24 @@ import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
-import Studymaterial from "../../../../api/SecondYear/Studymaterial"
+import Feedbacklist from "../../../../api/SecondYear/Feedbacklist";
+import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 function Cancel(){
-  window.location.href="/subject-teacher/study-material"
+  window.location.href="/class-teacher/class-feedback";
 }
 
-function  AddStudymaterial() {
 
-  const [date,SetDate] = useState("");
-  const [descriptionName,SetDescriptionName] = useState("");
+function  AddFeedbackList() {
+
+  const [year,SetYear] = useState("");
+  const [facultyName,SetFacultyName] = useState("");
   const [linkName,SetLinkName] = useState("");
 
 
 
   // const history = useHistory();
-//avadhut is here
+
   //rajesh is here
   const {
     register,
@@ -25,16 +27,16 @@ function  AddStudymaterial() {
     handleSubmit,
   } = useForm();
   const onSubmit = async() =>{
-    const studymaterial = {
-      date:date,
-      description:descriptionName,
+    const feedbacklist = {
+      year:year,
+      faculty:facultyName,
       link:linkName
     }
 
-    console.log(studymaterial);
-   const res = await Studymaterial.post("/add-studymaterial",studymaterial);
+    console.log(feedbacklist);
+   const res = await Feedbacklist.post("/add-feedbacklist",feedbacklist);
    console.log(res.data.msg)
-   window.location.href="/subject-teacher/study-material";
+   window.location.href="/class-teacher/class-feedback";
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }
@@ -45,26 +47,26 @@ function  AddStudymaterial() {
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
         <div>
-          <label>Date</label><br/>
+          <label>Year</label><br/>
           <input 
           className='input-box'
-          type = "date"
+          type = "text"
           name="date"
-          value={date}
+          value={year}
           onChange={(e) => {
-            SetDate(e.target.value);
+            SetYear(e.target.value);
           }}
           />
         </div>
         <div>
-          <label>Decsription</label><br/>
+          <label>Faculty Name</label><br/>
           <input 
           className='input-box'
           type ="text"
           name ="activityName"
-          value = {descriptionName}
+          value = {facultyName}
           onChange={(e)=>{
-            SetDescriptionName(e.target.value);
+            SetFacultyName(e.target.value);
           }}
           />
         </div>
@@ -89,4 +91,4 @@ function  AddStudymaterial() {
   )
 }
 
-export default AddStudymaterial;     
+export default AddFeedbackList;     

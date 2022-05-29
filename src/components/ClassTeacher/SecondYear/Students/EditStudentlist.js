@@ -1,16 +1,16 @@
 import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
-import Studymaterial from "../../../../api/SecondYear/Studymaterial";
+import Studentlist from "../../../../api/SecondYear/Studentlist";
+import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 import { useParams } from "react-router-dom";
-import "../Fideology/createPedelogy.css";
 
 function Cancel(){
-  window.location.href="/subject-teacher/study-material";
+  window.location.href="/class-teacher/student-table"
 }
 
-function  EditStudymaterial() {
+function  EditStudentlist() {
 
   const [date,SetDate] = useState("");
   const [descriptionName,SetDescriptionName] = useState("");
@@ -21,7 +21,7 @@ function  EditStudymaterial() {
   useEffect(()=>{
     const HandelGetReq= async ()=>{
         console.log(params.id)
-        const res = await Studymaterial.get(`/get-studymaterial/${params.id}`);
+        const res = await Studentlist.get(`/get-studentlist/${params.id}`);
         console.log("res");
         console.log(res.data)
         SetDate( res.data.date);
@@ -43,17 +43,17 @@ function  EditStudymaterial() {
     // formdata.append("activity",activityName);
     // formdata.append("subject",subName);
     // formdata.append("group",groupNo);
-    
+    window.location.href="/class-teacher/student-table"
     const formdata = {
         "date":date,
         "description":descriptionName,
         "link":linkName
     }
-    window.location.href="/subject-teacher/study-material";
+
     console.log("req")
     console.log(params.id)
     console.log(formdata)
-   const res = await Studymaterial.patch(`/update-studymaterial/${params.id}`,formdata);
+   const res = await Studentlist.patch(`/update-studentlist/${params.id}`,formdata);
    console.log(res.data.msg)
    
 
@@ -76,7 +76,7 @@ function  EditStudymaterial() {
           />
         </div>
         <div>
-          <label>Decsription</label><br/>
+          <label>Year</label><br/>
           <input 
           className='input-box'
           type ="text"
@@ -102,10 +102,11 @@ function  EditStudymaterial() {
         
         <input className ="subButton" type="submit" value="Submit"/>
         <input className ="cancelButton" type="button" onClick={Cancel} value="Cancel"/>
+
       </form>
     </div>
     </div>
   )
 }
 
-export default EditStudymaterial;     
+export default EditStudentlist;     
