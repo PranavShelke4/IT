@@ -291,13 +291,13 @@ const ConfigRoutes = () => {
          {/* Poonam Fafat Routes */}
          <Route path="/subject-teacher/poonam-fafat/dashboard" element={<FafatDashbord />}></Route>
         <Route path="/subject-teacher/poonam-fafat/fideology-form" element={<FafatCreateExercise />}></Route>
-        <Route path="/edit/:id" element={<FafatEditExercise/>}></Route>
+        <Route path="/subject-teacher/poonam-fafat/edit/:id" element={<FafatEditExercise/>}></Route>
         
         <Route path="/subject-teacher/poonam-fafat/student-details" element={<FafatStudentDetail />}></Route>
         <Route path="/subject-teacher/poonam-fafat/course" element={<FafatCourse />}></Route>
         <Route path="/subject-teacher/poonam-fafat/study-material" element={<FafatStudyPage />}></Route>
         <Route path="/subject-teacher/poonam-fafat/add-studymaterial" element={<FafatAddStudymaterial />}></Route>
-        <Route path="/studymaterial/edit/:id" element={<FafatEditStudymaterial />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/studymaterial/edit/:id" element={<FafatEditStudymaterial />}></Route>
 
         <Route path="/subject-teacher/poonam-fafat/question-paper" element={<FafatQuestionPaper />}></Route>
         <Route path="/subject-teacher/poonam-fafat/answer-key" element={<FafatAnswerKey />}></Route>

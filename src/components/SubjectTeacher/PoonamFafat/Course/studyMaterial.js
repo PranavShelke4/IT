@@ -13,7 +13,7 @@ const Studymaterial = props => (
         <td><a href={props.studymaterial.link}>{props.studymaterial.link}</a></td>
         
         <td>
-            <Link to={"/studymaterial/edit/"+props.studymaterial._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteStudymaterial(props.studymaterial._id) }} ><i className='bx bx-trash'></i></span>
+            <Link to={"/subject-teacher/poonam-fafat/studymaterial/edit/"+props.studymaterial._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteStudymaterial(props.studymaterial._id) }} ><i className='bx bx-trash'></i></span>
             {/* <button className="btn btn-secondary"><Link to={"/edit/"+props.exercise._id} style={{color:"white"}}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => {props.deleteExercise(props.exercise._id) }}>Delete</button> */}
         </td>
     </tr>
@@ -68,7 +68,7 @@ class StudyMaterial extends Component {
                         {this.studymaterialsList()}
                     </tbody>
                 </table>
-                <Link to={'/subject-teacher/add-studymaterial'}><div className='add'>Add</div></Link>
+                <Link to={'/subject-teacher/poonam-fafat/add-studymaterial'}><div className='add'>Add</div></Link>
             </div>
             </div>
          );

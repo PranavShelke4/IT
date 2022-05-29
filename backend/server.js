@@ -44,6 +44,11 @@ const RautExercisesRouter = require("./routes/SnehaRaut/ExercisesRoutes");
 const RautStudymaterialsRouter = require("./routes/SnehaRaut/StudymaterialsRoutes");
 
 
+// Poonam Fafat Subject Teacher
+const FafatExercisesRouter = require("./routes/PoonamFafat/ExercisesRoutes");
+const FafatStudymaterialsRouter = require("./routes/PoonamFafat/StudymaterialsRoutes");
+
+
 
 
 
@@ -90,6 +95,10 @@ app.use('/TYfeedbacklists', TYFeedbacklistsRouter);
 // Sneha Raut Subject Taecher
 app.use("/Rautexercises", RautExercisesRouter);
 app.use("/Rautstudymaterials", RautStudymaterialsRouter);
+
+// Poonam Fafat Subject Taecher
+app.use("/Fafatexercises", FafatExercisesRouter);
+app.use("/Fafatstudymaterials", FafatStudymaterialsRouter);
 
 app.listen(5000, () => {
   console.log(`Server is running on port 5000`);
