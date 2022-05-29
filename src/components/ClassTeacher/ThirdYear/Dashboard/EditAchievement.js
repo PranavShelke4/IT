@@ -7,7 +7,7 @@ import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 import { useParams } from "react-router-dom";
 
 function Cancel(){
-  window.location.href="/class-teacher/Fafat/dashboard";
+  window.location.href="/class-teacher/TY/dashboard";
 }
 
 function  EditAchievement() {
@@ -47,7 +47,7 @@ function  EditAchievement() {
     // formdata.append("activity",activityName);
     // formdata.append("subject",subName);
     // formdata.append("group",groupNo);
-    window.location.href="/class-teacher/Fafat/dashboard";
+    window.location.href="/class-teacher/TY/dashboard";
     const formdata = {
         "sname":studentName,
         "dept":deptName,

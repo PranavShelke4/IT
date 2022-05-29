@@ -6,7 +6,7 @@ import Detentionlist from "../../../../api/ThirdYear/Detentionlist";
 import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 function Cancel(){
-  window.location.href="/class-teacher/Fafat/class-detentionlist";
+  window.location.href="/class-teacher/TY/class-detentionlist";
 }
 
 
@@ -36,7 +36,7 @@ function  AddDetentionList() {
     console.log(detentionlist);
    const res = await Detentionlist.post("/add-detentionlist",detentionlist);
    console.log(res.data.msg)
-   window.location.href="/class-teacher/Fafat/class-detentionlist";
+   window.location.href="/class-teacher/TY/class-detentionlist";
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }
