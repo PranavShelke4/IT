@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import axios from "axios";
 //import '../../ClassTeacher/SecondYear/Dashboard/studentAchievement.css';
-import "./StudentAchievementsHOD.css"
+//import "./StudentAchievementsHOD.css"
 
 import Achievements from '../../../api/FirstYear/Achievement';
 
