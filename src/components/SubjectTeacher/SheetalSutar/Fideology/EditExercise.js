@@ -2,7 +2,7 @@ import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
 
-import Exercise from "../../../../api/RautMadam/Exercise";
+import Exercise from "../../../../api/SheetalSutar/Exercise";
 
 import { useParams } from "react-router-dom";
 import "./createPedelogy.css";

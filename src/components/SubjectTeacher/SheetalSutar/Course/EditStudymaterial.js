@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
-import Studymaterial from "../../../../api/RautMadam/Studymaterial";
+import Studymaterial from "../../../../api/SheetalSutar/Studymaterial";
 
 import { useParams } from "react-router-dom";
 import "../Fideology/createPedelogy.css";

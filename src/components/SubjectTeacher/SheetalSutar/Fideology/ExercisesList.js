@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import './ExercisesList.css';
 
-import Exercises from '../../../../api/RautMadam/Exercise';
+import Exercises from '../../../../api/SheetalSutar/Exercise';
 
 const Exercise = props => (
     <tr>
