@@ -39,6 +39,7 @@ const TYStudentlistsRouter = require("./routes/ThirdYear/StudentlistsRoutes");
 const TYDetentionlistsRouter = require("./routes/ThirdYear/DetentionlistsRoutes");
 const TYFeedbacklistsRouter = require('./routes/ThirdYear/FeedbacklistsRoutes');
 
+// Sneha Raut Subject Teacher
 const RautExercisesRouter = require("./routes/SnehaRaut/ExercisesRoutes");
 const RautStudymaterialsRouter = require("./routes/SnehaRaut/StudymaterialsRoutes");
 
@@ -72,7 +73,7 @@ app.use("/TYstudentlists", TYStudentlistsRouter);
 app.use("/TYdetentionlists", TYDetentionlistsRouter);
 app.use('/TYfeedbacklists', TYFeedbacklistsRouter);
 
-//Third Year Class Taecher
+// Sneha Raut Subject Taecher
 app.use("/Rautexercises", RautExercisesRouter);
 app.use("/Rautstudymaterials", RautStudymaterialsRouter);
 
