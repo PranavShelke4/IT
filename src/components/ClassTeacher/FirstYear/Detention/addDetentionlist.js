@@ -2,11 +2,11 @@ import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
-import Detentionlist from "../../../../api/ThirdYear/Detentionlist";
+import Detentionlist from "../../../../api/FirstYear/Detentionlist";
 import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 function Cancel(){
-  window.location.href="/class-teacher/TY/class-detentionlist";
+  window.location.href="/class-teacher/FY/class-detentionlist";
 }
 
 
@@ -36,7 +36,7 @@ function  AddDetentionList() {
     console.log(detentionlist);
    const res = await Detentionlist.post("/add-detentionlist",detentionlist);
    console.log(res.data.msg)
-   window.location.href="/class-teacher/TY/class-detentionlist";
+   window.location.href="/class-teacher/FY/class-detentionlist";
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }
