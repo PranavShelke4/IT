@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import axios from "axios";
-import '../../ClassTeacher/SecondYear/Dashboard/studentAchievement.css';
+//import '../../ClassTeacher/SecondYear/Dashboard/studentAchievement.css';
+import "./StudentAchievementsHOD.css"
 
-import Achievements from '../../../api/SecondYear/Achievement';
+import Achievements from '../../../api/FirstYear/Achievement';
 
 
 const Achievement = props => (
@@ -52,8 +53,14 @@ class studentAchievement extends Component {
 
     render() { 
         return ( 
+
             <div className='FideologyActivities'>
+            <Link to={'/HOD/Dashbord'}><div className='sy-btn sy'>FY</div></Link>
+            <Link to={'/HOD/Dashbord/SY-Achievements'}><div className='sy-btn fy'>SY</div></Link>
+            <Link to={'/HOD/Dashbord/TY-Achievements'}><div className='sy-btn'>TY</div></Link>
+           
             <div className="fideo">
+        
                 <h3 className='fidoh3'>Student Achievements</h3>
                 <table>
                     <thead className="thead-light">
