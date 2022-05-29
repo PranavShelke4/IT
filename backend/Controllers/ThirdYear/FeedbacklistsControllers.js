@@ -1,4 +1,4 @@
-const Feedbacklists = require("../../models/FafatMadam/feedbacklist.model");
+const Feedbacklists = require("../../models/ThirdYear/feedbacklist.model");
 
 exports.postFeedbacklist = (req, res) => {
   console.log("Post Req ------------------->>>>>>");

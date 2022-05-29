@@ -1,4 +1,4 @@
-const Exercises = require("../../models/FafatMadam/exercise.model");
+const Exercises = require("../../models/ThirdYear/exercise.model");
 
 exports.postExercise = (req, res) => {
   console.log("Post Req ------------------->>>>>>");
