@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const detentionlistsControllers = require('../../Controllers/GhodeMadam/DetentionlistsControllers');
+const detentionlistsControllers = require('../../Controllers/SecondYear/DetentionlistsControllers');
 
 router.post('/add-detentionlist',detentionlistsControllers.postDetentionlist);
 router.get('/get-detentionlists',detentionlistsControllers.getDetentionlists);
