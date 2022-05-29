@@ -2,32 +2,20 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
 import { Link } from "react-router-dom";
-import STData from "./STData";
+import STData from "../../SecondYear/AssignST/STData";
 import "./AssignST.css";
 
-function AssignST(props) {
+function AssignST5th(props) {
   return (
     <>
       <div className="facultysCR">
         <div className="fideo">
           <h3 className="fidoh3">Assign Subject Teacher</h3>
-          <Link to={'/class-teacher/assign-5thSem'}><div className='add'>5th Sem</div></Link>
+          <Link to={'/class-teacher/assign-6thSem'}><div className='add'>6th Sem</div></Link>
 
-          <h4 className="fidoh44">Management (MAN)</h4>
+          <h4 className="fidoh44">Operating System (OS)</h4>
 
-          {/* <select>
-              <option>java</option>
-              <option>cpp</option>
-              <option>php</option>
-          </select>
-
-          <select>
-              <option>java</option>
-              <option>cpp</option>
-              <option>php</option>
-          </select> */}
-
-<table>
+        <table>
             <tr>
               <th>Sr No</th>
               <th>Image</th>
@@ -54,7 +42,7 @@ function AssignST(props) {
             
         </div> 
 
-          <h4 className="fidoh44">Emerginig Trends in IT & Computer (ETI)</h4>
+          <h4 className="fidoh44">Environmental Studies (EST)</h4>
           <table>
             <tr>
               <th>Sr No</th>
@@ -78,7 +66,7 @@ function AssignST(props) {
             })}
           </table>
 
-          <h4 className="fidoh44">Wireless And Mobile Network (WMN)</h4>
+          <h4 className="fidoh44">Client Side Scripting (CSS)</h4>
           <table>
             <tr>
               <th>Sr No</th>
@@ -102,7 +90,7 @@ function AssignST(props) {
             })}
           </table>
 
-           <h4 className="fidoh44">Mobile Application Development (MAD)</h4>
+           <h4 className="fidoh44">Entrepreneurship Development (EDE)</h4>
           <table>
             <tr>
               <th>Sr No</th>
@@ -126,7 +114,7 @@ function AssignST(props) {
             })}
           </table>
 
-          <h4 className="fidoh44">Web Based Application using PHP (WBP)</h4>
+          <h4 className="fidoh44">Advanced Java Programming (AJP)</h4>
           <table>
             <tr>
               <th>Sr No</th>
@@ -156,4 +144,4 @@ function AssignST(props) {
   );
 }
 
-export default AssignST;
+export default AssignST5th;
