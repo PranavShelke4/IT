@@ -30,6 +30,10 @@ const TYStudentlistsRouter = require("./routes/ThirdYear/StudentlistsRoutes");
 const TYDetentionlistsRouter = require("./routes/ThirdYear/DetentionlistsRoutes");
 const TYFeedbacklistsRouter = require('./routes/ThirdYear/FeedbacklistsRoutes');
 
+//Sneha Raut Subject Teacher
+const RautExercisesRouter = require("./routes/SnehaRaut/ExercisesRoutes");
+const RautStudymaterialsRouter = require("./routes/SnehaRaut/StudymaterialsRoutes");
+
 mongoose.connect(uri, { useNewUrlParser: true });
 
 const connection = mongoose.connection;
@@ -53,6 +57,10 @@ app.use("/TYstudymaterials", TYStudymaterialsRouter);
 app.use("/TYstudentlists", TYStudentlistsRouter);
 app.use("/TYdetentionlists", TYDetentionlistsRouter);
 app.use('/TYfeedbacklists', TYFeedbacklistsRouter);
+
+//Third Year Class Taecher
+app.use("/Rautexercises", RautExercisesRouter);
+app.use("/Rautstudymaterials", RautStudymaterialsRouter);
 
 app.listen(5000, () => {
   console.log(`Server is running on port 5000`);

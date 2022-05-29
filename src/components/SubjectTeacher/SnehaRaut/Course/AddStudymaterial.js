@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import Studymaterial from "../../../../api/RautMadam/Studymaterial"
 
 function Cancel(){
-  window.location.href="/subject-teacher/study-material"
+  window.location.href="/subject-teacher/sneha-raut/study-material"
 }
 
 function  AddStudymaterial() {
@@ -34,7 +34,7 @@ function  AddStudymaterial() {
     console.log(studymaterial);
    const res = await Studymaterial.post("/add-studymaterial",studymaterial);
    console.log(res.data.msg)
-   window.location.href="/subject-teacher/study-material";
+   window.location.href="/subject-teacher/sneha-raut/study-material";
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }
