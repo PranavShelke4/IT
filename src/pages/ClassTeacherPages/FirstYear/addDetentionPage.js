@@ -1,6 +1,6 @@
 import React from 'react';
-import ClassNavbar from '../../../components/ClassTeacher/ThirdYear/classTeacherNavbar';
-import AddDetention from '../../../components/ClassTeacher/ThirdYear/Detention/addDetentionlist';
+import ClassNavbar from '../../../components/ClassTeacher/FirstYear/classTeacherNavbar';
+import AddDetention from '../../../components/ClassTeacher/FirstYear/Detention/addDetentionlist';
 
 function addDetentionPage(){
     return (

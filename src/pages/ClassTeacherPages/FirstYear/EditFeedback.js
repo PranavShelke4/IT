@@ -1,6 +1,6 @@
 import React from 'react';
-import ClassNavbar from '../../../components/ClassTeacher/ThirdYear/classTeacherNavbar';
-import EditFeedbacklist from '../../../components/ClassTeacher/ThirdYear/FeedBack/EditFeedbacklist';
+import ClassNavbar from '../../../components/ClassTeacher/FirstYear/classTeacherNavbar';
+import EditFeedbacklist from '../../../components/ClassTeacher/FirstYear/FeedBack/EditFeedbacklist';
 
 function EditFeedback(){
     return (

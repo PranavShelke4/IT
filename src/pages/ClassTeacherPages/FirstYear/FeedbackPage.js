@@ -1,6 +1,6 @@
 import React from 'react';
-import ClassNavbar from '../../../components/ClassTeacher/ThirdYear/classTeacherNavbar';
-import Feedback from '../../../components/ClassTeacher/ThirdYear/FeedBack/FeedbackList';
+import ClassNavbar from '../../../components/ClassTeacher/FirstYear/classTeacherNavbar';
+import Feedback from '../../../components/ClassTeacher/FirstYear/FeedBack/FeedbackList';
 
 function FeedbackPage(){
     return (

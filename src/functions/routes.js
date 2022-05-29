@@ -12,6 +12,34 @@ import AssignClassTeacher from '../pages/HODPages/AssignClassTeacher';
 import FacyltyLeave from '../pages/HODPages/Leaves'
 
 
+
+//Third Year class Teacher routes 
+
+import FYClassTeacherDashboard from '../pages/ClassTeacherPages/FirstYear/Dashboard';
+import FYAddAchievement from "../pages/ClassTeacherPages/FirstYear/addAchievement";
+import FYEditAchievement from "../pages/ClassTeacherPages/FirstYear/EditAchievementPage";
+
+import FYClassFaculFY from "../pages/ClassTeacherPages/FirstYear/FacultyDetails";
+
+import FYAssignST1stPage from "../pages/ClassTeacherPages/FirstYear/AssignST1stPage";
+import FYAssignST2ndPage from "../pages/ClassTeacherPages/FirstYear/AssignST2ndPage";
+
+import FYStudent from "../pages/ClassTeacherPages/FirstYear/studentpage";
+import FYAddList from "../pages/ClassTeacherPages/FirstYear/addListPage";
+import FYEditStudentlist from "../pages/ClassTeacherPages/FirstYear/EditListPage";
+
+import FYDetentionPage from "../pages/ClassTeacherPages/FirstYear/DetentionPage";
+import FYAddDetentionList from "../pages/ClassTeacherPages/FirstYear/addDetentionPage";
+import FYEditDetentionlist from "../pages/ClassTeacherPages/FirstYear/EditDetention";
+
+import FYFeedbackPage from "../pages/ClassTeacherPages/FirstYear/FeedbackPage";
+import FYAddFeedbackList from "../pages/ClassTeacherPages/FirstYear/AddFeedbackPage";
+import FYEditFeedbacklist from "../pages/ClassTeacherPages/FirstYear/EditFeedback";
+
+import FYClassProfilePage from "../pages/ClassTeacherPages/FirstYear/ProfilePage";
+
+
+
 // Second Year classTaecher Routes
 
 import ClassTeacherDashboard from '../pages/ClassTeacherPages/SecondYear/Dashboard';
@@ -351,7 +379,33 @@ const ConfigRoutes = () => {
         <Route path="/subject-teacher/deepak-rewadkar/profile" element={<RewadkarProfilePage />}></Route>
         <Route path="/subject-teacher/deepak-rewadkar/leave" element={<RewadkarLeavePage />}></Route>
         
-      
+
+
+          {/* class teacher Routes First Year  */}
+          <Route path="/class-teacher/FY/dashboard" element={<FYClassTeacherDashboard />}></Route>
+        <Route path="/class-teacher/FY/add-achievement" element={<FYAddAchievement />}></Route>
+        <Route path="/CT/FY/edit/:id" element={<FYEditAchievement/>}></Route>
+
+        <Route path="/class-teacher/FY/classfaculty" element={<FYClassFaculFY />}></Route>
+
+        <Route path="/class-teacher/FY/student-table" element={<FYStudent />}></Route>
+        <Route path="/class-teacher/FY/add-student-list" element={<FYAddList />}></Route>
+        <Route path="/studentlist/FY/edit/:id" element={<FYEditStudentlist />}></Route>
+        
+        <Route path="/class-teacher/FY/assign-1stSem" element={<FYAssignST1stPage />}></Route>
+        <Route path="/class-teacher/FY/assign-2ndSem" element={<FYAssignST2ndPage />}></Route>
+        
+        <Route path="/class-teacher/FY/class-detentionlist" element={<FYDetentionPage />}></Route>
+        <Route path="/class-teacher/FY/add-detentionlist" element={<FYAddDetentionList />}></Route>
+        <Route path="/detentionlist/FY/edit/:id" element={<FYEditDetentionlist />}></Route>
+
+        <Route path="/class-teacher/FY/class-feedback" element={<FYFeedbackPage />}></Route>
+        <Route path="/class-teacher/FY/add-feedbacklist" element={<FYAddFeedbackList />}></Route>
+        <Route path="/feedbacklist/FY/edit/:id" element={<FYEditFeedbacklist />}></Route>
+        <Route path="/class-teacher/FY/profile" element={<FYClassProfilePage />}></Route>
+        
+
+
         {/* class teacher Routes Second Year  */}
         <Route path="/class-teacher/SY/dashboard" element={<ClassTeacherDashboard />}></Route>
         <Route path="/class-teacher/SY/add-achievement" element={<AddAchievement />}></Route>

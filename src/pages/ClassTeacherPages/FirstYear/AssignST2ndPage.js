@@ -1,14 +1,14 @@
 import React from 'react';
 import ClassNavbar from '../../../components/ClassTeacher/FirstYear/classTeacherNavbar';
-import Profile from '../../../components/ClassTeacher/FirstYear/Profile/Profile';
+import AssignST6th from '../../../components/ClassTeacher/FirstYear/AssignST/AssignST2nd';
 
-function ProfilePage(){
+function AssignST6thPage(){
     return (
     <div>
         <ClassNavbar />
-        <Profile />
+        <AssignST6th />
     </div>
     );
 }
 
-export default ProfilePage;
+export default AssignST6thPage;

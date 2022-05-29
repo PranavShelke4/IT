@@ -1,6 +1,6 @@
 import React from 'react';
-import ClassNavbar from '../../../components/ClassTeacher/ThirdYear/classTeacherNavbar';
-import EditDetentionList from '../../../components/ClassTeacher/ThirdYear/Detention/EditDetentionlist';
+import ClassNavbar from '../../../components/ClassTeacher/FirstYear/classTeacherNavbar';
+import EditDetentionList from '../../../components/ClassTeacher/FirstYear/Detention/EditDetentionlist';
 
 function EditDetention(){
     return (
