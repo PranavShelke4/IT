@@ -13,9 +13,10 @@
     box-sizing: border-box;
     box-shadow: 35px 12px 23px rgba(201, 176, 255, 0.25);
     border-radius: 10px;
-    margin-top: -2rem;
+    margin-top: 2.5rem !important;
     margin-bottom:50px;
     padding: 2%;
+    /* padding-top: 5rem !important; */
   }
 
 .fidoh3{

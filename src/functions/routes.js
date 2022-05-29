@@ -223,13 +223,13 @@ const ConfigRoutes = () => {
          {/* Sneha Raut Routes */}
         <Route path="/subject-teacher/sneha-raut/dashboard" element={<Dashbord />}></Route>
         <Route path="/subject-teacher/sneha-raut/fideology-form" element={<CreateExercise />}></Route>
-        <Route path="/sneha-raut/edit/:id" element={<EditExercise/>}></Route>
+        <Route path="/subject-teacher/sneha-raut/edit/:id" element={<EditExercise/>}></Route>
         
         <Route path="/subject-teacher/sneha-raut/student-details" element={<StudentDetail />}></Route>
         <Route path="/subject-teacher/sneha-raut/course" element={<Course />}></Route>
         <Route path="/subject-teacher/sneha-raut/study-material" element={<StudyPage />}></Route>
         <Route path="/subject-teacher/sneha-raut/add-studymaterial" element={<AddStudymaterial />}></Route>
-        <Route path="/studymaterial/edit/:id" element={<EditStudymaterial />}></Route>
+        <Route path="/studymaterial/sneha-raut/edit/:id" element={<EditStudymaterial />}></Route>
 
         <Route path="/subject-teacher/sneha-raut/question-paper" element={<QuestionPaper />}></Route>
         <Route path="/subject-teacher/sneha-raut/answer-key" element={<AnswerKey />}></Route>

@@ -22,8 +22,8 @@ function subject(){
         </Dropdown.Toggle>
 
       <Dropdown.Menu>
-          <Dropdown.Item href="/question-paper">Question Paper</Dropdown.Item>
-          <Dropdown.Item href="/answer-key">Answer Key</Dropdown.Item>
+          <Dropdown.Item href="/subject-teacher/sneha-raut/question-paper">Question Paper</Dropdown.Item>
+          <Dropdown.Item href="/subject-teacher/sneha-raut/answer-key">Answer Key</Dropdown.Item>
           <Dropdown.Item href="#/ds-format">DS Format</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
@@ -44,8 +44,8 @@ function subject(){
         </Dropdown.Toggle>
 
       <Dropdown.Menu>
-          <Dropdown.Item href="/assignments">Assignments</Dropdown.Item>
-          <Dropdown.Item href="/subject-teacher/study-material">Study Materials</Dropdown.Item>
+          <Dropdown.Item href="/subject-teacher/sneha-raut/assignments">Assignments</Dropdown.Item>
+          <Dropdown.Item href="/subject-teacher/sneha-raut/study-material">Study Materials</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
 
