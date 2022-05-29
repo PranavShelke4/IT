@@ -1,4 +1,4 @@
-const Studentlists = require("../../models/FafatMadam/studentlist.model");
+const Studentlists = require("../../models/ThirdYear/studentlist.model");
 
 exports.postStudentlist = (req, res) => {
   console.log("Post Req ------------------->>>>>>");
