@@ -127,6 +127,27 @@ import DabhadeAssignmentPage from "../pages/SubjectTeacherPages/JyotiDabhade/Ass
 import DabhadeProfilePage from "../pages/SubjectTeacherPages/JyotiDabhade/ProfilePage";
 import DabhadeLeavePage from '../pages/SubjectTeacherPages/JyotiDabhade/LeavePage';
 
+
+// Yogesh Bodhe Routes.....
+
+import BodheDashbord from '../pages/SubjectTeacherPages/YogeshBodhe/Dashbord';
+import BodheCreateExercise from "../pages/SubjectTeacherPages/YogeshBodhe/FideologyForm";
+import BodheEditExercise from "../pages/SubjectTeacherPages/YogeshBodhe/EditPedeology";
+
+import BodheStudentDetail from '../pages/SubjectTeacherPages/YogeshBodhe/studentDetail';
+import BodheCourse from '../pages/SubjectTeacherPages/YogeshBodhe/coursePage';
+
+import BodheStudyPage  from "../pages/SubjectTeacherPages/YogeshBodhe/studyPage";
+import BodheAddStudymaterial from "../pages/SubjectTeacherPages/YogeshBodhe/StudyMaterialPage";
+import BodheEditStudymaterial from "../pages/SubjectTeacherPages/YogeshBodhe/EditStudyMaterialPage";
+
+import BodheQuestionPaper from '../pages/SubjectTeacherPages/YogeshBodhe/questionPaper';
+import BodheAnswerKey from '../pages/SubjectTeacherPages/YogeshBodhe/answerKey';
+import BodheAssignmentPage from "../pages/SubjectTeacherPages/YogeshBodhe/Assignmentpage";
+
+import BodheProfilePage from "../pages/SubjectTeacherPages/YogeshBodhe/ProfilePage";
+import BodheLeavePage from '../pages/SubjectTeacherPages/YogeshBodhe/LeavePage';
+
 // Other
 
 //import SignUpPage from "../components/Signup/signup";
@@ -214,6 +235,24 @@ const ConfigRoutes = () => {
         <Route path="/subject-teacher/jyoti-dabhade/profile" element={<DabhadeProfilePage />}></Route>
         <Route path="/subject-teacher/jyoti-dabhade/leave" element={<DabhadeLeavePage />}></Route>
        
+
+        {/* Yogesh Bodhe Routes */}
+        <Route path="/subject-teacher/yogesh-bodhe/dashboard" element={<BodheDashbord />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/fideology-form" element={<BodheCreateExercise />}></Route>
+        <Route path="/edit/:id" element={<BodheEditExercise/>}></Route>
+        
+        <Route path="/subject-teacher/yogesh-bodhe/student-details" element={<BodheStudentDetail />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/course" element={<BodheCourse />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/study-material" element={<BodheStudyPage />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/add-studymaterial" element={<BodheAddStudymaterial />}></Route>
+        <Route path="/studymaterial/edit/:id" element={<BodheEditStudymaterial />}></Route>
+
+        <Route path="/subject-teacher/yogesh-bodhe/question-paper" element={<BodheQuestionPaper />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/answer-key" element={<BodheAnswerKey />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/assignments" element={<BodheAssignmentPage />}></Route>
+        
+        <Route path="/subject-teacher/yogesh-bodhe/profile" element={<BodheProfilePage />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/leave" element={<BodheLeavePage />}></Route>
         
       
         {/* class teacher Routes */}

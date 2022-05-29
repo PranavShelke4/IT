@@ -53,7 +53,7 @@ const FacultyDatass = [
         id: 6,
         SrNo: "6",
         Image: "1",
-        Name: "Mr. Yogesh Uttamrao Bodhe",
+        Name: "Mr. Yogesh U. Bodhe",
         Gender: "Male",
         Qualification: "BE(Comp.Engg), M.Tech(Comp.Sci.& Engg.)",
         Mobile: "8530407444",
