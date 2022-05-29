@@ -194,13 +194,13 @@ function classTeacherNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/HOD/student-details">First Year</Link>
+                <Link to="/HOD/FY-Feedback">First Year</Link>
               </li>
               <li>
-                <Link to="/HOD/student-details">Second Year</Link>
+                <Link to="/HOD/SY-Feedback">Second Year</Link>
               </li>
               <li>
-                <Link to="/HOD/student-details">Third Year</Link>
+                <Link to="/HOD/TY-Feedback">Third Year</Link>
               </li>
             </ul>
           </li>
