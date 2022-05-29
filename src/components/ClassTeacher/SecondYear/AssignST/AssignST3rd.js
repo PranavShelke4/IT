@@ -12,7 +12,7 @@ function AssignST(props) {
         <div className="fideo">
           <h3 className="fidoh3">Assign Subject Teacher</h3>
           <Link to={'/class-teacher/SY/assign-4thSem'}><div className='add'>4th Sem</div></Link>
-
+        </div>
           <h4 className="fidoh44">Object Oriented Programming (OOP)</h4> 
         <table>
             <tr>
@@ -36,10 +36,6 @@ function AssignST(props) {
               );
             })}
           </table>
-
-
-            
-        </div> 
 
           <h4 className="fidoh44">Data Structure using C (DSU)</h4>
           <table>
@@ -160,9 +156,7 @@ function AssignST(props) {
               );
             })}
           </table>
-          
-        </div>
-
+          </div>
     </>
   );
 }
