@@ -2,11 +2,11 @@ import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
-import Feedbacklist from "../../../../api/ThirdYear/Feedbacklist";
+import Feedbacklist from "../../../../api/FirstYear/Feedbacklist";
 import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 function Cancel(){
-  window.location.href="/class-teacher/TY/class-feedback";
+  window.location.href="/class-teacher/FY/class-feedback";
 }
 
 
@@ -36,7 +36,7 @@ function  AddFeedbackList() {
     console.log(feedbacklist);
    const res = await Feedbacklist.post("/add-feedbacklist",feedbacklist);
    console.log(res.data.msg)
-   window.location.href="/class-teacher/TY/class-feedback";
+   window.location.href="/class-teacher/FY/class-feedback";
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }
