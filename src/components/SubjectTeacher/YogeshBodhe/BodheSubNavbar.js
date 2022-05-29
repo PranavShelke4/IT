@@ -1,5 +1,5 @@
 //import React, { useContext } from "react";
-import "./SutarSubNavbar.css";
+import "./BodheSubNavbar.css";
 import {Link} from 'react-router-dom';
 import BodheSirImg from "../../../assets/img/BodheSirImg.jpg"
 //import { AuthContext } from "../../functions/Auth"
@@ -35,13 +35,13 @@ function subNavbar() {
         </div>
         <ul className="nav-links">
           <li>
-            <Link to="/subject-teacher/sheetal-sutar/dashboard">
+            <Link to="/subject-teacher/yogesh-bodhe/dashboard">
               <i className="bx bx-home-alt"></i>
               <span className="link_name">Dashboard</span>
             </Link>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="/subject-teacher/sheetal-sutar/dashboard">
+                <Link className="link_name" to="/subject-teacher/yogesh-bodhe/dashboard">
                   Dashboard
                 </Link>
               </li>
@@ -63,25 +63,25 @@ function subNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/subject-teacher/sheetal-sutar/student-details">First Year</Link>
+                <Link to="/subject-teacher/yogesh-bodhe/student-details">First Year</Link>
               </li>
               <li>
-                <Link to="/subject-teacher/sheetal-sutar/student-details">Second Year</Link>
+                <Link to="/subject-teacher/yogesh-bodhe/student-details">Second Year</Link>
               </li>
               <li>
-                <Link to="/subject-teacher/sheetal-sutar/student-details">Third Year</Link>
+                <Link to="/subject-teacher/yogesh-bodhe/student-details">Third Year</Link>
               </li>
             </ul>
           </li>
 
           <li>
-            <Link to="/subject-teacher/sheetal-sutar/course">
+            <Link to="/subject-teacher/yogesh-bodhe/course">
               <i className="bx bx-book"></i>
               <span className="link_name">Course</span>
             </Link>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="/subject-teacher/sheetal-sutar/course">
+                <Link className="link_name" to="/subject-teacher/yogesh-bodhe/course">
                 Course
                 </Link>
               </li>
@@ -95,9 +95,9 @@ function subNavbar() {
             </a>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0">
+                <a className="link_name" href="https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0">
                 CPP Project
-                </Link>
+                </a>
               </li>
             </ul>
           </li>
@@ -174,19 +174,19 @@ function subNavbar() {
                 <Link to="#">CR</Link>
               </li>
               <li>
-                <Link to="/subject-teacher/sheetal-sutar/profile">Profile</Link>
+                <Link to="/subject-teacher/yogesh-bodhe/profile">Profile</Link>
               </li>
             </ul>
           </li>
 
           <li>
-            <Link to="/subject-teacher/sheetal-sutar/leave">
+            <Link to="/subject-teacher/yogesh-bodhe/leave">
               <i className="bx bxs-comment-detail"></i>
               <span className="link_name">Leaves</span>
             </Link>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="/subject-teacher/sheetal-sutar/leave">
+                <Link className="link_name" to="/subject-teacher/yogesh-bodhe/leave">
                 Leaves
                 </Link>
               </li>
@@ -212,7 +212,7 @@ function subNavbar() {
                 <img alt="" src={BodheSirImg} />
               </div>
               <div className="name-job">
-                <div className="profile_name">Mr. Yogesh U. Bodhe</div>
+                <div className="profile_name">Mrs. Sneha D. Raut</div>
                 <div className="job">Lecturer in IT</div>
               </div>
             </div>

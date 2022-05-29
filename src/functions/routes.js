@@ -105,6 +105,67 @@ import SutarAssignmentPage from "../pages/SubjectTeacherPages/SheetalSutar/Assig
 import SutarProfilePage from "../pages/SubjectTeacherPages/SheetalSutar/ProfilePage";
 import SutarLeavePage from '../pages/SubjectTeacherPages/SheetalSutar/LeavePage';
 
+// Poonam Fafat Routes.....
+
+import FafatDashbord from '../pages/SubjectTeacherPages/PoonamFafat/Dashbord';
+import FafatCreateExercise from "../pages/SubjectTeacherPages/PoonamFafat/FideologyForm";
+import FafatEditExercise from "../pages/SubjectTeacherPages/PoonamFafat/EditPedeology";
+
+import FafatStudentDetail from '../pages/SubjectTeacherPages/PoonamFafat/studentDetail';
+import FafatCourse from '../pages/SubjectTeacherPages/PoonamFafat/coursePage';
+
+import FafatStudyPage  from "../pages/SubjectTeacherPages/PoonamFafat/studyPage";
+import FafatAddStudymaterial from "../pages/SubjectTeacherPages/PoonamFafat/StudyMaterialPage";
+import FafatEditStudymaterial from "../pages/SubjectTeacherPages/PoonamFafat/EditStudyMaterialPage";
+
+import FafatQuestionPaper from '../pages/SubjectTeacherPages/PoonamFafat/questionPaper';
+import FafatAnswerKey from '../pages/SubjectTeacherPages/PoonamFafat/answerKey';
+import FafatAssignmentPage from "../pages/SubjectTeacherPages/PoonamFafat/Assignmentpage";
+
+import FafatProfilePage from "../pages/SubjectTeacherPages/PoonamFafat/ProfilePage";
+import FafatLeavePage from '../pages/SubjectTeacherPages/PoonamFafat/LeavePage';
+
+// Jyoti Dabhade Routes.....
+
+import DabhadeDashbord from '../pages/SubjectTeacherPages/JyotiDabhade/Dashbord';
+import DabhadeCreateExercise from "../pages/SubjectTeacherPages/JyotiDabhade/FideologyForm";
+import DabhadeEditExercise from "../pages/SubjectTeacherPages/JyotiDabhade/EditPedeology";
+
+import DabhadeStudentDetail from '../pages/SubjectTeacherPages/JyotiDabhade/studentDetail';
+import DabhadeCourse from '../pages/SubjectTeacherPages/JyotiDabhade/coursePage';
+
+import DabhadeStudyPage  from "../pages/SubjectTeacherPages/JyotiDabhade/studyPage";
+import DabhadeAddStudymaterial from "../pages/SubjectTeacherPages/JyotiDabhade/StudyMaterialPage";
+import DabhadeEditStudymaterial from "../pages/SubjectTeacherPages/JyotiDabhade/EditStudyMaterialPage";
+
+import DabhadeQuestionPaper from '../pages/SubjectTeacherPages/JyotiDabhade/questionPaper';
+import DabhadeAnswerKey from '../pages/SubjectTeacherPages/JyotiDabhade/answerKey';
+import DabhadeAssignmentPage from "../pages/SubjectTeacherPages/JyotiDabhade/Assignmentpage";
+
+import DabhadeProfilePage from "../pages/SubjectTeacherPages/JyotiDabhade/ProfilePage";
+import DabhadeLeavePage from '../pages/SubjectTeacherPages/JyotiDabhade/LeavePage';
+
+
+// Yogesh Bodhe Routes.....
+
+import BodheDashbord from '../pages/SubjectTeacherPages/YogeshBodhe/Dashbord';
+import BodheCreateExercise from "../pages/SubjectTeacherPages/YogeshBodhe/FideologyForm";
+import BodheEditExercise from "../pages/SubjectTeacherPages/YogeshBodhe/EditPedeology";
+
+import BodheStudentDetail from '../pages/SubjectTeacherPages/YogeshBodhe/studentDetail';
+import BodheCourse from '../pages/SubjectTeacherPages/YogeshBodhe/coursePage';
+
+import BodheStudyPage  from "../pages/SubjectTeacherPages/YogeshBodhe/studyPage";
+import BodheAddStudymaterial from "../pages/SubjectTeacherPages/YogeshBodhe/StudyMaterialPage";
+import BodheEditStudymaterial from "../pages/SubjectTeacherPages/YogeshBodhe/EditStudyMaterialPage";
+
+import BodheQuestionPaper from '../pages/SubjectTeacherPages/YogeshBodhe/questionPaper';
+import BodheAnswerKey from '../pages/SubjectTeacherPages/YogeshBodhe/answerKey';
+import BodheAssignmentPage from "../pages/SubjectTeacherPages/YogeshBodhe/Assignmentpage";
+
+import BodheProfilePage from "../pages/SubjectTeacherPages/YogeshBodhe/ProfilePage";
+import BodheLeavePage from '../pages/SubjectTeacherPages/YogeshBodhe/LeavePage';
+
 // Other
 
 //import SignUpPage from "../components/Signup/signup";
@@ -120,7 +181,7 @@ const ConfigRoutes = () => {
          {/* Sneha Raut Routes */}
         <Route path="/subject-teacher/sneha-raut/dashboard" element={<Dashbord />}></Route>
         <Route path="/subject-teacher/sneha-raut/fideology-form" element={<CreateExercise />}></Route>
-        <Route path="/edit/:id" element={<EditExercise/>}></Route>
+        <Route path="/sneha-raut/edit/:id" element={<EditExercise/>}></Route>
         
         <Route path="/subject-teacher/sneha-raut/student-details" element={<StudentDetail />}></Route>
         <Route path="/subject-teacher/sneha-raut/course" element={<Course />}></Route>
@@ -153,7 +214,63 @@ const ConfigRoutes = () => {
         
         <Route path="/subject-teacher/sheetal-sutar/profile" element={<SutarProfilePage />}></Route>
         <Route path="/subject-teacher/sheetal-sutar/leave" element={<SutarLeavePage />}></Route>
+
+
+         {/* Poonam Fafat Routes */}
+         <Route path="/subject-teacher/poonam-fafat/dashboard" element={<FafatDashbord />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/fideology-form" element={<FafatCreateExercise />}></Route>
+        <Route path="/edit/:id" element={<FafatEditExercise/>}></Route>
+        
+        <Route path="/subject-teacher/poonam-fafat/student-details" element={<FafatStudentDetail />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/course" element={<FafatCourse />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/study-material" element={<FafatStudyPage />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/add-studymaterial" element={<FafatAddStudymaterial />}></Route>
+        <Route path="/studymaterial/edit/:id" element={<FafatEditStudymaterial />}></Route>
+
+        <Route path="/subject-teacher/poonam-fafat/question-paper" element={<FafatQuestionPaper />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/answer-key" element={<FafatAnswerKey />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/assignments" element={<FafatAssignmentPage />}></Route>
+        
+        <Route path="/subject-teacher/poonam-fafat/profile" element={<FafatProfilePage />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/leave" element={<FafatLeavePage />}></Route>
+
+
+         {/* Jotyi Dabhade Routes */}
+         <Route path="/subject-teacher/jyoti-dabhade/dashboard" element={<DabhadeDashbord />}></Route>
+        <Route path="/subject-teacher/jyoti-dabhade/fideology-form" element={<DabhadeCreateExercise />}></Route>
+        <Route path="/edit/:id" element={<DabhadeEditExercise/>}></Route>
+        
+        <Route path="/subject-teacher/jyoti-dabhade/student-details" element={<DabhadeStudentDetail />}></Route>
+        <Route path="/subject-teacher/jyoti-dabhade/course" element={<DabhadeCourse />}></Route>
+        <Route path="/subject-teacher/jyoti-dabhade/study-material" element={<DabhadeStudyPage />}></Route>
+        <Route path="/subject-teacher/jyoti-dabhade/add-studymaterial" element={<DabhadeAddStudymaterial />}></Route>
+        <Route path="/studymaterial/edit/:id" element={<DabhadeEditStudymaterial />}></Route>
+
+        <Route path="/subject-teacher/jyoti-dabhade/question-paper" element={<DabhadeQuestionPaper />}></Route>
+        <Route path="/subject-teacher/jyoti-dabhade/answer-key" element={<DabhadeAnswerKey />}></Route>
+        <Route path="/subject-teacher/jyoti-dabhade/assignments" element={<DabhadeAssignmentPage />}></Route>
+        
+        <Route path="/subject-teacher/jyoti-dabhade/profile" element={<DabhadeProfilePage />}></Route>
+        <Route path="/subject-teacher/jyoti-dabhade/leave" element={<DabhadeLeavePage />}></Route>
        
+
+        {/* Yogesh Bodhe Routes */}
+        <Route path="/subject-teacher/yogesh-bodhe/dashboard" element={<BodheDashbord />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/fideology-form" element={<BodheCreateExercise />}></Route>
+        <Route path="/edit/:id" element={<BodheEditExercise/>}></Route>
+        
+        <Route path="/subject-teacher/yogesh-bodhe/student-details" element={<BodheStudentDetail />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/course" element={<BodheCourse />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/study-material" element={<BodheStudyPage />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/add-studymaterial" element={<BodheAddStudymaterial />}></Route>
+        <Route path="/studymaterial/edit/:id" element={<BodheEditStudymaterial />}></Route>
+
+        <Route path="/subject-teacher/yogesh-bodhe/question-paper" element={<BodheQuestionPaper />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/answer-key" element={<BodheAnswerKey />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/assignments" element={<BodheAssignmentPage />}></Route>
+        
+        <Route path="/subject-teacher/yogesh-bodhe/profile" element={<BodheProfilePage />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/leave" element={<BodheLeavePage />}></Route>
         
       
         {/* class teacher Routes Second Year  */}
