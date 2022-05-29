@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import './studentAchievement.css';
 
-import Achievements from '../../../../api/ThirdYear/Achievement';
+import Achievements from '../../../../api/FirstYear/Achievement';
 
 
 const Achievement = props => (
@@ -16,7 +16,7 @@ const Achievement = props => (
         <td>{props.achievement.date}</td>
         
         <td>
-            <Link to={"/CT/TY/edit/"+props.achievement._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteAchievement(props.achievement._id) }} ><i className='bx bx-trash'></i></span>
+            <Link to={"/CT/FY/edit/"+props.achievement._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteAchievement(props.achievement._id) }} ><i className='bx bx-trash'></i></span>
             {/* <button className="btn btn-secondary"><Link to={"/edit/"+props.exercise._id} style={{color:"white"}}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => {props.deleteExercise(props.exercise._id) }}>Delete</button> */}
         </td>
     </tr>
@@ -73,7 +73,7 @@ class studentAchievement extends Component {
                         {this.achievementsList()}
                     </tbody>
                 </table>
-                <Link to='/class-teacher/TY/add-achievement'><div className='add'>Add</div></Link>
+                <Link to='/class-teacher/FY/add-achievement'><div className='add'>Add</div></Link>
             </div>
             </div>
          );

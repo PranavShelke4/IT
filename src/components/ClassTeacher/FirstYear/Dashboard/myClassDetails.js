@@ -22,7 +22,7 @@ function myClassDetails() {
           <p className="subcode">6</p>
         </div>
         <div className="it">
-            <h3>Third Year (2021 - 22)</h3>
+            <h3>First Year (2021 - 22)</h3>
         </div>
       </div>
 
