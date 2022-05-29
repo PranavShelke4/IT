@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
-import Studymaterial from "../../../../api/SecondYear/Studymaterial"
+import Studymaterial from "../../../../api/RautMadam/Studymaterial"
 
 function Cancel(){
   window.location.href="/subject-teacher/study-material"
