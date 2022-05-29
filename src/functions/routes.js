@@ -310,13 +310,13 @@ const ConfigRoutes = () => {
          {/* Jotyi Dabhade Routes */}
          <Route path="/subject-teacher/jyoti-dabhade/dashboard" element={<DabhadeDashbord />}></Route>
         <Route path="/subject-teacher/jyoti-dabhade/fideology-form" element={<DabhadeCreateExercise />}></Route>
-        <Route path="/edit/:id" element={<DabhadeEditExercise/>}></Route>
+        <Route path="/subject-teacher/jyoti-dabhade/edit/:id" element={<DabhadeEditExercise/>}></Route>
         
         <Route path="/subject-teacher/jyoti-dabhade/student-details" element={<DabhadeStudentDetail />}></Route>
         <Route path="/subject-teacher/jyoti-dabhade/course" element={<DabhadeCourse />}></Route>
         <Route path="/subject-teacher/jyoti-dabhade/study-material" element={<DabhadeStudyPage />}></Route>
         <Route path="/subject-teacher/jyoti-dabhade/add-studymaterial" element={<DabhadeAddStudymaterial />}></Route>
-        <Route path="/studymaterial/edit/:id" element={<DabhadeEditStudymaterial />}></Route>
+        <Route path="/subject-teacher/jyoti-dabhade/studymaterial/edit/:id" element={<DabhadeEditStudymaterial />}></Route>
 
         <Route path="/subject-teacher/jyoti-dabhade/question-paper" element={<DabhadeQuestionPaper />}></Route>
         <Route path="/subject-teacher/jyoti-dabhade/answer-key" element={<DabhadeAnswerKey />}></Route>

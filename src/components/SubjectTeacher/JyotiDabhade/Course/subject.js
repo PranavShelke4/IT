@@ -45,7 +45,7 @@ function subject(){
 
       <Dropdown.Menu>
           <Dropdown.Item href="/assignments">Assignments</Dropdown.Item>
-          <Dropdown.Item href="/subject-teacher/study-material">Study Materials</Dropdown.Item>
+          <Dropdown.Item href="/subject-teacher/jyoti-dabhade/study-material">Study Materials</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
 
