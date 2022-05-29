@@ -16,6 +16,10 @@ import FYStudentPage from "../pages/HODPages/FYStudentsPage"
 import SYStudentPage from "../pages/HODPages/SYStudentsPage"
 import TYStudentPage from "../pages/HODPages/TYStudentsPage"
 
+import HODFYDetentionPage from "../pages/HODPages/FYDetentionPage"
+import HODSYDetentionPage from "../pages/HODPages/SYDetentionPage"
+import HODTYDetentionPage from "../pages/HODPages/TYDetentionPage"
+
 import AssignClassTeacher from '../pages/HODPages/AssignClassTeacher';
 import FacyltyLeave from '../pages/HODPages/Leaves'
 
@@ -476,6 +480,10 @@ const ConfigRoutes = () => {
         <Route path="/HOD/FY-Students" element={<FYStudentPage />}></Route>
         <Route path="/HOD/SY-Students" element={<SYStudentPage />}></Route>
         <Route path="/HOD/TY-Students" element={<TYStudentPage />}></Route>
+
+        <Route path="/HOD/FY-Detention" element={<HODFYDetentionPage />}></Route>
+        <Route path="/HOD/SY-Detention" element={<HODSYDetentionPage />}></Route>
+        <Route path="/HOD/TY-Detention" element={<HODTYDetentionPage />}></Route>
 
         <Route path="/HOD/Facylty-Leave" element={<FacyltyLeave />}></Route>
 
