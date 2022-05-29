@@ -10,6 +10,6 @@ const feedbacklistSchema = new Schema({
     
 });
 
-const Feedbacklist = mongoose.model('FafatFeedbacklist', feedbacklistSchema);
+const Feedbacklist = mongoose.model('TYFeedbacklist', feedbacklistSchema);
 
 module.exports = Feedbacklist;

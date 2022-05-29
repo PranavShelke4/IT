@@ -10,6 +10,6 @@ const detentionlistSchema = new Schema({
     
 });
 
-const Detentionlist = mongoose.model('FafatDetentionlist', detentionlistSchema);
+const Detentionlist = mongoose.model('TYDetentionlist', detentionlistSchema);
 
 module.exports = Detentionlist;

@@ -11,6 +11,6 @@ const exerciseSchema = new Schema({
     
 });
 
-const Exercise = mongoose.model('FafatExercise', exerciseSchema);
+const Exercise = mongoose.model('TYExercise', exerciseSchema);
 
 module.exports = Exercise;

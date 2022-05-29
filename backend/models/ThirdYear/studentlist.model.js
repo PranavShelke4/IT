@@ -10,6 +10,6 @@ const studentlistSchema = new Schema({
     
 });
 
-const Studentlist = mongoose.model('FafatStudentlist', studentlistSchema);
+const Studentlist = mongoose.model('TYStudentlist', studentlistSchema);
 
 module.exports = Studentlist;
