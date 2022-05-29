@@ -187,6 +187,27 @@ import GhodeAssignmentPage from "../pages/SubjectTeacherPages/PriyankaGhode/Assi
 import GhodeProfilePage from "../pages/SubjectTeacherPages/PriyankaGhode/ProfilePage";
 import GhodeLeavePage from '../pages/SubjectTeacherPages/PriyankaGhode/LeavePage';
 
+
+// Deepak Rewadkar Routes.....
+
+import RewadkarDashbord from '../pages/SubjectTeacherPages/DeepakRewadkar/Dashbord';
+import RewadkarCreateExercise from "../pages/SubjectTeacherPages/DeepakRewadkar/FideologyForm";
+import RewadkarEditExercise from "../pages/SubjectTeacherPages/DeepakRewadkar/EditPedeology";
+
+import RewadkarStudentDetail from '../pages/SubjectTeacherPages/DeepakRewadkar/studentDetail';
+import RewadkarCourse from '../pages/SubjectTeacherPages/DeepakRewadkar/coursePage';
+
+import RewadkarStudyPage  from "../pages/SubjectTeacherPages/DeepakRewadkar/studyPage";
+import RewadkarAddStudymaterial from "../pages/SubjectTeacherPages/DeepakRewadkar/StudyMaterialPage";
+import RewadkarEditStudymaterial from "../pages/SubjectTeacherPages/DeepakRewadkar/EditStudyMaterialPage";
+
+import RewadkarQuestionPaper from '../pages/SubjectTeacherPages/DeepakRewadkar/questionPaper';
+import RewadkarAnswerKey from '../pages/SubjectTeacherPages/DeepakRewadkar/answerKey';
+import RewadkarAssignmentPage from "../pages/SubjectTeacherPages/DeepakRewadkar/Assignmentpage";
+
+import RewadkarProfilePage from "../pages/SubjectTeacherPages/DeepakRewadkar/ProfilePage";
+import RewadkarLeavePage from '../pages/SubjectTeacherPages/DeepakRewadkar/LeavePage';
+
 // Other
 
 //import SignUpPage from "../components/Signup/signup";
@@ -311,6 +332,24 @@ const ConfigRoutes = () => {
         
         <Route path="/subject-teacher/priyanka-ghode/profile" element={<GhodeProfilePage />}></Route>
         <Route path="/subject-teacher/priyanka-ghode/leave" element={<GhodeLeavePage />}></Route>
+
+         {/* Deepak Rewa Routes */}
+         <Route path="/subject-teacher/deepak-rewadkar/dashboard" element={<RewadkarDashbord />}></Route>
+        <Route path="/subject-teacher/deepak-rewadkar/fideology-form" element={<RewadkarCreateExercise />}></Route>
+        <Route path="/edit/:id" element={<RewadkarEditExercise/>}></Route>
+        
+        <Route path="/subject-teacher/deepak-rewadkar/student-details" element={<RewadkarStudentDetail />}></Route>
+        <Route path="/subject-teacher/deepak-rewadkar/course" element={<RewadkarCourse />}></Route>
+        <Route path="/subject-teacher/deepak-rewadkar/study-material" element={<RewadkarStudyPage />}></Route>
+        <Route path="/subject-teacher/deepak-rewadkar/add-studymaterial" element={<RewadkarAddStudymaterial />}></Route>
+        <Route path="/studymaterial/edit/:id" element={<RewadkarEditStudymaterial />}></Route>
+
+        <Route path="/subject-teacher/deepak-rewadkar/question-paper" element={<RewadkarQuestionPaper />}></Route>
+        <Route path="/subject-teacher/deepak-rewadkar/answer-key" element={<RewadkarAnswerKey />}></Route>
+        <Route path="/subject-teacher/deepak-rewadkar/assignments" element={<RewadkarAssignmentPage />}></Route>
+        
+        <Route path="/subject-teacher/deepak-rewadkar/profile" element={<RewadkarProfilePage />}></Route>
+        <Route path="/subject-teacher/deepak-rewadkar/leave" element={<RewadkarLeavePage />}></Route>
         
       
         {/* class teacher Routes Second Year  */}
