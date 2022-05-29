@@ -43,10 +43,24 @@ const TYFeedbacklistsRouter = require('./routes/ThirdYear/FeedbacklistsRoutes');
 const RautExercisesRouter = require("./routes/SnehaRaut/ExercisesRoutes");
 const RautStudymaterialsRouter = require("./routes/SnehaRaut/StudymaterialsRoutes");
 
+
+
+
+
+
+
+//************************************************************************ */
+mongoose.connect(uri, { useNewUrlParser: true});
 const connection = mongoose.connection;
 connection.once("open", () => {
   console.log("Mongodb database connection established successfully !!");
 });
+
+
+
+
+
+
 
 //First Year Class Teacher
 app.use("/FYexercises", FYExercisesRouter);
