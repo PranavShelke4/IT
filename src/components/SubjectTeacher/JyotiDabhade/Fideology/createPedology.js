@@ -6,7 +6,7 @@ import Exercise from "../../../../api/JyotiDabhade/Exercise";
 import "./createPedelogy.css";
 
 function Cancel(){
-  window.location.href="/subject-teacher/dashboard"
+  window.location.href="/subject-teacher/jyoti-dabhade/dashboard"
 }
 
 function  CreatePedology() {
@@ -36,7 +36,7 @@ function  CreatePedology() {
     console.log(exercise);
    const res = await Exercise.post("/add-exercise",exercise);
    console.log(res.data.msg)
-   window.location.href="/subject-teacher/dashboard";
+   window.location.href="/subject-teacher/jyoti-dabhade/dashboard";
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }

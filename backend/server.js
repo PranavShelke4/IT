@@ -43,7 +43,6 @@ const TYFeedbacklistsRouter = require('./routes/ThirdYear/FeedbacklistsRoutes');
 const RautExercisesRouter = require("./routes/SnehaRaut/ExercisesRoutes");
 const RautStudymaterialsRouter = require("./routes/SnehaRaut/StudymaterialsRoutes");
 
-
 // Poonam Fafat Subject Teacher
 const FafatExercisesRouter = require("./routes/PoonamFafat/ExercisesRoutes");
 const FafatStudymaterialsRouter = require("./routes/PoonamFafat/StudymaterialsRoutes");
@@ -52,7 +51,9 @@ const FafatStudymaterialsRouter = require("./routes/PoonamFafat/StudymaterialsRo
 const GhodeExercisesRouter = require("./routes/PriyankaGhode/ExercisesRoutes");
 const GhodeStudymaterialsRouter = require("./routes/PriyankaGhode/StudymaterialsRoutes");
 
-
+// Jyoti Dabhad Subject Teacher
+const DabhadeExercisesRouter = require("./routes/JyotiDabhade/ExercisesRoutes");
+const DabhadeStudymaterialsRouter = require("./routes/JyotiDabhade/StudymaterialsRoutes");
 
 
 
@@ -107,6 +108,10 @@ app.use("/Fafatstudymaterials", FafatStudymaterialsRouter);
 // Priyank Ghode Subject Taecher
 app.use("/Ghodeexercises", GhodeExercisesRouter);
 app.use("/Ghodestudymaterials", GhodeStudymaterialsRouter);
+
+// Jyoti Dabhad Subject Taecher
+app.use("/Dabhadeexercises", DabhadeExercisesRouter);
+app.use("/Dabhadestudymaterials", DabhadeStudymaterialsRouter);
 
 app.listen(5000, () => {
   console.log(`Server is running on port 5000`);
