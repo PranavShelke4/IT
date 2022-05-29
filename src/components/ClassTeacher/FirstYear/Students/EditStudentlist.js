@@ -1,13 +1,13 @@
 import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
-import Studentlist from "../../../../api/ThirdYear/Studentlist";
+import Studentlist from "../../../../api/FirstYear/Studentlist";
 import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 
 import { useParams } from "react-router-dom";
 
 function Cancel(){
-  window.location.href="/class-teacher/TY/student-table"
+  window.location.href="/class-teacher/FY/student-table"
 }
 
 function  EditStudentlist() {
@@ -43,7 +43,7 @@ function  EditStudentlist() {
     // formdata.append("activity",activityName);
     // formdata.append("subject",subName);
     // formdata.append("group",groupNo);
-    window.location.href="/class-teacher/TY/student-table"
+    window.location.href="/class-teacher/FY/student-table"
     const formdata = {
         "date":date,
         "description":descriptionName,

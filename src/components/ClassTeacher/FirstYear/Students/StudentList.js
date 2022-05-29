@@ -4,7 +4,7 @@ import axios from "axios";
 //import './ExercisesList.css';
 import "./students.css";
 
-import Studentlists from '../../../../api/ThirdYear/Studentlist';
+import Studentlists from '../../../../api/FirstYear/Studentlist';
 
 const Studentlist = props => (
     <tr>
@@ -14,7 +14,7 @@ const Studentlist = props => (
         <td><a href={props.studentlist.link}>{props.studentlist.link}</a></td>
         
         <td>
-            <Link to={"/studentlist/TY/edit/"+props.studentlist._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteStudentlist(props.studentlist._id) }} ><i className='bx bx-trash'></i></span>
+            <Link to={"/studentlist/FY/edit/"+props.studentlist._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteStudentlist(props.studentlist._id) }} ><i className='bx bx-trash'></i></span>
             {/* <button className="btn btn-secondary"><Link to={"/edit/"+props.exercise._id} style={{color:"white"}}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => {props.deleteExercise(props.exercise._id) }}>Delete</button> */}
         </td>
     </tr>
@@ -69,7 +69,7 @@ class StudentList extends Component {
                         {this.studentlistsList()}
                     </tbody>
                 </table>
-                <Link to={'/class-teacher/TY/add-student-list'}><div className='add'>Add</div></Link>
+                <Link to={'/class-teacher/FY/add-student-list'}><div className='add'>Add</div></Link>
             </div>
             </div>
          );
