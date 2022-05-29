@@ -166,6 +166,27 @@ import BodheAssignmentPage from "../pages/SubjectTeacherPages/YogeshBodhe/Assign
 import BodheProfilePage from "../pages/SubjectTeacherPages/YogeshBodhe/ProfilePage";
 import BodheLeavePage from '../pages/SubjectTeacherPages/YogeshBodhe/LeavePage';
 
+
+// Priyanka Ghode Routes.....
+
+import GhodeDashbord from '../pages/SubjectTeacherPages/PriyankaGhode/Dashbord';
+import GhodeCreateExercise from "../pages/SubjectTeacherPages/PriyankaGhode/FideologyForm";
+import GhodeEditExercise from "../pages/SubjectTeacherPages/PriyankaGhode/EditPedeology";
+
+import GhodeStudentDetail from '../pages/SubjectTeacherPages/PriyankaGhode/studentDetail';
+import GhodeCourse from '../pages/SubjectTeacherPages/PriyankaGhode/coursePage';
+
+import GhodeStudyPage  from "../pages/SubjectTeacherPages/PriyankaGhode/studyPage";
+import GhodeAddStudymaterial from "../pages/SubjectTeacherPages/PriyankaGhode/StudyMaterialPage";
+import GhodeEditStudymaterial from "../pages/SubjectTeacherPages/PriyankaGhode/EditStudyMaterialPage";
+
+import GhodeQuestionPaper from '../pages/SubjectTeacherPages/PriyankaGhode/questionPaper';
+import GhodeAnswerKey from '../pages/SubjectTeacherPages/PriyankaGhode/answerKey';
+import GhodeAssignmentPage from "../pages/SubjectTeacherPages/PriyankaGhode/Assignmentpage";
+
+import GhodeProfilePage from "../pages/SubjectTeacherPages/PriyankaGhode/ProfilePage";
+import GhodeLeavePage from '../pages/SubjectTeacherPages/PriyankaGhode/LeavePage';
+
 // Other
 
 //import SignUpPage from "../components/Signup/signup";
@@ -271,6 +292,25 @@ const ConfigRoutes = () => {
         
         <Route path="/subject-teacher/yogesh-bodhe/profile" element={<BodheProfilePage />}></Route>
         <Route path="/subject-teacher/yogesh-bodhe/leave" element={<BodheLeavePage />}></Route>
+
+
+        {/* Priyanka Ghode Routes */}
+        <Route path="/subject-teacher/priyanka-ghode/dashboard" element={<GhodeDashbord />}></Route>
+        <Route path="/subject-teacher/priyanka-ghode/fideology-form" element={<GhodeCreateExercise />}></Route>
+        <Route path="/edit/:id" element={<GhodeEditExercise/>}></Route>
+        
+        <Route path="/subject-teacher/priyanka-ghode/student-details" element={<GhodeStudentDetail />}></Route>
+        <Route path="/subject-teacher/priyanka-ghode/course" element={<GhodeCourse />}></Route>
+        <Route path="/subject-teacher/priyanka-ghode/study-material" element={<GhodeStudyPage />}></Route>
+        <Route path="/subject-teacher/priyanka-ghode/add-studymaterial" element={<GhodeAddStudymaterial />}></Route>
+        <Route path="/studymaterial/edit/:id" element={<GhodeEditStudymaterial />}></Route>
+
+        <Route path="/subject-teacher/priyanka-ghode/question-paper" element={<GhodeQuestionPaper />}></Route>
+        <Route path="/subject-teacher/priyanka-ghode/answer-key" element={<GhodeAnswerKey />}></Route>
+        <Route path="/subject-teacher/priyanka-ghode/assignments" element={<GhodeAssignmentPage />}></Route>
+        
+        <Route path="/subject-teacher/priyanka-ghode/profile" element={<GhodeProfilePage />}></Route>
+        <Route path="/subject-teacher/priyanka-ghode/leave" element={<GhodeLeavePage />}></Route>
         
       
         {/* class teacher Routes Ghode Madam  */}
