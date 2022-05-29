@@ -12,6 +12,6 @@ const achievementSchema = new Schema({
     
 });
 
-const Achievement = mongoose.model('FafatAchievement', achievementSchema);
+const Achievement = mongoose.model('TYAchievement', achievementSchema);
 
 module.exports = Achievement;
