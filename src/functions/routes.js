@@ -12,55 +12,55 @@ import AssignClassTeacher from '../pages/HODPages/AssignClassTeacher';
 import FacyltyLeave from '../pages/HODPages/Leaves'
 
 
-// classTaecher Routes Ghode Madam
+// Second Year classTaecher Routes
 
-import ClassTeacherDashboard from '../pages/ClassTeacherPages/GhodeMadam/Dashboard';
-import AddAchievement from "../pages/ClassTeacherPages/GhodeMadam/addAchievement";
-import EditAchievement from "../pages/ClassTeacherPages/GhodeMadam/EditAchievementPage";
+import ClassTeacherDashboard from '../pages/ClassTeacherPages/SecondYear/Dashboard';
+import AddAchievement from "../pages/ClassTeacherPages/SecondYear/addAchievement";
+import EditAchievement from "../pages/ClassTeacherPages/SecondYear/EditAchievementPage";
 
-import ClassFaculty from "../pages/ClassTeacherPages/GhodeMadam/FacultyDetails";
+import ClassFaculty from "../pages/ClassTeacherPages/SecondYear/FacultyDetails";
 
-import AssignST5thPage from "../pages/ClassTeacherPages/GhodeMadam/AssignST5thPage";
-import AssignST6thPage from "../pages/ClassTeacherPages/GhodeMadam/AssignST6thPage";
+import AssignST5thPage from "../pages/ClassTeacherPages/SecondYear/AssignST5thPage";
+import AssignST6thPage from "../pages/ClassTeacherPages/SecondYear/AssignST6thPage";
 
-import Student from "../pages/ClassTeacherPages/GhodeMadam/studentpage";
-import AddList from "../pages/ClassTeacherPages/GhodeMadam/addListPage";
-import EditStudentlist from "../pages/ClassTeacherPages/GhodeMadam/EditListPage";
+import Student from "../pages/ClassTeacherPages/SecondYear/studentpage";
+import AddList from "../pages/ClassTeacherPages/SecondYear/addListPage";
+import EditStudentlist from "../pages/ClassTeacherPages/SecondYear/EditListPage";
 
-import DetentionPage from "../pages/ClassTeacherPages/GhodeMadam/DetentionPage";
-import AddDetentionList from "../pages/ClassTeacherPages/GhodeMadam/addDetentionPage";
-import EditDetentionlist from "../pages/ClassTeacherPages/GhodeMadam/EditDetention";
+import DetentionPage from "../pages/ClassTeacherPages/SecondYear/DetentionPage";
+import AddDetentionList from "../pages/ClassTeacherPages/SecondYear/addDetentionPage";
+import EditDetentionlist from "../pages/ClassTeacherPages/SecondYear/EditDetention";
 
-import FeedbackPage from "../pages/ClassTeacherPages/GhodeMadam/FeedbackPage";
-import AddFeedbackList from "../pages/ClassTeacherPages/GhodeMadam/AddFeedbackPage";
-import EditFeedbacklist from "../pages/ClassTeacherPages/GhodeMadam/EditFeedback";
+import FeedbackPage from "../pages/ClassTeacherPages/SecondYear/FeedbackPage";
+import AddFeedbackList from "../pages/ClassTeacherPages/SecondYear/AddFeedbackPage";
+import EditFeedbacklist from "../pages/ClassTeacherPages/SecondYear/EditFeedback";
 
-import ClassProfilePage from "../pages/ClassTeacherPages/GhodeMadam/ProfilePage";
+import ClassProfilePage from "../pages/ClassTeacherPages/SecondYear/ProfilePage";
 
-//class Teacher routes Fafat Madam
+//Third Year class Teacher routes 
 
-import FafatClassTeacherDashboard from '../pages/ClassTeacherPages/FafatMadam/Dashboard';
-import FafatAddAchievement from "../pages/ClassTeacherPages/FafatMadam/addAchievement";
-import FafatEditAchievement from "../pages/ClassTeacherPages/FafatMadam/EditAchievementPage";
+import TYClassTeacherDashboard from '../pages/ClassTeacherPages/ThirdYear/Dashboard';
+import TYAddAchievement from "../pages/ClassTeacherPages/ThirdYear/addAchievement";
+import TYEditAchievement from "../pages/ClassTeacherPages/ThirdYear/EditAchievementPage";
 
-import FafatClassFaculty from "../pages/ClassTeacherPages/FafatMadam/FacultyDetails";
+import TYClassFaculty from "../pages/ClassTeacherPages/ThirdYear/FacultyDetails";
 
-import FafatAssignST3rdPage from "../pages/ClassTeacherPages/FafatMadam/AssignST3rdPage";
-import FafatAssignST4thPage from "../pages/ClassTeacherPages/FafatMadam/AssignST4thPage";
+import TYAssignST3rdPage from "../pages/ClassTeacherPages/ThirdYear/AssignST3rdPage";
+import TYAssignST4thPage from "../pages/ClassTeacherPages/ThirdYear/AssignST4thPage";
 
-import FafatStudent from "../pages/ClassTeacherPages/FafatMadam/studentpage";
-import FafatAddList from "../pages/ClassTeacherPages/FafatMadam/addListPage";
-import FafatEditStudentlist from "../pages/ClassTeacherPages/FafatMadam/EditListPage";
+import TYStudent from "../pages/ClassTeacherPages/ThirdYear/studentpage";
+import TYAddList from "../pages/ClassTeacherPages/ThirdYear/addListPage";
+import TYEditStudentlist from "../pages/ClassTeacherPages/ThirdYear/EditListPage";
 
-import FafatDetentionPage from "../pages/ClassTeacherPages/FafatMadam/DetentionPage";
-import FafatAddDetentionList from "../pages/ClassTeacherPages/FafatMadam/addDetentionPage";
-import FafatEditDetentionlist from "../pages/ClassTeacherPages/FafatMadam/EditDetention";
+import TYDetentionPage from "../pages/ClassTeacherPages/ThirdYear/DetentionPage";
+import TYAddDetentionList from "../pages/ClassTeacherPages/ThirdYear/addDetentionPage";
+import TYEditDetentionlist from "../pages/ClassTeacherPages/ThirdYear/EditDetention";
 
-import FafatFeedbackPage from "../pages/ClassTeacherPages/FafatMadam/FeedbackPage";
-import FafatAddFeedbackList from "../pages/ClassTeacherPages/FafatMadam/AddFeedbackPage";
-import FafatEditFeedbacklist from "../pages/ClassTeacherPages/FafatMadam/EditFeedback";
+import TYFeedbackPage from "../pages/ClassTeacherPages/ThirdYear/FeedbackPage";
+import TYAddFeedbackList from "../pages/ClassTeacherPages/ThirdYear/AddFeedbackPage";
+import TYEditFeedbacklist from "../pages/ClassTeacherPages/ThirdYear/EditFeedback";
 
-import FafatClassProfilePage from "../pages/ClassTeacherPages/FafatMadam/ProfilePage";
+import TYClassProfilePage from "../pages/ClassTeacherPages/ThirdYear/ProfilePage";
 
 
 
@@ -156,7 +156,7 @@ const ConfigRoutes = () => {
        
         
       
-        {/* class teacher Routes Ghode Madam  */}
+        {/* class teacher Routes Second Year  */}
         <Route path="/class-teacher/dashboard" element={<ClassTeacherDashboard />}></Route>
         <Route path="/class-teacher/add-achievement" element={<AddAchievement />}></Route>
         <Route path="/CT/edit/:id" element={<EditAchievement/>}></Route>
@@ -180,28 +180,28 @@ const ConfigRoutes = () => {
         <Route path="/class-teacher/profile" element={<ClassProfilePage />}></Route>
         
         
-        {/* class teacher Routes Fafat Madam  */}
-        <Route path="/class-teacher/Fafat/dashboard" element={<FafatClassTeacherDashboard />}></Route>
-        <Route path="/class-teacher/Fafat/add-achievement" element={<FafatAddAchievement />}></Route>
-        <Route path="/CT/Fafat/edit/:id" element={<FafatEditAchievement/>}></Route>
+        {/* class teacher Routes Third Year  */}
+        <Route path="/class-teacher/TY/dashboard" element={<TYClassTeacherDashboard />}></Route>
+        <Route path="/class-teacher/TY/add-achievement" element={<TYAddAchievement />}></Route>
+        <Route path="/CT/TY/edit/:id" element={<TYEditAchievement/>}></Route>
 
-        <Route path="/class-teacher/Fafat/classfaculty" element={<FafatClassFaculty />}></Route>
+        <Route path="/class-teacher/TY/classfaculty" element={<TYClassFaculty />}></Route>
 
-        <Route path="/class-teacher/Fafat/student-table" element={<FafatStudent />}></Route>
-        <Route path="/class-teacher/Fafat/add-student-list" element={<FafatAddList />}></Route>
-        <Route path="/studentlist/Fafat/edit/:id" element={<FafatEditStudentlist />}></Route>
+        <Route path="/class-teacher/TY/student-table" element={<TYStudent />}></Route>
+        <Route path="/class-teacher/TY/add-student-list" element={<TYAddList />}></Route>
+        <Route path="/studentlist/TY/edit/:id" element={<TYEditStudentlist />}></Route>
         
-        <Route path="/class-teacher/Fafat/assign-3rdSem" element={<FafatAssignST3rdPage />}></Route>
-        <Route path="/class-teacher/Fafat/assign-4thSem" element={<FafatAssignST4thPage />}></Route>
+        <Route path="/class-teacher/TY/assign-3rdSem" element={<TYAssignST3rdPage />}></Route>
+        <Route path="/class-teacher/TY/assign-4thSem" element={<TYAssignST4thPage />}></Route>
         
-        <Route path="/class-teacher/Fafat/class-detentionlist" element={<FafatDetentionPage />}></Route>
-        <Route path="/class-teacher/Fafat/add-detentionlist" element={<FafatAddDetentionList />}></Route>
-        <Route path="/detentionlist/Fafat/edit/:id" element={<FafatEditDetentionlist />}></Route>
+        <Route path="/class-teacher/TY/class-detentionlist" element={<TYDetentionPage />}></Route>
+        <Route path="/class-teacher/TY/add-detentionlist" element={<TYAddDetentionList />}></Route>
+        <Route path="/detentionlist/TY/edit/:id" element={<TYEditDetentionlist />}></Route>
 
-        <Route path="/class-teacher/Fafat/class-feedback" element={<FafatFeedbackPage />}></Route>
-        <Route path="/class-teacher/Fafat/add-feedbacklist" element={<FafatAddFeedbackList />}></Route>
-        <Route path="/feedbacklist/Fafat/edit/:id" element={<FafatEditFeedbacklist />}></Route>
-        <Route path="/class-teacher/Fafat/profile" element={<FafatClassProfilePage />}></Route>
+        <Route path="/class-teacher/TY/class-feedback" element={<TYFeedbackPage />}></Route>
+        <Route path="/class-teacher/TY/add-feedbacklist" element={<TYAddFeedbackList />}></Route>
+        <Route path="/feedbacklist/TY/edit/:id" element={<TYEditFeedbacklist />}></Route>
+        <Route path="/class-teacher/TY/profile" element={<TYClassProfilePage />}></Route>
         
 
 
