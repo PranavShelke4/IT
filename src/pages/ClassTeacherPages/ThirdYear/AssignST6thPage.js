@@ -1,5 +1,5 @@
 import React from 'react';
-import ClassNavbar from '../../../components/ClassTeacher/SecondYear/classTeacherNavbar';
+import ClassNavbar from '../../../components/ClassTeacher/ThirdYear/classTeacherNavbar';
 import AssignST6th from '../../../components/ClassTeacher/ThirdYear/AssignST/AssignST6th';
 
 function AssignST6thPage(){
