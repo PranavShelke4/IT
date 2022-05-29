@@ -1,12 +1,12 @@
 import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
-import Feedbacklist from "../../../../api/ThirdYear/Feedbacklist";
+import Feedbacklist from "../../../../api/FirstYear/Feedbacklist";
 import "../../../SubjectTeacher/SnehaRaut/Fideology/createPedelogy.css"
 import { useParams } from "react-router-dom";
 
 function Cancel(){
-  window.location.href="/class-teacher/TY/class-feedback";
+  window.location.href="/class-teacher/FY/class-feedback";
 }
 
 
@@ -43,7 +43,7 @@ function  EditFeedbacklist() {
     // formdata.append("activity",activityName);
     // formdata.append("subject",subName);
     // formdata.append("group",groupNo);
-    window.location.href="/class-teacher/TY/class-feedback";
+    window.location.href="/class-teacher/FY/class-feedback";
     const formdata = {
         "year":year,
         "faculty":facultyName,
