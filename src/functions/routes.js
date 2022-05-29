@@ -8,8 +8,14 @@ import App from "../App";
 import HODDashbord from "../pages/HODPages/Dashboard"
 import SYAchievementPage from "../pages/HODPages/SYAchievementPage"
 import TYAchievementPage from "../pages/HODPages/TYAchievementPage"
+
 import FacultyDetails from "../pages/HODPages/FacultyDetails";
 import FacultyCR from "../pages/HODPages/FacultyCR";
+
+import FYStudentPage from "../pages/HODPages/FYStudentsPage"
+import SYStudentPage from "../pages/HODPages/SYStudentsPage"
+import TYStudentPage from "../pages/HODPages/TYStudentsPage"
+
 import AssignClassTeacher from '../pages/HODPages/AssignClassTeacher';
 import FacyltyLeave from '../pages/HODPages/Leaves'
 
@@ -461,9 +467,16 @@ const ConfigRoutes = () => {
         <Route path="/HOD/Dashbord" element={<HODDashbord />}></Route>
         <Route path="/HOD/Dashbord/SY-Achievements" element={<SYAchievementPage/>}></Route>
         <Route path="/HOD/Dashbord/TY-Achievements" element={<TYAchievementPage />}></Route>
+
         <Route path="/HOD/Faculty-Details" element={<FacultyDetails />}></Route>
         <Route path="/HOD/Faculty-CR" element={<FacultyCR />}></Route>
+
         <Route path="/HOD/assign-class-teacher" element={<AssignClassTeacher />}></Route>
+
+        <Route path="/HOD/FY-Students" element={<FYStudentPage />}></Route>
+        <Route path="/HOD/SY-Students" element={<SYStudentPage />}></Route>
+        <Route path="/HOD/TY-Students" element={<TYStudentPage />}></Route>
+
         <Route path="/HOD/Facylty-Leave" element={<FacyltyLeave />}></Route>
 
 
