@@ -1,6 +1,6 @@
 import React from 'react';
-import ClassNavbar from '../../../components/ClassTeacher/ThirdYear/classTeacherNavbar';
-import EditList from "../../../components/ClassTeacher/ThirdYear/Students/EditStudentlist";
+import ClassNavbar from '../../../components/ClassTeacher/FirstYear/classTeacherNavbar';
+import EditList from "../../../components/ClassTeacher/FirstYear/Students/EditStudentlist";
 
 function EditListPage(){
     return (

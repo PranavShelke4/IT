@@ -1,6 +1,6 @@
 import React from 'react';
-import ClassNavbar from '../../../components/ClassTeacher/ThirdYear/classTeacherNavbar';
-import EditAchievement from '../../../components/ClassTeacher/ThirdYear/Dashboard/EditAchievement';
+import ClassNavbar from '../../../components/ClassTeacher/FirstYear/classTeacherNavbar';
+import EditAchievement from '../../../components/ClassTeacher/FirstYear/Dashboard/EditAchievement';
 
 function EditAchievementPage(){
     return (

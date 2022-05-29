@@ -1,5 +1,5 @@
 import React from 'react';
-import ClassNavbar from '../../../components/ClassTeacher/ThirdYear/classTeacherNavbar';
+import ClassNavbar from '../../../components/ClassTeacher/FirstYear/classTeacherNavbar';
 import Faculty from '../../../components/HOD/Faculty/Facultys'
 
 function FacultyDetails(){
