@@ -286,13 +286,13 @@ const ConfigRoutes = () => {
          {/* Sheetal Sutar Routes */}
          <Route path="/subject-teacher/sheetal-sutar/dashboard" element={<SutarDashbord />}></Route>
         <Route path="/subject-teacher/sheetal-sutar/fideology-form" element={<SutarCreateExercise />}></Route>
-        <Route path="/edit/:id" element={<SutarEditExercise/>}></Route>
+        <Route path="/subject-teacher/sheetal-sutar/edit/:id" element={<SutarEditExercise/>}></Route>
         
         <Route path="/subject-teacher/sheetal-sutar/student-details" element={<SutarStudentDetail />}></Route>
         <Route path="/subject-teacher/sheetal-sutar/course" element={<SutarCourse />}></Route>
         <Route path="/subject-teacher/sheetal-sutar/study-material" element={<SutarStudyPage />}></Route>
         <Route path="/subject-teacher/sheetal-sutar/add-studymaterial" element={<SutarAddStudymaterial />}></Route>
-        <Route path="/studymaterial/edit/:id" element={<SutarEditStudymaterial />}></Route>
+        <Route path="/subject-teacher/sheetal-sutar/studymaterial/edit/:id" element={<SutarEditStudymaterial />}></Route>
 
         <Route path="/subject-teacher/sheetal-sutar/question-paper" element={<SutarQuestionPaper />}></Route>
         <Route path="/subject-teacher/sheetal-sutar/answer-key" element={<SutarAnswerKey />}></Route>

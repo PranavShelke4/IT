@@ -55,6 +55,10 @@ const GhodeStudymaterialsRouter = require("./routes/PriyankaGhode/Studymaterials
 const DabhadeExercisesRouter = require("./routes/JyotiDabhade/ExercisesRoutes");
 const DabhadeStudymaterialsRouter = require("./routes/JyotiDabhade/StudymaterialsRoutes");
 
+// Sheetal Sutar Subject Teacher
+const SutarExercisesRouter = require("./routes/SheetalSutar/ExercisesRoutes");
+const SutarStudymaterialsRouter = require("./routes/SheetalSutar/StudymaterialsRoutes");
+
 
 
 
@@ -112,6 +116,12 @@ app.use("/Ghodestudymaterials", GhodeStudymaterialsRouter);
 // Jyoti Dabhad Subject Taecher
 app.use("/Dabhadeexercises", DabhadeExercisesRouter);
 app.use("/Dabhadestudymaterials", DabhadeStudymaterialsRouter);
+
+// Sheetal Sutar Subject Taecher
+app.use("/Sutarexercises", SutarExercisesRouter);
+app.use("/Sutarstudymaterials", SutarStudymaterialsRouter);
+
+
 
 app.listen(5000, () => {
   console.log(`Server is running on port 5000`);

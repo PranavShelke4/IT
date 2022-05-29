@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
 import "./createPedelogy.css";
 
 function Cancel(){
-  window.location.href="/subject-teacher/dashboard"
+  window.location.href="/subject-teacher/sheetal-sutar/dashboard"
 }
 
 function  EditExercise() {
@@ -53,7 +53,7 @@ function  EditExercise() {
         "subject":subName,
         "group":groupNo
     }
-    window.location.href="/subject-teacher/dashboard";
+    window.location.href="/subject-teacher/sheetal-sutar/dashboard";
     console.log("req")
     console.log(params.id)
     console.log(formdata)
