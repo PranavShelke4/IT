@@ -7,6 +7,7 @@ function Dashboard() {
   return (
     <>
       <HODNavbar />
+      <h3 className='fidoh3'>Student Achievements</h3>
       <StudentAchievementsHOD />
       <TopperList />
     </>

@@ -14,12 +14,21 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 const uri = process.env.ATLAS_URI;
 
-const ExercisesRouter = require("./routes/ExercisesRoutes");
-const AchievementsRouter = require("./routes/AchievementsRoutes");
-const StudymaterialsRouter = require("./routes/StudymaterialsRoutes");
-const StudentlistsRouter = require("./routes/StudentlistsRoutes");
-const DetentionlistsRouter = require("./routes/DetentionlistsRoutes");
-const FeedbacklistsRouter = require('./routes/FeedbacklistsRoutes');
+// Second Year class Teacher 
+const ExercisesRouter = require("./routes/SecondYear/ExercisesRoutes");
+const AchievementsRouter = require("./routes/SecondYear/AchievementsRoutes");
+const StudymaterialsRouter = require("./routes/SecondYear/StudymaterialsRoutes");
+const StudentlistsRouter = require("./routes/SecondYear/StudentlistsRoutes");
+const DetentionlistsRouter = require("./routes/SecondYear/DetentionlistsRoutes");
+const FeedbacklistsRouter = require('./routes/SecondYear/FeedbacklistsRoutes');
+
+//Third Year Class Teacher
+const TYExercisesRouter = require("./routes/ThirdYear/ExercisesRoutes");
+const TYAchievementsRouter = require("./routes/ThirdYear/AchievementsRoutes");
+const TYStudymaterialsRouter = require("./routes/ThirdYear/StudymaterialsRoutes");
+const TYStudentlistsRouter = require("./routes/ThirdYear/StudentlistsRoutes");
+const TYDetentionlistsRouter = require("./routes/ThirdYear/DetentionlistsRoutes");
+const TYFeedbacklistsRouter = require('./routes/ThirdYear/FeedbacklistsRoutes');
 
 mongoose.connect(uri, { useNewUrlParser: true });
 
@@ -28,6 +37,8 @@ connection.once("open", () => {
   console.log("Mongodb database connection established successfully !!");
 });
 
+
+//Second Year Class Teacher
 app.use("/exercises", ExercisesRouter);
 app.use("/achievements", AchievementsRouter);
 app.use("/studymaterials", StudymaterialsRouter);
@@ -35,6 +46,13 @@ app.use("/studentlists", StudentlistsRouter);
 app.use("/detentionlists", DetentionlistsRouter);
 app.use('/feedbacklists', FeedbacklistsRouter);
 
+//Third Year Class Taecher
+app.use("/TYexercises", TYExercisesRouter);
+app.use("/TYachievements", TYAchievementsRouter);
+app.use("/TYstudymaterials", TYStudymaterialsRouter);
+app.use("/TYstudentlists", TYStudentlistsRouter);
+app.use("/TYdetentionlists", TYDetentionlistsRouter);
+app.use('/TYfeedbacklists', TYFeedbacklistsRouter);
 
 app.listen(5000, () => {
   console.log(`Server is running on port 5000`);
