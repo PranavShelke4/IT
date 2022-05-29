@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const exercisesControllers = require('../../Controllers/PoonamFafat/ExercisesControllers');
+const exercisesControllers = require('../../Controllers/PriyankaGhode/ExercisesControllers');
 
 router.post('/add-exercise',exercisesControllers.postExercise);
 router.get('/get-exercises',exercisesControllers.getExercises);
@@ -10,3 +10,4 @@ router.delete('/delete-exercise/:id',exercisesControllers.deleteExercises);
 router.patch('/update-exercise/:id',exercisesControllers.updateExercise);
 
 module.exports = router;
+

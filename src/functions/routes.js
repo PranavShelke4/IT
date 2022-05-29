@@ -354,13 +354,13 @@ const ConfigRoutes = () => {
         {/* Priyanka Ghode Routes */}
         <Route path="/subject-teacher/priyanka-ghode/dashboard" element={<GhodeDashbord />}></Route>
         <Route path="/subject-teacher/priyanka-ghode/fideology-form" element={<GhodeCreateExercise />}></Route>
-        <Route path="/edit/:id" element={<GhodeEditExercise/>}></Route>
+        <Route path="/subject-teacher/priyanka-ghode/edit/:id" element={<GhodeEditExercise/>}></Route>
         
         <Route path="/subject-teacher/priyanka-ghode/student-details" element={<GhodeStudentDetail />}></Route>
         <Route path="/subject-teacher/priyanka-ghode/course" element={<GhodeCourse />}></Route>
         <Route path="/subject-teacher/priyanka-ghode/study-material" element={<GhodeStudyPage />}></Route>
         <Route path="/subject-teacher/priyanka-ghode/add-studymaterial" element={<GhodeAddStudymaterial />}></Route>
-        <Route path="/studymaterial/edit/:id" element={<GhodeEditStudymaterial />}></Route>
+        <Route path="/subject-teacher/priyanka-ghode/studymaterial/edit/:id" element={<GhodeEditStudymaterial />}></Route>
 
         <Route path="/subject-teacher/priyanka-ghode/question-paper" element={<GhodeQuestionPaper />}></Route>
         <Route path="/subject-teacher/priyanka-ghode/answer-key" element={<GhodeAnswerKey />}></Route>
