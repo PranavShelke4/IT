@@ -20,6 +20,10 @@ import HODFYDetentionPage from "../pages/HODPages/FYDetentionPage"
 import HODSYDetentionPage from "../pages/HODPages/SYDetentionPage"
 import HODTYDetentionPage from "../pages/HODPages/TYDetentionPage"
 
+import HODFYFeedbackPage from "../pages/HODPages/FYFeedbackPage"
+import HODSYFeedbackPage from "../pages/HODPages/SYFeedbackPage"
+import HODTYFeedbackPage from "../pages/HODPages/TYFeedbackPage"
+
 import AssignClassTeacher from '../pages/HODPages/AssignClassTeacher';
 import FacyltyLeave from '../pages/HODPages/Leaves'
 
@@ -405,6 +409,10 @@ const ConfigRoutes = () => {
         <Route path="/HOD/FY-Detention" element={<HODFYDetentionPage />}></Route>
         <Route path="/HOD/SY-Detention" element={<HODSYDetentionPage />}></Route>
         <Route path="/HOD/TY-Detention" element={<HODTYDetentionPage />}></Route>
+
+        <Route path="/HOD/FY-Feedback" element={<HODFYFeedbackPage />}></Route>
+        <Route path="/HOD/SY-Feedback" element={<HODSYFeedbackPage />}></Route>
+        <Route path="/HOD/TY-Feedback" element={<HODTYFeedbackPage />}></Route>
 
         <Route path="/HOD/Facylty-Leave" element={<FacyltyLeave />}></Route>
 
