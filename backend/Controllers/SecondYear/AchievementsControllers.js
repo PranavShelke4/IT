@@ -1,4 +1,4 @@
-const Achievements = require("../../models/GhodeMadam/achievement.model");
+const Achievements = require("../../models/SecondYear/achievement.model");
 
 exports.postAchievement = (req, res) => {
   console.log("Post Req ------------------->>>>>>");
