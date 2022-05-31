@@ -52,7 +52,7 @@ class StudentList extends Component {
         return ( 
             <div className='FideologyActivities'>
             <div className="fideo">
-                
+            <h3 className='fidoh3'>Second Year Students</h3>
                 <table className='student-list'>
                     <thead className="thead-light">
                         <tr>
