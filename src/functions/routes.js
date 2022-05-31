@@ -221,7 +221,10 @@ import GhodeDashbord from '../pages/SubjectTeacherPages/PriyankaGhode/Dashbord';
 import GhodeCreateExercise from "../pages/SubjectTeacherPages/PriyankaGhode/FideologyForm";
 import GhodeEditExercise from "../pages/SubjectTeacherPages/PriyankaGhode/EditPedeology";
 
-import GhodeStudentDetail from '../pages/SubjectTeacherPages/PriyankaGhode/studentDetail';
+import GhodeFYStudents from "../pages/SubjectTeacherPages/PriyankaGhode/StudentsPages/FYStuddentsPage";
+import GhodeSYStudents from "../pages/SubjectTeacherPages/PriyankaGhode/StudentsPages/SYStudentsPage"
+import GhodeTYStudents from "../pages/SubjectTeacherPages/PriyankaGhode/StudentsPages/TYStudentsPage"
+
 import GhodeCourse from '../pages/SubjectTeacherPages/PriyankaGhode/coursePage';
 
 import GhodeStudyPage  from "../pages/SubjectTeacherPages/PriyankaGhode/C/studyPage";
@@ -371,7 +374,10 @@ const ConfigRoutes = () => {
         <Route path="/subject-teacher/priyanka-ghode/fideology-form" element={<GhodeCreateExercise />}></Route>
         <Route path="/subject-teacher/priyanka-ghode/edit/:id" element={<GhodeEditExercise/>}></Route>
         
-        <Route path="/subject-teacher/priyanka-ghode/student-details" element={<GhodeStudentDetail />}></Route>
+        <Route path="/subject-teacher/priyanka-ghode/FY-Students" element={<GhodeFYStudents />}></Route>
+        <Route path="/subject-teacher/priyanka-ghode/SY-Students" element={<GhodeSYStudents />}></Route>
+        <Route path="/subject-teacher/priyanka-ghode/TY-Students" element={<GhodeTYStudents />}></Route>
+
         <Route path="/subject-teacher/priyanka-ghode/course" element={<GhodeCourse />}></Route>
         <Route path="/subject-teacher/priyanka-ghode/study-material" element={<GhodeStudyPage />}></Route>
         <Route path="/subject-teacher/priyanka-ghode/add-studymaterial" element={<GhodeAddStudymaterial />}></Route>
