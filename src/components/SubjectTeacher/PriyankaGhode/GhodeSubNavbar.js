@@ -114,13 +114,13 @@ function subNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="#">First Year</Link>
+              <a href="https://drive.google.com/file/d/1chDe5cx6ljpuNmQ1nOH8MrPsq7F149MZ/view?" rel="noreferrer" target='_blank'>First Year</a>
               </li>
               <li>
-                <Link to="#">Second Year</Link>
+              <a rel="noreferrer" target='_blank' href="https://drive.google.com/file/d/1w_1HrLTeJM02rtjA6pjyGuzv-2N-F7dp/view">Second Year</a>
               </li>
               <li>
-                <Link to="#">Third Year</Link>
+              <a rel="noreferrer" target='_blank' href="https://drive.google.com/file/d/1u9kw1RYBUUFIw8cKsDvTdHjid0yGAcol/view">Third Year</a>
               </li>
             </ul>
           </li>
