@@ -1,12 +1,12 @@
 import React from 'react';
 // import RautSubNavbar from '../../components/SubjectTeacher/subNavbar';
-import FafatSubNavbar from "../../../components/SubjectTeacher/PoonamFafat/FafatSubNavbar";
-import StudyMaterial from '../../../components/SubjectTeacher/PoonamFafat/Course/studyMaterial';
+import GhodeSubNavbar from "../../../../components/SubjectTeacher/PriyankaGhode/GhodeSubNavbar"
+import StudyMaterial from '../../../../components/SubjectTeacher/PriyankaGhode/Course/C/studyMaterial';
 
 function studyPage(){
     return (
         <div>
-            <FafatSubNavbar />
+            <GhodeSubNavbar />
             <StudyMaterial />
         </div>
     );

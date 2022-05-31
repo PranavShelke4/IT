@@ -158,13 +158,13 @@ import FafatEditExercise from "../pages/SubjectTeacherPages/PoonamFafat/EditPede
 import FafatStudentDetail from '../pages/SubjectTeacherPages/PoonamFafat/studentDetail';
 import FafatCourse from '../pages/SubjectTeacherPages/PoonamFafat/coursePage';
 
-import FafatStudyPage  from "../pages/SubjectTeacherPages/PoonamFafat/studyPage";
-import FafatAddStudymaterial from "../pages/SubjectTeacherPages/PoonamFafat/StudyMaterialPage";
-import FafatEditStudymaterial from "../pages/SubjectTeacherPages/PoonamFafat/EditStudyMaterialPage";
+import FafatStudyPage  from "../pages/SubjectTeacherPages/PoonamFafat/SEN/studyPage";
+import FafatAddStudymaterial from "../pages/SubjectTeacherPages/PoonamFafat/SEN/StudyMaterialPage";
+import FafatEditStudymaterial from "../pages/SubjectTeacherPages/PoonamFafat/SEN/EditStudyMaterialPage";
 
-import FafatQuestionPaper from '../pages/SubjectTeacherPages/PoonamFafat/questionPaper';
-import FafatAnswerKey from '../pages/SubjectTeacherPages/PoonamFafat/answerKey';
-import FafatAssignmentPage from "../pages/SubjectTeacherPages/PoonamFafat/Assignmentpage";
+import FafatQuestionPaper from '../pages/SubjectTeacherPages/PoonamFafat/SEN/questionPaper';
+import FafatAnswerKey from '../pages/SubjectTeacherPages/PoonamFafat/SEN/answerKey';
+import FafatAssignmentPage from "../pages/SubjectTeacherPages/PoonamFafat/SEN/Assignmentpage";
 
 import FafatProfilePage from "../pages/SubjectTeacherPages/PoonamFafat/ProfilePage";
 import FafatLeavePage from '../pages/SubjectTeacherPages/PoonamFafat/LeavePage';
@@ -220,13 +220,13 @@ import GhodeEditExercise from "../pages/SubjectTeacherPages/PriyankaGhode/EditPe
 import GhodeStudentDetail from '../pages/SubjectTeacherPages/PriyankaGhode/studentDetail';
 import GhodeCourse from '../pages/SubjectTeacherPages/PriyankaGhode/coursePage';
 
-import GhodeStudyPage  from "../pages/SubjectTeacherPages/PriyankaGhode/studyPage";
-import GhodeAddStudymaterial from "../pages/SubjectTeacherPages/PriyankaGhode/StudyMaterialPage";
-import GhodeEditStudymaterial from "../pages/SubjectTeacherPages/PriyankaGhode/EditStudyMaterialPage";
+import GhodeStudyPage  from "../pages/SubjectTeacherPages/PriyankaGhode/C/studyPage";
+import GhodeAddStudymaterial from "../pages/SubjectTeacherPages/PriyankaGhode/C/StudyMaterialPage";
+import GhodeEditStudymaterial from "../pages/SubjectTeacherPages/PriyankaGhode/C/EditStudyMaterialPage";
 
-import GhodeQuestionPaper from '../pages/SubjectTeacherPages/PriyankaGhode/questionPaper';
-import GhodeAnswerKey from '../pages/SubjectTeacherPages/PriyankaGhode/answerKey';
-import GhodeAssignmentPage from "../pages/SubjectTeacherPages/PriyankaGhode/Assignmentpage";
+import GhodeQuestionPaper from '../pages/SubjectTeacherPages/PriyankaGhode/C/questionPaper';
+import GhodeAnswerKey from '../pages/SubjectTeacherPages/PriyankaGhode/C/answerKey';
+import GhodeAssignmentPage from "../pages/SubjectTeacherPages/PriyankaGhode/C/Assignmentpage";
 
 import GhodeProfilePage from "../pages/SubjectTeacherPages/PriyankaGhode/ProfilePage";
 import GhodeLeavePage from '../pages/SubjectTeacherPages/PriyankaGhode/LeavePage';
@@ -380,13 +380,13 @@ const ConfigRoutes = () => {
          {/* Deepak Rewa Routes */}
          <Route path="/subject-teacher/deepak-rewadkar/dashboard" element={<RewadkarDashbord />}></Route>
         <Route path="/subject-teacher/deepak-rewadkar/fideology-form" element={<RewadkarCreateExercise />}></Route>
-        <Route path="/edit/:id" element={<RewadkarEditExercise/>}></Route>
+        <Route path="/subject-teacher/deepak-rewadkar/edit/:id" element={<RewadkarEditExercise/>}></Route>
         
         <Route path="/subject-teacher/deepak-rewadkar/student-details" element={<RewadkarStudentDetail />}></Route>
         <Route path="/subject-teacher/deepak-rewadkar/course" element={<RewadkarCourse />}></Route>
         <Route path="/subject-teacher/deepak-rewadkar/study-material" element={<RewadkarStudyPage />}></Route>
         <Route path="/subject-teacher/deepak-rewadkar/add-studymaterial" element={<RewadkarAddStudymaterial />}></Route>
-        <Route path="/studymaterial/edit/:id" element={<RewadkarEditStudymaterial />}></Route>
+        <Route path="/subject-teacher/deepak-rewadkar/studymaterial/edit/:id" element={<RewadkarEditStudymaterial />}></Route>
 
         <Route path="/subject-teacher/deepak-rewadkar/question-paper" element={<RewadkarQuestionPaper />}></Route>
         <Route path="/subject-teacher/deepak-rewadkar/answer-key" element={<RewadkarAnswerKey />}></Route>

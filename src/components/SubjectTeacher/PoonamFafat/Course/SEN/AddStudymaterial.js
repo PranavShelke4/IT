@@ -1,62 +1,43 @@
-import React,{useEffect, useState} from 'react'
+import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
+// import { useHistory } from "react-router-dom";
 
-import Studymaterial from "../../../../api/FafatMadam/Studymaterial";
-
-import { useParams } from "react-router-dom";
-import "../Fideology/createPedelogy.css";
+import Studymaterial from "../../../../../api/FafatMadam/Studymaterial"
 
 function Cancel(){
-  window.location.href="/subject-teacher/poonam-fafat/study-material";
+  window.location.href="/subject-teacher/poonam-fafat/study-material"
 }
 
-function  EditStudymaterial() {
+function  AddStudymaterial() {
 
   const [date,SetDate] = useState("");
   const [descriptionName,SetDescriptionName] = useState("");
   const [linkName,SetLinkName] = useState("");
-  
-  const params = useParams();
-
-  useEffect(()=>{
-    const HandelGetReq= async ()=>{
-        console.log(params.id)
-        const res = await Studymaterial.get(`/get-studymaterial/${params.id}`);
-        console.log("res");
-        console.log(res.data)
-        SetDate( res.data.date);
-        SetDescriptionName(res.data.description);
-        SetLinkName(res.data.link);
-    }
-    HandelGetReq();
-  },[SetDate,SetDescriptionName,SetLinkName,params.id]);
 
 
+
+  // const history = useHistory();
+//avadhut is here
+  //rajesh is here
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
   const onSubmit = async() =>{
-    // const formdata = new FormData();
-    // formdata.append("date",date);
-    // formdata.append("activity",activityName);
-    // formdata.append("subject",subName);
-    // formdata.append("group",groupNo);
-    
-    const formdata = {
-        "date":date,
-        "description":descriptionName,
-        "link":linkName
+    const studymaterial = {
+      date:date,
+      description:descriptionName,
+      link:linkName
     }
-    window.location.href="/subject-teacher/poonam-fafat/study-material";
-    console.log("req")
-    console.log(params.id)
-    console.log(formdata)
-   const res = await Studymaterial.patch(`/update-studymaterial/${params.id}`,formdata);
-   console.log(res.data.msg)
-   
 
+    console.log(studymaterial);
+   const res = await Studymaterial.post("/add-studymaterial",studymaterial);
+   console.log(res.data.msg)
+   window.location.href="/subject-teacher/poonam-fafat/study-material";
+  //  if(res.data.msg =="success"){
+  //   //  history.push("/subject-teacher-dashboard");
+  //  }
   }
 
   return (
@@ -108,4 +89,4 @@ function  EditStudymaterial() {
   )
 }
 
-export default EditStudymaterial;     
+export default AddStudymaterial;     

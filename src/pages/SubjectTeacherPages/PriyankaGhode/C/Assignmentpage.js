@@ -1,11 +1,11 @@
 import React from 'react';
 // import AssignmentRaut from "../../components/SubjectTeacher/SnehaRaut/Assignment/Assignment";
-import FafatSubNavbar from "../../../components/SubjectTeacher/PoonamFafat/FafatSubNavbar";
+import GhodeSubNavbar from "../../../../components/SubjectTeacher/PriyankaGhode/GhodeSubNavbar"
 
 function AssignmentPage(){
     return (
         <div>
-            <FafatSubNavbar />
+            <GhodeSubNavbar />
             {/* <Assignment /> */}
         </div>
     );

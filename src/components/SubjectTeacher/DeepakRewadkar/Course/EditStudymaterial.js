@@ -1,13 +1,13 @@
 import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
-import Studymaterial from "../../../../api/JyotiDabhade/Studymaterial";
+import Studymaterial from "../../../../api/DeepakRewadkar/Studymaterial";
 
 import { useParams } from "react-router-dom";
 import "../Fideology/createPedelogy.css";
 
 function Cancel(){
-  window.location.href="/subject-teacher/study-material";
+  window.location.href="/subject-teacher/deepak-rewadkar/study-material";
 }
 
 function  EditStudymaterial() {
@@ -49,7 +49,7 @@ function  EditStudymaterial() {
         "description":descriptionName,
         "link":linkName
     }
-    window.location.href="/subject-teacher/study-material";
+    window.location.href="/subject-teacher/deepak-rewadkar/study-material";
     console.log("req")
     console.log(params.id)
     console.log(formdata)

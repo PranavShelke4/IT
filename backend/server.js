@@ -63,6 +63,10 @@ const SutarStudymaterialsRouter = require("./routes/SheetalSutar/StudymaterialsR
 const BodheExercisesRouter = require("./routes/YogeshBodhe/ExercisesRoutes");
 const BodheStudymaterialsRouter = require("./routes/YogeshBodhe/StudymaterialsRoutes");
 
+// Deepak Rewadkar Subject Teacher
+const RewadkarExercisesRouter = require("./routes/DeepakRewadkar/ExercisesRoutes");
+const RewadkarStudymaterialsRouter = require("./routes/DeepakRewadkar/StudymaterialsRoutes");
+
 
 
 
@@ -128,6 +132,10 @@ app.use("/Sutarstudymaterials", SutarStudymaterialsRouter);
 // Yogesh Bodhe Subject Taecher
 app.use("/Bodheexercises", BodheExercisesRouter);
 app.use("/Bodhestudymaterials", BodheStudymaterialsRouter);
+
+// Deepak Rewadkar Subject Taecher
+app.use("/Rewadkarexercises", RewadkarExercisesRouter);
+app.use("/Rewadkarstudymaterials", RewadkarStudymaterialsRouter);
 
 
 
