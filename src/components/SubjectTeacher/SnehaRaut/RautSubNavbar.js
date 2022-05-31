@@ -1,7 +1,7 @@
 //import React, { useContext } from "react";
 import "./RautSubNavbar.css";
 import {Link} from 'react-router-dom';
-import BodheSirImg from "../../../assets/img/BodheSirImg.jpg"
+import RautMadamImg from "../../../assets/img/raut-madam.jpg"
 //import { AuthContext } from "../../functions/Auth"
 //import firebaseConfig from "../../functions/fire"
 
@@ -209,7 +209,7 @@ function subNavbar() {
           <li>
             <div className="profile-details">
               <div className="profile-content">
-                <img alt="" src={BodheSirImg} />
+                <img alt="" src={RautMadamImg} />
               </div>
               <div className="name-job">
                 <div className="profile_name">Mrs. Sneha D. Raut</div>
