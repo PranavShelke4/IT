@@ -63,13 +63,13 @@ function subNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/subject-teacher/sneha-raut/student-details">First Year</Link>
+                <Link to="/subject-teacher/sneha-raut/FY-Students">First Year</Link>
               </li>
               <li>
-                <Link to="/subject-teacher/sneha-raut/student-details">Second Year</Link>
+                <Link to="/subject-teacher/sneha-raut/SY-Students">Second Year</Link>
               </li>
               <li>
-                <Link to="/subject-teacher/sneha-raut/student-details">Third Year</Link>
+                <Link to="/subject-teacher/sneha-raut/TY-Students">Third Year</Link>
               </li>
             </ul>
           </li>
