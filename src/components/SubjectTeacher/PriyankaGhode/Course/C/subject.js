@@ -44,7 +44,7 @@ function subject(){
         </Dropdown.Toggle>
 
       <Dropdown.Menu>
-          <Dropdown.Item href="/assignments">Assignments</Dropdown.Item>
+          <Dropdown.Item rel="noreferrer" target='_blank' href="https://drive.google.com/drive/folders/1RY248uFoVnAmx8jB06fUjZAhLYQGLcj-?usp=sharing">Assignments</Dropdown.Item>
           <Dropdown.Item href="/subject-teacher/priyanka-ghode/study-material">Study Materials</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
