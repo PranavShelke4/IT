@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
+
 function HODLoginForm() {
+
+  
   return (
     <div className="box">
       <form action="/HOD/Dashbord">
