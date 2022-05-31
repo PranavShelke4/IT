@@ -1,9 +1,8 @@
 //import React, { useContext } from "react";
 import "./GhodeSubNavbar.css";
 import {Link} from 'react-router-dom';
-import BodheSirImg from "../../../assets/img/BodheSirImg.jpg"
-//import { AuthContext } from "../../functions/Auth"
-//import firebaseConfig from "../../functions/fire"
+import GhodeMadamImg from "../../../assets/img/ghode-madam.svg"
+
 
 
 function eventHandle() {
@@ -63,13 +62,13 @@ function subNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/subject-teacher/priyanka-ghode/student-details">First Year</Link>
+                <Link to="/subject-teacher/priyanka-ghode/FY-Students">First Year</Link>
               </li>
               <li>
-                <Link to="/subject-teacher/priyanka-ghode/student-details">Second Year</Link>
+                <Link to="/subject-teacher/priyanka-ghode/SY-Students">Second Year</Link>
               </li>
               <li>
-                <Link to="/subject-teacher/priyanka-ghode/student-details">Third Year</Link>
+                <Link to="/subject-teacher/priyanka-ghode/TY-Students">Third Year</Link>
               </li>
             </ul>
           </li>
@@ -209,10 +208,10 @@ function subNavbar() {
           <li>
             <div className="profile-details">
               <div className="profile-content">
-                <img alt="" src={BodheSirImg} />
+                <img alt="" src={GhodeMadamImg} />
               </div>
               <div className="name-job">
-                <div className="profile_name">Mr. Yogesh U. Bodhe</div>
+                <div className="profile_name">Mrs. P. S. ghode</div>
                 <div className="job">Lecturer in IT</div>
               </div>
             </div>
