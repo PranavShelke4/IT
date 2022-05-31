@@ -114,7 +114,11 @@ import Dashbord from '../pages/SubjectTeacherPages/SnehaRaut/Dashbord';
 import CreateExercise from "../pages/SubjectTeacherPages/SnehaRaut/FideologyForm";
 import EditExercise from "../pages/SubjectTeacherPages/SnehaRaut/EditPedeology";
 
-import StudentDetail from '../pages/SubjectTeacherPages/SnehaRaut/studentDetail';
+
+import FYStudents from "../pages/SubjectTeacherPages/SnehaRaut/FYStuddentsPage";
+import SYStudents from "../pages/SubjectTeacherPages/SnehaRaut/SYStudentsPage";
+import TYStudents from "../pages/SubjectTeacherPages/SnehaRaut/SYStudentsPage";
+
 import Course from '../pages/SubjectTeacherPages/SnehaRaut/coursePage';
 
 import StudyPage  from "../pages/SubjectTeacherPages/SnehaRaut/studyPage";
@@ -135,7 +139,7 @@ import SutarDashbord from '../pages/SubjectTeacherPages/SheetalSutar/Dashbord';
 import SutarCreateExercise from "../pages/SubjectTeacherPages/SheetalSutar/FideologyForm";
 import SutarEditExercise from "../pages/SubjectTeacherPages/SheetalSutar/EditPedeology";
 
-import SutarStudentDetail from '../pages/SubjectTeacherPages/SheetalSutar/studentDetail';
+
 import SutarCourse from '../pages/SubjectTeacherPages/SheetalSutar/coursePage';
 
 import SutarStudyPage  from "../pages/SubjectTeacherPages/SheetalSutar/studyPage";
@@ -269,7 +273,10 @@ const ConfigRoutes = () => {
         <Route path="/subject-teacher/sneha-raut/fideology-form" element={<CreateExercise />}></Route>
         <Route path="/subject-teacher/sneha-raut/edit/:id" element={<EditExercise/>}></Route>
         
-        <Route path="/subject-teacher/sneha-raut/student-details" element={<StudentDetail />}></Route>
+        <Route path="/subject-teacher/sneha-raut/FY-Students" element={<FYStudents />}></Route>
+        <Route path="/subject-teacher/sneha-raut/SY-Students" element={<SYStudents />}></Route>
+        <Route path="/subject-teacher/sneha-raut/TY-Students" element={<TYStudents />}></Route>
+
         <Route path="/subject-teacher/sneha-raut/course" element={<Course />}></Route>
         <Route path="/subject-teacher/sneha-raut/study-material" element={<StudyPage />}></Route>
         <Route path="/subject-teacher/sneha-raut/add-studymaterial" element={<AddStudymaterial />}></Route>
@@ -288,7 +295,7 @@ const ConfigRoutes = () => {
         <Route path="/subject-teacher/sheetal-sutar/fideology-form" element={<SutarCreateExercise />}></Route>
         <Route path="/subject-teacher/sheetal-sutar/edit/:id" element={<SutarEditExercise/>}></Route>
         
-        <Route path="/subject-teacher/sheetal-sutar/student-details" element={<SutarStudentDetail />}></Route>
+        {/* <Route path="/subject-teacher/sheetal-sutar/student-details" element={<SutarStudentDetail />}></Route> */}
         <Route path="/subject-teacher/sheetal-sutar/course" element={<SutarCourse />}></Route>
         <Route path="/subject-teacher/sheetal-sutar/study-material" element={<SutarStudyPage />}></Route>
         <Route path="/subject-teacher/sheetal-sutar/add-studymaterial" element={<SutarAddStudymaterial />}></Route>
