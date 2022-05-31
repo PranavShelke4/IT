@@ -1,13 +1,11 @@
 import React from 'react';
-import Subject from '../../../components/SubjectTeacher/PriyankaGhode/Course/subject'
+import CSubject from '../../../components/SubjectTeacher/PriyankaGhode/Course/C/subject'
 import GhodeSubNavbar from "../../../components/SubjectTeacher/PriyankaGhode/GhodeSubNavbar"
 
 function coursePage(){
     return (<div>
         <GhodeSubNavbar />
-        <Subject />
-        <Subject />
-        <Subject />
+        <CSubject />
     </div>);
 
 }

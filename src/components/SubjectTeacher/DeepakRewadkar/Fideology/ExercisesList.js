@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import './ExercisesList.css';
 
-import Exercises from '../../../../api/JyotiDabhade/Exercise';
+import Exercises from '../../../../api/DeepakRewadkar/Exercise';
 
 const Exercise = props => (
     <tr>
@@ -14,7 +14,7 @@ const Exercise = props => (
         <td>{props.exercise.group}</td>
         
         <td>
-            <Link to={"/edit/"+props.exercise._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteExercise(props.exercise._id) }} ><i className='bx bx-trash'></i></span>
+            <Link to={"/subject-teacher/deepak-rewadkar/edit/"+props.exercise._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteExercise(props.exercise._id) }} ><i className='bx bx-trash'></i></span>
             {/* <button className="btn btn-secondary"><Link to={"/edit/"+props.exercise._id} style={{color:"white"}}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => {props.deleteExercise(props.exercise._id) }}>Delete</button> */}
         </td>
     </tr>
@@ -70,7 +70,7 @@ class ExercisesList extends Component {
                         {this.exercisesList()}
                     </tbody>
                 </table>
-                <Link to={'/subject-teacher/fideology-form'}><div className='add'>Add</div></Link>
+                <Link to={'/subject-teacher/deepak-rewadkar/fideology-form'}><div className='add'>Add</div></Link>
             </div>
             </div>
          );

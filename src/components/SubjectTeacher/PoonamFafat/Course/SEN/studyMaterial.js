@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 //import './ExercisesList.css';
 
-import Studymaterials from '../../../../api/FafatMadam/Studymaterial';
+import Studymaterials from '../../../../../api/FafatMadam/Studymaterial';
 
 const Studymaterial = props => (
     <tr>

@@ -2,10 +2,10 @@ import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
-import Studymaterial from "../../../../api/FafatMadam/Studymaterial"
+import Studymaterial from "../../../../../api/GhodeMadam/Studymaterial"
 
 function Cancel(){
-  window.location.href="/subject-teacher/poonam-fafat/study-material"
+  window.location.href="/subject-teacher/priyanka-ghode/study-material"
 }
 
 function  AddStudymaterial() {
@@ -34,7 +34,7 @@ function  AddStudymaterial() {
     console.log(studymaterial);
    const res = await Studymaterial.post("/add-studymaterial",studymaterial);
    console.log(res.data.msg)
-   window.location.href="/subject-teacher/poonam-fafat/study-material";
+   window.location.href="/subject-teacher/priyanka-ghode/study-material";
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }

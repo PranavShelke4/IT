@@ -1,6 +1,6 @@
 import React from 'react';
-import Question from '../../../components/SubjectTeacher/PoonamFafat/Course/question';
-import FafatSubNavbar from "../../../components/SubjectTeacher/PoonamFafat/FafatSubNavbar";
+import Question from '../../../../components/SubjectTeacher/PoonamFafat/Course/SEN/question';
+import FafatSubNavbar from "../../../../components/SubjectTeacher/PoonamFafat/FafatSubNavbar";
 
 function questionPaper(){
     return (

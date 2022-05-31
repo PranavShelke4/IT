@@ -2,11 +2,11 @@ import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
 
-import Exercise from "../../../../api/JyotiDabhade/Exercise";
+import Exercise from "../../../../api/DeepakRewadkar/Exercise";
 import "./createPedelogy.css";
 
 function Cancel(){
-  window.location.href="/subject-teacher/dashboard"
+  window.location.href="/subject-teacher/deepak-rewadkar/dashboard"
 }
 
 function  CreatePedology() {
@@ -36,7 +36,7 @@ function  CreatePedology() {
     console.log(exercise);
    const res = await Exercise.post("/add-exercise",exercise);
    console.log(res.data.msg)
-   window.location.href="/subject-teacher/dashboard";
+   window.location.href="/subject-teacher/deepak-rewadkar/dashboard";
   //  if(res.data.msg =="success"){
   //   //  history.push("/subject-teacher-dashboard");
   //  }

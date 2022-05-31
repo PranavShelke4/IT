@@ -1,10 +1,10 @@
 import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
-import Studymaterial from "../../../../api/GhodeMadam/Studymaterial";
+import Studymaterial from "../../../../../api/GhodeMadam/Studymaterial";
 
 import { useParams } from "react-router-dom";
-import "../Fideology/createPedelogy.css";
+import "../../Fideology/createPedelogy.css";
 
 function Cancel(){
   window.location.href="/subject-teacher/priyanka-ghode/study-material";

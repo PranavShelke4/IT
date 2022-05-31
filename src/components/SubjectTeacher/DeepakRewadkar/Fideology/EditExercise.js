@@ -2,13 +2,13 @@ import React,{useEffect, useState} from 'react'
 import { useForm } from "react-hook-form";
 
 
-import Exercise from "../../../../api/JyotiDabhade/Exercise";
+import Exercise from "../../../../api/DeepakRewadkar/Exercise";
 
 import { useParams } from "react-router-dom";
 import "./createPedelogy.css";
 
 function Cancel(){
-  window.location.href="/subject-teacher/dashboard"
+  window.location.href="/subject-teacher/deepak-rewadkar/dashboard"
 }
 
 function  EditExercise() {
@@ -53,7 +53,7 @@ function  EditExercise() {
         "subject":subName,
         "group":groupNo
     }
-    window.location.href="/subject-teacher/dashboard";
+    window.location.href="/subject-teacher/deepak-rewadkar/dashboard";
     console.log("req")
     console.log(params.id)
     console.log(formdata)
