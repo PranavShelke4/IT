@@ -242,6 +242,8 @@ import GhodejavaEditStudymaterial from "../pages/SubjectTeacherPages/PriyankaGho
 import GhodeProfilePage from "../pages/SubjectTeacherPages/PriyankaGhode/ProfilePage";
 import GhodeCR from '../pages/SubjectTeacherPages/PriyankaGhode/CRPage';
 import GhodeLeavePage from '../pages/SubjectTeacherPages/PriyankaGhode/LeavePage';
+import AddGhodeleave from "../pages/SubjectTeacherPages/PriyankaGhode/AddLeavePage";
+import EditGhodeleave from "../pages/SubjectTeacherPages/PriyankaGhode/EditLeavePage";
 
 
 // Deepak Rewadkar Routes.....
@@ -398,7 +400,10 @@ const ConfigRoutes = () => {
         
         <Route path="/subject-teacher/priyanka-ghode/profile" element={<GhodeProfilePage />}></Route>
         <Route path="/subject-teacher/priyanka-ghode/cr" element={<GhodeCR />}></Route>
+        
         <Route path="/subject-teacher/priyanka-ghode/leave" element={<GhodeLeavePage />}></Route>
+        <Route path="/subject-teacher/priyanka-ghode/add-leave" element={<AddGhodeleave />}></Route>
+        <Route path="/subject-teacher/priyanka-ghode/edit-leave/:id" element={<EditGhodeleave />}></Route>
 
          {/* Deepak Rewa Routes */}
          <Route path="/subject-teacher/deepak-rewadkar/dashboard" element={<RewadkarDashbord />}></Route>
