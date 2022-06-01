@@ -10,7 +10,7 @@ const Feedbacklist = props => (
         {/* <td>{props.exercise.username}</td> */}
         <td>{props.feedbacklist.year}</td>
         <td>{props.feedbacklist.faculty}</td>
-        <td><a href={props.feedbacklist.link}>{props.feedbacklist.link}</a></td>
+        <td><a  rel="noreferrer" target='_blank' href={props.feedbacklist.link}>{props.feedbacklist.link}</a></td>
         
     </tr>
 )
