@@ -10,7 +10,7 @@ function subject(){
         <div className='sub_section'>
         <div className="sub sub1">
 
-    <label className="s1">C</label>
+    <label className="s1">Programming in C</label>
     <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0'><div className="attendance">
       <span className="attend_label">Attendance</span>
     </div></a>
@@ -22,9 +22,9 @@ function subject(){
         </Dropdown.Toggle>
 
       <Dropdown.Menu>
-          <Dropdown.Item href="/question-paper">Question Paper</Dropdown.Item>
-          <Dropdown.Item href="/answer-key">Answer Key</Dropdown.Item>
-          <Dropdown.Item href="#/ds-format">DS Format</Dropdown.Item>
+          <Dropdown.Item target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1NNRF7JSHd1s6nJt4BfJkl7NrHLIzLyTO?usp=sharing">Question Paper</Dropdown.Item>
+          <Dropdown.Item target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1HKn1kb7qswFxvYgmmwiEHfn9XmGBHLXj?usp=sharing">Answer Key</Dropdown.Item>
+          <Dropdown.Item target="_blank" rel="noopener noreferrer" href="#/ds-format">DS Format</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
       </div>
@@ -44,7 +44,7 @@ function subject(){
         </Dropdown.Toggle>
 
       <Dropdown.Menu>
-          <Dropdown.Item href="/assignments">Assignments</Dropdown.Item>
+          <Dropdown.Item rel="noreferrer" target='_blank' href="https://drive.google.com/drive/folders/1RY248uFoVnAmx8jB06fUjZAhLYQGLcj-?usp=sharing">Assignments</Dropdown.Item>
           <Dropdown.Item href="/subject-teacher/priyanka-ghode/study-material">Study Materials</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>

@@ -6,14 +6,14 @@ function MySubject() {
     
       <div className="d-flex flex-md-row flex-sm-column flex-wrap justify-content-center" id="row">
         <div className="sub1">
-          <p className="subname">Java Script</p>
-          <p className="subcode">123</p>
+          <p className="subname">OOP</p>
+          <p className="subcode">(22316)</p>
         </div>
         <div className="sub2">
-          <p className="subname">Java Script</p>
-          <p className="subcode">123</p>
+          <p className="subname">DSU</p>
+          <p className="subcode">(22317)</p>
         </div>
-        <div className="sub3">
+        {/* <div className="sub3">
           <p className="subname">Java Script</p>
           <p className="subcode">123</p>
         </div>
@@ -23,7 +23,7 @@ function MySubject() {
         </div>
         <div className="it">
             <h3>Information Technology</h3>
-        </div>
+        </div> */}
       </div>
 
   );

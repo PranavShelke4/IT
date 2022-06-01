@@ -1,9 +1,8 @@
 //import React, { useContext } from "react";
 import "./GhodeSubNavbar.css";
 import {Link} from 'react-router-dom';
-import BodheSirImg from "../../../assets/img/BodheSirImg.jpg"
-//import { AuthContext } from "../../functions/Auth"
-//import firebaseConfig from "../../functions/fire"
+import GhodeMadamImg from "../../../assets/img/ghode-madam.svg"
+
 
 
 function eventHandle() {
@@ -63,13 +62,13 @@ function subNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/subject-teacher/priyanka-ghode/student-details">First Year</Link>
+                <Link to="/subject-teacher/priyanka-ghode/FY-Students">First Year</Link>
               </li>
               <li>
-                <Link to="/subject-teacher/priyanka-ghode/student-details">Second Year</Link>
+                <Link to="/subject-teacher/priyanka-ghode/SY-Students">Second Year</Link>
               </li>
               <li>
-                <Link to="/subject-teacher/priyanka-ghode/student-details">Third Year</Link>
+                <Link to="/subject-teacher/priyanka-ghode/TY-Students">Third Year</Link>
               </li>
             </ul>
           </li>
@@ -89,15 +88,13 @@ function subNavbar() {
           </li>
 
           <li>
-            <a rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0" >
+            <a rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1C7-8spoquQK5-eqn5A2549EhT5bIS9wJ/edit?usp=sharing&ouid=100148969996896430193&rtpof=true&sd=true" >
               <i className="bx bx-file-find"></i>
               <span className="link_name">CPP Project</span>
             </a>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0">
-                CPP Project
-                </Link>
+              <a className="link_name" rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1C7-8spoquQK5-eqn5A2549EhT5bIS9wJ/edit?usp=sharing&ouid=100148969996896430193&rtpof=true&sd=true" >CPP Project</a>
               </li>
             </ul>
           </li>
@@ -117,13 +114,13 @@ function subNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="#">First Year</Link>
+              <a href="https://drive.google.com/file/d/1chDe5cx6ljpuNmQ1nOH8MrPsq7F149MZ/view?" rel="noreferrer" target='_blank'>First Year</a>
               </li>
               <li>
-                <Link to="#">Second Year</Link>
+              <a rel="noreferrer" target='_blank' href="https://drive.google.com/file/d/1w_1HrLTeJM02rtjA6pjyGuzv-2N-F7dp/view">Second Year</a>
               </li>
               <li>
-                <Link to="#">Third Year</Link>
+              <a rel="noreferrer" target='_blank' href="https://drive.google.com/file/d/1u9kw1RYBUUFIw8cKsDvTdHjid0yGAcol/view">Third Year</a>
               </li>
             </ul>
           </li>
@@ -209,10 +206,10 @@ function subNavbar() {
           <li>
             <div className="profile-details">
               <div className="profile-content">
-                <img alt="" src={BodheSirImg} />
+                <img alt="" src={GhodeMadamImg} />
               </div>
               <div className="name-job">
-                <div className="profile_name">Mr. Yogesh U. Bodhe</div>
+                <div className="profile_name">Mrs. P. S. ghode</div>
                 <div className="job">Lecturer in IT</div>
               </div>
             </div>
