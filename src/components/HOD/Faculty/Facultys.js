@@ -70,7 +70,11 @@ function Facultys(props) {
 
                   <tr key={item.id}>
                 <td>{ item.SrNo }</td>
-                <td>{ item.Image }</td>
+                <td><img
+                      className="facultyImg"
+                      alt="faculty img"
+                      src={item.Image}
+                    /> </td>
                 <td>{ item.Name }</td>
                 <td>{ item.Gender }</td>
                 <td>{ item.Qualification }</td>

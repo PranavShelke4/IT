@@ -1,9 +1,12 @@
+import bhapkarIMG from "../../../assets/img/bhapkar.png";
+import kadamIMG from "../../../assets/img/kadam.png";
+
 
 const SupportingFacultyData = [
     {
         id: 1,
         SrNo: "1",
-        Image: "12",
+        Image: bhapkarIMG,
         Name: "Shree. Rahul P. Bhapkar",
         Gender: "Male",
         Qualification: "B.Com.",
@@ -14,7 +17,7 @@ const SupportingFacultyData = [
     {
         id: 2,
         SrNo: "2",
-        Image: "1",
+        Image: kadamIMG,
         Name: "Shree. Dattatray Jagannath Kadam",
         Gender: "Male",
         Qualification: "SSC Diploma",
