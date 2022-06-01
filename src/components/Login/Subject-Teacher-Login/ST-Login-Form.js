@@ -4,12 +4,12 @@ import "./ST-Login-Form.css";
 function ST_Login_Form() {
 
 
-function login(event){
-  event.preventDefault();
+function login(event4){
+  event4.preventDefault();
 
-  var email = document.getElementById("email").value;
-     var password = document.getElementById("password").value;
-     console.log(email);
+  var email = document.getElementById("STemail").value;
+  var password = document.getElementById("STpassword").value;
+    
 
   if (email === "priyanka.kamdi@gmail.com" && password === "psghode@123") {
     window.location.href="/subject-teacher/priyanka-ghode/dashboard";
@@ -40,7 +40,7 @@ function login(event){
         <input
           type="email"
           name="email"
-          id="email"
+          id="STemail"
           placeholder="Email ID / Username"
           autoFocus
           required
@@ -49,7 +49,7 @@ function login(event){
         <input 
          type="password" 
          name="password"
-         id="password"
+         id="STpassword"
          placeholder="Enter Password"
          required />
         <a href="/">
