@@ -1,9 +1,16 @@
+import ghodeIMG from "../../../assets/img/ghode-madam.svg";
+import rautIMG from "../../../assets/img/raut-madam.jpg";
+import fafatIMG from "../../../assets/img/fafat-madam.jpeg";
+import sutarIMG from "../../../assets/img/sutar.jpg";
+import dabhadeIMG from "../../../assets/img/dabhade_madam.jpg";
+import yogeshIMG from "../../../assets/img/BodheSirImg.jpg";
+
 
 const FacultyDatass = [
     {
         id: 1,
         SrNo: "1",
-        Image: "https://drive.google.com/file/d/1ZxH9qX01ajrYjj1XkVHrraeuf2SJLN1S/view?usp=sharing",
+        Image: ghodeIMG,
         Name: "Mrs. Priyanka Ghode",
         Gender: "Female",
         Qualification: "M.Tech (CSE) B.E(IT)",
@@ -14,7 +21,7 @@ const FacultyDatass = [
     {
         id: 2,
         SrNo: "2",
-        Image: "1",
+        Image: rautIMG,
         Name: "Mrs. Sneha D. Raut",
         Gender: "Female",
         Qualification: "M.E(CN) B.E(IT)",
@@ -25,7 +32,7 @@ const FacultyDatass = [
     {
         id: 3,
         SrNo: "3",
-        Image: "1",
+        Image: fafatIMG,
         Name: "Ms. Poonam C. Fafat",
         Gender: "Female",
         Qualification: "M.E(IT), BE(CSE)",
@@ -36,7 +43,7 @@ const FacultyDatass = [
     {
         id: 4,
         SrNo: "4",
-        Image: "1",
+        Image: sutarIMG,
         Name: "Ms. Sheetal S. Sutar",
         Gender: "Female",
         Qualification: "BE(IT), M.E(CS)",
@@ -47,7 +54,7 @@ const FacultyDatass = [
     {
         id: 5,
         SrNo: "5",
-        Image: "1",
+        Image: dabhadeIMG,
         Name: "Ms. Jyoti G. Dabhade",
         Gender: "Female",
         Qualification: "BE(IT), M.E(Comp.Engg)",
@@ -58,7 +65,7 @@ const FacultyDatass = [
     {
         id: 6,
         SrNo: "6",
-        Image: "1",
+        Image: yogeshIMG,
         Name: "Mr. Yogesh Uttamrao Bodhe",
         Gender: "Male",
         Qualification: "BE(Comp.Engg), M.Tech(Comp.Sci.& Engg.)",
