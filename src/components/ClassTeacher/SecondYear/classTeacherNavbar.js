@@ -131,15 +131,16 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <Link to="#">
+          
+          <a className="link_name" rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1QSjpK5C75lgn5rx_DTA4GLBc3-m3TbLc/edit?usp=sharing&ouid=100148969996896430193&rtpof=true&sd=true">
               <i className="bx bx-spreadsheet"></i>
               <span className="link_name">Result Analysis</span>
-            </Link>
+            </a>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="#">
+              <a className="link_name" rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1QSjpK5C75lgn5rx_DTA4GLBc3-m3TbLc/edit?usp=sharing&ouid=100148969996896430193&rtpof=true&sd=true">
                 Result Analysis
-                </Link>
+                </a>
               </li>
             </ul>
           </li>
