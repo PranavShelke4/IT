@@ -6,6 +6,7 @@ import dabhadeIMG from "../../../assets/img/dabhade_madam.jpg";
 import yogeshIMG from "../../../assets/img/BodheSirImg.jpg";
 
 
+
 const FacultyDatass = [
     {
         id: 1,
