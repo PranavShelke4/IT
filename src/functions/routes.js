@@ -234,12 +234,12 @@ import GhodejavaStudyPage  from "../pages/SubjectTeacherPages/PriyankaGhode/Java
 import GhodejavaAddStudymaterial from "../pages/SubjectTeacherPages/PriyankaGhode/Java/StudyMaterialPage";
 import GhodejavaEditStudymaterial from "../pages/SubjectTeacherPages/PriyankaGhode/Java/EditStudyMaterialPage";
 
-import GhodeQuestionPaper from '../pages/SubjectTeacherPages/PriyankaGhode/C/questionPaper';
-import GhodeAnswerKey from '../pages/SubjectTeacherPages/PriyankaGhode/C/answerKey';
-import GhodeAssignmentPage from "../pages/SubjectTeacherPages/PriyankaGhode/C/Assignmentpage";
-import GhodejavaQuestionPaper from '../pages/SubjectTeacherPages/PriyankaGhode/Java/questionPaper';
-import GhodejavaAnswerKey from '../pages/SubjectTeacherPages/PriyankaGhode/Java/answerKey';
-import GhodejavaAssignmentPage from "../pages/SubjectTeacherPages/PriyankaGhode/Java/Assignmentpage";
+// import GhodeQuestionPaper from '../pages/SubjectTeacherPages/PriyankaGhode/C/questionPaper';
+// import GhodeAnswerKey from '../pages/SubjectTeacherPages/PriyankaGhode/C/answerKey';
+// import GhodeAssignmentPage from "../pages/SubjectTeacherPages/PriyankaGhode/C/Assignmentpage";
+// import GhodejavaQuestionPaper from '../pages/SubjectTeacherPages/PriyankaGhode/Java/questionPaper';
+// import GhodejavaAnswerKey from '../pages/SubjectTeacherPages/PriyankaGhode/Java/answerKey';
+// import GhodejavaAssignmentPage from "../pages/SubjectTeacherPages/PriyankaGhode/Java/Assignmentpage";
 
 import GhodeProfilePage from "../pages/SubjectTeacherPages/PriyankaGhode/ProfilePage";
 import GhodeLeavePage from '../pages/SubjectTeacherPages/PriyankaGhode/LeavePage';
@@ -393,9 +393,9 @@ const ConfigRoutes = () => {
         <Route path="/subject-teacher/priyanka-ghode/java/add-studymaterial" element={<GhodejavaAddStudymaterial />}></Route>
         <Route path="/subject-teacher/priyanka-ghode/java/studymaterial/edit/:id" element={<GhodejavaEditStudymaterial />}></Route>
 
-        <Route path="/subject-teacher/priyanka-ghode/question-paper" element={<GhodeQuestionPaper />}></Route>
+        {/* <Route path="/subject-teacher/priyanka-ghode/question-paper" element={<GhodeQuestionPaper />}></Route>
         <Route path="/subject-teacher/priyanka-ghode/answer-key" element={<GhodeAnswerKey />}></Route>
-        <Route path="/subject-teacher/priyanka-ghode/assignments" element={<GhodeAssignmentPage />}></Route>
+        <Route path="/subject-teacher/priyanka-ghode/assignments" element={<GhodeAssignmentPage />}></Route> */}
         
         <Route path="/subject-teacher/priyanka-ghode/profile" element={<GhodeProfilePage />}></Route>
         <Route path="/subject-teacher/priyanka-ghode/leave" element={<GhodeLeavePage />}></Route>

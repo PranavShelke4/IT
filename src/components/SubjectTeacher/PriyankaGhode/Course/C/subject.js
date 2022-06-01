@@ -22,8 +22,8 @@ function subject(){
         </Dropdown.Toggle>
 
       <Dropdown.Menu>
-          <Dropdown.Item target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1NNRF7JSHd1s6nJt4BfJkl7NrHLIzLyTO?usp=sharing">Question Paper</Dropdown.Item>
-          <Dropdown.Item target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1HKn1kb7qswFxvYgmmwiEHfn9XmGBHLXj?usp=sharing">Answer Key</Dropdown.Item>
+          <Dropdown.Item target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1qDSBJ77AvSN4M1cH80bxhLvIHqHFCEh4?usp=sharing">Question Paper</Dropdown.Item>
+          <Dropdown.Item target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1geIeHMmN3-PeLCZPXQhAgRVJFpLTadkG?usp=sharing">Answer Key</Dropdown.Item>
           <Dropdown.Item target="_blank" rel="noopener noreferrer" href="#/ds-format">DS Format</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
@@ -44,7 +44,7 @@ function subject(){
         </Dropdown.Toggle>
 
       <Dropdown.Menu>
-          <Dropdown.Item rel="noreferrer" target='_blank' href="https://drive.google.com/drive/folders/1RY248uFoVnAmx8jB06fUjZAhLYQGLcj-?usp=sharing">Assignments</Dropdown.Item>
+          <Dropdown.Item rel="noreferrer" target='_blank' href="https://drive.google.com/drive/folders/1Fy5jKLQaovn-Vk9sTrk5aib2y9282t6m?usp=sharing">Assignments</Dropdown.Item>
           <Dropdown.Item href="/subject-teacher/priyanka-ghode/study-material">Study Materials</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>

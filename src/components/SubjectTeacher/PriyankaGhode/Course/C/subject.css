@@ -16,8 +16,8 @@
   }
   
   .s1{
-    width: auto;
-    height: auto;
+    width: 400px !important;
+    height: 50px;
     margin-left: 15px;
     /* margin-top: 5px; */
     line-height: 2rem;
