@@ -10,7 +10,7 @@ const Studymaterial = props => (
         {/* <td>{props.exercise.username}</td> */}
         <td>{props.studymaterial.date}</td>
         <td>{props.studymaterial.description}</td>
-        <td><a href={props.studymaterial.link}>{props.studymaterial.link}</a></td>
+        <td><a target="_blank" rel="noopener noreferrer" href={props.studymaterial.link}>{props.studymaterial.link}</a></td>
         
         <td>
             <Link to={"/subject-teacher/priyanka-ghode/java/studymaterial/edit/"+props.studymaterial._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteStudymaterial(props.studymaterial._id) }} ><i className='bx bx-trash'></i></span>
@@ -54,7 +54,7 @@ class StudyMaterial extends Component {
         return ( 
             <div className='FideologyActivities'>
             <div className="fideo">
-                <h3 className='fidoh3'>Pedelogy Activities</h3>
+            <h3 className='fidoh3'>Study Material</h3>
                 <table>
                     <thead className="thead-light">
                         <tr>
