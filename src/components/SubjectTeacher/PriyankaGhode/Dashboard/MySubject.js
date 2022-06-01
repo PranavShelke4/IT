@@ -4,7 +4,7 @@ import "./MySubject.css";
 function MySubject() {
   return (
     
-      <div className="d-flex flex-md-row flex-sm-column flex-wrap justify-content-center" id="row">
+      <div className="d-flex flex-md-row flex-sm-column flex-wrap justify-content-left" id="row">
         <div className="sub1">
           <p className="subname">OOP</p>
           <p className="subcode">(22316)</p>
