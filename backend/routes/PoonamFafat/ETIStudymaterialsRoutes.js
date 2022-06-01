@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const studymaterialsControllers = require('../../Controllers/PoonamFafat/Sub2StudymaterialsControllers');
+const studymaterialsControllers = require('../../Controllers/PoonamFafat/ETIStudymaterialsControllers');
 
 router.post('/add-studymaterial',studymaterialsControllers.postStudymaterial);
 router.get('/get-studymaterials',studymaterialsControllers.getStudymaterials);

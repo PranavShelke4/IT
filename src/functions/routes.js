@@ -166,9 +166,10 @@ import FafatStudyPage  from "../pages/SubjectTeacherPages/PoonamFafat/SEN/studyP
 import FafatAddStudymaterial from "../pages/SubjectTeacherPages/PoonamFafat/SEN/StudyMaterialPage";
 import FafatEditStudymaterial from "../pages/SubjectTeacherPages/PoonamFafat/SEN/EditStudyMaterialPage";
 
-import FafatQuestionPaper from '../pages/SubjectTeacherPages/PoonamFafat/SEN/questionPaper';
-import FafatAnswerKey from '../pages/SubjectTeacherPages/PoonamFafat/SEN/answerKey';
-import FafatAssignmentPage from "../pages/SubjectTeacherPages/PoonamFafat/SEN/Assignmentpage";
+import FafatETIStudyPage  from "../pages/SubjectTeacherPages/PoonamFafat/ETI/studyPage";
+import FafatETIAddStudymaterial from "../pages/SubjectTeacherPages/PoonamFafat/ETI/StudyMaterialPage";
+import FafatETIEditStudymaterial from "../pages/SubjectTeacherPages/PoonamFafat/ETI/EditStudyMaterialPage";
+
 
 import FafatProfilePage from "../pages/SubjectTeacherPages/PoonamFafat/ProfilePage";
 import FafatLeavePage from '../pages/SubjectTeacherPages/PoonamFafat/LeavePage';
@@ -326,9 +327,10 @@ const ConfigRoutes = () => {
         <Route path="/subject-teacher/poonam-fafat/add-studymaterial" element={<FafatAddStudymaterial />}></Route>
         <Route path="/subject-teacher/poonam-fafat/studymaterial/edit/:id" element={<FafatEditStudymaterial />}></Route>
 
-        <Route path="/subject-teacher/poonam-fafat/question-paper" element={<FafatQuestionPaper />}></Route>
-        <Route path="/subject-teacher/poonam-fafat/answer-key" element={<FafatAnswerKey />}></Route>
-        <Route path="/subject-teacher/poonam-fafat/assignments" element={<FafatAssignmentPage />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/ETI/study-material" element={<FafatETIStudyPage />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/ETI/add-studymaterial" element={<FafatETIAddStudymaterial />}></Route>
+        <Route path="/subject-teacher/poonam-fafat/ETI/studymaterial/edit/:id" element={<FafatETIEditStudymaterial />}></Route>
+
         
         <Route path="/subject-teacher/poonam-fafat/profile" element={<FafatProfilePage />}></Route>
         <Route path="/subject-teacher/poonam-fafat/leave" element={<FafatLeavePage />}></Route>
