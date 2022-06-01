@@ -10,7 +10,7 @@ const Detentionlist = props => (
         {/* <td>{props.exercise.username}</td> */}
         <td>{props.detentionlist.date}</td>
         <td>{props.detentionlist.description}</td>
-        <td><a href={props.detentionlist.link}>{props.detentionlist.link}</a></td>
+        <td><a target="_blank" rel="noopener noreferrer" href={props.detentionlist.link}>{props.detentionlist.link}</a></td>
         
         <td>
             <Link to={"/detentionlist/SY/edit/"+props.detentionlist._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteDetentionlist(props.detentionlist._id) }} ><i className='bx bx-trash'></i></span>
@@ -54,7 +54,7 @@ class DetentionList extends Component {
         return ( 
             <div className='FideologyActivities'>
             <div className="fideo">
-                
+            <h3 className='fidoh3'>Second Year Detention Lists</h3>
                 <table className='detention-table'>
                     <thead className="thead-light">
                         <tr>
