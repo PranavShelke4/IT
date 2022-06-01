@@ -26,8 +26,9 @@ function Facultys(props) {
                 return(
 
                   <tr key={item.id}>
+                  
                 <td>{ item.SrNo }</td>
-                <td>{ item.Image }</td>
+                <td><img src={item.Image} alt="planet" /></td>
                 <td>{ item.Name }</td>
                 <td>{ item.Gender }</td>
                 <td>{ item.Qualification }</td>

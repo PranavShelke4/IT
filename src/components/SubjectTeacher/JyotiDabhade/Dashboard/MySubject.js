@@ -6,21 +6,14 @@ function MySubject() {
     
       <div className="d-flex flex-md-row flex-sm-column flex-wrap justify-content-center" id="row">
         <div className="sub1">
-          <p className="subname">Java Script</p>
-          <p className="subcode">123</p>
+          <p className="subname">EST</p>
+          <p className="subcode">22447</p>
         </div>
         <div className="sub2">
-          <p className="subname">Java Script</p>
-          <p className="subcode">123</p>
+          <p className="subname">VB.Net</p>
+          <p className="subcode">22034</p>
         </div>
-        <div className="sub3">
-          <p className="subname">Java Script</p>
-          <p className="subcode">123</p>
-        </div>
-        <div className="sub4">
-          <p className="subname">Java Script</p>
-          <p className="subcode">123</p>
-        </div>
+        
         <div className="it">
             <h3>Information Technology</h3>
         </div>

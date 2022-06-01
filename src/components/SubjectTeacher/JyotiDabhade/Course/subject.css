@@ -16,7 +16,7 @@
   }
   
   .s1{
-    width: 164px;
+    width: 500px;
     height: 10px;
     margin-left: 15px;
     margin-top: 5px;
@@ -31,7 +31,9 @@
   
   
   }
-  
+  .newS1{
+    width: 700px !important;
+  }
   .attendance{
     width: 246px;
     height: 56px;
