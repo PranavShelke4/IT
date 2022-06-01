@@ -126,15 +126,15 @@ function subNavbar() {
           </li>
 
           <li>
-            <Link to="#">
+            <a target="_blank" href="https://drive.google.com/drive/folders/1VSU4l-07IkyRa06aYnHO_7EnTx85G1Nz?usp=sharing">
               <i className="bx bx-food-menu"></i>
               <span className="link_name">Teaching / Lab Plan</span>
-            </Link>
+            </a>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="#">
+                <a target="_blank" className="link_name" href="https://drive.google.com/drive/folders/1VSU4l-07IkyRa06aYnHO_7EnTx85G1Nz?usp=sharing">
                  Teaching / Lab Plan
-                </Link>
+                </a>
               </li>
             </ul>
           </li>
