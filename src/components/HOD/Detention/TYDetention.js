@@ -10,7 +10,7 @@ const Detentionlist = props => (
         {/* <td>{props.exercise.username}</td> */}
         <td>{props.detentionlist.date}</td>
         <td>{props.detentionlist.description}</td>
-        <td><a href={props.detentionlist.link}>{props.detentionlist.link}</a></td>
+        <td><a  rel="noreferrer" target='_blank' href={props.detentionlist.link}>{props.detentionlist.link}</a></td>
         
     </tr>
 )
@@ -50,7 +50,7 @@ class DetentionList extends Component {
         return ( 
             <div className='FideologyActivities'>
             <div className="fideo">
-                
+            <h3 className='fidoh3'>Third Year Detention Lists</h3>
                 <table className='detention-table'>
                     <thead className="thead-light">
                         <tr>
