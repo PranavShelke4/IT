@@ -9,7 +9,7 @@ import Studentlists from '../../../../api/FirstYear/Studentlist';
 const Studentlist = props => (
     <tr>
         {/* <td>{props.exercise.username}</td> */}
-        <td>{props.studentlist.date.substring(0,4)}</td>
+        <td>{props.studentlist.date}</td>
         <td>{props.studentlist.description}</td>
         <td><a target="_blank" rel="noopener noreferrer" href={props.studentlist.link}>{props.studentlist.link}</a></td>
         
