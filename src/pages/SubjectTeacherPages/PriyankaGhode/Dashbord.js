@@ -12,7 +12,7 @@ function Dashbord() {
         <MySubject />
         {/* <FideologyActivities /> */}
         <ExercisesList />
-        /<LecturesInWeek/>
+        {/* /<LecturesInWeek/> */}
     </>
   )
 }

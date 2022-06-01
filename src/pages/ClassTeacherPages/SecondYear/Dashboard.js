@@ -10,7 +10,7 @@ function Dashboard() {
         <ClassNavbar/>
         <MyClassDetails />
         <StudentAchievement />
-        <ImpNotes />
+        {/* <ImpNotes /> */}
     </>
   )
 }
