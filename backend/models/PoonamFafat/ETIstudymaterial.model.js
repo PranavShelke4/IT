@@ -10,6 +10,6 @@ const studymaterialSchema = new Schema({
     
 });
 
-const Studymaterial = mongoose.model('FafatSub2Studymaterial', studymaterialSchema);
+const Studymaterial = mongoose.model('FafatETIStudymaterial', studymaterialSchema);
 
 module.exports = Studymaterial;

@@ -10,7 +10,7 @@ function subject(){
         <div className='sub_section'>
         <div className="sub sub1">
 
-    <label className="s1">Software Engineering</label>
+    <label className="s1">Emerging Trends In Computer & IT</label>
     <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0'><div className="attendance">
       <span className="attend_label">Attendance</span>
     </div></a>
