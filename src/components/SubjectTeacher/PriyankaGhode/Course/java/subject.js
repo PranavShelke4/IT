@@ -22,9 +22,9 @@ function subject(){
         </Dropdown.Toggle>
 
       <Dropdown.Menu>
-          <Dropdown.Item href="/question-paper">Question Paper</Dropdown.Item>
-          <Dropdown.Item href="/answer-key">Answer Key</Dropdown.Item>
-          <Dropdown.Item href="#/ds-format">DS Format</Dropdown.Item>
+          <Dropdown.Item target='_blank' href="https://drive.google.com/drive/folders/1011dLtQ3L7_JypnmJqd8gLscyL9SQpDJ?usp=sharing">Question Paper</Dropdown.Item>
+          <Dropdown.Item target='_blank'  href="https://drive.google.com/drive/folders/1011dLtQ3L7_JypnmJqd8gLscyL9SQpDJ?usp=sharing">Answer Key</Dropdown.Item>
+          <Dropdown.Item target='_blank' href="#/ds-format">DS Format</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
       </div>
@@ -44,7 +44,7 @@ function subject(){
         </Dropdown.Toggle>
 
       <Dropdown.Menu>
-          <Dropdown.Item href="/assignments">Assignments</Dropdown.Item>
+          <Dropdown.Item target='_blank' href="https://drive.google.com/drive/folders/1B8uYwqdkK8Q7JMnQkPIYhWtRlj5qBrcp?usp=sharing">Assignments</Dropdown.Item>
           <Dropdown.Item href="/subject-teacher/priyanka-ghode/java/study-material">Study Materials</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
