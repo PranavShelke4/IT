@@ -23,7 +23,11 @@ function AssignCT(props) {
               return (
                 <tr key={item.id}>
                   <td>{item.SrNo}</td>
-                  <td>{item.Image}</td>
+                  <td><img
+                      className="facultyImg"
+                      alt="faculty img"
+                      src={item.Image}
+                    /></td>
                   <td>{item.Name}</td>
                   <td>
                     <button onClick={() => {}} className="Assign">
@@ -49,7 +53,11 @@ function AssignCT(props) {
               return (
                 <tr key={item.id}>
                   <td>{item.SrNo}</td>
-                  <td>{item.Image}</td>
+                  <td><img
+                      className="facultyImg"
+                      alt="faculty img"
+                      src={item.Image}
+                    /></td>
                   <td>{item.Name}</td>
                   <td>
                     <button onClick={() => {}} className="Assign">
@@ -73,7 +81,11 @@ function AssignCT(props) {
               return (
                 <tr key={item.id}>
                   <td>{item.SrNo}</td>
-                  <td>{item.Image}</td>
+                  <td><img
+                      className="facultyImg"
+                      alt="faculty img"
+                      src={item.Image}
+                    /></td>
                   <td>{item.Name}</td>
                   <td>
                     <button onClick={() => {}} className="Assign">
