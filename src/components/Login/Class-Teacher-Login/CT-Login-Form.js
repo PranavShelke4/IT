@@ -7,8 +7,8 @@ function CT_Login_Form() {
   function CTlogin(event2){
     event2.preventDefault();
   
-    var email = document.getElementById("email").value;
-       var password = document.getElementById("password").value;
+    var email = document.getElementById("CTemail").value;
+       var password = document.getElementById("CTpassword").value;
        console.log(email);
   
     if (email === "priyanka.kamdi@gmail.com" && password === "psghode@123") {
@@ -31,7 +31,7 @@ function CT_Login_Form() {
         <input
           type="email"
           name="email"
-          id="email"
+          id="CTemail"
           placeholder="Email ID / Username"
           autoFocus
           required
@@ -40,7 +40,7 @@ function CT_Login_Form() {
         <input 
          type="password" 
          name="password"
-         id="password"
+         id="CTpassword"
          placeholder="Enter Password"
          required />
         <a href="/">
