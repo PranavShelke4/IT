@@ -24,6 +24,7 @@ import HODFYFeedbackPage from "../pages/HODPages/FYFeedbackPage"
 import HODSYFeedbackPage from "../pages/HODPages/SYFeedbackPage"
 import HODTYFeedbackPage from "../pages/HODPages/TYFeedbackPage"
 
+import HODProfile from "../pages/HODPages/HODProfile";
 import AssignClassTeacher from '../pages/HODPages/AssignClassTeacher';
 import FacyltyLeave from '../pages/HODPages/Leaves'
 
@@ -514,7 +515,7 @@ const ConfigRoutes = () => {
         <Route path="/HOD/FY-Feedback" element={<HODFYFeedbackPage />}></Route>
         <Route path="/HOD/SY-Feedback" element={<HODSYFeedbackPage />}></Route>
         <Route path="/HOD/TY-Feedback" element={<HODTYFeedbackPage />}></Route>
-
+        <Route path="/HOD/My-Profile" element={<HODProfile />}></Route>
         <Route path="/HOD/Facylty-Leave" element={<FacyltyLeave />}></Route>
 
 
