@@ -50,6 +50,7 @@ const FafatStudymaterialsRouter = require("./routes/PoonamFafat/StudymaterialsRo
 // Priyank Ghode Subject Teacher
 const GhodeExercisesRouter = require("./routes/PriyankaGhode/ExercisesRoutes");
 const GhodeStudymaterialsRouter = require("./routes/PriyankaGhode/StudymaterialsRoutes");
+const GhodeJavaStudymaterialsRouter = require("./routes/PriyankaGhode/JavaStudymaterialsRoutes");
 
 // Jyoti Dabhad Subject Teacher
 const DabhadeExercisesRouter = require("./routes/JyotiDabhade/ExercisesRoutes");
@@ -120,6 +121,7 @@ app.use("/Fafatstudymaterials", FafatStudymaterialsRouter);
 // Priyank Ghode Subject Taecher
 app.use("/Ghodeexercises", GhodeExercisesRouter);
 app.use("/Ghodestudymaterials", GhodeStudymaterialsRouter);
+app.use("/GhodeJavastudymaterials", GhodeJavaStudymaterialsRouter);
 
 // Jyoti Dabhad Subject Taecher
 app.use("/Dabhadeexercises", DabhadeExercisesRouter);
