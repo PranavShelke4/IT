@@ -3,7 +3,7 @@ const FacultyDatass = [
     {
         id: 1,
         SrNo: "1",
-        Image: "12",
+        Image: "https://drive.google.com/file/d/1ZxH9qX01ajrYjj1XkVHrraeuf2SJLN1S/view?usp=sharing",
         Name: "Mrs. Priyanka Ghode",
         Gender: "Female",
         Qualification: "M.Tech (CSE) B.E(IT)",
