@@ -21,12 +21,12 @@ function FacultyCR() {
               <td>1.</td>
               <td>2022</td>
               <td>
-                <a
+                <a target={"_blank"}
                   href={
-                    "https://drive.google.com/file/d/1wW9EtYi5b7dCDiB8sb4nILJjovM2jFUL/view"
-                  }
+                    "https://docs.google.com/spreadsheets/d/1m4TtShwkJnTLUC9qdrcKhW3OCIBrMRqX/edit?usp=sharing&ouid=100148969996896430193&rtpof=true&sd=true"
+                  } rel="noreferrer"
                 >
-                  https://drive.google.com/file/d/1wW9EtYi5b7dCDiB8sb4nILJjovM2jFUL/view
+                  https://docs.google.com/spreadsheets/d/&ouid=100148969996896430193&rtpof=true&sd=true
                 </a>{" "}
               </td>
             </tr>
@@ -44,10 +44,10 @@ function FacultyCR() {
               <td>1.</td>
               <td>2022</td>
               <td>
-                <a
+                <a target={"_blank"}
                   href={
                     "https://drive.google.com/file/d/1wW9EtYi5b7dCDiB8sb4nILJjovM2jFUL/view"
-                  }
+                  } rel="noreferrer"
                 >
                   https://drive.google.com/file/d/1wW9EtYi5b7dCDiB8sb4nILJjovM2jFUL/view
                 </a>{" "}
@@ -67,10 +67,10 @@ function FacultyCR() {
               <td>1.</td>
               <td>2022</td>
               <td>
-                <a
+                <a target={"_blank"}
                   href={
                     "https://drive.google.com/file/d/1wW9EtYi5b7dCDiB8sb4nILJjovM2jFUL/view"
-                  }
+                  } rel="noreferrer"
                 >
                   https://drive.google.com/file/d/1wW9EtYi5b7dCDiB8sb4nILJjovM2jFUL/view
                 </a>{" "}
@@ -90,10 +90,10 @@ function FacultyCR() {
               <td>1.</td>
               <td>2022</td>
               <td>
-                <a
+                <a target={"_blank"}
                   href={
                     "https://drive.google.com/file/d/1wW9EtYi5b7dCDiB8sb4nILJjovM2jFUL/view"
-                  }
+                  } rel="noreferrer"
                 >
                   https://drive.google.com/file/d/1wW9EtYi5b7dCDiB8sb4nILJjovM2jFUL/view
                 </a>{" "}
@@ -113,10 +113,10 @@ function FacultyCR() {
               <td>1.</td>
               <td>2022</td>
               <td>
-                <a
+                <a target={"_blank"}
                   href={
                     "https://drive.google.com/file/d/1wW9EtYi5b7dCDiB8sb4nILJjovM2jFUL/view"
-                  }
+                  } rel="noreferrer"
                 >
                   https://drive.google.com/file/d/1wW9EtYi5b7dCDiB8sb4nILJjovM2jFUL/view
                 </a>{" "}
@@ -136,10 +136,10 @@ function FacultyCR() {
               <td>1.</td>
               <td>2022</td>
               <td>
-                <a
+                <a target={"_blank"}
                   href={
                     "https://drive.google.com/file/d/1wW9EtYi5b7dCDiB8sb4nILJjovM2jFUL/view"
-                  }
+                  } rel="noreferrer"
                 >
                   https://drive.google.com/file/d/1wW9EtYi5b7dCDiB8sb4nILJjovM2jFUL/view
                 </a>{" "}
