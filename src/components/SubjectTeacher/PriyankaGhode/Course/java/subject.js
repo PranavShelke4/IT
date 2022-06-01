@@ -10,7 +10,7 @@ function subject(){
         <div className='sub_section'>
         <div className="sub sub1">
 
-    <label className="s1">C</label>
+    <label className="s1">Java</label>
     <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0'><div className="attendance">
       <span className="attend_label">Attendance</span>
     </div></a>
@@ -45,7 +45,7 @@ function subject(){
 
       <Dropdown.Menu>
           <Dropdown.Item href="/assignments">Assignments</Dropdown.Item>
-          <Dropdown.Item href="/subject-teacher/priyanka-ghode/study-material">Study Materials</Dropdown.Item>
+          <Dropdown.Item href="/subject-teacher/priyanka-ghode/java/study-material">Study Materials</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
 
