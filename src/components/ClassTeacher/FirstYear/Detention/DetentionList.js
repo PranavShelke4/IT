@@ -54,7 +54,7 @@ class DetentionList extends Component {
         return ( 
             <div className='FideologyActivities'>
             <div className="fideo">
-                
+            <h3 className='fidoh3'>First Year Detention Lists</h3>
                 <table className='detention-table'>
                     <thead className="thead-light">
                         <tr>
