@@ -168,7 +168,7 @@ function subNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="#">CR</Link>
+                <Link to="/subject-teacher/priyanka-ghode/cr">CR</Link>
               </li>
               <li>
                 <Link to="/subject-teacher/priyanka-ghode/profile">Profile</Link>
