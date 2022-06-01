@@ -11,7 +11,7 @@ const Studentlist = props => (
         {/* <td>{props.exercise.username}</td> */}
         <td>{props.studentlist.date}</td>
         <td>{props.studentlist.description}</td>
-        <td><a href={props.studentlist.link}>{props.studentlist.link}</a></td>
+        <td><a  rel="noreferrer" target='_blank' href={props.studentlist.link}>{props.studentlist.link}</a></td>
         
        
     </tr>
