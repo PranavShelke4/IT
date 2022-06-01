@@ -2,7 +2,7 @@ import React from 'react'
 import GhodeSubNavbar from "../../../components/SubjectTeacher/PriyankaGhode/GhodeSubNavbar"
 import MySubject from "../../../components/SubjectTeacher/PriyankaGhode/Dashboard/MySubject";
 // import FideologyActivities from "../../components/SubjectTeacher/Dashboard/FideologyActivities";
-//import LecturesInWeek from '../../components/SubjectTeacher/Dashboard/LecturesInWeek';
+import LecturesInWeek from '../../../components/SubjectTeacher/PriyankaGhode/Dashboard/LecturesInWeek';
 import ExercisesList from '../../../components/SubjectTeacher/PriyankaGhode/Fideology/ExercisesList';
 
 function Dashbord() {
@@ -12,7 +12,7 @@ function Dashbord() {
         <MySubject />
         {/* <FideologyActivities /> */}
         <ExercisesList />
-        {/* /<LecturesInWeek/> */}
+        /<LecturesInWeek/>
     </>
   )
 }
