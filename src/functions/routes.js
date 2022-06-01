@@ -179,7 +179,10 @@ import DabhadeDashbord from '../pages/SubjectTeacherPages/JyotiDabhade/Dashbord'
 import DabhadeCreateExercise from "../pages/SubjectTeacherPages/JyotiDabhade/FideologyForm";
 import DabhadeEditExercise from "../pages/SubjectTeacherPages/JyotiDabhade/EditPedeology";
 
-import DabhadeStudentDetail from '../pages/SubjectTeacherPages/JyotiDabhade/studentDetail';
+import DabhadeFYStudents from "../pages/SubjectTeacherPages/JyotiDabhade/StudentsPages/FYStuddentsPage";
+import DabhadeSYStudents from "../pages/SubjectTeacherPages/JyotiDabhade/StudentsPages/SYStudentsPage";
+import DabhadeTYStudents from "../pages/SubjectTeacherPages/JyotiDabhade/StudentsPages/TYStudentsPage";
+
 import DabhadeCourse from '../pages/SubjectTeacherPages/JyotiDabhade/coursePage';
 
 import DabhadeStudyPage  from "../pages/SubjectTeacherPages/JyotiDabhade/studyPage";
@@ -336,7 +339,10 @@ const ConfigRoutes = () => {
         <Route path="/subject-teacher/jyoti-dabhade/fideology-form" element={<DabhadeCreateExercise />}></Route>
         <Route path="/subject-teacher/jyoti-dabhade/edit/:id" element={<DabhadeEditExercise/>}></Route>
         
-        <Route path="/subject-teacher/jyoti-dabhade/student-details" element={<DabhadeStudentDetail />}></Route>
+        <Route path="/subject-teacher/jyoti-dabhade/FY-Students" element={<DabhadeFYStudents />}></Route>
+        <Route path="/subject-teacher/jyoti-dabhade/SY-Students" element={<DabhadeSYStudents />}></Route>
+        <Route path="/subject-teacher/jyoti-dabhade/TY-Students" element={<DabhadeTYStudents />}></Route>
+
         <Route path="/subject-teacher/jyoti-dabhade/course" element={<DabhadeCourse />}></Route>
         <Route path="/subject-teacher/jyoti-dabhade/study-material" element={<DabhadeStudyPage />}></Route>
         <Route path="/subject-teacher/jyoti-dabhade/add-studymaterial" element={<DabhadeAddStudymaterial />}></Route>

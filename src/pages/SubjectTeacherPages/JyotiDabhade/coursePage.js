@@ -6,8 +6,7 @@ function coursePage(){
     return (<div>
         <DabhdeSubNavbar />
         <Subject />
-        <Subject />
-        <Subject />
+
     </div>);
 
 }
