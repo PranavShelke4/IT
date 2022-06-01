@@ -126,13 +126,13 @@ function subNavbar() {
           </li>
 
           <li>
-            <a target="_blank" href="https://drive.google.com/drive/folders/1VSU4l-07IkyRa06aYnHO_7EnTx85G1Nz?usp=sharing">
+            <a rel="noreferrer" target='_blank' href="https://drive.google.com/drive/folders/1VSU4l-07IkyRa06aYnHO_7EnTx85G1Nz?usp=sharing">
               <i className="bx bx-food-menu"></i>
               <span className="link_name">Teaching / Lab Plan</span>
             </a>
             <ul className="sub-menu blank">
               <li>
-                <a target="_blank" className="link_name" href="https://drive.google.com/drive/folders/1VSU4l-07IkyRa06aYnHO_7EnTx85G1Nz?usp=sharing">
+                <a rel="noreferrer" target='_blank' className="link_name" href="https://drive.google.com/drive/folders/1VSU4l-07IkyRa06aYnHO_7EnTx85G1Nz?usp=sharing">
                  Teaching / Lab Plan
                 </a>
               </li>
@@ -209,7 +209,7 @@ function subNavbar() {
                 <img alt="" src={GhodeMadamImg} />
               </div>
               <div className="name-job">
-                <div className="profile_name">Mrs. P. S. ghode</div>
+                <div className="profile_name">Mrs. P. S. Ghode</div>
                 <div className="job">Lecturer in IT</div>
               </div>
             </div>
