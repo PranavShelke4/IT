@@ -1,7 +1,7 @@
 import React from "react";
 import "./HODNavbar.css";
 import {Link} from 'react-router-dom';
-import GhodeMadamimg from '../../assets/img/ghode-madam.svg'
+import HODImg from '../../assets/img/hod.png'
 
 
 function eventHandle() {
@@ -180,13 +180,13 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <Link to="/">
+            <Link to="/HOD/My-Profile">
               <i class="bx bx-user-circle"></i>
               <span class="link_name">My Profile</span>
             </Link>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="/">
+                <Link class="link_name" to="/HOD/My-Profile">
                   My Profile
                 </Link>
               </li>
@@ -211,7 +211,7 @@ function classTeacherNavbar() {
           <li>
             <div class="profile-details">
               <div class="profile-content">
-                <img alt="" src={GhodeMadamimg} />
+                <img alt="" src={HODImg} />
               </div>
               <div class="name-job">
                 <div class="profile_name">Dr.D.N.Rewadkar</div>
