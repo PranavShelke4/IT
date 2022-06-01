@@ -12,7 +12,7 @@ function HODLoginForm() {
        console.log(email);
   
     if (email === "deep.rew@gmail.com" && password === "dnrewadkar@123") {
-      window.location.href="/class-teacher/SY/dashboard";
+      window.location.href="/HOD/Dashbord";
     }else{
      alert("Please enter valid information");
      return;
