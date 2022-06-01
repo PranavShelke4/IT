@@ -52,6 +52,7 @@ const FafatETIStudymaterialsRouter = require("./routes/PoonamFafat/ETIStudymater
 const GhodeExercisesRouter = require("./routes/PriyankaGhode/ExercisesRoutes");
 const GhodeStudymaterialsRouter = require("./routes/PriyankaGhode/StudymaterialsRoutes");
 const GhodeJavaStudymaterialsRouter = require("./routes/PriyankaGhode/JavaStudymaterialsRoutes");
+const GhodeLeavesRouter = require("./routes/PriyankaGhode/GhodeleavesRoutes");
 
 // Jyoti Dabhad Subject Teacher
 const DabhadeExercisesRouter = require("./routes/JyotiDabhade/ExercisesRoutes");
@@ -82,6 +83,8 @@ connection.once("open", () => {
 
 
 
+
+//=========================================================================================
 
 
 
@@ -124,6 +127,7 @@ app.use("/FafatETIstudymaterials", FafatETIStudymaterialsRouter);
 app.use("/Ghodeexercises", GhodeExercisesRouter);
 app.use("/Ghodestudymaterials", GhodeStudymaterialsRouter);
 app.use("/GhodeJavastudymaterials", GhodeJavaStudymaterialsRouter);
+app.use("/Ghodeleaves", GhodeLeavesRouter);
 
 // Jyoti Dabhad Subject Taecher
 app.use("/Dabhadeexercises", DabhadeExercisesRouter);
