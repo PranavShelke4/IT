@@ -1,60 +1,84 @@
-import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
-// import { useHistory } from "react-router-dom";
 
-import Ghodeleave from "../../../../api/GhodeMadam/Ghodeleave"
+import Ghodeleave from "../../../../api/GhodeMadam/Ghodeleave";
+
+import { useParams } from "react-router-dom";
+import "../Fideology/createPedelogy.css";
 
 function Cancel(){
-  window.location.href="/subject-teacher/priyanka-ghode/leave"
+  window.location.href="/HOD/Facylty-Leave";
 }
 
-function  AddGhodeleave() {
+function  EditGhodeleave() {
 
-  const [date,SetDate] = useState("");
-  const [fnameName,SetFnameName] = useState("");
-  const [lnameName,SetLnameName] = useState("");
-  const [designationName,SetDesignationName] = useState("");
-  const [NoOfDays,SetNoOfDays] = useState("");
-  const [TypeOfDays,SetTypeOfDays] = useState("");
-  const [emailName,SetEmailName] = useState("");
-  const [resName,SetResName] = useState("pending");
+    // const [date,SetDate] = useState("");
+    // const [fnameName,SetFnameName] = useState("");
+    // const [lnameName,SetLnameName] = useState("");
+    // const [designationName,SetDesignationName] = useState("");
+    // const [NoOfDays,SetNoOfDays] = useState("");
+    // const [TypeOfDays,SetTypeOfDays] = useState("");
+    // const [emailName,SetEmailName] = useState("");
+     const [resName,SetResName] = useState("");
+  
+  const params = useParams();
+
+  useEffect(()=>{
+    const HandelGetReq= async ()=>{
+        console.log(params.id)
+        const res = await Ghodeleave.get(`/get-ghodeleave/${params.id}`);
+        console.log("res");
+        console.log(res.data)
+        
+        // SetDate( res.data.date);
+        // SetFnameName( res.data.fname);
+        // SetLnameName( res.data.lname);
+        // SetDesignationName( res.data.designation);
+        // SetNoOfDays( res.data.NoDays);
+        // SetTypeOfDays( res.data.TypeDays);
+        // SetEmailName(res.data.email);
+        SetResName(res.data.response);
+    }
+    HandelGetReq();
+  },[SetResName, params.id]);
 
 
-
-  // const history = useHistory();
-//avadhut is here
-  //rajesh is here
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
   const onSubmit = async() =>{
-    const ghodeleave = {
-      date:date,
-      fname:fnameName,
-      lname:lnameName,
-      designation: designationName,
-      NoDays: NoOfDays,
-      TypeDays: TypeOfDays,
-      email:emailName,
-      response: resName
+    // const formdata = new FormData();
+    // formdata.append("date",date);
+    // formdata.append("activity",activityName);
+    // formdata.append("subject",subName);
+    // formdata.append("group",groupNo);
+    
+    const formdata = {
+        // "date":date,
+        // "fname":fnameName,
+        // "lname":lnameName,
+        // "designation":designationName,
+        // "NoOfDays":NoOfDays,
+        // "TypeOfLeave":TypeOfDays,
+        // "email":emailName,
+        "response":resName,
     }
-
-    console.log(ghodeleave);
-   const res = await Ghodeleave.post("/add-ghodeleave",ghodeleave);
+    window.location.href="/HOD/Facylty-Leave";
+    console.log("req")
+    console.log(params.id)
+    console.log(formdata)
+   const res = await Ghodeleave.patch(`/update-ghodeleave/${params.id}`,formdata);
    console.log(res.data.msg)
-   window.location.href="/subject-teacher/priyanka-ghode/leave";
-  //  if(res.data.msg =="success"){
-  //   //  history.push("/subject-teacher-dashboard");
-  //  }
+   
+
   }
 
   return (
     <div className='main-sec'>
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
-        <div>
+        {/* <div>
           <label>Date</label><br/>
           <input 
           className='input-box'
@@ -137,7 +161,7 @@ function  AddGhodeleave() {
             SetEmailName(e.target.value);
           }}
           />
-        </div>
+        </div> */}
         <div>
           <label>Response</label><br/>
           <input 
@@ -145,14 +169,12 @@ function  AddGhodeleave() {
           type ="text"
           name ="activityName"
           value = {resName}
-          disabled={true}
           onChange={(e)=>{
             SetResName(e.target.value);
           }}
           />
         </div>
-       
-
+        
         <input className ="subButton" type="submit" value="Submit"/>
         <input className ="cancelButton" type="button" onClick={Cancel} value="Cancel"/>
       </form>
@@ -161,4 +183,4 @@ function  AddGhodeleave() {
   )
 }
 
-export default AddGhodeleave;     
+export default EditGhodeleave;     
