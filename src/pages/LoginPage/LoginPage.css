@@ -62,15 +62,24 @@
   margin-bottom: 4.3rem;
 }
 
+.tabbb{
+  margin-bottom: -10rem !important;
+
+}
+
+.nav-item{
+  margin-bottom: .7rem;
+}
+
 .nav-tabs{
   width: 100%;
   justify-content: center;
 }
 
 #noanim-tab-example-tab-HOD, #noanim-tab-example-tab-Class-Teacher, #noanim-tab-example-tab-Subject-Teacher {
-  margin-top: -3.4rem !important;
+ 
   width: auto;
-  margin-bottom: 3.7rem;
+  /* margin-bottom: 3.7rem; */
 }
 
 .nav-link{
