@@ -140,15 +140,15 @@ function subNavbar() {
           </li>
 
           <li>
-            <Link to="#">
+            <a target='_blank' href="https://drive.google.com/drive/folders/1Fy5jKLQaovn-Vk9sTrk5aib2y9282t6m?usp=sharing">
               <i className="bx bx-spreadsheet"></i>
               <span className="link_name">MSBTE Result</span>
-            </Link>
+            </a>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="#">
+                <a target='_blank' className="link_name" href="https://drive.google.com/drive/folders/1Fy5jKLQaovn-Vk9sTrk5aib2y9282t6m?usp=sharing">
                 MSBTE Result
-                </Link>
+                </a>
               </li>
             </ul>
           </li>
