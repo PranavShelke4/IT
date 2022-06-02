@@ -24,7 +24,7 @@ function subject(){
       <Dropdown.Menu>
           <Dropdown.Item target='_blank' href="https://drive.google.com/drive/folders/1011dLtQ3L7_JypnmJqd8gLscyL9SQpDJ?usp=sharing">Question Paper</Dropdown.Item>
           <Dropdown.Item target='_blank'  href="https://drive.google.com/drive/folders/1011dLtQ3L7_JypnmJqd8gLscyL9SQpDJ?usp=sharing">Answer Key</Dropdown.Item>
-          <Dropdown.Item target='_blank' href="#/ds-format">DS Format</Dropdown.Item>
+          <Dropdown.Item rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0'>DS Format</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
       </div>
