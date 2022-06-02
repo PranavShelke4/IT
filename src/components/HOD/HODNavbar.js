@@ -113,15 +113,15 @@ function classTeacherNavbar() {
           </li>
 
           <li>
-            <Link to="#">
+            <a target="_blank" href="https://drive.google.com/drive/folders/1NO1RQzRzgENYkR39ATLQHSbxZitzxSLP?usp=sharing">
               <i class="bx bx-notepad"></i>
               <span class="link_name">Result Analysis</span>
-            </Link>
+            </a>
             <ul class="sub-menu blank">
               <li>
-                <Link class="link_name" to="#">
+                <a class="link_name" target="_blank" href="https://drive.google.com/drive/folders/1NO1RQzRzgENYkR39ATLQHSbxZitzxSLP?usp=sharing">
                 Result Analysis
-                </Link>
+                </a>
               </li>
             </ul>
           </li>
