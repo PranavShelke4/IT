@@ -205,7 +205,10 @@ import BodheDashbord from '../pages/SubjectTeacherPages/YogeshBodhe/Dashbord';
 import BodheCreateExercise from "../pages/SubjectTeacherPages/YogeshBodhe/FideologyForm";
 import BodheEditExercise from "../pages/SubjectTeacherPages/YogeshBodhe/EditPedeology";
 
-import BodheStudentDetail from '../pages/SubjectTeacherPages/YogeshBodhe/studentDetail';
+import BodheFYStudents from "../pages/SubjectTeacherPages/YogeshBodhe/StudentsPages/FYStuddentsPage"
+import BodheSYStudents from "../pages/SubjectTeacherPages/YogeshBodhe/StudentsPages/SYStudentsPage";
+import BodheTYStudents from "../pages/SubjectTeacherPages/YogeshBodhe/StudentsPages/TYStudentsPage";
+
 import BodheCourse from '../pages/SubjectTeacherPages/YogeshBodhe/coursePage';
 
 import BodheStudyPage  from "../pages/SubjectTeacherPages/YogeshBodhe/studyPage";
@@ -362,7 +365,10 @@ const ConfigRoutes = () => {
         <Route path="/subject-teacher/yogesh-bodhe/fideology-form" element={<BodheCreateExercise />}></Route>
         <Route path="/subject-teacher/yogesh-bodhe/edit/:id" element={<BodheEditExercise/>}></Route>
         
-        <Route path="/subject-teacher/yogesh-bodhe/student-details" element={<BodheStudentDetail />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/FY-Students" element={<BodheFYStudents />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/SY-Students" element={<BodheSYStudents />}></Route>
+        <Route path="/subject-teacher/yogesh-bodhe/TY-Students" element={<BodheTYStudents />}></Route>
+
         <Route path="/subject-teacher/yogesh-bodhe/course" element={<BodheCourse />}></Route>
         <Route path="/subject-teacher/yogesh-bodhe/study-material" element={<BodheStudyPage />}></Route>
         <Route path="/subject-teacher/yogesh-bodhe/add-studymaterial" element={<BodheAddStudymaterial />}></Route>
