@@ -117,27 +117,27 @@ function subNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="#">First Year</Link>
+              <a href="https://drive.google.com/file/d/1chDe5cx6ljpuNmQ1nOH8MrPsq7F149MZ/view?" rel="noreferrer" target='_blank'>First Year</a>
               </li>
               <li>
-                <Link to="#">Second Year</Link>
+              <a rel="noreferrer" target='_blank' href="https://drive.google.com/file/d/1w_1HrLTeJM02rtjA6pjyGuzv-2N-F7dp/view">Second Year</a>
               </li>
               <li>
-                <Link to="#">Third Year</Link>
+              <a rel="noreferrer" target='_blank' href="https://drive.google.com/file/d/1u9kw1RYBUUFIw8cKsDvTdHjid0yGAcol/view">Third Year</a>
               </li>
             </ul>
           </li>
 
           <li>
-            <Link to="#">
+          <a rel="noreferrer" target='_blank' href="https://drive.google.com/drive/folders/1VSU4l-07IkyRa06aYnHO_7EnTx85G1Nz?usp=sharing">
               <i className="bx bx-food-menu"></i>
               <span className="link_name">Teaching / Lab Plan</span>
-            </Link>
+            </a>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="#">
+              <a rel="noreferrer" target='_blank' className="link_name" href="https://drive.google.com/drive/folders/1VSU4l-07IkyRa06aYnHO_7EnTx85G1Nz?usp=sharing">
                  Teaching / Lab Plan
-                </Link>
+                </a>
               </li>
             </ul>
           </li>

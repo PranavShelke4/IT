@@ -6,8 +6,7 @@ function coursePage(){
     return (<div>
         <BodheSubNavbar />
         <Subject />
-        <Subject />
-        <Subject />
+
     </div>);
 
 }
