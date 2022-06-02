@@ -10,6 +10,8 @@ const ghodeleaveSchema = new Schema({
     NoDays: {type: Number, required: true},
     TypeDays: {type: String, required: true},
     email: {type: String,required: true},
+    response: {type: String,required: true}
+
     
 });
 

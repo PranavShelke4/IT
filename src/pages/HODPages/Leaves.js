@@ -1,6 +1,6 @@
 import React from 'react'
 import HODNavbar from "../../components/HOD/HODNavbar"
-import LeavesHOD from '../../components/HOD/Dashboard/LeavesHOD'
+import LeavesHOD from '../../components/HOD/Leaves/leaveForm'
 
 function Leaves() {
   return (
