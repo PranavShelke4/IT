@@ -212,10 +212,6 @@ import BodheStudyPage  from "../pages/SubjectTeacherPages/YogeshBodhe/studyPage"
 import BodheAddStudymaterial from "../pages/SubjectTeacherPages/YogeshBodhe/StudyMaterialPage";
 import BodheEditStudymaterial from "../pages/SubjectTeacherPages/YogeshBodhe/EditStudyMaterialPage";
 
-import BodheQuestionPaper from '../pages/SubjectTeacherPages/YogeshBodhe/questionPaper';
-import BodheAnswerKey from '../pages/SubjectTeacherPages/YogeshBodhe/answerKey';
-import BodheAssignmentPage from "../pages/SubjectTeacherPages/YogeshBodhe/Assignmentpage";
-
 import BodheProfilePage from "../pages/SubjectTeacherPages/YogeshBodhe/ProfilePage";
 import BodheLeavePage from '../pages/SubjectTeacherPages/YogeshBodhe/LeavePage';
 
@@ -372,10 +368,6 @@ const ConfigRoutes = () => {
         <Route path="/subject-teacher/yogesh-bodhe/add-studymaterial" element={<BodheAddStudymaterial />}></Route>
         <Route path="/subject-teacher/yogesh-bodhe/studymaterial/edit/:id" element={<BodheEditStudymaterial />}></Route>
 
-        <Route path="/subject-teacher/yogesh-bodhe/question-paper" element={<BodheQuestionPaper />}></Route>
-        <Route path="/subject-teacher/yogesh-bodhe/answer-key" element={<BodheAnswerKey />}></Route>
-        <Route path="/subject-teacher/yogesh-bodhe/assignments" element={<BodheAssignmentPage />}></Route>
-        
         <Route path="/subject-teacher/yogesh-bodhe/profile" element={<BodheProfilePage />}></Route>
         <Route path="/subject-teacher/yogesh-bodhe/leave" element={<BodheLeavePage />}></Route>
 
