@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-import Ghodeleaves from '../../../../api/GhodeMadam/Ghodeleave';
+import Ghodeleaves from '../../../api/GhodeMadam/Ghodeleave';
 
 const Ghodeleave = props => (
     <tr>
@@ -14,9 +14,10 @@ const Ghodeleave = props => (
         <td>{props.ghodeleave.NoDays}</td>
         <td>{props.ghodeleave.TypeDays}</td>
         <td>{props.ghodeleave.email}</td>
+        <td>{props.ghodeleave.response}</td>
     
         <td>
-            <Link to={"/subject-teacher/priyanka-ghode/edit-leave/"+props.ghodeleave._id}><i className='bx bx-edit-alt'></i></Link> | <span onClick={() => {props.deleteGhodeleave(props.ghodeleave._id) }} ><i className='bx bx-trash'></i></span>
+            <Link to={"/HOD/edit-leave/"+props.ghodeleave._id}><i className='bx bx-edit-alt'></i></Link> 
             {/* <button className="btn btn-secondary"><Link to={"/edit/"+props.exercise._id} style={{color:"white"}}>Edit</Link></button> | <button className="btn btn-danger" onClick={() => {props.deleteExercise(props.exercise._id) }}>Delete</button> */}
         </td>
     </tr>
@@ -68,6 +69,7 @@ class leaveForm extends Component {
                             <th>No Of Days</th>
 		                    <th>Type Of Days</th>
                             <th>Email</th>
+                            <th>Response</th>
 		                    <th>Actions</th>
                         </tr>
                     </thead>
@@ -75,7 +77,7 @@ class leaveForm extends Component {
                         {this.ghodeleavesList()}
                     </tbody>
                 </table>
-                <Link to={'/subject-teacher/priyanka-ghode/add-leave'}><div className='add'>Add</div></Link>
+                {/* <Link to={'/subject-teacher/priyanka-ghode/add-leave'}><div className='add'>Add</div></Link> */}
             </div>
             </div>
          );

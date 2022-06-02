@@ -27,7 +27,7 @@ import HODTYFeedbackPage from "../pages/HODPages/TYFeedbackPage"
 import HODProfile from "../pages/HODPages/HODProfile";
 import AssignClassTeacher from '../pages/HODPages/AssignClassTeacher';
 import FacyltyLeave from '../pages/HODPages/Leaves'
-
+import EditHODleave from "../pages/HODPages/EditLeavePage";
 
 
 //Third Year class Teacher routes 
@@ -243,7 +243,7 @@ import GhodeProfilePage from "../pages/SubjectTeacherPages/PriyankaGhode/Profile
 import GhodeCR from '../pages/SubjectTeacherPages/PriyankaGhode/CRPage';
 import GhodeLeavePage from '../pages/SubjectTeacherPages/PriyankaGhode/LeavePage';
 import AddGhodeleave from "../pages/SubjectTeacherPages/PriyankaGhode/AddLeavePage";
-import EditGhodeleave from "../pages/SubjectTeacherPages/PriyankaGhode/EditLeavePage";
+
 
 
 // Deepak Rewadkar Routes.....
@@ -403,7 +403,7 @@ const ConfigRoutes = () => {
         
         <Route path="/subject-teacher/priyanka-ghode/leave" element={<GhodeLeavePage />}></Route>
         <Route path="/subject-teacher/priyanka-ghode/add-leave" element={<AddGhodeleave />}></Route>
-        <Route path="/subject-teacher/priyanka-ghode/edit-leave/:id" element={<EditGhodeleave />}></Route>
+        
 
          {/* Deepak Rewa Routes */}
          <Route path="/subject-teacher/deepak-rewadkar/dashboard" element={<RewadkarDashbord />}></Route>
@@ -522,6 +522,7 @@ const ConfigRoutes = () => {
         <Route path="/HOD/TY-Feedback" element={<HODTYFeedbackPage />}></Route>
         <Route path="/HOD/My-Profile" element={<HODProfile />}></Route>
         <Route path="/HOD/Facylty-Leave" element={<FacyltyLeave />}></Route>
+        <Route path="/HOD/edit-leave/:id" element={<EditHODleave />}></Route>
 
 
         {/* <Route path="/SignUp" element={<SignUpPage />}></Route> */}

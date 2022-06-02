@@ -7,18 +7,19 @@ import { useParams } from "react-router-dom";
 import "../Fideology/createPedelogy.css";
 
 function Cancel(){
-  window.location.href="/subject-teacher/priyanka-ghode/leave";
+  window.location.href="/HOD/Facylty-Leave";
 }
 
 function  EditGhodeleave() {
 
-    const [date,SetDate] = useState("");
-    const [fnameName,SetFnameName] = useState("");
-    const [lnameName,SetLnameName] = useState("");
-    const [designationName,SetDesignationName] = useState("");
-    const [NoOfDays,SetNoOfDays] = useState("");
-    const [TypeOfDays,SetTypeOfDays] = useState("");
-    const [emailName,SetEmailName] = useState("");
+    // const [date,SetDate] = useState("");
+    // const [fnameName,SetFnameName] = useState("");
+    // const [lnameName,SetLnameName] = useState("");
+    // const [designationName,SetDesignationName] = useState("");
+    // const [NoOfDays,SetNoOfDays] = useState("");
+    // const [TypeOfDays,SetTypeOfDays] = useState("");
+    // const [emailName,SetEmailName] = useState("");
+     const [resName,SetResName] = useState("");
   
   const params = useParams();
 
@@ -29,16 +30,17 @@ function  EditGhodeleave() {
         console.log("res");
         console.log(res.data)
         
-        SetDate( res.data.date);
-        SetFnameName( res.data.fname);
-        SetLnameName( res.data.lname);
-        SetDesignationName( res.data.designation);
-        SetNoOfDays( res.data.NoDays);
-        SetTypeOfDays( res.data.TypeDays);
-        SetEmailName(res.data.email);
+        // SetDate( res.data.date);
+        // SetFnameName( res.data.fname);
+        // SetLnameName( res.data.lname);
+        // SetDesignationName( res.data.designation);
+        // SetNoOfDays( res.data.NoDays);
+        // SetTypeOfDays( res.data.TypeDays);
+        // SetEmailName(res.data.email);
+        SetResName(res.data.response);
     }
     HandelGetReq();
-  },[SetDate,SetFnameName,SetLnameName,SetDesignationName,SetNoOfDays,SetTypeOfDays,SetEmailName, params.id]);
+  },[SetResName, params.id]);
 
 
   const {
@@ -54,15 +56,16 @@ function  EditGhodeleave() {
     // formdata.append("group",groupNo);
     
     const formdata = {
-        "date":date,
-        "fname":fnameName,
-        "lname":lnameName,
-        "designation":designationName,
-        "NoOfDays":NoOfDays,
-        "TypeOfLeave":TypeOfDays,
-        "email":emailName,
+        // "date":date,
+        // "fname":fnameName,
+        // "lname":lnameName,
+        // "designation":designationName,
+        // "NoOfDays":NoOfDays,
+        // "TypeOfLeave":TypeOfDays,
+        // "email":emailName,
+        "response":resName,
     }
-    window.location.href="/subject-teacher/priyanka-ghode/leave";
+    window.location.href="/HOD/Facylty-Leave";
     console.log("req")
     console.log(params.id)
     console.log(formdata)
@@ -76,7 +79,7 @@ function  EditGhodeleave() {
     <div className='main-sec'>
     <div className="upd_section">
       <form onSubmit ={handleSubmit(onSubmit)} >
-        <div>
+        {/* <div>
           <label>Date</label><br/>
           <input 
           className='input-box'
@@ -157,6 +160,18 @@ function  EditGhodeleave() {
           value = {emailName}
           onChange={(e)=>{
             SetEmailName(e.target.value);
+          }}
+          />
+        </div> */}
+        <div>
+          <label>Response</label><br/>
+          <input 
+          className='input-box'
+          type ="text"
+          name ="activityName"
+          value = {resName}
+          onChange={(e)=>{
+            SetResName(e.target.value);
           }}
           />
         </div>

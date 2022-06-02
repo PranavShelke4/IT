@@ -10,9 +10,10 @@ exports.postGhodeleave = (req, res) => {
   const NoDays = req.body.NoDays;
   const TypeDays = req.body.TypeDays;
   const email = req.body.email;
+  const response = req.body.response;
   
 
-  const newGhodeleave = new Ghodeleaves({ date, fname, lname, designation, NoDays, TypeDays, email});
+  const newGhodeleave = new Ghodeleaves({ date, fname, lname, designation, NoDays, TypeDays, email,response});
 
   newGhodeleave
     .save()
@@ -54,7 +55,8 @@ exports.updateGhodeleave = (req, res) => {
             designation: req.body.designation,
             NoDays: req.body.NoDays,
             TypeDays: req.body.TypeDays,
-            email: req.body.email
+            email: req.body.email,
+            response: req.body.response
             
           },(error,data)=>{
               if(error){

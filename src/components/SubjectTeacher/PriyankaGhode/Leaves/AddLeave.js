@@ -17,6 +17,7 @@ function  AddGhodeleave() {
   const [NoOfDays,SetNoOfDays] = useState("");
   const [TypeOfDays,SetTypeOfDays] = useState("");
   const [emailName,SetEmailName] = useState("");
+  const [resName,SetResName] = useState("pending");
 
 
 
@@ -36,7 +37,8 @@ function  AddGhodeleave() {
       designation: designationName,
       NoDays: NoOfDays,
       TypeDays: TypeOfDays,
-      email:emailName
+      email:emailName,
+      response: resName
     }
 
     console.log(ghodeleave);
@@ -136,7 +138,21 @@ function  AddGhodeleave() {
           }}
           />
         </div>
-        
+        <div>
+          <label>Response</label><br/>
+          <input 
+          className='input-box'
+          type ="text"
+          name ="activityName"
+          value = {resName}
+          
+          onChange={(e)=>{
+            SetResName(e.target.value);
+          }}
+          />
+        </div>
+       
+
         <input className ="subButton" type="submit" value="Submit"/>
         <input className ="cancelButton" type="button" onClick={Cancel} value="Cancel"/>
       </form>
