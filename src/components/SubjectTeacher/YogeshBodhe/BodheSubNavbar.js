@@ -212,7 +212,7 @@ function subNavbar() {
                 <img alt="" src={BodheSirImg} />
               </div>
               <div className="name-job">
-                <div className="profile_name">Mrs. Sneha D. Raut</div>
+                <div className="profile_name">Mr. Y. U. Bodhe</div>
                 <div className="job">Lecturer in IT</div>
               </div>
             </div>
