@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { useForm } from "react-hook-form";
 // import { useHistory } from "react-router-dom";
+import "./AddLeave.css"
 
 import Ghodeleave from "../../../../api/GhodeMadam/Ghodeleave"
 
@@ -19,7 +20,9 @@ function  AddGhodeleave() {
   const [emailName,SetEmailName] = useState("");
   const [resName,SetResName] = useState("pending");
 
-
+  const handelLeave = (e) => {
+    SetTypeOfDays(e.target.value);
+  };
 
   // const history = useHistory();
 //avadhut is here
@@ -116,7 +119,7 @@ function  AddGhodeleave() {
         </div>
         <div>
           <label>Type of Leave</label><br/>
-          <input 
+          {/* <input 
           className='input-box'
           type ="text"
           name ="activityName"
@@ -124,7 +127,20 @@ function  AddGhodeleave() {
           onChange={(e)=>{
             SetTypeOfDays(e.target.value);
           }}
-          />
+          /> */}
+
+                    <select
+                        className='input-box res-box'
+                        value={TypeOfDays}
+                        required
+                        onChange={handelLeave}
+                        
+                      >
+                        <option value=""> </option>
+                        <option value="Casual">Casual</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Other">Earned</option>
+                      </select>
         </div>
         <div>
           <label>Email</label><br/>
