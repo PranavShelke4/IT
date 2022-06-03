@@ -87,7 +87,7 @@ function subNavbar() {
             </ul>
           </li>
 
-          <li>
+          {/* <li>
             <a rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1C7-8spoquQK5-eqn5A2549EhT5bIS9wJ/edit?usp=sharing&ouid=100148969996896430193&rtpof=true&sd=true" >
               <i className="bx bx-file-find"></i>
               <span className="link_name">CPP Project</span>
@@ -97,7 +97,7 @@ function subNavbar() {
               <a className="link_name" rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1C7-8spoquQK5-eqn5A2549EhT5bIS9wJ/edit?usp=sharing&ouid=100148969996896430193&rtpof=true&sd=true" >CPP Project</a>
               </li>
             </ul>
-          </li>
+          </li> */}
 
           <li>
             <div className="iocn-link">

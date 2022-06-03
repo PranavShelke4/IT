@@ -24,7 +24,17 @@
     border-radius: 6px;
     box-shadow: 5px 12px 23px rgba(201, 176, 255, 0.25);
   }
-  
+  .add-files{
+    margin-left: 65rem;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.5rem;
+    padding-right: -5rem;
+    background-color: #11101d;
+    color: white;
+  }
   td {
     border: 1px solid #dddddd;
     text-align: center;

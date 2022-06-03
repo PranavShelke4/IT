@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import axios from "axios";
 //import './ExercisesList.css';
-
+import "./studyMaterial.css"
 import Studymaterials from '../../../../../api/GhodeMadam/Studymaterial';
 
 const Studymaterial = props => (
@@ -55,6 +55,7 @@ class StudyMaterial extends Component {
             <div className='FideologyActivities'>
             <div className="fideo">
                 <h3 className='fidoh3'>Study Material</h3>
+                <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1Q6jQ_HhDo44eU7EsTvATLq592UQFcBnV?usp=sharing"><div className='add-files'>Files</div></a>
                 <table>
                     <thead className="thead-light">
                         <tr>
