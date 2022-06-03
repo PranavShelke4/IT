@@ -163,9 +163,12 @@ function  EditGhodeleave() {
           }}
           />
         </div> */}
+
+                     
+
         <div>
           <label>Response</label><br/>
-          <input 
+          {/* <input 
           className='input-box'
           type ="text"
           name ="activityName"
@@ -173,7 +176,23 @@ function  EditGhodeleave() {
           onChange={(e)=>{
             SetResName(e.target.value);
           }}
-          />
+          /> */}
+
+                      <select
+                      className='input-box res-box'
+                        value = {resName}
+                        required
+                        onChange={(e)=>{
+                          SetResName(e.target.value);
+                        }}
+                        
+                      >
+                        <option value=""></option>
+                        <option value="Accepted">Accepted</option>
+                        <option value="Rejected">Rejected</option>
+                        
+                      </select>
+
         </div>
         
         <input className ="subButton" type="submit" value="Submit"/>
