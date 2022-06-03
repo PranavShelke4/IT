@@ -140,14 +140,14 @@ function subNavbar() {
           </li>
 
           <li>
-            <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0'>
+            <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1QSjpK5C75lgn5rx_DTA4GLBc3-m3TbLc/edit?usp=sharing&ouid=100148969996896430193&rtpof=true&sd=true'>
               <i className="bx bx-spreadsheet"></i>
-              <span className="link_name">MSBTE Result</span>
+              <span className="link_name">Result Analysis</span>
             </a>
             <ul className="sub-menu blank">
               <li>
-                <a className="link_name" rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0'>
-                MSBTE Result
+                <a className="link_name" rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1QSjpK5C75lgn5rx_DTA4GLBc3-m3TbLc/edit?usp=sharing&ouid=100148969996896430193&rtpof=true&sd=true'>
+                Result Analysis
                 </a>
               </li>
             </ul>
