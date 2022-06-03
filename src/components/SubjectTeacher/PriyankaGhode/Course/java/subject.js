@@ -11,7 +11,7 @@ function subject(){
         <div className="sub sub1">
 
     <label className="s1">Java Programming </label>
-    <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1ZlCxaB2IpXlY8YIJROQDISO8_vMbRpb4/edit?usp=sharing&ouid=100148969996896430193&rtpof=true&sd=truehttps://docs.google.com/spreadsheets/d/1ZlCxaB2IpXlY8YIJROQDISO8_vMbRpb4/edit?usp=sharing&ouid=100148969996896430193&rtpof=true&sd=true'><div className="attendance">
+    <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1ZlCxaB2IpXlY8YIJROQDISO8_vMbRpb4/edit?usp=sharing&ouid=100148969996896430193&rtpof=true&sd=true'><div className="attendance">
       <span className="attend_label">Attendance</span>
     </div></a>
 
