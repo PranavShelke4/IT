@@ -63,13 +63,13 @@ function subNavbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/subject-teacher/yogesh-bodhe/student-details">First Year</Link>
+                <Link to="/subject-teacher/yogesh-bodhe/FY-Students">First Year</Link>
               </li>
               <li>
-                <Link to="/subject-teacher/yogesh-bodhe/student-details">Second Year</Link>
+                <Link to="/subject-teacher/yogesh-bodhe/SY-Students">Second Year</Link>
               </li>
               <li>
-                <Link to="/subject-teacher/yogesh-bodhe/student-details">Third Year</Link>
+                <Link to="/subject-teacher/yogesh-bodhe/TY-Students">Third Year</Link>
               </li>
             </ul>
           </li>
@@ -89,13 +89,13 @@ function subNavbar() {
           </li>
 
           <li>
-            <a rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0" >
+            <a rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1C7-8spoquQK5-eqn5A2549EhT5bIS9wJ/edit?usp=sharing&ouid=100148969996896430193&rtpof=true&sd=true" >
               <i className="bx bx-file-find"></i>
               <span className="link_name">CPP Project</span>
             </a>
             <ul className="sub-menu blank">
               <li>
-                <a className="link_name" href="https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0">
+                <a className="link_name" rel="noreferrer" target='_blank' href="https://docs.google.com/spreadsheets/d/1C7-8spoquQK5-eqn5A2549EhT5bIS9wJ/edit?usp=sharing&ouid=100148969996896430193&rtpof=true&sd=true">
                 CPP Project
                 </a>
               </li>
@@ -117,7 +117,7 @@ function subNavbar() {
                 </Link>
               </li>
               <li>
-              <a href="https://drive.google.com/file/d/1chDe5cx6ljpuNmQ1nOH8MrPsq7F149MZ/view?" rel="noreferrer" target='_blank'>First Year</a>
+              <a rel="noreferrer" target='_blank' href="https://drive.google.com/file/d/1chDe5cx6ljpuNmQ1nOH8MrPsq7F149MZ/view?" rel="noreferrer" target='_blank'>First Year</a>
               </li>
               <li>
               <a rel="noreferrer" target='_blank' href="https://drive.google.com/file/d/1w_1HrLTeJM02rtjA6pjyGuzv-2N-F7dp/view">Second Year</a>
@@ -143,15 +143,15 @@ function subNavbar() {
           </li>
 
           <li>
-            <Link to="#">
+            <a rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0'>
               <i className="bx bx-spreadsheet"></i>
               <span className="link_name">MSBTE Result</span>
-            </Link>
+            </a>
             <ul className="sub-menu blank">
               <li>
-                <Link className="link_name" to="#">
+                <a className="link_name" rel="noreferrer" target='_blank' href='https://docs.google.com/spreadsheets/d/1JdKMJ7M-X0fMoIhBd1Dcl7ul_2csuosdVWpwTOEERFc/edit#gid=0'>
                 MSBTE Result
-                </Link>
+                </a>
               </li>
             </ul>
           </li>
