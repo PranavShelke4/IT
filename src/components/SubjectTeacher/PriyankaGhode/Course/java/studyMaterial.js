@@ -55,6 +55,7 @@ class StudyMaterial extends Component {
             <div className='FideologyActivities'>
             <div className="fideo">
             <h3 className='fidoh3'>Study Material</h3>
+            <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/folders/1Pd26y8X9VEK0LJYSULTA7ZULsaOnVPsd?usp=sharing"><div className='add-files'>Files</div></a>
                 <table>
                     <thead className="thead-light">
                         <tr>
